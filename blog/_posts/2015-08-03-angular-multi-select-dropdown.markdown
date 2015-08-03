@@ -7,7 +7,7 @@ categories: angularJS ui
 
 Design guidelines require a multi-select dropdown that shows all the options as selectable and tallies the selections as a comma-separated, concatenated string in the dropdown's consolidated view.
 
-##The TARGET
+## The TARGET
 
 ![Multi-select dropdown target]({{ site.url }}/assets/uiselect/target.jpg)
 
@@ -18,36 +18,36 @@ Basic Requirements
  * Cross-browser compatible
  * AngularJS
 
-##The CONTENDERS
+## The CONTENDERS
 
  * [Select2][select2]
  * [UI-Select][uiSelect]
  * [Angularjs Dropdown Multiselect][ngDropdown]
  * [angular-multi-select][ngMultiSelect]
 
-- - -
+___
 
-###Select2 (deprecated)
+### Select2 (deprecated)
 
 [Github page][select2] states this is obsolete and then links to [UI-Select][uiSelect].
 
-- - -
+___
 
-###UI-Select
+### UI-Select
 
 ![UI-Select snapshot]({{ site.url }}/assets/uiselect/uiselect.jpg)
 
-####Overview
+#### Overview
 
 This 100% AngularJS solution provides multi-select options for variations on customizable dropdowns. Once an item has been selected, it is removed from the dropdown list and becomes a "remove this item" button with customizable label.
 
-####Try it
+#### Try it
 [Plnkr.co][select2try]
 
-####Review
+#### Review
 Although there are many available skins for download, the CSS is usually intended for Select2 and therefore the classes and class declarations do not match that of ui-select. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.
 
-- - -
+___
 
 
 
