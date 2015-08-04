@@ -81,7 +81,7 @@ It appears that there is a duplicate repo and it is unclear to me exactly what i
 [jsfiddle.net][ngMultiSelectTry]
 
 #### Review
-This full-featured and highly customizable directive addresses all the functionality you could want. Easily change visual themes with Bootstrap skins (e.g. [Bootswatch][bootstrapSkins]).
+This full-featured and highly customizable directive addresses all the functionality you could want. There are no readily available skins for this.
 
 
 
