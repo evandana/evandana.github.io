@@ -20,20 +20,15 @@ Basic Requirements
 
 ## The CONTENDERS
 
- * [Select2][select2]
  * [UI-Select][uiSelect]
  * [Angularjs Dropdown Multiselect][ngDropdown]
  * [angular-multi-select][ngMultiSelect]
 
 ___
 
-### Select2 (deprecated)
-
-[Github page][select2] states this is obsolete and then links to [UI-Select][uiSelect].
-
-___
-
 ### UI-Select
+
+Previously [UI-Select2][ngSelect2]
 
 ![UI-Select snapshot]({{ site.url }}/assets/uiselect/uiselect.png)
 
@@ -45,25 +40,33 @@ This 100% AngularJS solution provides multi-select options for variations on cus
 [Plnkr.co][select2try]
 
 #### Review
-Although there are many available skins for download, the CSS is usually intended for Select2 and therefore the classes and class declarations do not match that of ui-select. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.
+Although there are many available skins for download, the CSS is usually intended for [Select2][select2] and therefore the classes and class declarations do not match that of `ui-select`. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.
+
+___
+
+### AngularJS Dropdown Multiselect
+
+![UI-Select snapshot]({{ site.url }}/assets/uiselect/ngmultiselect.png)
+
+#### Overview
+
+This 100% AngularJS solution provides multi-select options for variations on customizable dropdowns. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Extensive documentation and examples are provided on their site.
+
+#### Try it
+[jsfiddle.net][ngDropdownTry]
+
+#### Review
+This full-featured and highly customizable directive addresses all the functionality you could want. Easily change visual themes with Bootstrap skins (e.g. [Bootswatch][bootstrapSkins]).
 
 ___
 
 
-
-
-{% highlight javascript %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-
-[select2]:https://github.com/angular-ui/ui-select2
+[select2]:https://select2.github.io/
+[ngSelect2]:https://github.com/angular-ui/ui-select2
 [uiSelect]:https://github.com/angular-ui/ui-select
 [ngDropdown]:http://dotansimha.github.io/angularjs-dropdown-multiselect/#/
 [ngMultiSelect]:https://www.npmjs.com/package/angular-multi-select
 
 [select2try]:http://plnkr.co/edit/juqoNOt1z1Gb349XabQ2?p=preview
+[ngDropdownTry]:https://jsfiddle.net/evand/bmvtmzmm/
+[bootstrapSkins]:https://bootswatch.com/
