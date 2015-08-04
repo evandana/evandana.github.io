@@ -6,8 +6,8 @@
 </description>
     <link>http://evandana.github.io/</link>
     <atom:link href="http://evandana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2015 11:30:49 -0400</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2015 11:30:49 -0400</lastBuildDate>
+    <pubDate>Tue, 04 Aug 2015 14:34:24 -0400</pubDate>
+    <lastBuildDate>Tue, 04 Aug 2015 14:34:24 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,6 +23,7 @@
  * Summarizes selections in collapsed view
  * Shows all items in dropdown and can toggle selection state
  * Cross-browser compatible
+ * Skinnable
  * AngularJS&lt;/p&gt;
 
 &lt;h2 id=&quot;the-contenders&quot;&gt;The CONTENDERS&lt;/h2&gt;
@@ -37,13 +38,14 @@
 
 &lt;h3 id=&quot;ui-select&quot;&gt;UI-Select&lt;/h3&gt;
 
-&lt;p&gt;Previously &lt;a href=&quot;https://github.com/angular-ui/ui-select2&quot;&gt;UI-Select2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Previously &lt;a href=&quot;https://github.com/angular-ui/ui-select2&quot;&gt;UI-Select2&lt;/a&gt;
+&lt;a href=&quot;https://github.com/angular-ui/ui-select&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://evandana.github.io/assets/uiselect/uiselect.png&quot; alt=&quot;UI-Select snapshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;overview&quot;&gt;Overview&lt;/h4&gt;
 
-&lt;p&gt;This 100% AngularJS solution provides multi-select options for variations on customizable dropdowns. Once an item has been selected, it is removed from the dropdown list and becomes a “remove this item” button with customizable label.&lt;/p&gt;
+&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Once an item has been selected, it is removed from the dropdown list and becomes a “remove this item” button with customizable label.&lt;/p&gt;
 
 &lt;h4 id=&quot;try-it&quot;&gt;Try it&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;http://plnkr.co/edit/juqoNOt1z1Gb349XabQ2?p=preview&quot;&gt;Plnkr.co&lt;/a&gt;&lt;/p&gt;
@@ -55,11 +57,13 @@
 
 &lt;h3 id=&quot;angularjs-dropdown-multiselect&quot;&gt;AngularJS Dropdown Multiselect&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://evandana.github.io/assets/uiselect/ngmultiselect.png&quot; alt=&quot;UI-Select snapshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://dotansimha.github.io/angularjs-dropdown-multiselect/#/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://evandana.github.io/assets/uiselect/ngmultiselect.png&quot; alt=&quot;AngularJS Dropdown Multiselect snapshot&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;overview-1&quot;&gt;Overview&lt;/h4&gt;
 
-&lt;p&gt;This 100% AngularJS solution provides multi-select options for variations on customizable dropdowns. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Extensive documentation and examples are provided on their site.&lt;/p&gt;
+&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Extensive documentation and examples are provided on their site.&lt;/p&gt;
 
 &lt;h4 id=&quot;try-it-1&quot;&gt;Try it&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/evand/bmvtmzmm/&quot;&gt;jsfiddle.net&lt;/a&gt;&lt;/p&gt;
@@ -68,6 +72,24 @@
 &lt;p&gt;This full-featured and highly customizable directive addresses all the functionality you could want. Easily change visual themes with Bootstrap skins (e.g. &lt;a href=&quot;https://bootswatch.com/&quot;&gt;Bootswatch&lt;/a&gt;).&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;h3 id=&quot;angularjs-multi-select&quot;&gt;AngularJS Multi Select&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/angular-multi-select&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://evandana.github.io/assets/uiselect/angularjsmultiselect.png&quot; alt=&quot;AngularJS Multi Select snapshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;overview-2&quot;&gt;Overview&lt;/h4&gt;
+
+&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Icons can be shown next to items in the dropdown and in the button text.&lt;/p&gt;
+
+&lt;p&gt;It appears that there is a duplicate repo and it is unclear to me exactly what is going on. Both github users contributed to &lt;a href=&quot;http://alexandernst.github.io/angular-multi-select/&quot;&gt;this repo&lt;/a&gt;, but only one contributed to &lt;a href=&quot;http://isteven.github.io/angular-multi-select/&quot;&gt;this&lt;/a&gt; one.&lt;/p&gt;
+
+&lt;h4 id=&quot;try-it-2&quot;&gt;Try it&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/evand/x6kjc76r/&quot;&gt;jsfiddle.net&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;review-2&quot;&gt;Review&lt;/h4&gt;
+&lt;p&gt;This full-featured and highly customizable directive addresses all the functionality you could want. Easily change visual themes with Bootstrap skins (e.g. &lt;a href=&quot;https://bootswatch.com/&quot;&gt;Bootswatch&lt;/a&gt;).&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 03 Aug 2015 09:35:58 -0400</pubDate>
