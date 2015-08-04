@@ -3,7 +3,7 @@ title: Evan's Tech Blog
 email:
 description: > # this means to ignore newlines until "baseurl:"
   Documenting notes gathered while researching tech solutions
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://evandana.github.io" # the base hostname & protocol for your site
 twitter_username: evandana
 github_username:  evandana
