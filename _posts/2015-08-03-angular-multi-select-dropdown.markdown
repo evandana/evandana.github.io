@@ -9,7 +9,7 @@ Design guidelines require a multi-select dropdown that shows all the options as 
 
 ## The TARGET
 
-![Multi-select dropdown target]({{ site.url }}/assets/uiselect/target.jpg)
+![Multi-select dropdown target]({{ site.url }}/assets/uiselect/target.png)
 
 Basic Requirements
  * Multi-select
@@ -35,7 +35,7 @@ ___
 
 ### UI-Select
 
-![UI-Select snapshot]({{ site.url }}/assets/uiselect/uiselect.jpg)
+![UI-Select snapshot]({{ site.url }}/assets/uiselect/uiselect.png)
 
 #### Overview
 
