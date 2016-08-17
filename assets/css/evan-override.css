@@ -1,0 +1,139 @@
+.page-content {
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+section {
+    margin-bottom: 5em;
+}
+
+.list-strip li:nth-child(even) {
+    background: #63A4B5;
+}
+
+.timeline {
+    padding-bottom: 0;
+}
+
+.timeline:before {
+    left: 20px;
+}
+
+.timeline-panel {
+    width: 100%;
+}
+
+.i-toggle-view {
+    cursor: pointer;
+}
+
+.timeline-body p a {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #63A4B5;
+}
+.timeline-body p a:hover {
+    text-decoration: none;
+    color: #63A4B5;
+}
+
+.timeline-heading {
+    float: left;
+    max-width: 18em;
+}
+
+.timeline-heading .fa {
+    font-size: .7em;
+    padding-left: 1em;
+}
+
+.timeline-body {
+    margin-left: 20em;
+}
+
+.timeline-body ul {
+    margin-top: 1em;
+    padding-left: 0;
+}
+
+.timeline-body li {
+    margin-left: 1.2em;
+    padding-bottom: .5em;
+}
+
+.grid-block:before, .grid-block:after {
+    display: none;
+}
+
+
+/* --------------------------------
+ * RESPONSIVE
+ * --------------------------------*/
+
+@media (max-width: 1199px) and (min-width: 991px) {
+    .timeline-heading {
+        float: none;
+        max-width:100%;
+    }
+    .timeline-body {
+        margin-left: 0;
+    }
+}
+@media (max-width: 990px) and (min-width: 768px) {
+    section {
+        margin-bottom: 3em;
+    }
+}
+@media (max-width: 767px) and (min-width: 676px) {
+    .timeline-heading {
+        float: none;
+        max-width:100%;
+    }
+    .timeline-body {
+        margin-left: 0;
+    }
+}
+@media (max-width: 675px) and (min-width: 601px) {
+    .timeline-heading {
+        float: none;
+        max-width:100%;
+    }
+    .timeline-body {
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .timeline-heading {
+        float: none;
+        max-width:100%;
+    }
+    .timeline-body {
+        margin-left: 0;
+    }
+}
+
+
+/* --------------------------------
+ * INTERACTIONS
+ * --------------------------------*/
+
+.timeline-panel.i-collapsed::after {
+    content: 'a';
+}
+.timeline-panel.i-collapsed .timeline-body {
+    display: none;
+}
+.timeline-panel.i-collapsed .timeline-heading {
+    max-width: 100%;
+    width: 100%;
+}
+.timeline-panel.i-collapsed .timeline-heading h4 {
+    float: left;
+}
+.timeline-panel.i-collapsed .timeline-heading .text-muted {
+    display: none;
+}
+.timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
+    display: block;
+    float: right;
+    margin-top: -7px;
+}
