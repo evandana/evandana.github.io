@@ -35,13 +35,13 @@ author:
       description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.<br/><br/>Try the <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">demo-version</a> using dummy data." 
       features: 
         - feature1: 
-          text: Live bidding using Websockets.io, ReactJS, and Redux
+          text: Live bidding using websockets, ReactJS, and Redux
         - feature1: 
           text: Secure sign-in using Google OAuth
         - feature1: 
           text: Enforced bidding rules 
         - feature1: 
-          text: Database and hosting using Firebase.io
+          text: Database and hosting using Firebase.io (experimented with AWS)
 
         - feature1: 
           text: Remove Donate links
@@ -52,11 +52,12 @@ author:
         - feature1: 
           text: Connect websockets for CONFIG.bidding
       icon: live
-      technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
+      technologies: "ReactJS 15.1.x, Redux, websockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
       link: https://auction-demo.firebaseapp.com
       completedyear: 2016
     - evandanadotcom:
       title: Previous evandana.com
+      collapsed: true
       description: "Although fully functional and easy to update, the old version was recently abandoned to save money on unecessary hosting charges." 
       features: 
         - feature: 
@@ -64,10 +65,11 @@ author:
         - feature: 
           text: "Featured a D3.js interactive graph that highlighted my capabilities in web development, leadership, and design."
         - feature: 
-          text: "Responsive design based on <a href=\"www.getskeleton.com\" target=\"_BLANK\">Skeleton V1.1</a>." 
+          text: "Responsive, mobile-friendly and quick-to-load." 
         - feature: 
           text: "Linked to page with example code demonstrating and annotating current tech (at the time): HTML5, jQUERY, CSS3 & LESS, XML, PHP."
       icon: github
+      technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       link: https://github.com/evandana/website-2012
       completedyear: 2012
   workHistory:

@@ -116,6 +116,16 @@ section {
  * INTERACTIONS
  * --------------------------------*/
 
+/* timeline-panel isn't needed directly below, but it helps for consistency*/
+.timeline-panel.grid-block.i-toggle-view:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+.timeline-panel.grid-block.i-toggle-view.i-collapsed:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+.timeline-panel.i-collapsed {
+    background: rgba(255, 255, 255, 0.2);
+}
 .timeline-panel.i-collapsed::after {
     content: 'a';
 }
@@ -135,5 +145,5 @@ section {
 .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
     display: block;
     float: right;
-    margin-top: 4px;
+    margin-top: -6px;
 }
