@@ -56,17 +56,19 @@ author:
       link: https://auction-demo.firebaseapp.com
       completedyear: 2016
     - evandanadotcom:
-      title: Previous Evandana.com
-      description: Although fully functional and easy to update, the old version was recently abandoned when GoDaddy wanted to charge $500 for hosting. 
+      title: Previous evandana.com
+      description: "Although fully functional and easy to update, the old version was recently abandoned to save money on unecessary hosting charges." 
       features: 
-        - feature1: 
-          text: "XML and XSLT driven print (InDesign) and web (PHP) résumé experiences."
-        - feature2: 
-          text: "Featured a D3.js interactive graph that highlighted the experience backing my capabilities in web development, leadership, and design; view the <a href=\"\">standalone version ADD LINK HERE</a>." 
-        - feature3: 
-          text: "Linked to page with example code demonstrating and annotating current tech (at the time)&colon; HTML5, jQUERY, CSS3 & LESS, XML, PHP."
+        - feature: 
+          text: "XML and XSLT drove print (InDesign) and web (PHP) résumé workflows."
+        - feature: 
+          text: "Featured a D3.js interactive graph that highlighted my capabilities in web development, leadership, and design."
+        - feature: 
+          text: "Responsive design based on <a href=\"www.getskeleton.com\" target=\"_BLANK\">Skeleton V1.1</a>." 
+        - feature: 
+          text: "Linked to page with example code demonstrating and annotating current tech (at the time): HTML5, jQUERY, CSS3 & LESS, XML, PHP."
       icon: github
-      link: http://github.com/evandana/website-2012
+      link: https://github.com/evandana/website-2012
       completedyear: 2012
   workHistory:
     - work1:
@@ -87,7 +89,7 @@ author:
       description: Extended current app by developing additional functionality and engaging UI with JavaScript. Implemented significant contributions in an agile team to achieve business goals. Reached cross-browser functionality with collaborative discussions. 
     - work1:
       company: Innerscope Research Inc.
-      hidden: true
+      collapsed: true
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2009
@@ -96,7 +98,7 @@ author:
       description: "Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences."
     - work1:
       company: EC Boston
-      hidden: true
+      collapsed: true
       location: Boston, MA
       title: Web Developer 
       started: 2009
@@ -105,7 +107,7 @@ author:
       description: Facilitated and increased conversion rates by establishing new branding and easily accessible information. Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. Content updatable by client without markup. Site was live September 2009 - 20011.
     - work1:
       company: Crimson Life Sciences
-      hidden: true
+      collapsed: true
       location: Boston, MA
       title: Process Engineer 
       started: 2009
@@ -114,7 +116,7 @@ author:
       description: "Delivered high ROI by automating Excel and Word document processing. Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. Achieved timely project completion through appropriate architecture and schedule planning. Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use."
     - work1:
       company: Reebok International
-      hidden: true
+      collapsed: true
       location: Canton, MA
       title: Graphic Designer & Process Engineer 
       started: 2007
@@ -138,14 +140,14 @@ author:
       duration: (2013 - 2013)
     - coursera:
       organization: Coursera.org
-      hidden: true
       location: Stanford University Online
-      description: "Introduction to Python, Model Thinking, Software Engineering for Saas, CS101. Read more in <a href=\"#activities\">activities</a>."
+      description: "Enriching and expanding skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. Courses include homework, lectures, and quizzes/exams. Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. Earned a certificate of completion for listed classes."
       completed: 2014
       duration: (2012 - 2013)  
   activities:
     - activity:
       location: Boston, MA
+      collapsed: true
       title: Co-leader of November Project's Boston Tribe
       started: 2013
       icon: bicycle
@@ -159,15 +161,8 @@ author:
       duration: (2015)
       description: "Engaged developers in an immersive and interactive two-night class called Introduction to D3.js. Presented using a follow-along slide deck with individually-editable code examples: <a href=\"http://slides.com/evandana/d3-intro-3\" target=\"_BLANK\">http://slides.com/evandana/d3-intro-3</a>." 
     - activity:
-      location: Stanford University
-      title: Coursera.org Online Classes
-      started: 2013
-      icon: code
-      duration: (2014 - 2015)
-      description: "Enriching and expanding skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. Courses include homework, lectures, and quizzes/exams. Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. Earned a certificate of completion for listed classes."
-    - activity:
       location: Boston, MA
-      hidden: true
+      collapsed: true
       title: Co-leader and Webmaster of The Most Informal Running Club Ever (TMIRCE) 
       started: 2010
       icon: bicycle

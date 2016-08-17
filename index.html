@@ -58,7 +58,7 @@ layout: default
                                         <div class="timeline-badge info fa fa-github"> </div>
                                     {% endif %}
                                 {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if sample.hidden %}i-collapsed{% endif %}">
+                                <div class="timeline-panel grid-block i-toggle-view {% if sample.collapsed %}i-collapsed{% endif %}">
                                     <div class="timeline-heading">
                                         {% if sample.title %}
                                             <h4 class="timeline-title">{{ sample.title }}</h4>
@@ -111,7 +111,7 @@ layout: default
                                 {% if work.started %}
                                     <div class="timeline-badge info">{{ work.started }}</div>
                                 {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if work.hidden %}i-collapsed{% endif %}">
+                                <div class="timeline-panel grid-block i-toggle-view {% if work.collapsed %}i-collapsed{% endif %}">
                                     <div class="timeline-heading">
                                         {% if work.company %}
                                             <h4 class="timeline-title">{{ work.company }} </h4>
@@ -162,7 +162,7 @@ layout: default
                                 {% if education.completed %}
                                     <div class="timeline-badge info">{{ education.completed }}</div>
                                 {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if education.hidden %}i-collapsed{% endif %}">
+                                <div class="timeline-panel grid-block i-toggle-view {% if education.collapsed %}i-collapsed{% endif %}">
                                     <div class="timeline-heading">
                                         {% if education.organization %}
                                             <h4 class="timeline-title">{{ education.organization }}</h4>
@@ -210,7 +210,7 @@ layout: default
                                 {% else %}
                                     <div class="timeline-badge info">{{ activity.started }}</div>
                                 {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if activity.hidden %}i-collapsed{% endif %}">
+                                <div class="timeline-panel grid-block i-toggle-view {% if activity.collapsed %}i-collapsed{% endif %}">
                                     <div class="timeline-heading">
                                         {% if activity.title %}
                                             <h4 class="timeline-title">{{ activity.title }} </h4>

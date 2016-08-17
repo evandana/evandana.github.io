@@ -27,11 +27,11 @@ section {
     cursor: pointer;
 }
 
-.timeline-body p a {
+.timeline-body a {
     padding-bottom: 1px;
     border-bottom: 1px solid #63A4B5;
 }
-.timeline-body p a:hover {
+.timeline-body a:hover {
     text-decoration: none;
     color: #63A4B5;
 }
@@ -43,7 +43,7 @@ section {
 
 .timeline-heading .fa {
     font-size: .7em;
-    padding-left: 1em;
+    padding-left: .7em;
 }
 
 .timeline-body {
@@ -135,5 +135,5 @@ section {
 .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
     display: block;
     float: right;
-    margin-top: -7px;
+    margin-top: 4px;
 }
