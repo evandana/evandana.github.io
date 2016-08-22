@@ -27,10 +27,12 @@ author:
   stackoverflow:
 #  stackoverflow: 4582127
   intro: 
-      title: Something here
-      description: something else goes here and here and here
+      firstline: "UI lead / front end developer with a focus on <a href=\"work-sample-auction-app\">architecting successful web experiences</a>." 
+      description: Approaches challenges with engaging energy and passion, engineering efficient tooling and processes to benefit the project and team.
+        Articulate multi-discipline communication enhanced by design background."
   workSamples:
     - auctionapp:
+      id: auctionapp
       title: PMC Auction App
       description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.<br/><br/>Try the <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">demo-version</a> using dummy data." 
       features: 
@@ -44,18 +46,13 @@ author:
           text: Database and hosting using Firebase.io (experimented with AWS)
 
         - feature1: 
-          text: Remove Donate links
-        - feature1: 
-          text: Update intro page explaining it's a demo
-        - feature1: 
-          text: Sponsors and Winners are broken
-        - feature1: 
           text: Connect websockets for CONFIG.bidding
       icon: live
       technologies: "ReactJS 15.1.x, Redux, websockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
       link: https://auction-demo.firebaseapp.com
       completedyear: 2016
     - evandanadotcom:
+      id: evandanadotcom 
       title: Previous evandana.com
       collapsed: true
       description: "Although fully functional and easy to update, the old version was recently abandoned to save money on unecessary hosting charges." 
@@ -78,7 +75,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2013
-      duration: (2013 - Present)
+      duration: (2013 &ndash; Present)
       technologies: ES2015, AngularJS 1.x, Aurelia, Jenkins, Atomic Design, NodeJS, JSPM
       description: Delivering UI of valuable enterprise level web application with complex RESTful services. Ensuring maintainable code with hierarchy of class extensions, abstracted templates, and custom methods on the appropriate level.
     - work1:
@@ -86,7 +83,7 @@ author:
       location: Boston, MA
       title: Javascript UI Developer 
       started: 2012
-      duration: (2012 - 2013)
+      duration: (2012 &ndash; 2013)
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description: Extended current app by developing additional functionality and engaging UI with JavaScript. Implemented significant contributions in an agile team to achieve business goals. Reached cross-browser functionality with collaborative discussions. 
     - work1:
@@ -95,7 +92,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2009
-      duration: (2009 - 2012)
+      duration: (2009 &ndash; 2012)
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       description: "Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences."
     - work1:
@@ -106,7 +103,7 @@ author:
       started: 2009
       duration: (2009)
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
-      description: Facilitated and increased conversion rates by establishing new branding and easily accessible information. Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. Content updatable by client without markup. Site was live September 2009 - 20011.
+      description: Facilitated and increased conversion rates by establishing new branding and easily accessible information. Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. Content updatable by client without markup. Site was live September 2009&nda &ndash; 20011.
     - work1:
       company: Crimson Life Sciences
       collapsed: true
@@ -122,7 +119,7 @@ author:
       location: Canton, MA
       title: Graphic Designer & Process Engineer 
       started: 2007
-      duration: (2007 - 2009)
+      duration: (2007&nda &ndash; 2009)
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. Initiated projects to enhance data communication across groups. Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
   educationHistory:
@@ -132,20 +129,20 @@ author:
       degree: Bachelor
       major: Industrial Design
       completed: 2005
-      duration: (2001 - 2005)
+      duration: (2001 &ndash; 2005)
       description: "BFA in Industrial Design, GPA 3.84, highest honors. AAS in Graphic Design. Technical concentrations in Mechanical and Manufacturing Technology."
     - extension:
       organization: Harvard Extension School
       location: Cambridge, MA
       description: Mobile Operating Systems and Applications
       completed: 2013
-      duration: (2013 - 2013)
+      duration: (2013 &ndash; 2013)
     - coursera:
       organization: Coursera.org
       location: Stanford University Online
       description: "Enriching and expanding skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. Courses include homework, lectures, and quizzes/exams. Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. Earned a certificate of completion for listed classes."
       completed: 2014
-      duration: (2012 - 2013)  
+      duration: (2012 &ndash; 2013)  
   activities:
     - activity:
       location: Boston, MA
@@ -153,8 +150,8 @@ author:
       title: Co-leader of November Project's Boston Tribe
       started: 2013
       icon: bicycle
-      duration: (2014 - 2015)
-      description: "Continual learning about how to inspire self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities. Developing comfort, ease, and power when speaking and writing for a large audience. Building strong relationships and learning how to give and recieve critical feedback with other co-leaders."
+      duration: (2014 &ndash; 2015)
+      description: "Continual learning about how to inspire self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities. Developing comfort, ease, and power when speaking and writing for a large audience. Building strong relationships and learning how to give and receive critical feedback with other co-leaders."
     - activity:
       location: General Assembly, MA
       title: D3.js Instructor 
@@ -168,9 +165,9 @@ author:
       title: Co-leader and Webmaster of The Most Informal Running Club Ever (TMIRCE) 
       started: 2010
       icon: bicycle
-      duration: (2010 - 2011)
+      duration: (2010 &ndash; 2011)
       description: "Cultivated welcoming community of runners through attitude modeling and directing activities. Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity. Positioned club for success with engaging summary presentation of social impact: digitally and physically."
-  languages:
+  REMOVE-THIS-TO-ENABLE-languages:
     - language1:
       name: English
       proficiency: Native
@@ -183,7 +180,7 @@ author:
       percentage: 80%
       usefulness: expert
     - skill2:
-      name: Frameworks - React/Angular
+      name: "Frameworks: React/Angular"
       percentage: 60%
       usefulness: experienced
     - skill3:
@@ -198,3 +195,15 @@ author:
       name: Server-side
       percentage: 30%
       usefulness: proficient
+  github:
+      intro: Notable repos
+      repos:
+      - repo:
+        name: JavaScript/ES2015
+        link: 80%
+        description: expert
+      - repo:
+        name: JavaScript/ES2015
+        link: 80%
+        description: expert
+        

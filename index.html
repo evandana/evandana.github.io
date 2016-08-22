@@ -6,11 +6,7 @@ layout: default
         
         $('.i-toggle-view').on( 'click', expandCollapse );
 
-        console.log('hi');
-
         function expandCollapse (evt) {
-
-            console.log('target', evt);
 
             var panel = $(evt.currentTarget);
             if ( panel.hasClass('i-collapsed') ) {
@@ -28,18 +24,15 @@ layout: default
 
             {% if site.author.intro %}
                 <section id="intro">
-                    <h3 class="title with-icon"><span class="glyphicon glyphicon-plane cat-title"></span>Intro</h3>
-                    <div class="grid-block">
-                        <div class="timeline-heading">
-                            {% if site.author.intro.title %}
-                                <h4 class="timeline-title">{{ site.author.intro.title }} </h4>
-                            {% endif %}
-                        </div>
-                        <div class="timeline-body">
-                            {% if site.author.intro.description %}
-                                <p>{{ site.author.intro.description }}</p>
-                            {% endif %}
-                        </div>
+                    <div class="intro-block">
+                        {% if site.author.intro.description %}
+                            <p class="intro-body">
+                                <span class="intro-body-first-line">
+                                    {{ site.author.intro.firstline }}
+                                </span>
+                                {{ site.author.intro.description }}
+                            </p>
+                        {% endif %}
                     </div>
                 </section>
             {% endif %}
@@ -49,7 +42,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
                         {% for sample in site.author.workSamples %}
-                            <li class="timeline-inverted">
+                            <li class="timeline-inverted" id="work-sample-{{ sample.id }}">
                                 {% if sample.icon %}
                                     {% if sample.icon == "live" %}
                                         <div class="timeline-badge info fa fa-mouse-pointer"> </div>
@@ -63,16 +56,16 @@ layout: default
                                         {% if sample.title %}
                                             <h4 class="timeline-title">{{ sample.title }}</h4>
                                         {% endif %}
-                                        {% if sample.link %}
-                                            <p>
+                                        <p>
+                                            {% if sample.link %}
                                                 <small class="text-muted">
                                                     <a href="{{ sample.link }}" target="_blank">
                                                         {{ sample.link }}
                                                         <span class="fa fa-external-link"> </span>
                                                     </a>
-                                                </small>
-                                            </p>
-                                        {% endif %}
+                                                </small>        
+                                            {% endif %}
+                                        </p>
                                         {% if sample.technologies %}
                                             <p>
                                                 <small class="text-muted i-preserve">
@@ -133,7 +126,7 @@ layout: default
                                         <p>
                                             <small class="text-muted">
                                                 {% if work.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                                    <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;|&nbsp;
                                                 {% endif %}
                                                 {% if work.location %}
                                                     <i class="fa fa-map-marker"></i>  {{ work.location }}
@@ -179,7 +172,7 @@ layout: default
                                         <p>
                                             <small class="text-muted i-preserve">
                                                 {% if education.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ education.duration }} |
+                                                    <i class="fa fa-calendar"></i> {{ education.duration }} &nbsp;|&nbsp;
                                                 {% endif %}
                                                 {% if education.location %}
                                                     <i class="fa fa-map-marker"></i>  {{ education.location }}
@@ -201,7 +194,7 @@ layout: default
 
             {% if site.author.activities %}
                 <section id="activities">
-                    <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Activities</h3>
+                    <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
                     <ul class="timeline">
                         {% for activity in site.author.activities %}
                             <li class="timeline-inverted">
@@ -218,7 +211,7 @@ layout: default
                                         <p>
                                             <small class="text-muted i-preserve">
                                                 {% if activity.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ activity.duration }} |
+                                                    <i class="fa fa-calendar"></i> {{ activity.duration }} &nbsp;|&nbsp;
                                                 {% endif %}
                                                 {% if activity.location %}
                                                     <i class="fa fa-map-marker"></i>  {{ activity.location }}
@@ -239,7 +232,7 @@ layout: default
             {% endif %}
 
         </div>
-        <div class="col-md-4">
+        <aside class="sidebar col-md-4">
             {% if site.author.stackoverflow or site.author.programmingSkills %}
                 <section id="programming-skills">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
@@ -387,6 +380,32 @@ layout: default
                     {% endif %}
                 </section>
             {% endif %}
+            {% if site.author.github %}
+                <section id="github">
+                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Github</h3>
+                    <div class="grid-block">
+                        <p>{{ github.description }}</p>
+                        <ul class="list-unstyled">
+                            {% for repo in site.author.github.repos %}
+                                <li>
+                                    {% if repo.name %}
+                                        <span class="github-name">
+                                            {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
+                                                {{ repo.name }}
+                                            {% if repo.link %}</a>{% endif %}
+                                        </span>
+                                    {% endif %}
+                                    {% if repo.description %}
+                                        <span class="github-description">
+                                            {{ repo.description }}
+                                        </span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+            {% endif %}
             {% if site.author.languages %}
                 <section id="languages">
                     <div class="deviter"></div>
@@ -406,13 +425,13 @@ layout: default
                     </div>
                 </section>
             {% endif %}
-            <div class="deviter"></div>
             {% if false %}
+            <div class="deviter"></div>
                 <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
                 <div class="grid-block">
                     <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
                 </div>
             {% endif %}
-        </div>
+        </aside>
     </div>
 </div>

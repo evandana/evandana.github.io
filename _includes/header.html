@@ -3,20 +3,20 @@
         <div class="row-fluid">
             <div class="col-sm-4">
                 <img src="{{ site.favicon | prepend: site.baseurl }}" title="Avatar" alt="My Avatar">
-                <h4>{{ site.author.name }}</h4>
-                <p>{{ site.author.title }}</p>
-                <p class="muted">{{ site.author.address }}</p>
+                <h4 class="author-name">{{ site.author.name }}</h4>
+                <p class="author-title">{{ site.author.title }}</p>
+                <p class="author-address muted">{{ site.author.address }}</p>
                 <div class="clearfix"></div>
             </div>
             <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
-                <p><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:userhatestogetspam@gmail.com" 
-   onclick="this.href=this.href.replace(/userhatestogetspam/,'evan.writes.code')">click for email</a> </p>
-                <p><i class="fa fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
-                <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> {{ site.author.linkedin }} </a></p>
-                <p><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>
+                <p class="social-link-block"><i class="fa fa-envelope-o fa-fw"></i><span title="evan.dana"
+   onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
+                <p class="social-link-block"><i class="fa fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
+                <p class="social-link-block"><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> {{ site.author.linkedin }} </a></p>
+                <p class="social-link-block"><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>
             </div>
             <div class="col-sm-4 visible-md-block visible-lg-block">
-                <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf </a>
+                <a href="#" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>
             </div>
         </div>
     </div>
