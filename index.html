@@ -15,6 +15,16 @@ layout: default
                 panel.addClass('i-collapsed');
             }
         }
+
+        $(window).on('hashchange', function() {
+            // allow temporary highlighting of hash target
+            $(window.location.hash).addClass('hash-focus');
+            setTimeout( function () {
+                $(window.location.hash).removeClass('hash-focus');
+            }, 1000);
+        });
+
+
     });
 </script>
 
@@ -42,7 +52,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
                         {% for sample in site.author.workSamples %}
-                            <li class="timeline-inverted" id="work-sample-{{ sample.id }}">
+                            <li class="timeline-inverted" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
                                 {% if sample.icon %}
                                     {% if sample.icon == "live" %}
                                         <div class="timeline-badge info fa fa-mouse-pointer"> </div>
@@ -56,19 +66,19 @@ layout: default
                                         {% if sample.title %}
                                             <h4 class="timeline-title">{{ sample.title }}</h4>
                                         {% endif %}
-                                        <p>
-                                            {% if sample.link %}
-                                                <small class="text-muted">
+                                        {% if sample.link %}
+                                            <p class="text-muted">
+                                                <small>
                                                     <a href="{{ sample.link }}" target="_blank">
                                                         {{ sample.link }}
                                                         <span class="fa fa-external-link"> </span>
                                                     </a>
                                                 </small>        
-                                            {% endif %}
-                                        </p>
+                                            </p>
+                                        {% endif %}
                                         {% if sample.technologies %}
-                                            <p>
-                                                <small class="text-muted i-preserve">
+                                            <p class="text-muted i-preserve">
+                                                <small>
                                                     {{ sample.technologies }}
                                                 </small>
                                             </p>
@@ -100,7 +110,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
                     <ul class="timeline">
                         {% for work in site.author.workHistory %}
-                            <li class="timeline-inverted work-{{ work.name }}">
+                            <li {% if work.id %}id="work-history-{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.name }}">
                                 {% if work.started %}
                                     <div class="timeline-badge info">{{ work.started }}</div>
                                 {% endif %}
@@ -109,30 +119,32 @@ layout: default
                                         {% if work.company %}
                                             <h4 class="timeline-title">{{ work.company }} </h4>
                                         {% endif %}
-                                        <p>
-                                            <small class="text-muted">
-                                                {% if work.title %}
+                                        {% if work.title %}
+                                            <p class="text-muted">
+                                                <small >
                                                     {{ work.title }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
+                                                </small>
+                                            </p>
+                                        {% endif %}
                                         {% if work.technologies %}
-                                            <p>
-                                                <small class="text-muted i-preserve">
+                                            <p class="text-muted i-preserve">
+                                                <small>
                                                     {{ work.technologies }}
                                                 </small>
                                             </p>
                                         {% endif %}
-                                        <p>
-                                            <small class="text-muted">
-                                                {% if work.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;|&nbsp;
-                                                {% endif %}
-                                                {% if work.location %}
-                                                    <i class="fa fa-map-marker"></i>  {{ work.location }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
+                                        {% if work.duration or work.location %}
+                                            <p class="text-muted">
+                                                <small >
+                                                    {% if work.duration %}
+                                                        <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;|&nbsp;
+                                                    {% endif %}
+                                                    {% if work.location %}
+                                                        <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
                                     </div>
                                     <div class="timeline-body">
                                         {% if work.description %}
@@ -151,7 +163,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education History</h3>
                     <ul class="timeline">
                         {% for education in site.author.educationHistory %}
-                            <li class="timeline-inverted">
+                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %}class="timeline-inverted">
                                 {% if education.completed %}
                                     <div class="timeline-badge info">{{ education.completed }}</div>
                                 {% endif %}
@@ -160,25 +172,29 @@ layout: default
                                         {% if education.organization %}
                                             <h4 class="timeline-title">{{ education.organization }}</h4>
                                         {% endif %}
-                                        <p>
-                                            <small class="text-muted">
-                                                {% if education.degree %}
-                                                    {{ education.degree }}{% endif %}{% if education.degree and education.major %}, {% endif %}
-                                                {% if education.major %}
-                                                    {{ education.major }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
-                                        <p>
-                                            <small class="text-muted i-preserve">
-                                                {% if education.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ education.duration }} &nbsp;|&nbsp;
-                                                {% endif %}
-                                                {% if education.location %}
-                                                    <i class="fa fa-map-marker"></i>  {{ education.location }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
+                                        {% if education.degree or education.major %}
+                                            <p class="text-muted">
+                                                <small>
+                                                    {% if education.degree %}
+                                                        {{ education.degree }}{% endif %}{% if education.degree and education.major %}, {% endif %}
+                                                    {% if education.major %}
+                                                        {{ education.major }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if education.duration or education.location %}
+                                            <p class="text-muted i-preserve">
+                                                <small>
+                                                    {% if education.duration %}
+                                                        <i class="fa fa-calendar"></i> {{ education.duration }} &nbsp;|&nbsp;
+                                                    {% endif %}
+                                                    {% if education.location %}
+                                                        <i class="fa fa-map-marker"></i>  {{ education.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
                                     </div>
                                     <div class="timeline-body">
                                         {% if education.description %}
@@ -197,7 +213,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
                     <ul class="timeline">
                         {% for activity in site.author.activities %}
-                            <li class="timeline-inverted">
+                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted">
                                 {% if activity.icon %}
                                     <div class="timeline-badge info fa fa-{{ activity.icon }}"></div>
                                 {% else %}
@@ -208,16 +224,18 @@ layout: default
                                         {% if activity.title %}
                                             <h4 class="timeline-title">{{ activity.title }} </h4>
                                         {% endif %}
-                                        <p>
-                                            <small class="text-muted i-preserve">
-                                                {% if activity.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ activity.duration }} &nbsp;|&nbsp;
-                                                {% endif %}
-                                                {% if activity.location %}
-                                                    <i class="fa fa-map-marker"></i>  {{ activity.location }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
+                                        {% if activity.duration or activity.location %}
+                                            <p class="text-muted i-preserve">
+                                                <small>
+                                                    {% if activity.duration %}
+                                                        <i class="fa fa-calendar"></i> {{ activity.duration }} &nbsp;|&nbsp;
+                                                    {% endif %}
+                                                    {% if activity.location %}
+                                                        <i class="fa fa-map-marker"></i>  {{ activity.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
                                     </div>
                                     <div class="timeline-body">
                                         {% if activity.description %}
@@ -380,19 +398,19 @@ layout: default
                     {% endif %}
                 </section>
             {% endif %}
-            {% if site.author.github %}
+            {% if site.author.opensource %}
                 <section id="github">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Github</h3>
                     <div class="grid-block">
-                        <p>{{ github.description }}</p>
+                        <p>{{ opensource.description }}</p>
                         <ul class="list-unstyled">
-                            {% for repo in site.author.github.repos %}
-                                <li>
+                            {% for repo in site.author.opensource.repos %}
+                                <li class="github-repo">
                                     {% if repo.name %}
                                         <span class="github-name">
                                             {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
                                                 {{ repo.name }}
-                                            {% if repo.link %}</a>{% endif %}
+                                            {% if repo.link %}<i class="fa fa-external-link"></i></a>{% endif %}
                                         </span>
                                     {% endif %}
                                     {% if repo.description %}

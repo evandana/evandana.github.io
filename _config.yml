@@ -27,12 +27,13 @@ author:
   stackoverflow:
 #  stackoverflow: 4582127
   intro: 
-      firstline: "UI lead / front end developer with a focus on <a href=\"work-sample-auction-app\">architecting successful web experiences</a>." 
-      description: Approaches challenges with engaging energy and passion, engineering efficient tooling and processes to benefit the project and team.
-        Articulate multi-discipline communication enhanced by design background."
+      firstline: "UI lead / front end developer with a focus on <a href=\"#work-sample-auction-app\">architecting successful web experiences</a>." 
+      description: "Approaches challenges with <a href=\"#activity-november-project\">engaging energy and passion</a>, 
+        engineering <a href=\"#work-sample-evandanadotcom\">efficient tooling, processes</a>, and <a href=\"#work-history-sapient\">organization to benefit the project and team</a>.
+        Articulate cross-domain communication enhanced by <a href=\"#education-history-rit\">design background</a>."
   workSamples:
     - auctionapp:
-      id: auctionapp
+      id: auction-app
       title: PMC Auction App
       description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.<br/><br/>Try the <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">demo-version</a> using dummy data." 
       features: 
@@ -44,9 +45,6 @@ author:
           text: Enforced bidding rules 
         - feature1: 
           text: Database and hosting using Firebase.io (experimented with AWS)
-
-        - feature1: 
-          text: Connect websockets for CONFIG.bidding
       icon: live
       technologies: "ReactJS 15.1.x, Redux, websockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
       link: https://auction-demo.firebaseapp.com
@@ -71,6 +69,7 @@ author:
       completedyear: 2012
   workHistory:
     - work1:
+      id: sapient
       company: Sapient Global Markets
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
@@ -124,13 +123,14 @@ author:
       description: Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. Initiated projects to enhance data communication across groups. Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
   educationHistory:
     - rit:
+      id: rit
       organization: Rochester Institute of Technology
       location: Rochester, NY
       degree: Bachelor
       major: Industrial Design
       completed: 2005
       duration: (2001 &ndash; 2005)
-      description: "BFA in Industrial Design, GPA 3.84, highest honors. AAS in Graphic Design. Technical concentrations in Mechanical and Manufacturing Technology."
+      description: "BFA in Industrial Design, GPA 3.84, highest honors. AAS in Graphic Design. Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology."
     - extension:
       organization: Harvard Extension School
       location: Cambridge, MA
@@ -145,6 +145,7 @@ author:
       duration: (2012 &ndash; 2013)  
   activities:
     - activity:
+      id: november-project
       location: Boston, MA
       collapsed: true
       title: Co-leader of November Project's Boston Tribe
@@ -195,15 +196,22 @@ author:
       name: Server-side
       percentage: 30%
       usefulness: proficient
-  github:
+  opensource:
       intro: Notable repos
       repos:
       - repo:
-        name: JavaScript/ES2015
-        link: 80%
-        description: expert
+        name: Auction App - Demo Version
+        link: https://github.com/evandana/auction-demo
+        description: Demo version of full app. Uses updated versions of React, Material-UI, etc.
       - repo:
-        name: JavaScript/ES2015
-        link: 80%
-        description: expert
-        
+        name: PMC Auction App
+        link: https://github.com/evandana/pmc-auction
+        description: App used for live auction.
+      - repo:
+        name: Repo for this site
+        link: https://github.com/evandana/evandana.github.io
+        description: Jekyll template with UX modifications.
+      - repo:
+        name: Learning Programming Patterns (notes)
+        link: https://github.com/evandana/learning-programming-patterns
+        description: Notes taken while studying programming patterns.

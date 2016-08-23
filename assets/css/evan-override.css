@@ -9,6 +9,7 @@ body {
     height: 40px;
     line-height: 40px;
     margin-left: -66px;
+    top: 16px;
 }
 /* change icon size only for badge */
 .timeline-badge.fa:before {
@@ -50,6 +51,9 @@ body {
 .timeline > li > .timeline-panel:before {
     top: 21px;
 }
+.timeline-panel {
+    margin: 0;
+}
 
 section {
     margin-bottom: 5em;
@@ -72,6 +76,16 @@ section {
 }
 .intro-body-first-line {
     text-transform: uppercase;
+}
+#intro a {
+    /*color: #23527c;*/
+    text-decoration:none;
+    padding-bottom:0;
+    border-bottom: 1px solid #c7c7c7;
+}
+#intro a:hover {
+    color: #23527c;
+    border-bottom: 1px solid #23527c;
 }
 
 /* header */
@@ -134,10 +148,29 @@ aside .title .cat-title {
 aside .title .cat-title::after {
     border-top: 10px solid #c7c7c7;
 }
+.github-name {
+    text-transform: uppercase;
+}
+.github-name a:hover {
+    color: #63A4B5;
+}
+.github-name .fa {
+    font-size: .8em;
+    padding-left: .5em;
+}
+.github-description {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+.github-repo:last-of-type .github-description {
+    padding-bottom: 0;
+}
 
 /* programming skills */
 .list-skills li .progress .progress-bar span {
     background: #999;
+    letter-spacing: 1px;
 }
 .list-skills li .progress .progress-bar span:after {
     border-bottom: 5px solid #999;
@@ -290,6 +323,28 @@ section {
  * INTERACTIONS
  * --------------------------------*/
 
+
+/* highlight item on hash change (not just click) */
+li.timeline-inverted {
+  -webkit-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -kthtml-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.hash-focus {
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -kthtml-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-box-shadow: 0px 0px 25px 2px #5bc0de;
+  -moz-box-shadow: 0px 0px 25px 2px #5bc0de;
+  box-shadow: 0px 0px 25px 2px #5bc0de;
+}
+
 /* timeline-panel isn't needed directly below, but it helps for consistency*/
 .timeline-panel.grid-block.i-toggle-view:hover {
     background: rgba(255, 255, 255, 0.6);
@@ -312,6 +367,7 @@ section {
 }
 .timeline-panel.i-collapsed .timeline-heading h4 {
     float: left;
+    margin-bottom: 0;
 }
 .timeline-panel.i-collapsed .timeline-heading .text-muted {
     display: none;
@@ -319,5 +375,5 @@ section {
 .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
     display: block;
     float: right;
-    margin-top: -6px;
+    margin-bottom: 0;
 }
