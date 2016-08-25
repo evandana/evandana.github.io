@@ -6,6 +6,7 @@ baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
 google_analytics: UA-6306273-2
+resumelink: false
 
 # Build settings
 markdown: kramdown
@@ -27,18 +28,21 @@ author:
   stackoverflow:
 #  stackoverflow: 4582127
   intro: 
-      firstline: "Front-end manager / UI lead developer with a focus on <a href=\"#work-sample-auction-app\">architecting successful web experiences</a>." 
-      description: "Approaches challenges with <a href=\"#activity-november-project\">engaging energy and passion</a>, 
-        engineering <a href=\"#work-sample-evandanadotcom\">efficient tooling, processes</a>, and <a href=\"#work-history-sapient\">organization to benefit the project and team</a>.
-        Articulate cross-domain communication enhanced by <a href=\"#education-history-rit\">design background</a>."
+      firstline: >
+        Front-end manager / UI lead developer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
+      description: >
+        Approaches challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>, 
+        engineering <a href="#work-sample-evandanadotcom" title="Jump to Evandana.com (Work Sample)">efficient tooling, processes</a>, and <a href="#work-history-sapient" title="Jump to Publicis.Sapient (Work History)">organization to benefit the project and team</a>.
+        <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">Articulate technical</a> and cross-domain communication enhanced by <a href="#education-history-rit" title="Jump to RIT (Education History)">design background</a>.
   workSamples:
     - auctionapp:
       id: auction-app
       title: PMC Auction App
-      description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. 
+      description: >
+        From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. 
         Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.
         <br/><br/>
-        <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">Try the demo-version</a> using dummy data." 
+        <a href="https://auction-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
       features: 
         - feature1: 
           text: Live bidding using websockets, ReactJS, and Redux
@@ -73,7 +77,7 @@ author:
   workHistory:
     - work1:
       id: sapient
-      company: Sapient Global Markets
+      company: Publicis.Sapient | Sapient Consulting
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2013
@@ -82,9 +86,10 @@ author:
       description: > 
         UI Lead and front-end developer with aptitude on team dynamics: group coordination, process efficiencies, and individual development. 
         Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology.
-        <br/><br/>
-        Years of experience in UI lead role, conducting enganging technical presentations, and as technical liason for client and internal domain teams. 
+        <br/><br/>    
+        Years of experience in UI lead role, conducting enganging technical presentations, and as technical liason for client and internal domain teams.
         Enforced code quality using best practices such as John DePapa's style guide and BEM on both Agile and Atomic approach projects. 
+        Self-motivated and driven as exemplified by creation of D3.js library during bench time and initiation of effective team-building program.
         Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
     - work1:
       company: Putnam Investments
@@ -93,7 +98,10 @@ author:
       started: 2012
       duration: (2012 &ndash; 2013)
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
-      description: Extended current app by developing additional functionality and engaging UI with JavaScript. Implemented significant contributions in an agile team to achieve business goals. Reached cross-browser functionality with collaborative discussions. 
+      description: >
+        Extended current app by developing additional functionality and engaging UI with JavaScript. 
+        Implemented significant contributions in an agile team to achieve business goals. 
+        Reached cross-browser functionality with collaborative discussions. 
     - work1:
       company: Innerscope Research Inc.
       collapsed: true
@@ -112,7 +120,10 @@ author:
       started: 2009
       duration: (2009)
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
-      description: Facilitated and increased conversion rates by establishing new branding and easily accessible information. Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. Content updatable by client without markup. Site was live September 2009&nda &ndash; 20011.
+      description: >
+        Facilitated and increased conversion rates by establishing new branding and easily accessible information. 
+        Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. 
+        Content updatable by client without markup. Site was live September 2009&nda &ndash; 20011.
     - work1:
       company: Crimson Life Sciences
       collapsed: true
@@ -121,7 +132,11 @@ author:
       started: 2009
       duration: (2009)
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001-2007), Mac and PC platforms
-      description: "Delivered high ROI by automating Excel and Word document processing. Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. Achieved timely project completion through appropriate architecture and schedule planning. Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use."
+      description: >
+        Delivered high ROI by automating Excel and Word document processing. 
+        Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
+        Achieved timely project completion through appropriate architecture and schedule planning. 
+        Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use.
     - work1:
       company: Reebok International
       collapsed: true
@@ -130,7 +145,11 @@ author:
       started: 2007
       duration: (2007&nda &ndash; 2009)
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
-      description: Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. Initiated projects to enhance data communication across groups. Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
+      description: >
+        Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
+        Initiated projects to enhance data communication across groups. 
+        Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
+        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
   educationHistory:
     - rit:
       id: rit
@@ -140,7 +159,14 @@ author:
       major: Industrial Design
       completed: 2005
       duration: (2001 &ndash; 2005)
-      description: "BFA in Industrial Design, GPA 3.84, highest honors. AAS in Graphic Design. Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology."
+      description: >
+        BFA in Industrial Design, GPA 3.84, highest honors. 
+        <br/>
+        AAS in Graphic Design. 
+        <br/>
+        Concentration in conversational French. 
+        <br/>
+        Technical concentrations in Mechanical and Manufacturing Technology.
     - extension:
       organization: Harvard Extension School
       location: Cambridge, MA
@@ -150,26 +176,37 @@ author:
     - coursera:
       organization: Coursera.org
       location: Stanford University Online
-      description: "Enriching and expanding skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. Courses include homework, lectures, and quizzes/exams. Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. Earned a certificate of completion for listed classes."
+      description: >
+        Enriched and expanded skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. 
+        Courses include homework, lectures, and quizzes/exams. 
+        Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
+        Earned a certificate of completion for listed classes.
       completed: 2014
       duration: (2012 &ndash; 2013)  
   activities:
     - activity:
       id: november-project
       location: Boston, MA
-      collapsed: true
-      title: Co-leader of November Project's Boston Tribe
+      title: Co-leader of November Project Boston
       started: 2013
       icon: bicycle
       duration: (2014 &ndash; 2015)
-      description: "Continual learning about how to inspire self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities. Developing comfort, ease, and power when speaking and writing for a large audience. Building strong relationships and learning how to give and receive critical feedback with other co-leaders."
+      description: >
+        November Project is a free-fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
+        Developed comfort, ease, and power when speaking and writing for a large audience.
+        Inspired self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities.  
+        With co-leaders, cultured strong relationships that included feedback cycles.
     - activity:
+      id: ga-instructor
       location: General Assembly, MA
       title: D3.js Instructor 
       started: 2015
       icon: code
       duration: (2015)
-      description: "Engaged developers in an immersive and interactive two-night class called Introduction to D3.js. Presented using a follow-along slide deck with individually-editable code examples: <a href=\"http://slides.com/evandana/d3-intro-3\" target=\"_BLANK\">http://slides.com/evandana/d3-intro-3</a>." 
+      description: >
+        Engaged developers in an immersive and interactive two-night class: Introduction to D3.js. 
+        Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck<i class="fa fa-external-link"></i></a>
+         with individually-editable code examples.
     - activity:
       location: Boston, MA
       collapsed: true
@@ -177,7 +214,10 @@ author:
       started: 2010
       icon: bicycle
       duration: (2010 &ndash; 2011)
-      description: "Cultivated welcoming community of runners through attitude modeling and directing activities. Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity. Positioned club for success with engaging summary presentation of social impact: digitally and physically."
+      description: >
+        Cultivated welcoming community of runners through attitude modeling and directing activities. 
+        Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity. 
+        Positioned club for success with engaging presentation of its social impact.
   REMOVE-THIS-TO-ENABLE-languages:
     - language1:
       name: English
@@ -191,7 +231,7 @@ author:
       percentage: 80%
       usefulness: expert
     - skill2:
-      name: "Frameworks: React/Angular"
+      name: "Frameworks: React | Angular | Aurelia"
       percentage: 60%
       usefulness: experienced
     - skill3:

@@ -246,11 +246,13 @@ section {
     max-width: 18em;
 }
 
-.timeline-heading .fa {
+.timeline-heading a .fa,
+.timeline-body a .fa {
+    padding-left: .4em;
     font-size: .8em;
 }
-.timeline-heading a .fa {
-    padding-left: .6em;
+.timeline-body a {
+    margin-right: .25em;
 }
 
 .timeline-body {

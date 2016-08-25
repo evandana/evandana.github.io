@@ -16,7 +16,9 @@
                 <!--<p class="social-link-block"><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>-->
             </div>
             <div class="col-sm-4 visible-md-block visible-lg-block">
-                <a href="#" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>
+                {% if site.resumelink %}
+                    <a href="{{ site.resumelink }}" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>
+                {% endif %}
             </div>
         </div>
     </div>
