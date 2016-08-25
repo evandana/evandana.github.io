@@ -27,7 +27,7 @@ author:
   stackoverflow:
 #  stackoverflow: 4582127
   intro: 
-      firstline: "UI lead / front end developer with a focus on <a href=\"#work-sample-auction-app\">architecting successful web experiences</a>." 
+      firstline: "Front-end manager / UI lead developer with a focus on <a href=\"#work-sample-auction-app\">architecting successful web experiences</a>." 
       description: "Approaches challenges with <a href=\"#activity-november-project\">engaging energy and passion</a>, 
         engineering <a href=\"#work-sample-evandanadotcom\">efficient tooling, processes</a>, and <a href=\"#work-history-sapient\">organization to benefit the project and team</a>.
         Articulate cross-domain communication enhanced by <a href=\"#education-history-rit\">design background</a>."
@@ -35,7 +35,10 @@ author:
     - auctionapp:
       id: auction-app
       title: PMC Auction App
-      description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.<br/><br/>Try the <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">demo-version</a> using dummy data." 
+      description: "From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. 
+        Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.
+        <br/><br/>
+        <a href=\"https://auction-demo.firebaseapp.com\" target=\"_BLANK\">Try the demo-version</a> using dummy data." 
       features: 
         - feature1: 
           text: Live bidding using websockets, ReactJS, and Redux
@@ -64,7 +67,7 @@ author:
         - feature: 
           text: "Linked to page with example code demonstrating and annotating current tech (at the time): HTML5, jQUERY, CSS3 & LESS, XML, PHP."
       icon: github
-      technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
+      technologies: "D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow"
       link: https://github.com/evandana/website-2012
       completedyear: 2012
   workHistory:
@@ -75,8 +78,14 @@ author:
       title: Sr. Interactive Developer, L2 
       started: 2013
       duration: (2013 &ndash; Present)
-      technologies: ES2015, AngularJS 1.x, Aurelia, Jenkins, Atomic Design, NodeJS, JSPM
-      description: Delivering UI of valuable enterprise level web application with complex RESTful services. Ensuring maintainable code with hierarchy of class extensions, abstracted templates, and custom methods on the appropriate level.
+      technologies: "ES2015, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
+      description: > 
+        UI Lead and front-end developer with aptitude on team dynamics: group coordination, process efficiencies, and individual development. 
+        Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology.
+        <br/><br/>
+        Years of experience in UI lead role, conducting enganging technical presentations, and as technical liason for client and internal domain teams. 
+        Enforced code quality using best practices such as John DePapa's style guide and BEM on both Agile and Atomic approach projects. 
+        Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
     - work1:
       company: Putnam Investments
       location: Boston, MA
@@ -93,7 +102,8 @@ author:
       started: 2009
       duration: (2009 &ndash; 2012)
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
-      description: "Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences."
+      description: >
+        Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
     - work1:
       company: EC Boston
       collapsed: true
