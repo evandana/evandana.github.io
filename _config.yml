@@ -161,16 +161,19 @@ author:
       duration: (2001 &ndash; 2005)
       description: >
         BFA in Industrial Design, GPA 3.84, highest honors. 
-        <br/>
+        <br/><br/>
         AAS in Graphic Design. 
         <br/>
-        Concentration in conversational French. 
-        <br/>
-        Technical concentrations in Mechanical and Manufacturing Technology.
+        Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology.
     - extension:
       organization: Harvard Extension School
       location: Cambridge, MA
-      description: Mobile Operating Systems and Applications
+      description: >
+        Mobile Operating Systems and Applications
+        <br/><br/>
+        Deep dive into hardware and software underlying Android and iOS operating sytems. 
+        Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
+        Final project: Android "deck of cards" workout app.
       completed: 2013
       duration: (2013 &ndash; 2013)
     - coursera:
@@ -178,7 +181,8 @@ author:
       location: Stanford University Online
       description: >
         Enriched and expanded skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. 
-        Courses include homework, lectures, and quizzes/exams. 
+        Courses included homework, lectures, and quizzes/exams. 
+        <br/></br/>
         Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
         Earned a certificate of completion for listed classes.
       completed: 2014
@@ -193,6 +197,7 @@ author:
       duration: (2014 &ndash; 2015)
       description: >
         November Project is a free-fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
+        <br/></br/>
         Developed comfort, ease, and power when speaking and writing for a large audience.
         Inspired self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities.  
         With co-leaders, cultured strong relationships that included feedback cycles.

@@ -4,7 +4,11 @@
             <div class="col-md-12">
                  <ul class="footer-items">
                      <li><span title="evan.dana" onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> Click for email</span></li>
-                     <li><a href="#"> Download Résumé </a></li>
+                    {% if site.resumelink %}
+                        <li>
+                            <a href="{{ site.resumelink }}" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>    
+                        </li>
+                    {% endif %}
                      <li>Copyright &copy; 2016 {{ site.author.name }} - All rights reserved.</li>
                 </ul>
             </div>
