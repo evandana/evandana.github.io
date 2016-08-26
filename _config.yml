@@ -1,4 +1,5 @@
 # Site settings
+<<<<<<< HEAD
 title: Evan Dana's CV
 description: Evan Dana's CV
 favicon: /assets/img/edana-professional.jpg
@@ -270,3 +271,16 @@ author:
         name: Learning Programming Patterns (notes)
         link: https://github.com/evandana/learning-programming-patterns
         description: Notes taken while studying programming patterns.
+=======
+title: Evan's Tech Blog
+email:
+description: > # this means to ignore newlines until "baseurl:"
+  Documenting notes gathered while researching tech solutions
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://evandana.github.io" # the base hostname & protocol for your site
+twitter_username: evandana
+github_username:  evandana
+
+# Build settings
+markdown: kramdown
+>>>>>>> 2e6e277ac76374efd880c08e3274859f6bc68dfb
