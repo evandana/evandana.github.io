@@ -84,10 +84,10 @@ author:
       duration: (2013 &ndash; Present)
       technologies: "ES2015, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
       description: > 
-        UI Lead and front-end developer with aptitude on team dynamics: group coordination, process efficiencies, and individual development. 
+        UI Lead and front-end developer with aptitude for team dynamics: group coordination, process efficiencies, and individual development. 
         Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology.
         <br/><br/>    
-        Years of experience in UI lead role, conducting enganging technical presentations, and as technical liason for client and internal domain teams.
+        Years of experience in UI lead role, conducting engaging technical presentations, and as technical liason for client and internal domain teams.
         Enforced code quality using best practices such as John DePapa's style guide and BEM on both Agile and Atomic approach projects. 
         Self-motivated and driven as exemplified by creation of D3.js library during bench time and initiation of effective team-building program.
         Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
@@ -123,7 +123,7 @@ author:
       description: >
         Facilitated and increased conversion rates by establishing new branding and easily accessible information. 
         Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. 
-        Content updatable by client without markup. Site was live September 2009&nda &ndash; 20011.
+        Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
     - work1:
       company: Crimson Life Sciences
       collapsed: true
@@ -131,7 +131,7 @@ author:
       title: Process Engineer 
       started: 2009
       duration: (2009)
-      technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001-2007), Mac and PC platforms
+      technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
         Delivered high ROI by automating Excel and Word document processing. 
         Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
@@ -261,12 +261,8 @@ author:
       - repo:
         name: PMC Auction App
         link: https://github.com/evandana/pmc-auction
-        description: App used for live auction.
+        description: App code used for live auction. 
       - repo:
         name: Repo for this site
         link: https://github.com/evandana/evandana.github.io
         description: Jekyll template with UX modifications.
-      - repo:
-        name: Learning Programming Patterns (notes)
-        link: https://github.com/evandana/learning-programming-patterns
-        description: Notes taken while studying programming patterns.
