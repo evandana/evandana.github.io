@@ -6,7 +6,7 @@ baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
 google_analytics: UA-6306273-2
-resumelink: false
+resumelink: /assets/Evan-Dana__Public-Resume.pdf
 
 # Build settings
 markdown: kramdown
