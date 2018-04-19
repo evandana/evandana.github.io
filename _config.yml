@@ -248,21 +248,21 @@ author:
       name: French
       proficiency: Limited Conversational
   programmingSkills:
-    - skill1:
-      name: JavaScript/ES2015
-      percentage: 80%
-      usefulness: expert
     - skill2:
       name: "Frameworks: Polymer | React | Angular | Aurelia"
       percentage: 80%
       usefulness: expert
-    - skill3:
-      name: CSS3/SCSS
-      percentage: 60%
-      usefulness: experienced
+    - skill1:
+      name: JavaScript/ES2015
+      percentage: 80%
+      usefulness: expert
     - skill4:
       name: HTML5
       percentage: 70%
+      usefulness: experienced
+    - skill3:
+      name: CSS3/SCSS
+      percentage: 60%
       usefulness: experienced
     - skill3:
       name: Server-side
@@ -271,10 +271,6 @@ author:
   opensource:
       intro: Notable repos
       repos:
-      - repo:
-        name: Auction App - Demo
-        link: https://pmc-2018-demo.firebaseapp.com
-        description: Try out the Auction App!
       - repo:
         name: Auction App
         link: https://github.com/evandana/pmc-auction/tree/feature/2018
