@@ -42,7 +42,7 @@ author:
         From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. 
         Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.
         <br/><br/>
-        <a href="https://auction-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
+        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
       features: 
         - feature1: 
           text: Live bidding using websockets, ReactJS, and Redux
@@ -51,10 +51,10 @@ author:
         - feature1: 
           text: Enforced bidding rules 
         - feature1: 
-          text: Database and hosting using Firebase.io (experimented with AWS)
+          text: Database and hosting using Firebase.io
       icon: live
       technologies: "ReactJS 15.1.x, Redux, websockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
-      link: https://auction-demo.firebaseapp.com
+      link: https://pmc-2018-demo.firebaseapp.com
       completedyear: 2016
     - evandanadotcom:
       id: evandanadotcom 
@@ -76,12 +76,28 @@ author:
       completedyear: 2012
   workHistory:
     - work1:
+      id: ge
+      company: General Electric | GE Digital
+      location: Boston, MA
+      title: Sr. Software Engineer
+      started: 2016
+      duration: (2016 &ndash; Present)
+      technologies: "ES2015, Polymer, NodeJS, CI/CD, Hexagonal Architecture, Domain Modeling" 
+      description: > 
+        Delivered complex features in a timely manner, independently and through collaboration, with utmost attention to quality. 
+        Led by example of best practices from coding patterns to agile methodologies.
+        Translated requirements into buildable acceptance criteria, raising discussions early if needed.
+        <br/><br/>    
+        Presented modern UI framework and patterns through interactive programming session. 
+        Project managing and technical lead for side-project for GE Foundation: 
+        small team of developers and UX working off-hours to create patient intake app for local charity.
+    - work1:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2013
-      duration: (2013 &ndash; Present)
+      duration: (2013 &ndash; 2016)
       technologies: "ES2015, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
       description: > 
         UI Lead and front-end developer with aptitude for team dynamics: group coordination, process efficiencies, and individual development. 
