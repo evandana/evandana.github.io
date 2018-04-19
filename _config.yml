@@ -6,7 +6,7 @@ baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
 google_analytics: UA-6306273-2
-resumelink: /assets/Evan-Dana__Public-Resume.pdf
+# resumelink: /assets/Evan-Dana__Public-Resume.pdf
 
 # Build settings
 markdown: kramdown
@@ -109,6 +109,7 @@ author:
         Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
     - work1:
       company: Putnam Investments
+      collapsed: true
       location: Boston, MA
       title: Javascript UI Developer 
       started: 2012
@@ -252,12 +253,12 @@ author:
       percentage: 80%
       usefulness: expert
     - skill2:
-      name: "Frameworks: React | Angular | Aurelia"
-      percentage: 60%
-      usefulness: experienced
+      name: "Frameworks: Polymer | React | Angular | Aurelia"
+      percentage: 80%
+      usefulness: expert
     - skill3:
       name: CSS3/SCSS
-      percentage: 70%
+      percentage: 60%
       usefulness: experienced
     - skill4:
       name: HTML5
@@ -271,14 +272,22 @@ author:
       intro: Notable repos
       repos:
       - repo:
-        name: Auction App - Demo Version
-        link: https://github.com/evandana/auction-demo
-        description: Demo version of full app. Uses updated versions of React, Material-UI, etc.
+        name: Auction App - Demo
+        link: https://pmc-2018-demo.firebaseapp.com
+        description: Try out the Auction App!
       - repo:
-        name: PMC Auction App
-        link: https://github.com/evandana/pmc-auction
-        description: App code used for live auction. 
+        name: Auction App
+        link: https://github.com/evandana/pmc-auction/tree/feature/2018
+        description: Charitable-focused auction app including bucketed raffles
+      - repo:
+        name: AHOPE
+        link: https://github.com/evandana/keep-ahope
+        description: Patient intake app created in partnership with GE Foundation
+      - repo:
+        name: Stream Correlation
+        link: https://github.com/evandana/stream-correlation
+        description: Generate random data streams and show which ones are correlated
       - repo:
         name: Repo for this site
         link: https://github.com/evandana/evandana.github.io
-        description: Jekyll template with UX modifications.
+        description: Jekyll template with UX modifications
