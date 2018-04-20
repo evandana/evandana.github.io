@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Evan Dana&#39;s CV</title>
-    <description>Evan Dana&#39;s CV</description>
+    <title>Evan Dana's CV</title>
+    <description>Evan Dana's CV</description>
     <link>http://evandana.github.io/</link>
     <atom:link href="http://evandana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 02 Sep 2016 08:44:36 -0400</pubDate>
-    <lastBuildDate>Fri, 02 Sep 2016 08:44:36 -0400</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Fri, 20 Apr 2018 06:47:19 -0400</pubDate>
+    <lastBuildDate>Fri, 20 Apr 2018 06:47:19 -0400</lastBuildDate>
+    <generator>Jekyll v3.7.3</generator>
     
       <item>
         <title>AngularJS Multi-select Dropdown</title>
@@ -17,13 +17,15 @@
 
 &lt;p&gt;&lt;img src=&quot;http://evandana.github.io/assets/uiselect/target.png&quot; alt=&quot;Multi-select dropdown target&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Basic Requirements
- * Multi-select
- * Summarizes selections in collapsed view
- * Shows all items in dropdown and can toggle selection state
- * Cross-browser compatible
- * Skinnable
- * AngularJS&lt;/p&gt;
+&lt;p&gt;Basic Requirements&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Multi-select&lt;/li&gt;
+  &lt;li&gt;Summarizes selections in collapsed view&lt;/li&gt;
+  &lt;li&gt;Shows all items in dropdown and can toggle selection state&lt;/li&gt;
+  &lt;li&gt;Cross-browser compatible&lt;/li&gt;
+  &lt;li&gt;Skinnable&lt;/li&gt;
+  &lt;li&gt;AngularJS&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;the-contenders&quot;&gt;The CONTENDERS&lt;/h2&gt;
 
@@ -50,7 +52,7 @@
 &lt;p&gt;&lt;a href=&quot;http://plnkr.co/edit/juqoNOt1z1Gb349XabQ2?p=preview&quot;&gt;Plnkr.co&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;review&quot;&gt;Review&lt;/h4&gt;
-&lt;p&gt;Although there are many available skins for download, the CSS is usually intended for &lt;a href=&quot;https://select2.github.io/&quot;&gt;Select2&lt;/a&gt; and therefore the classes and class declarations do not match that of &lt;code&gt;ui-select&lt;/code&gt;. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.&lt;/p&gt;
+&lt;p&gt;Although there are many available skins for download, the CSS is usually intended for &lt;a href=&quot;https://select2.github.io/&quot;&gt;Select2&lt;/a&gt; and therefore the classes and class declarations do not match that of &lt;code class=&quot;highlighter-rouge&quot;&gt;ui-select&lt;/code&gt;. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -96,7 +98,7 @@
         <guid isPermaLink="true">http://evandana.github.io/angularjs/ui/2015/08/03/angular-multi-select-dropdown.html</guid>
         
         
-        <category>angularjs</category>
+        <category>angularJS</category>
         
         <category>ui</category>
         

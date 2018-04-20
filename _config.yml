@@ -39,7 +39,7 @@ author:
       id: auction-app
       title: PMC Auction App
       description: >
-        From concept through development to processing results, this live-bidding auction web app exceeded expectations for learning experiences and funds raised. 
+        From concept through development to processing results, this live-bidding auction and raffle ticket web app exceeded expectations for learning experiences and funds raised. 
         Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.
         <br/><br/>
         <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
@@ -52,10 +52,28 @@ author:
           text: Enforced bidding rules 
         - feature1: 
           text: Database and hosting using Firebase.io
-      icon: live
-      technologies: "ReactJS 15.1.x, Redux, websockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
+      icon: mouse-pointer
+      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
       link: https://pmc-2018-demo.firebaseapp.com
-      completedyear: 2016
+      completedyear: 2018
+    - streamcorrelation:
+      id: streamcorrelation 
+      title: Stream Correlation
+      collapsed: true
+      description: "Individual hackathon project intending to address the question: \"What other ways can a web app add value to an HMI (human-machine interface) dashboard?\""
+      features: 
+        - feature: 
+          text: "Node service generates semi-random data into N streams and publishes values over WebSocket connection"
+        - feature: 
+          text: "Node service subscribes to data generator, stores subset of data, processes data for correlation, and makes processed data available over WebSockets to client UI"
+        - feature: 
+          text: "Client UI subscribes to processed data service and shows corelation graph for any streams that correlate with the specified streams"
+        - feature: 
+          text: "Initialization and installation of the above three folders is handled simultaneously with shell script"
+      icon: cogs
+      technologies: "NodeJS, Polymer 2.0, WebSockets, Correlation Rank (NPM)"
+      link: https://github.com/evandana/stream-correlation
+      completedyear: 2017
     - evandanadotcom:
       id: evandanadotcom 
       title: Previous evandana.com

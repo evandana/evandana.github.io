@@ -5,7 +5,15 @@ Résumé site for Evan Dana built on the template 'resumecard' as referenced bel
 
 ## Run Locally
 
-- Run the jekyll server: `jekyll serve`
+### Prerequisites
+
+- [Install Jekyll](https://jekyllrb.com/docs/installation/)
+
+### Run Locally
+
+- [Full instructions](http://kbroman.org/simple_site/pages/local_test.html)
+- `jekyll build`
+- `jekyll serve`
 - Go to: <http://localhost:4000>.
 
 

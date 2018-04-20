@@ -54,11 +54,8 @@ layout: default
                         {% for sample in site.author.workSamples %}
                             <li class="timeline-inverted" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
                                 {% if sample.icon %}
-                                    {% if sample.icon == "live" %}
-                                        <div class="timeline-badge info fa fa-mouse-pointer"> </div>
-                                    {% endif %}
-                                    {% if sample.icon == "github" %}
-                                        <div class="timeline-badge info fa fa-github"> </div>
+                                    {% if sample.icon %}
+                                        <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
                                     {% endif %}
                                 {% endif %}
                                 <div class="timeline-panel grid-block i-toggle-view {% if sample.collapsed %}i-collapsed{% endif %}">
