@@ -392,8 +392,13 @@ li.timeline-inverted {
 /* Toggle switch */
 /* -------------------------------- */
 
+.switch-wrapper {
+    position: relative; /* why is this rule not showing up? */
+}
+
 /* The switch - the box around the slider */
 .switch {
+    margin-top: .5em;
     position: relative;
     display: inline-block;
     width: 2.2em;
@@ -408,7 +413,7 @@ li.timeline-inverted {
 .switch-label {
     margin-left: 3em;
     position: absolute;
-    top: -.17em;
+    top: .35em;
     color: #777;
 }
 
@@ -532,7 +537,7 @@ input:checked + .slider:before {
 
     .print-single-page #intro {
         position: absolute;
-        top: -459px;
+        top: -464px;
         /* right: -181px; */
         right: 0;
         font-size: 10px;

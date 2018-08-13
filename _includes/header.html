@@ -17,9 +17,9 @@
             </div>
             <div class="col-sm-4 visible-md-block visible-lg-block">
                 {% if site.resumelink %}
-                    <a href="{{ site.resumelink }}" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>
+                    <a href="{{ site.resumelink }}" class="btn btn-flat" target="_BLANK"><i class="icon-file icon-white"></i> Download Résumé </a>
                 {% endif %}
-                <div class"toggle-single-page">
+                <div class"toggle-single-page switch-wrapper" style="position: relative;">
                     <span class="switch-label">Print single page</span>
                     <label class="switch">
                         <input type="checkbox" onclick="togglePrintSinglePage()" >
