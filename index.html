@@ -26,11 +26,24 @@ layout: default
 
 
     });
+
+    function togglePrintSinglePage() {
+        var bodyEl = document.body,
+            bodyPrintSinglePageTrue = document.body.classList.value.indexOf('print-single-page') > -1;
+        
+        console.log('toggle', bodyPrintSinglePageTrue);
+
+        if ( bodyPrintSinglePageTrue ) {
+            document.body.classList.remove('print-single-page');
+        } else {
+            document.body.classList.add('print-single-page');
+        }
+    }
 </script>
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="col-md-8">
+        <main class="col-md-8">
 
             {% if site.author.intro %}
                 <section id="intro">
@@ -48,11 +61,11 @@ layout: default
             {% endif %}
 
             {% if site.author.workSamples %}
-                <section id="code-highlights">
+                <section id="codeHighlights">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
                         {% for sample in site.author.workSamples %}
-                            <li class="timeline-inverted" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
+                            <li class="timeline-inverted {% if sample.collapsed %}hidden{% endif %}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
                                 {% if sample.icon %}
                                     {% if sample.icon %}
                                         <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
@@ -103,11 +116,11 @@ layout: default
             {% endif %}
 
             {% if site.author.workHistory %}
-                <section id="work-history">
+                <section id="workHistory">
                     <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
                     <ul class="timeline">
                         {% for work in site.author.workHistory %}
-                            <li {% if work.id %}id="work-history-{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.name }}">
+                            <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} {% if work.collapsed %}collapsed{% endif %}">
                                 {% if work.started %}
                                     <div class="timeline-badge info">{{ work.started }}</div>
                                 {% endif %}
@@ -131,10 +144,10 @@ layout: default
                                             </p>
                                         {% endif %}
                                         {% if work.duration or work.location %}
-                                            <p class="text-muted">
+                                            <p class="work-history-dates text-muted">
                                                 <small >
                                                     {% if work.duration %}
-                                                        <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;|&nbsp;
+                                                        <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;&nbsp;|&nbsp;&nbsp;
                                                     {% endif %}
                                                     {% if work.location %}
                                                         <i class="fa fa-map-marker"></i>  {{ work.location }}
@@ -160,7 +173,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education History</h3>
                     <ul class="timeline">
                         {% for education in site.author.educationHistory %}
-                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %}class="timeline-inverted">
+                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %} class="timeline-inverted {% if education.collapsed %}collapsed{% endif %}">
                                 {% if education.completed %}
                                     <div class="timeline-badge info">{{ education.completed }}</div>
                                 {% endif %}
@@ -210,7 +223,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
                     <ul class="timeline">
                         {% for activity in site.author.activities %}
-                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted">
+                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted {% if activity.hidden %}hidden{% endif %} {% if activity.collapsed %}collapsed{% endif %}">
                                 {% if activity.icon %}
                                     <div class="timeline-badge info fa fa-{{ activity.icon }}"></div>
                                 {% else %}
@@ -246,10 +259,10 @@ layout: default
                 </section>
             {% endif %}
 
-        </div>
+        </main>
         <aside class="sidebar col-md-4">
             {% if site.author.stackoverflow or site.author.programmingSkills %}
-                <section id="programming-skills">
+                <section id="programmingSkills">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
                     {% if site.author.stackoverflow %}
                     <div class="grid-block">
@@ -408,6 +421,7 @@ layout: default
                                             {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
                                                 {{ repo.name }}
                                             {% if repo.link %}<i class="fa fa-external-link"></i></a>{% endif %}
+                                            {% if repo.year %}<span class="github-name--year">{{ repo.year }}</span>{% endif %}
                                         </span>
                                     {% endif %}
                                     {% if repo.description %}

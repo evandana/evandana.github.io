@@ -8,6 +8,7 @@ rss_url: /pages/atom.xml
 google_analytics: UA-6306273-2
 # resumelink: /assets/Evan-Dana__Public-Resume.pdf
 
+
 # Build settings
 markdown: kramdown
 
@@ -16,7 +17,7 @@ exclude: [vendor]
 # Author settings
 author:
   name: Evan Dana
-  title: JavaScript Developer
+  title: Sr. Software Engineer
   address: Boston, MA
   email: userhatestogetspam@gmail.com
   link: http://evandana.com
@@ -29,12 +30,32 @@ author:
 #  stackoverflow: 4582127
   intro: 
       firstline: >
-        Front-end manager / UI lead developer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
+        Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
       description: >
         Approaches challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>, 
-        engineering <a href="#work-sample-evandanadotcom" title="Jump to Evandana.com (Work Sample)">efficient tooling, processes</a>, and <a href="#work-history-sapient" title="Jump to Publicis.Sapient (Work History)">organization to benefit the project and team</a>.
+        engineering <a href="#work-sample-evandanadotcom" title="Jump to Evandana.com (Work Sample)">efficient tooling, processes</a>, and <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">organization to benefit the project and team</a>.
         <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">Articulate technical</a> and cross-domain communication enhanced by <a href="#education-history-rit" title="Jump to RIT (Education History)">design background</a>.
   workSamples:
+    - ahope:
+      id: ahope
+      title: Non-profit Intake App
+      description: >
+        Leading a team to create an intake app for a local non-profit. 
+        Creating and navigating requirements from stakeholders, including secure data storage and transfer with Google Cloud services.
+        Managing a small group of software engineers who are donating time for this project, ensuring coordinated efforts, timely delivery, and continued engagement.
+      features: 
+        - feature1: 
+          text: Form submission, contact profile search and update, and reports
+        - feature1:
+          text: Websockets and REST, React / Redux
+        - feature1: 
+          text: Secure sign-in using Google OAuth
+        - feature1: 
+          text: Parse API for server and database interface on Google Cloud
+      icon: mouse-pointer
+      technologies: "ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel"
+      link: https://github.com/evandana/keep-ahope
+      completedyear: 2018
     - auctionapp:
       id: auction-app
       title: PMC Auction App
@@ -45,7 +66,7 @@ author:
         <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
       features: 
         - feature1: 
-          text: Live bidding using websockets, ReactJS, and Redux
+          text: 'Live bidding: websockets, React / Redux'
         - feature1: 
           text: Secure sign-in using Google OAuth
         - feature1: 
@@ -53,7 +74,7 @@ author:
         - feature1: 
           text: Database and hosting using Firebase.io
       icon: mouse-pointer
-      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES2015, Babel, Domain Modeling"
+      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES6, Babel, Domain Modeling"
       link: https://pmc-2018-demo.firebaseapp.com
       completedyear: 2018
     - streamcorrelation:
@@ -74,24 +95,6 @@ author:
       technologies: "NodeJS, Polymer 2.0, WebSockets, Correlation Rank (NPM)"
       link: https://github.com/evandana/stream-correlation
       completedyear: 2017
-    - evandanadotcom:
-      id: evandanadotcom 
-      title: Previous evandana.com
-      collapsed: true
-      description: "Although fully functional and easy to update, the old version was recently abandoned to save money on unecessary hosting charges." 
-      features: 
-        - feature: 
-          text: "XML and XSLT drove print (InDesign) and web (PHP) résumé workflows."
-        - feature: 
-          text: "Featured a D3.js interactive graph that highlighted my capabilities in web development, leadership, and design."
-        - feature: 
-          text: "Responsive, mobile-friendly and quick-to-load." 
-        - feature: 
-          text: "Linked to page with example code demonstrating and annotating current tech (at the time): HTML5, jQUERY, CSS3 & LESS, XML, PHP."
-      icon: github
-      technologies: "D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow"
-      link: https://github.com/evandana/website-2012
-      completedyear: 2012
   workHistory:
     - work1:
       id: ge
@@ -99,24 +102,22 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       started: 2016
-      duration: (2016 &ndash; Present)
-      technologies: "ES2015, Polymer, NodeJS, CI/CD, Hexagonal Architecture, Domain Modeling" 
+      duration: 2016 &ndash; Present
+      technologies: "ES6, Polymer, NodeJS, CI/CD, Hexagonal Architecture, Domain Modeling" 
       description: > 
         Delivered complex features in a timely manner, independently and through collaboration, with utmost attention to quality. 
-        Led by example of best practices from coding patterns to agile methodologies.
-        Translated requirements into buildable acceptance criteria, raising discussions early if needed.
+        Exemplified best practices from coding patterns to agile methodologies.
+        Translated requirements into manageable stories with clear and complete acceptance criteria, raising discussions early if needed.
         <br/><br/>    
-        Presented modern UI framework and patterns through interactive programming session. 
-        Project managing and technical lead for side-project for GE Foundation: 
-        small team of developers and UX working off-hours to create patient intake app for local charity.
+        Mentored software engineers and presented on modern UI frameworks and patterns through the use of interactive programming session.
     - work1:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2013
-      duration: (2013 &ndash; 2016)
-      technologies: "ES2015, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
+      duration: 2013 &ndash; 2016
+      technologies: "ES6, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
       description: > 
         UI Lead and front-end developer with aptitude for team dynamics: group coordination, process efficiencies, and individual development. 
         Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology.
@@ -131,7 +132,7 @@ author:
       location: Boston, MA
       title: Javascript UI Developer 
       started: 2012
-      duration: (2012 &ndash; 2013)
+      duration: 2012 &ndash; 2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description: >
         Extended current app by developing additional functionality and engaging UI with JavaScript. 
@@ -143,7 +144,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2009
-      duration: (2009 &ndash; 2012)
+      duration: 2009 &ndash; 2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       description: >
         Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
@@ -153,7 +154,7 @@ author:
       location: Boston, MA
       title: Web Developer 
       started: 2009
-      duration: (2009)
+      duration: 2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
         Facilitated and increased conversion rates by establishing new branding and easily accessible information. 
@@ -165,7 +166,7 @@ author:
       location: Boston, MA
       title: Process Engineer 
       started: 2009
-      duration: (2009)
+      duration: 2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
         Delivered high ROI by automating Excel and Word document processing. 
@@ -178,7 +179,7 @@ author:
       location: Canton, MA
       title: Graphic Designer & Process Engineer 
       started: 2007
-      duration: (2007&nda &ndash; 2009)
+      duration: 2007 &ndash; 2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: >
         Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
@@ -210,7 +211,7 @@ author:
         Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
         Final project: Android "deck of cards" workout app.
       completed: 2013
-      duration: (2013 &ndash; 2013)
+      duration: 2013 &ndash; 2013
     - coursera:
       organization: Coursera.org
       location: Stanford University Online
@@ -229,7 +230,7 @@ author:
       title: Co-leader of November Project Boston
       started: 2013
       icon: bicycle
-      duration: (2014 &ndash; 2015)
+      duration: 2014 &ndash; 2015
       description: >
         November Project is a free-fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
         <br/></br/>
@@ -242,18 +243,19 @@ author:
       title: D3.js Instructor 
       started: 2015
       icon: code
-      duration: (2015)
+      duration: 2015
       description: >
         Engaged developers in an immersive and interactive two-night class: Introduction to D3.js. 
         Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck<i class="fa fa-external-link"></i></a>
          with individually-editable code examples.
     - activity:
+      hidden: true
       location: Boston, MA
-      collapsed: true
+      collapsed: false
       title: Co-leader and Webmaster of The Most Informal Running Club Ever (TMIRCE) 
       started: 2010
       icon: bicycle
-      duration: (2010 &ndash; 2011)
+      duration: 2010 &ndash; 2011
       description: >
         Cultivated welcoming community of runners through attitude modeling and directing activities. 
         Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity. 
@@ -271,8 +273,8 @@ author:
       percentage: 80%
       usefulness: expert
     - skill1:
-      name: JavaScript/ES2015
-      percentage: 80%
+      name: JavaScript/ES6
+      percentage: 70%
       usefulness: expert
     - skill4:
       name: HTML5
@@ -290,18 +292,27 @@ author:
       intro: Notable repos
       repos:
       - repo:
-        name: Auction App
-        link: https://github.com/evandana/pmc-auction/tree/feature/2018
-        description: Charitable-focused auction app including bucketed raffles
-      - repo:
         name: AHOPE
+        year: 2018
         link: https://github.com/evandana/keep-ahope
         description: Patient intake app created in partnership with GE Foundation
       - repo:
+        name: Auction App
+        year: 2018
+        link: https://github.com/evandana/pmc-auction/tree/feature/2018
+        description: Charitable-focused auction app including bucketed raffles
+      - repo:
         name: Stream Correlation
+        year: 2018
         link: https://github.com/evandana/stream-correlation
         description: Generate random data streams and show which ones are correlated
       - repo:
         name: Repo for this site
+        year: 2018
         link: https://github.com/evandana/evandana.github.io
         description: Jekyll template with UX modifications
+      - repo:
+        name: Previous evandana.com
+        year: 2018
+        link: https://github.com/evandana/website-2012
+        description: D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
