@@ -518,7 +518,7 @@ input:checked + .slider:before {
     }
 
     .author-intro {
-        width: 24%;
+        width: 20em;
         float: left;
     }
     
@@ -795,6 +795,15 @@ input:checked + .slider:before {
 
     .print-single-page footer {
         display: none;
+    }
+
+
+
+    footer .footer-items li:first-of-type span {
+        display: none;
+    }
+    footer .footer-items li:first-of-type::after {
+        content: " " "evan." /* don't spam me */  "writes.code" /* don't spam me */ "@" "gmail" /* don't spam me */  ".com";
     }
 
 }
