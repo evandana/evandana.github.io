@@ -30,8 +30,6 @@ layout: default
     function togglePrintSinglePage() {
         var bodyEl = document.body,
             bodyPrintSinglePageTrue = document.body.classList.value.indexOf('print-single-page') > -1;
-        
-        console.log('toggle', bodyPrintSinglePageTrue);
 
         if ( bodyPrintSinglePageTrue ) {
             document.body.classList.remove('print-single-page');
