@@ -58,8 +58,7 @@ body {
 section {
     margin-bottom: 5em;
 }
-@media (max-width: 990px) and (min-width: 768px)
-section {
+@media (max-width: 990px) and (min-width: 768px) {
     margin-bottom: 5em;
 }
 
@@ -132,6 +131,9 @@ section {
      bottom: -1px;
  }
 
+.fa-map-marker, .fa-calendar {
+    padding-right: .5em;
+}
 
  h4 {
      font-size: 16px;
@@ -167,6 +169,12 @@ aside .title .cat-title::after {
     padding-bottom: 0;
 }
 
+.github-name--year {
+    padding-left: 0.5em;
+    color: #777;
+}
+
+
 /* programming skills */
 .list-skills li .progress .progress-bar span {
     background: #999;
@@ -185,7 +193,7 @@ aside .title .cat-title::after {
     text-decoration: none;
 }
 .footer-items li {
-    display:inline;
+    display: inline;
     padding: 0 .5em;
     color: #333;
 }
@@ -378,4 +386,429 @@ li.timeline-inverted {
     display: block;
     float: right;
     margin-bottom: 0;
+}
+
+/* -------------------------------- */
+/* Toggle switch */
+/* -------------------------------- */
+
+.switch-wrapper {
+    position: relative; /* why is this rule not showing up? */
+}
+
+/* The switch - the box around the slider */
+.switch {
+    margin-top: .5em;
+    position: relative;
+    display: inline-block;
+    width: 2.2em;
+    height: 1.2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display:none;
+}
+
+.switch-label {
+    margin-left: 3em;
+    position: absolute;
+    top: .35em;
+    color: #777;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    left: .1em;
+    bottom: .1em;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5bc0de;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #5bc0de;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1em);
+    -ms-transform: translateX(1em);
+    transform: translateX(1em);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 1.5em;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end toggle switch -------------- */
+
+
+@media print { 
+
+    body {
+        page-break-before: avoid;
+        width: 100%;
+        height: 100%;
+        zoom: 50%;
+    }
+
+
+    /* ------------------- */
+    /* Global */
+    /* ------------------- */
+
+    body.print-single-page {
+        page-break-before: avoid;
+        width: 100%;
+        height: 100%;
+        zoom: 100%;
+
+        width: 750px;
+        max-width: 750px;
+        font-size: 10px;
+    }
+
+    .page-content {
+        max-width: 100%;
+    }
+
+
+    /* ------------------- */
+    /* Header */
+    /* ------------------- */
+
+    .print-single-page header.header {
+        padding-top: 0;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+
+    .print-single-page header > .container-fluid {
+        padding: 0 0 5px 0;
+        margin: 0 -5px;
+    }
+
+    .fa.fa-external-link, .timeline-body a .fa.fa-external-link {
+        display: none;
+    }
+
+    a, #intro a, .timeline-body a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    .author-intro {
+        width: 20em;
+        float: left;
+    }
+    
+    .print-single-page .author-intro {
+        width: 20%;
+    }
+
+    #intro {
+        margin-bottom: 2em;
+    }
+
+    .print-single-page #intro {
+        position: absolute;
+        top: -464px;
+        /* right: -181px; */
+        right: 0;
+        font-size: 10px;
+        width: 436px;
+        margin: 0;
+    }
+
+    .author-name {
+        margin-top: 0;
+    }
+
+    .author-intro img {
+        display: none;
+    }
+
+    .intro-body {
+        font-size: 12px;
+    }
+
+    .social-link-block:first-of-type span {
+        display: none;
+    }
+    .social-link-block:first-of-type::after {
+        content: " " "evan." /* don't spam me */  "writes.code" /* don't spam me */ "@" "gmail" /* don't spam me */  ".com";
+    }
+
+    .social-link-container {
+        padding: 0;
+        display: block !important;
+        float: left;
+    }
+
+    .timeline-heading a[href]:after, .header a[href]:after {
+        content: none !important;
+    }
+
+
+    /* ------------------- */
+    /* Sections */
+    /* ------------------- */
+
+    main > section {
+        margin-bottom: 2em;
+    }
+    .print-single-page main > section {
+        margin-bottom: 1em;
+    }
+
+    .title.with-icon {
+        margin: 6px 0 10px -21px;
+        padding-left: 38px;
+    }
+
+    .print-single-page .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
+        margin-left: 35em;
+        float: none;
+    }
+
+    .print-single-page .page-content > .wrapper > .container-fluid {
+        padding: 0;
+        margin: 0 -5px;
+    }
+
+
+    /* ------------------- */
+    /* Timeline */
+    /* ------------------- */
+
+    .timeline > li > .timeline-badge {
+        display: none;
+    }
+
+    .timeline > li > .timeline-panel {
+        border: none;
+        padding: 1em 0 0 0;
+    }
+
+    .timeline-heading {
+        float: left;
+        max-width: 18em;
+    }
+    .timeline-body {
+        margin-left: 20em;
+    }
+
+    .timeline > li, .timeline > li > .timeline-inverted {
+        padding: 0;
+        margin: 0;
+    }
+
+    .timeline > li.timeline-inverted > .timeline-panel:before {
+        display: none;
+    }
+
+    .title .cat-title:after {
+        display: none;
+    }
+
+    .timeline {
+        padding: 0;
+    }
+
+
+    /* ------------------- */
+    /* Work History */
+    /* ------------------- */
+
+    .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
+        display: block;
+        position: absolute;
+        left: 20em;
+        top: 10px;
+    }
+
+    .print-single-page #workHistory {
+        position: absolute;
+        top: -368px;
+    }
+
+    .print-single-page #workHistory::after {
+        clear: both;
+        float: none;
+        content: "";
+        display: block;
+    }
+
+    .print-single-page #workHistory .timeline-inverted {
+        width: 500px;
+        float: left;
+        /* border: 1px solid #dfd; */
+    }
+
+    .print-single-page #workHistory .timeline-inverted.collapsed {
+        width: 200px;
+        float: right;
+    }
+    .print-single-page #workHistory .timeline-inverted.collapsed .timeline-body {
+        margin-left: 0;
+    }
+    .print-single-page #workHistory .timeline-inverted.collapsed .timeline-heading .timeline-title, 
+        .print-single-page #workHistory .timeline-inverted.collapsed .timeline-heading .text-muted,
+        .print-single-page #workHistory .timeline-inverted.collapsed .timeline-heading .work-history-dates,
+    .print-single-page #education .timeline-inverted.collapsed .timeline-heading .timeline-title, 
+        .print-single-page #education .timeline-inverted.collapsed .timeline-heading .text-muted,
+        .print-single-page #education .timeline-inverted.collapsed .timeline-heading .work-history-dates {
+        display: block;
+        position: static;
+        top: '';
+        left: '';
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .print-single-page #workHistory .timeline-inverted:nth-child(3) {
+        margin-top: -127px;
+    }
+    
+    .print-single-page #workHistory .timeline-inverted:nth-child(4) {
+        margin-top: -24px;
+    }
+
+    .print-single-page #workHistory .timeline-inverted:nth-child(n+6) {
+        display: none;
+    }
+
+
+    /* ------------------- */
+    /* Code Highlights */
+    /* ------------------- */
+
+    .print-single-page #codeHighlights {
+        width: 485px;
+        margin-top: 372px;
+    }
+
+
+    /* ------------------- */
+    /* Education */
+    /* ------------------- */
+
+    .print-single-page #education {
+        position: absolute;
+        top: -9px;
+        right: 0;
+        width: 200px;
+    }
+
+    .print-single-page #education .timeline-body {
+        display: none;
+    }
+
+
+    /* ------------------- */
+    /* Activities */
+    /* ------------------- */
+
+    .print-single-page #activities {
+        position: absolute;
+        top: 267px;
+        right: 0;
+        width: 200px;
+    }
+
+    .print-single-page #activities .timeline-body {
+        display: none;
+    }
+
+
+    /* ------------------- */
+    /* Github */
+    /* ------------------- */
+
+    .print-single-page #programmingSkills {
+        display: none;
+    }
+
+    #programmingSkills .grid-block {
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    #programmingSkills .list-skills li .progress {
+        margin: 0 0 0 20em;
+        padding-bottom: 0;
+    }
+
+    #programmingSkills .list-skills li .progress .progress-bar {
+        text-align: left;
+        width: 100%;
+        margin-top: -2.1em;
+    }
+
+    #programmingSkills .list-skills li .progress .progress-bar span::after {
+        display: none;
+    }
+    
+    .list-skills li .progress .progress-bar span {
+        left: 0;
+        text-transform: uppercase
+    }
+
+
+    /* ------------------- */
+    /* Github */
+    /* ------------------- */
+
+    #github .grid-block {
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    .print-single-page aside {
+        display: none;
+    }
+
+
+    /* ------------------- */
+    /* Footer */
+    /* ------------------- */
+
+    .print-single-page footer {
+        display: none;
+    }
+
+
+
+    footer .footer-items li:first-of-type span {
+        display: none;
+    }
+    footer .footer-items li:first-of-type::after {
+        content: " " "evan." /* don't spam me */  "writes.code" /* don't spam me */ "@" "gmail" /* don't spam me */  ".com";
+    }
+
 }

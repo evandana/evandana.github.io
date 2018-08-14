@@ -37,17 +37,17 @@
       <a href="https://github.com/ddbullfrog/resumecard">Fork me on GitHub</a>
     </div>
 
-    <div class="header">
+    <header class="header">
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="col-sm-4">
+            <div class="author-intro col-sm-4">
                 <img src="/assets/img/edana-professional.jpg" title="Avatar" alt="My Avatar">
                 <h4 class="author-name">Evan Dana</h4>
-                <p class="author-title">JavaScript Developer</p>
+                <p class="author-title">Sr. Software Engineer</p>
                 <p class="author-address muted">Boston, MA</p>
                 <div class="clearfix"></div>
             </div>
-            <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
+            <div class="social-link-container col-sm-4 visible-md-block visible-lg-block visible-sm-block">
                 <p class="social-link-block"><i class="fa fa-envelope-o fa-fw"></i><span title="evan.writes.code"
    onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
                 <p class="social-link-block"><i class="fa fa-github fa-fw"></i><a href="//github.com/evandana" target="_blank">  @evandana </a></p>
@@ -56,10 +56,19 @@
             </div>
             <div class="col-sm-4 visible-md-block visible-lg-block">
                 
+                    <a href="/assets/Evan-Dana__Public-Resume.pdf" class="btn btn-flat" target="_BLANK"><i class="icon-file icon-white"></i> Download Résumé </a>
+                
+                <div class"toggle-single-page switch-wrapper" style="position: relative;">
+                    <span class="switch-label">Print single page</span>
+                    <label class="switch">
+                        <input type="checkbox" onclick="togglePrintSinglePage()" >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</header>
 
 
     <div class="page-content">
@@ -84,19 +93,23 @@
       </div>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-12">
                  <ul class="footer-items">
                      <li><span title="evan.writes.code" onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> Click for email</span></li>
                     
+                        <li>
+                            <a href="/assets/Evan-Dana__Public-Resume.pdf" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>    
+                        </li>
+                    
                      <li>Copyright &copy; 2018 Evan Dana - All rights reserved.</li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
+</footer>
 
 	  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
