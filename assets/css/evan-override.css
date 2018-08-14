@@ -502,6 +502,10 @@ input:checked + .slider:before {
     /* Header */
     /* ------------------- */
 
+    header .export-assets {
+        display: none;
+    }
+    
     .print-single-page header.header {
         padding-top: 0;
         padding-bottom: 1em;
@@ -802,7 +806,13 @@ input:checked + .slider:before {
         display: none;
     }
 
-
+    footer .btn.btn-flat {
+        display: none;
+    }
+    
+    .footer-items li:after {
+        padding-left: 0;
+    }
 
     footer .footer-items li:first-of-type span {
         display: none;
