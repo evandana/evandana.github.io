@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/resumecard.css">
   <link rel="stylesheet" href="/assets/css/evan-override.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <link rel="icon" type="image/png" href="/assets/img/edana-professional.jpg">
 
@@ -32,7 +32,7 @@
 </head>
 
 
-  <body>
+  <body class="print-single-page">
     <div class="ribbon right red">
       <a href="https://github.com/ddbullfrog/resumecard">Fork me on GitHub</a>
     </div>
@@ -48,23 +48,17 @@
                 <div class="clearfix"></div>
             </div>
             <div class="social-link-container col-sm-4 visible-md-block visible-lg-block visible-sm-block">
-                <p class="social-link-block"><i class="fa fa-envelope-o fa-fw"></i><span title="evan.writes.code"
+                <p class="social-link-block"><i class="far fa-envelope fa-fw"></i><span title="evan.writes.code"
    onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
-                <p class="social-link-block"><i class="fa fa-github fa-fw"></i><a href="//github.com/evandana" target="_blank">  @evandana </a></p>
-                <p class="social-link-block"><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/evandana" target="_blank"> evandana </a></p>
-                <!--<p class="social-link-block"><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/evandana" target="_blank">  @evandana </a></p>-->
+                <p class="social-link-block"><i class="fab fa-github fa-fw"></i><a href="//github.com/evandana" target="_blank">  @evandana </a></p>
+                <p class="social-link-block"><i class="fab fa-linkedin fa-fw"></i> <a href="//linkedin.com/in/evandana" target="_blank"> evandana </a></p>
             </div>
-            <div class="col-sm-4 visible-md-block visible-lg-block">
+            <div class="download-print-container col-sm-4 visible-md-block visible-lg-block">
                 
-                    <a href="/assets/Evan-Dana__Public-Resume.pdf" class="btn btn-flat" target="_BLANK"><i class="icon-file icon-white"></i> Download Résumé </a>
+                    <p><a href="/assets/Evan-Dana__Public-Resume.pdf" title="Download résumé" target="_BLANK"><i class="fa fa-file-download fa-fw"></i> Download</a></p>
                 
-                <div class"toggle-single-page switch-wrapper" style="position: relative;">
-                    <span class="switch-label">Print single page</span>
-                    <label class="switch">
-                        <input type="checkbox" onclick="togglePrintSinglePage()" >
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                <p><a onclick="printPage( 'SINGLE' );" title="Print single page" class="print-icon-group"> <i class="fas fa-print fa-fw"></i> Print Single Page</a></p>
+                <p><a onclick="printPage();" title="Print" class="print-icon-group"><i class="fas fa-print fa-fw"></i> Print </a></p>
             </div>
         </div>
     </div>

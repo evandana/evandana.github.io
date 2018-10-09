@@ -9,23 +9,17 @@
                 <div class="clearfix"></div>
             </div>
             <div class="social-link-container col-sm-4 visible-md-block visible-lg-block visible-sm-block">
-                <p class="social-link-block"><i class="fa fa-envelope-o fa-fw"></i><span title="evan.writes.code"
+                <p class="social-link-block"><i class="far fa-envelope fa-fw"></i><span title="evan.writes.code"
    onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
-                <p class="social-link-block"><i class="fa fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
-                <p class="social-link-block"><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> {{ site.author.linkedin }} </a></p>
-                <!--<p class="social-link-block"><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>-->
+                <p class="social-link-block"><i class="fab fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
+                <p class="social-link-block"><i class="fab fa-linkedin fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> {{ site.author.linkedin }} </a></p>
             </div>
-            <div class="col-sm-4 visible-md-block visible-lg-block">
+            <div class="download-print-container col-sm-4 visible-md-block visible-lg-block">
                 {% if site.resumelink %}
-                    <a href="{{ site.resumelink }}" class="btn btn-flat" target="_BLANK"><i class="icon-file icon-white"></i> Download Résumé </a>
+                    <p><a href="{{ site.resumelink }}" title="Download résumé" target="_BLANK"><i class="fa fa-file-download fa-fw"></i> Download</a></p>
                 {% endif %}
-                <div class"toggle-single-page switch-wrapper" style="position: relative;">
-                    <span class="switch-label">Print single page</span>
-                    <label class="switch">
-                        <input type="checkbox" onclick="togglePrintSinglePage()" >
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                <p><a onclick="printPage( 'SINGLE' );" title="Print single page" class="print-icon-group"> <i class="fas fa-print fa-fw"></i> Print Single Page</a></p>
+                <p><a onclick="printPage();" title="Print" class="print-icon-group"><i class="fas fa-print fa-fw"></i> Print </a></p>
             </div>
         </div>
     </div>

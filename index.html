@@ -27,13 +27,27 @@ layout: default
 
     });
 
-    function togglePrintSinglePage() {
+    function printPage ( printSingle ) {
+        if (printSingle === 'SINGLE') {
+            togglePrintSinglePage( true );
+            window.print();
+            togglePrintSinglePage( false );
+        } else {
+            window.print();
+        }
+    }
+
+    function togglePrintSinglePage( trueOrFalse ) {
         var bodyEl = document.body,
             bodyPrintSinglePageTrue = document.body.classList.value.indexOf('print-single-page') > -1;
-        
-        console.log('toggle', bodyPrintSinglePageTrue);
 
-        if ( bodyPrintSinglePageTrue ) {
+        if ( trueOrFalse !== undefined ) {
+            if ( !trueOrFalse ) {
+                document.body.classList.remove('print-single-page');
+            } else {
+                document.body.classList.add('print-single-page');
+            }
+        } else if ( bodyPrintSinglePageTrue ) {
             document.body.classList.remove('print-single-page');
         } else {
             document.body.classList.add('print-single-page');
@@ -65,7 +79,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
                         {% for sample in site.author.workSamples %}
-                            <li class="timeline-inverted {% if sample.collapsed %}hidden{% endif %}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
+                            <li class="timeline-inverted {% if sample.collapsed %}collapsed{% endif %} {% if sample.hidden %}hidden{% endif %}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
                                 {% if sample.icon %}
                                     {% if sample.icon %}
                                         <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
@@ -93,6 +107,15 @@ layout: default
                                                 </small>
                                             </p>
                                         {% endif %}
+                                        {% if sample.duration or sample.location %}
+                                        <p class="work-history-dates text-muted">
+                                            <small >
+                                                {% if sample.duration %}
+                                                    <i class="fa fa-calendar"></i> {{ sample.duration }}
+                                                {% endif %}
+                                            </small>
+                                        </p>
+                                    {% endif %}
                                     </div>
                                     <div class="timeline-body">
                                         {% if sample.description %}

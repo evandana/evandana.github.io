@@ -504,8 +504,16 @@ input:checked + .slider:before {
 
     .print-single-page header.header {
         padding-top: 0;
-        padding-bottom: 1em;
+        padding-bottom: 5em;
         margin-bottom: 1em;
+    }
+
+    .download-print-container {
+        margin-bottom:-1em;
+    } 
+
+    .download-print-container > * {
+        display: block;
     }
 
     .print-single-page header > .container-fluid {
@@ -537,11 +545,10 @@ input:checked + .slider:before {
 
     .print-single-page #intro {
         position: absolute;
-        top: -464px;
-        /* right: -181px; */
-        right: 0;
+        right: 14px;
+        top: -138px;
         font-size: 10px;
-        width: 436px;
+        width: 403px;
         margin: 0;
     }
 
@@ -652,17 +659,17 @@ input:checked + .slider:before {
         top: 10px;
     }
 
-    .print-single-page #workHistory {
+    /* .print-single-page #workHistory {
         position: absolute;
         top: -368px;
-    }
+    } */
 
-    .print-single-page #workHistory::after {
+    /* .print-single-page #workHistory::after {
         clear: both;
         float: none;
         content: "";
         display: block;
-    }
+    } */
 
     .print-single-page #workHistory .timeline-inverted {
         width: 500px;
@@ -692,11 +699,11 @@ input:checked + .slider:before {
     }
     
     .print-single-page #workHistory .timeline-inverted:nth-child(3) {
-        margin-top: -127px;
+        margin-top: -166px;
     }
     
     .print-single-page #workHistory .timeline-inverted:nth-child(4) {
-        margin-top: -24px;
+        margin-top: -65px;
     }
 
     .print-single-page #workHistory .timeline-inverted:nth-child(n+6) {
@@ -709,8 +716,9 @@ input:checked + .slider:before {
     /* ------------------- */
 
     .print-single-page #codeHighlights {
+        top: 407px;
+        position: absolute;
         width: 485px;
-        margin-top: 372px;
     }
 
 
@@ -720,7 +728,7 @@ input:checked + .slider:before {
 
     .print-single-page #education {
         position: absolute;
-        top: -9px;
+        top: 365px;
         right: 0;
         width: 200px;
     }
@@ -736,7 +744,7 @@ input:checked + .slider:before {
 
     .print-single-page #activities {
         position: absolute;
-        top: 267px;
+        top: 646px;
         right: 0;
         width: 200px;
     }

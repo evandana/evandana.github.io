@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/resumecard.css">
   <link rel="stylesheet" href="/assets/css/evan-override.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <link rel="icon" type="image/png" href="/assets/img/edana-professional.jpg">
 
@@ -32,7 +32,7 @@
 </head>
 
 
-  <body>
+  <body class="print-single-page">
     <div class="ribbon right red">
       <a href="https://github.com/ddbullfrog/resumecard">Fork me on GitHub</a>
     </div>
@@ -48,23 +48,17 @@
                 <div class="clearfix"></div>
             </div>
             <div class="social-link-container col-sm-4 visible-md-block visible-lg-block visible-sm-block">
-                <p class="social-link-block"><i class="fa fa-envelope-o fa-fw"></i><span title="evan.writes.code"
+                <p class="social-link-block"><i class="far fa-envelope fa-fw"></i><span title="evan.writes.code"
    onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
-                <p class="social-link-block"><i class="fa fa-github fa-fw"></i><a href="//github.com/evandana" target="_blank">  @evandana </a></p>
-                <p class="social-link-block"><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/evandana" target="_blank"> evandana </a></p>
-                <!--<p class="social-link-block"><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/evandana" target="_blank">  @evandana </a></p>-->
+                <p class="social-link-block"><i class="fab fa-github fa-fw"></i><a href="//github.com/evandana" target="_blank">  @evandana </a></p>
+                <p class="social-link-block"><i class="fab fa-linkedin fa-fw"></i> <a href="//linkedin.com/in/evandana" target="_blank"> evandana </a></p>
             </div>
-            <div class="col-sm-4 visible-md-block visible-lg-block">
+            <div class="download-print-container col-sm-4 visible-md-block visible-lg-block">
                 
-                    <a href="/assets/Evan-Dana__Public-Resume.pdf" class="btn btn-flat" target="_BLANK"><i class="icon-file icon-white"></i> Download Résumé </a>
+                    <p><a href="/assets/Evan-Dana__Public-Resume.pdf" title="Download résumé" target="_BLANK"><i class="fa fa-file-download fa-fw"></i> Download</a></p>
                 
-                <div class"toggle-single-page switch-wrapper" style="position: relative;">
-                    <span class="switch-label">Print single page</span>
-                    <label class="switch">
-                        <input type="checkbox" onclick="togglePrintSinglePage()" >
-                        <span class="slider round"></span>
-                    </label>
-                </div>
+                <p><a onclick="printPage( 'SINGLE' );" title="Print single page" class="print-icon-group"> <i class="fas fa-print fa-fw"></i> Print Single Page</a></p>
+                <p><a onclick="printPage();" title="Print" class="print-icon-group"><i class="fas fa-print fa-fw"></i> Print </a></p>
             </div>
         </div>
     </div>
@@ -99,13 +93,27 @@
 
     });
 
-    function togglePrintSinglePage() {
+    function printPage ( printSingle ) {
+        if (printSingle === 'SINGLE') {
+            togglePrintSinglePage( true );
+            window.print();
+            togglePrintSinglePage( false );
+        } else {
+            window.print();
+        }
+    }
+
+    function togglePrintSinglePage( trueOrFalse ) {
         var bodyEl = document.body,
             bodyPrintSinglePageTrue = document.body.classList.value.indexOf('print-single-page') > -1;
-        
-        console.log('toggle', bodyPrintSinglePageTrue);
 
-        if ( bodyPrintSinglePageTrue ) {
+        if ( trueOrFalse !== undefined ) {
+            if ( !trueOrFalse ) {
+                document.body.classList.remove('print-single-page');
+            } else {
+                document.body.classList.add('print-single-page');
+            }
+        } else if ( bodyPrintSinglePageTrue ) {
             document.body.classList.remove('print-single-page');
         } else {
             document.body.classList.add('print-single-page');
@@ -126,7 +134,7 @@
                                     Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
 
                                 </span>
-                                Approaches challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>,  engineering <a href="#work-sample-evandanadotcom" title="Jump to Evandana.com (Work Sample)">efficient tooling, processes</a>, and <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">organization to benefit the project and team</a>. <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">Articulate technical</a> and cross-domain communication enhanced by <a href="#education-history-rit" title="Jump to RIT (Education History)">design background</a>.
+                                Specializing in front-end technologies, I  <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">deliver customer value</a> through leadership and collaborative roles: as an <a href="#workHistory-ge" title="Jump to GE (Work History)">individual contributor, technical lead</a>,  and counsel for stakeholders. I enjoy providing <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">technical mentorship</a> and plan to stay current with tools and patterns. I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
 
                             </p>
                         
@@ -139,7 +147,7 @@
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
                         
-                            <li class="timeline-inverted " id="work-sample-ahope">
+                            <li class="timeline-inverted  " id="work-sample-ahope">
                                 
                                     
                                         <div class="timeline-badge info fa fa-mouse-pointer"> </div>
@@ -163,14 +171,23 @@
                                         
                                             <p class="text-muted i-preserve">
                                                 <small>
-                                                    ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel
+                                                    ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects
                                                 </small>
                                             </p>
                                         
+                                        
+                                        <p class="work-history-dates text-muted">
+                                            <small >
+                                                
+                                                    <i class="fa fa-calendar"></i> 2018 &ndash; Present
+                                                
+                                            </small>
+                                        </p>
+                                    
                                     </div>
                                     <div class="timeline-body">
                                         
-                                            <p>Leading a team to create an intake app for a local non-profit.  Creating and navigating requirements from stakeholders, including secure data storage and transfer with Google Cloud services. Managing a small group of software engineers who are donating time for this project, ensuring coordinated efforts, timely delivery, and continued engagement.
+                                            <p>Leading a team to create an intake app for a local non-profit.  Creating and navigating requirements from stakeholders, including secure data storage  and transfer with Google Cloud services.  Managing a small group of software engineers who are donating time for this project,  ensuring coordinated efforts, timely delivery, and continued engagement. Utilizing GitHub projects to achieve agile development, stay focused on MVP and keep stakeholders informed.
 </p>
                                         
                                         
@@ -198,13 +215,13 @@
                                 </div>
                             </li>
                         
-                            <li class="timeline-inverted " id="work-sample-auction-app">
+                            <li class="timeline-inverted collapsed " id="work-sample-auction-app">
                                 
                                     
                                         <div class="timeline-badge info fa fa-mouse-pointer"> </div>
                                     
                                 
-                                <div class="timeline-panel grid-block i-toggle-view ">
+                                <div class="timeline-panel grid-block i-toggle-view i-collapsed">
                                     <div class="timeline-heading">
                                         
                                             <h4 class="timeline-title">PMC Auction App</h4>
@@ -226,10 +243,19 @@
                                                 </small>
                                             </p>
                                         
+                                        
+                                        <p class="work-history-dates text-muted">
+                                            <small >
+                                                
+                                                    <i class="fa fa-calendar"></i> 2016 &ndash; 2018
+                                                
+                                            </small>
+                                        </p>
+                                    
                                     </div>
                                     <div class="timeline-body">
                                         
-                                            <p>From concept through development to processing results, this live-bidding auction and raffle ticket web app exceeded expectations for learning experiences and funds raised.  Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions. <br/><br/> <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
+                                            <p>From concept through development to processing results, this live-bidding auction  and raffle ticket web app exceeded expectations for learning experiences and funds raised.  Working with one other developer, we started with domain models, UX whiteboarding,  framework choices, and hosting discussions. <br/><br/> <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
 </p>
                                         
                                         
@@ -257,13 +283,13 @@
                                 </div>
                             </li>
                         
-                            <li class="timeline-inverted hidden" id="work-sample-streamcorrelation">
+                            <li class="timeline-inverted  hidden" id="work-sample-streamcorrelation">
                                 
                                     
                                         <div class="timeline-badge info fa fa-cogs"> </div>
                                     
                                 
-                                <div class="timeline-panel grid-block i-toggle-view i-collapsed">
+                                <div class="timeline-panel grid-block i-toggle-view ">
                                     <div class="timeline-heading">
                                         
                                             <h4 class="timeline-title">Stream Correlation</h4>
@@ -284,6 +310,7 @@
                                                     NodeJS, Polymer 2.0, WebSockets, Correlation Rank (NPM)
                                                 </small>
                                             </p>
+                                        
                                         
                                     </div>
                                     <div class="timeline-body">
@@ -343,7 +370,7 @@
                                         
                                             <p class="text-muted i-preserve">
                                                 <small>
-                                                    ES6, Polymer, NodeJS, CI/CD, Hexagonal Architecture, Domain Modeling
+                                                    ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS
                                                 </small>
                                             </p>
                                         
@@ -362,7 +389,7 @@
                                     </div>
                                     <div class="timeline-body">
                                         
-                                            <p>Delivered complex features in a timely manner, independently and through collaboration, with utmost attention to quality.  Exemplified best practices from coding patterns to agile methodologies. Translated requirements into manageable stories with clear and complete acceptance criteria, raising discussions early if needed. <br/><br/>     Mentored software engineers and presented on modern UI frameworks and patterns through the use of interactive programming session.
+                                            <p>Delivered complex features in a timely manner, independently and through  collaboration, with utmost attention to quality.  Exemplified best practices from coding patterns to agile methodologies. Translated requirements into manageable stories with clear and complete  acceptance criteria, raising discussions early if needed. Ensured quality by writing unit and system tests for use in CI/CD workflow. Exposed to varied project architecture elements including  cloud, microapp/microservies, and Docker. <br/><br/>     Mentored software engineers and presented on modern UI frameworks and  patterns through the use of interactive programming session.
 </p>
                                         
                                     </div>
@@ -388,7 +415,7 @@
                                         
                                             <p class="text-muted i-preserve">
                                                 <small>
-                                                    ES6, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling
+                                                    ES6, D3.js, AngularJS, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling
                                                 </small>
                                             </p>
                                         
@@ -407,7 +434,7 @@
                                     </div>
                                     <div class="timeline-body">
                                         
-                                            <p>UI Lead and front-end developer with aptitude for team dynamics: group coordination, process efficiencies, and individual development.  Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology. <br/><br/>     Years of experience in UI lead role, conducting engaging technical presentations, and as technical liason for client and internal domain teams. Enforced code quality using best practices such as John DePapa's style guide and BEM on both Agile and Atomic approach projects.  Self-motivated and driven as exemplified by creation of D3.js library during bench time and initiation of effective team-building program. Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
+                                            <p>UI Lead and front-end developer with aptitude for team dynamics:  group coordination, process efficiencies, and individual development.  Awarded recognition for Client-Focused Delivery after client feedback  on project when leading FED with recently self-taught technology. <br/><br/>     Years of experience in UI lead role, conducting engaging technical  presentations, and as technical liason for client and internal domain teams. Enforced code quality using best practices such as John DePapa's  style guide and BEM on both Agile and Atomic approach projects.  Self-motivated and driven as exemplified by creation of D3.js library  during bench time and initiation of effective team-building program. Advocate for code stability through unit, integration, functional, or  automated visual-diff testing.
 </p>
                                         
                                     </div>
@@ -542,7 +569,7 @@
                                     </div>
                                     <div class="timeline-body">
                                         
-                                            <p>Facilitated and increased conversion rates by establishing new branding and easily accessible information.  Worked closely with client to optimize content organization and modernize graphical feel for improved user experience.  Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
+                                            <p>Facilitated and increased conversion rates by establishing new branding and  easily accessible information.  Worked closely with client to optimize content organization and modernize  graphical feel for improved user experience.  Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
 </p>
                                         
                                     </div>
@@ -967,8 +994,24 @@
                                 <li class="github-repo">
                                     
                                         <span class="github-name">
-                                            <a href="https://github.com/evandana/pmc-auction/tree/feature/2018" target="_BLANK">
+                                            <a href="https://github.com/evandana/pmc-auction" target="_BLANK">
                                                 Auction App
+                                            <i class="fa fa-external-link"></i></a>
+                                            <span class="github-name--year">2018</span>
+                                        </span>
+                                    
+                                    
+                                        <span class="github-description">
+                                            Charitable-focused auction app including bucketed raffles
+                                        </span>
+                                    
+                                </li>
+                            
+                                <li class="github-repo">
+                                    
+                                        <span class="github-name">
+                                            <a href="https://github.com/evandana/wellworthnewengland" target="_BLANK">
+                                                Wellworth New England
                                             <i class="fa fa-external-link"></i></a>
                                             <span class="github-name--year">2018</span>
                                         </span>
@@ -1008,22 +1051,6 @@
                                     
                                         <span class="github-description">
                                             Jekyll template with UX modifications
-                                        </span>
-                                    
-                                </li>
-                            
-                                <li class="github-repo">
-                                    
-                                        <span class="github-name">
-                                            <a href="https://github.com/evandana/website-2012" target="_BLANK">
-                                                Previous evandana.com
-                                            <i class="fa fa-external-link"></i></a>
-                                            <span class="github-name--year">2018</span>
-                                        </span>
-                                    
-                                    
-                                        <span class="github-description">
-                                            D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
                                         </span>
                                     
                                 </li>

@@ -32,17 +32,27 @@ author:
       firstline: >
         Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
       description: >
-        Approaches challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>, 
-        engineering <a href="#work-sample-evandanadotcom" title="Jump to Evandana.com (Work Sample)">efficient tooling, processes</a>, and <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">organization to benefit the project and team</a>.
-        <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">Articulate technical</a> and cross-domain communication enhanced by <a href="#education-history-rit" title="Jump to RIT (Education History)">design background</a>.
+        Specializing in front-end technologies, I 
+        <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">deliver customer value</a>
+        through leadership and collaborative roles:
+        as an <a href="#workHistory-ge" title="Jump to GE (Work History)">individual contributor, technical lead</a>, 
+        and counsel for stakeholders.
+        I enjoy providing <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">technical mentorship</a>
+        and plan to stay current with tools and patterns.
+        I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
   workSamples:
     - ahope:
       id: ahope
       title: Non-profit Intake App
+      duration: 2018 &ndash; Present
       description: >
         Leading a team to create an intake app for a local non-profit. 
-        Creating and navigating requirements from stakeholders, including secure data storage and transfer with Google Cloud services.
-        Managing a small group of software engineers who are donating time for this project, ensuring coordinated efforts, timely delivery, and continued engagement.
+        Creating and navigating requirements from stakeholders, including secure data storage 
+        and transfer with Google Cloud services. 
+        Managing a small group of software engineers who are donating time for this project, 
+        ensuring coordinated efforts, timely delivery, and continued engagement.
+        Utilizing GitHub projects to achieve agile development, stay focused on MVP and
+        keep stakeholders informed.
       features: 
         - feature1: 
           text: Form submission, contact profile search and update, and reports
@@ -53,15 +63,18 @@ author:
         - feature1: 
           text: Parse API for server and database interface on Google Cloud
       icon: mouse-pointer
-      technologies: "ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel"
+      technologies: "ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
       link: https://github.com/evandana/keep-ahope
-      completedyear: 2018
     - auctionapp:
       id: auction-app
+      collapsed: true
       title: PMC Auction App
+      duration: 2016 &ndash; 2018
       description: >
-        From concept through development to processing results, this live-bidding auction and raffle ticket web app exceeded expectations for learning experiences and funds raised. 
-        Working with one other developer, we started with domain models, UX whiteboarding, framework choices, and hosting discussions.
+        From concept through development to processing results, this live-bidding auction 
+        and raffle ticket web app exceeded expectations for learning experiences and funds raised. 
+        Working with one other developer, we started with domain models, UX whiteboarding, 
+        framework choices, and hosting discussions.
         <br/><br/>
         <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
       features: 
@@ -80,7 +93,7 @@ author:
     - streamcorrelation:
       id: streamcorrelation 
       title: Stream Correlation
-      collapsed: true
+      hidden: true
       description: "Individual hackathon project intending to address the question: \"What other ways can a web app add value to an HMI (human-machine interface) dashboard?\""
       features: 
         - feature: 
@@ -103,13 +116,19 @@ author:
       title: Sr. Software Engineer
       started: 2016
       duration: 2016 &ndash; Present
-      technologies: "ES6, Polymer, NodeJS, CI/CD, Hexagonal Architecture, Domain Modeling" 
+      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS" 
       description: > 
-        Delivered complex features in a timely manner, independently and through collaboration, with utmost attention to quality. 
+        Delivered complex features in a timely manner, independently and through 
+        collaboration, with utmost attention to quality. 
         Exemplified best practices from coding patterns to agile methodologies.
-        Translated requirements into manageable stories with clear and complete acceptance criteria, raising discussions early if needed.
+        Translated requirements into manageable stories with clear and complete 
+        acceptance criteria, raising discussions early if needed.
+        Ensured quality by writing unit and system tests for use in CI/CD workflow.
+        Exposed to varied project architecture elements including 
+        cloud, microapp/microservies, and Docker.
         <br/><br/>    
-        Mentored software engineers and presented on modern UI frameworks and patterns through the use of interactive programming session.
+        Mentored software engineers and presented on modern UI frameworks and 
+        patterns through the use of interactive programming session.
     - work1:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
@@ -117,15 +136,21 @@ author:
       title: Sr. Interactive Developer, L2 
       started: 2013
       duration: 2013 &ndash; 2016
-      technologies: "ES6, AngularJS 1.x, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
+      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
       description: > 
-        UI Lead and front-end developer with aptitude for team dynamics: group coordination, process efficiencies, and individual development. 
-        Awarded recognition for Client-Focused Delivery after client feedback on project when leading FED with recently self-taught technology.
+        UI Lead and front-end developer with aptitude for team dynamics: 
+        group coordination, process efficiencies, and individual development. 
+        Awarded recognition for Client-Focused Delivery after client feedback 
+        on project when leading FED with recently self-taught technology.
         <br/><br/>    
-        Years of experience in UI lead role, conducting engaging technical presentations, and as technical liason for client and internal domain teams.
-        Enforced code quality using best practices such as John DePapa's style guide and BEM on both Agile and Atomic approach projects. 
-        Self-motivated and driven as exemplified by creation of D3.js library during bench time and initiation of effective team-building program.
-        Advocate for code stability through unit, integration, functional, or automated visual-diff testing.
+        Years of experience in UI lead role, conducting engaging technical 
+        presentations, and as technical liason for client and internal domain teams.
+        Enforced code quality using best practices such as John DePapa's 
+        style guide and BEM on both Agile and Atomic approach projects. 
+        Self-motivated and driven as exemplified by creation of D3.js library 
+        during bench time and initiation of effective team-building program.
+        Advocate for code stability through unit, integration, functional, or 
+        automated visual-diff testing.
     - work1:
       company: Putnam Investments
       collapsed: true
@@ -157,8 +182,10 @@ author:
       duration: 2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
-        Facilitated and increased conversion rates by establishing new branding and easily accessible information. 
-        Worked closely with client to optimize content organization and modernize graphical feel for improved user experience. 
+        Facilitated and increased conversion rates by establishing new branding and 
+        easily accessible information. 
+        Worked closely with client to optimize content organization and modernize 
+        graphical feel for improved user experience. 
         Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
     - work1:
       company: Crimson Life Sciences
@@ -299,7 +326,12 @@ author:
       - repo:
         name: Auction App
         year: 2018
-        link: https://github.com/evandana/pmc-auction/tree/feature/2018
+        link: https://github.com/evandana/pmc-auction
+        description: Charitable-focused auction app including bucketed raffles
+      - repo:
+        name: Wellworth New England
+        year: 2018
+        link: https://github.com/evandana/wellworthnewengland
         description: Charitable-focused auction app including bucketed raffles
       - repo:
         name: Stream Correlation
@@ -311,8 +343,8 @@ author:
         year: 2018
         link: https://github.com/evandana/evandana.github.io
         description: Jekyll template with UX modifications
-      - repo:
-        name: Previous evandana.com
-        year: 2018
-        link: https://github.com/evandana/website-2012
-        description: D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
+      # - repo:
+      #   name: Previous evandana.com
+      #   year: 2012
+      #   link: https://github.com/evandana/website-2012
+      #   description: D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
