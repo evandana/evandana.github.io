@@ -42,14 +42,14 @@ author:
         I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
   workSamples:
     - ahope:
-      id: ahope
+      id: ahope 
       title: Non-profit Intake App
       duration: 2018 &ndash; Present
       description: >
-        Leading a team to create an intake app for a local non-profit. 
+        With guidance from GE Foundation, leading a team to create an intake app for a local non-profit. 
         Creating and navigating requirements from stakeholders, including secure data storage 
         and transfer with Google Cloud services. 
-        Managing a small group of software engineers who are donating time for this project, 
+        Managing a small group of software engineers who are donating time for this project: 
         ensuring coordinated efforts, timely delivery, and continued engagement.
         Utilizing GitHub projects to achieve agile development, stay focused on MVP and
         keep stakeholders informed.
@@ -72,7 +72,7 @@ author:
       duration: 2016 &ndash; 2018
       description: >
         From concept through development to processing results, this live-bidding auction 
-        and raffle ticket web app exceeded expectations for learning experiences and funds raised. 
+        and raffle ticket web app exceeded expectations &mdash; raising over $5000 for charity. 
         Working with one other developer, we started with domain models, UX whiteboarding, 
         framework choices, and hosting discussions.
         <br/><br/>
@@ -83,7 +83,7 @@ author:
         - feature1: 
           text: Secure sign-in using Google OAuth
         - feature1: 
-          text: Enforced bidding rules 
+          text: Enforced business logic (bidding rules) in UI and Mid-Tier
         - feature1: 
           text: Database and hosting using Firebase.io
       icon: mouse-pointer
@@ -129,6 +129,22 @@ author:
         <br/><br/>    
         Mentored software engineers and presented on modern UI frameworks and 
         patterns through the use of interactive programming session.
+      features: 
+        - feature: 
+          title: Community thought leader and advocate
+          text: SME across teams for UI frameworks and patterns
+        - feature: 
+          title: Project / feature lead
+          text: 'Led UI development of feature on open source repo: <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pulls?q=is%3Apr+is%3Aclosed+author%3Aevandana">px-data-table</a>'
+        - feature: 
+          title: Team contributor
+          text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
+        - feature: 
+          title: Independent feature delivery
+          text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
+        - feature: 
+          title: Backlog refinement and feature design
+          text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
     - work1:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
@@ -152,6 +168,7 @@ author:
         Advocate for code stability through unit, integration, functional, or 
         automated visual-diff testing.
     - work1:
+      id: putnam
       company: Putnam Investments
       collapsed: true
       location: Boston, MA
@@ -164,6 +181,7 @@ author:
         Implemented significant contributions in an Agile team to achieve business goals. 
         Reached cross-browser functionality with collaborative discussions. 
     - work1:
+      id: innerscope
       company: Innerscope Research Inc.
       collapsed: true
       location: Boston, MA
@@ -174,6 +192,7 @@ author:
       description: >
         Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
     - work1:
+      id: ecboston
       company: EC Boston
       collapsed: true
       location: Boston, MA
@@ -187,20 +206,22 @@ author:
         Worked closely with client to optimize content organization and modernize 
         graphical feel for improved user experience. 
         Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
+    # - work1:
+    #   id: crimson
+    #   company: Crimson Life Sciences
+    #   collapsed: true
+    #   location: Boston, MA
+    #   title: Process Engineer 
+    #   started: 2009
+    #   duration: 2009
+    #   technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
+    #   description: >
+    #     Delivered high ROI by automating Excel and Word document processing. 
+    #     Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
+    #     Achieved timely project completion through appropriate architecture and schedule planning. 
+    #     Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use.
     - work1:
-      company: Crimson Life Sciences
-      collapsed: true
-      location: Boston, MA
-      title: Process Engineer 
-      started: 2009
-      duration: 2009
-      technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
-      description: >
-        Delivered high ROI by automating Excel and Word document processing. 
-        Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
-        Achieved timely project completion through appropriate architecture and schedule planning. 
-        Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use.
-    - work1:
+      id: reebok
       company: Reebok International
       collapsed: true
       location: Canton, MA

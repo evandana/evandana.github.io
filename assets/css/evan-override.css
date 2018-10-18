@@ -87,6 +87,11 @@ section {
     border-bottom: 1px solid #5bc0de;
 }
 
+.feature-list--title {
+    font-weight: bold;
+    display: block;
+}
+
 /* header */
 .header {
     background-image: none;
@@ -102,6 +107,7 @@ section {
 }
 .social-link-block {
     margin-bottom: 8px;
+    white-space: nowrap;
 }
 
 /* fork me */
@@ -270,6 +276,7 @@ section {
 .timeline-body ul {
     margin-top: 1em;
     padding-left: 0;
+    list-style-type: disc;
 }
 
 .timeline-body li {
@@ -360,7 +367,7 @@ li.timeline-inverted {
     background: rgba(255, 255, 255, 0.6);
 }
 .timeline-panel.grid-block.i-toggle-view.i-collapsed:hover {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
 }
 .timeline-panel.i-collapsed {
     background: rgba(255, 255, 255, 0.2);
@@ -477,6 +484,13 @@ input:checked + .slider:before {
         zoom: 50%;
     }
 
+    .print-hidden {
+        visibility: hidden;
+    }
+    .print-removed {
+        display: none;
+    }
+
 
     /* ------------------- */
     /* Global */
@@ -497,6 +511,18 @@ input:checked + .slider:before {
         max-width: 100%;
     }
 
+    .feature-list {
+        position: absolute;
+        top: 0;
+        left: 104%;
+        width: 228px;
+    }
+    #workHistory .feature-list--content {
+        display: none;
+    }
+    .fa.fa-calendar, .fa.fa-map-marker {
+        display: none;
+    }
 
     /* ------------------- */
     /* Header */
@@ -543,7 +569,7 @@ input:checked + .slider:before {
         margin-bottom: 2em;
     }
 
-    .print-single-page #intro {
+    #intro {
         position: absolute;
         right: 14px;
         top: -138px;
@@ -592,10 +618,12 @@ input:checked + .slider:before {
     .print-single-page main > section {
         margin-bottom: 1em;
     }
-
     .title.with-icon {
-        margin: 6px 0 10px -21px;
-        padding-left: 38px;
+        margin: 6px 0 10px -50px;
+    }
+    
+    .title.with-icon .fa {
+        display: none;
     }
 
     .print-single-page .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
@@ -652,6 +680,10 @@ input:checked + .slider:before {
     /* Work History */
     /* ------------------- */
 
+    #workHistory {
+        clear: both;
+    }
+
     .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
         display: block;
         position: absolute;
@@ -679,7 +711,7 @@ input:checked + .slider:before {
 
     .print-single-page #workHistory .timeline-inverted.collapsed {
         width: 200px;
-        float: right;
+        float: left;
     }
     .print-single-page #workHistory .timeline-inverted.collapsed .timeline-body {
         margin-left: 0;
@@ -692,18 +724,16 @@ input:checked + .slider:before {
         .print-single-page #education .timeline-inverted.collapsed .timeline-heading .work-history-dates {
         display: block;
         position: static;
-        top: '';
-        left: '';
         width: 100%;
         margin-left: 0;
     }
     
     .print-single-page #workHistory .timeline-inverted:nth-child(3) {
-        margin-top: -166px;
+        clear: left;
     }
     
     .print-single-page #workHistory .timeline-inverted:nth-child(4) {
-        margin-top: -65px;
+        padding-right: 3em;
     }
 
     .print-single-page #workHistory .timeline-inverted:nth-child(n+6) {
@@ -716,9 +746,22 @@ input:checked + .slider:before {
     /* ------------------- */
 
     .print-single-page #codeHighlights {
-        top: 407px;
+        /* top: 407px;
         position: absolute;
-        width: 485px;
+        width: 485px; */
+    }
+    
+    .print-single-page #codeHighlights .timeline-inverted {
+        width: 500px;
+        float: left;
+        /* border: 1px solid #dfd; */
+    }
+
+    .print-single-page #codeHighlights .timeline-inverted.collapsed {
+        width: 100%;
+        display: block;
+        clear: both;
+        /* border: 1px solid #dfd; */
     }
 
 
@@ -727,9 +770,16 @@ input:checked + .slider:before {
     /* ------------------- */
 
     .print-single-page #education {
-        position: absolute;
+        /* position: absolute;
         top: 365px;
         right: 0;
+        width: 200px; */
+        clear: both;
+        display: inline-block;
+    }
+
+    .print-single-page #education .timeline-inverted {
+        float:left;
         width: 200px;
     }
 
@@ -743,11 +793,14 @@ input:checked + .slider:before {
     /* ------------------- */
 
     .print-single-page #activities {
-        position: absolute;
+        /* position: absolute;
         top: 646px;
-        right: 0;
-        width: 200px;
+        right: 0; */
+        width: 127px;
+        display: inline-block;
     }
+
+    
 
     .print-single-page #activities .timeline-body {
         display: none;

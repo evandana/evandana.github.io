@@ -122,10 +122,12 @@ layout: default
                                             <p>{{ sample.description }}</p>
                                         {% endif %}
                                         {% if sample.features %}
-                                            <ul>
+                                            <ul class="feature-list">
                                                 {% for feature in sample.features %}
-                                                    {% if feature.text %}
-                                                        <li>{{ feature.text }}</li>
+                                                    {% if feature.text or feature.title %}
+                                                        <li>
+                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
                                                     {% endif %}
                                                 {% endfor %}
                                             </ul>
@@ -182,6 +184,18 @@ layout: default
                                     <div class="timeline-body">
                                         {% if work.description %}
                                             <p>{{ work.description }}</p>
+                                        {% endif %}
+                                        {% if work.features %}
+                                            <ul class="feature-list">
+                                                {% for feature in work.features %}
+                                                
+                                                    {% if feature.text or feature.title %}
+                                                        <li>
+                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
                                         {% endif %}
                                     </div>
                                 </div>
