@@ -40,24 +40,177 @@ author:
         I enjoy providing <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">technical mentorship</a>
         and plan to stay current with tools and patterns.
         I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
+  workHistory:
+    - work1:
+      id: ge
+      company: General Electric | GE Digital
+      printsinglepage: show
+      location: Boston, MA
+      title: Sr. Software Engineer
+      started: 2016
+      duration: 2016 &ndash; Present
+      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown documentation" 
+      description: > 
+        Delivered complex features in a timely manner, independently and through 
+        collaboration, with utmost attention to quality.
+        Exemplified best practices from coding patterns to agile methodologies.
+        Translated requirements into manageable stories with clear and complete 
+        acceptance criteria, raising discussions early if needed.
+        Ensured quality by writing unit and system tests for use in CI/CD workflow.
+        Consistently created useful graphical and text-based documentation.
+        Exposed to varied project architecture elements including 
+        cloud, microapp/microservies, and Docker.
+        <br/><br/>    
+        Mentored software engineers and presented on modern UI frameworks and 
+        patterns through the use of interactive programming session.
+      features: 
+        - feature: 
+          title: Community thought leader and advocate
+          text: SME across teams for UI frameworks and patterns
+        - feature: 
+          title: Project / feature lead
+          text: 'Led UI development of feature on open source shared component library: <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pulls?q=is%3Apr+is%3Aclosed+author%3Aevandana">px-data-table</a>'
+        - feature: 
+          title: Team contributor
+          text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
+        - feature: 
+          title: Independent feature delivery
+          text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
+        - feature: 
+          title: Backlog refinement and feature design
+          text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
+    - work1:
+      id: sapient
+      company: Publicis.Sapient | Sapient Consulting
+      printsinglepage: show
+      location: Boston, MA
+      title: Sr. Interactive Developer, L2 
+      started: 2013
+      duration: 2013 &ndash; 2016
+      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA" 
+      description: > 
+        UI lead and front-end developer with aptitude for team dynamics,
+        group coordination, and process efficiencies. 
+        <br/><br/>    
+        Awarded recognition for Client-Focused Delivery after client feedback 
+        on project when leading UI development with recently self-taught technology.
+        <br/><br/>    
+        Years of experience in UI lead role, conducting engaging presentations, 
+        and as technical liason for client and internal domain teams.
+        Enforced code quality using best practices such as John DePapa's 
+        style guide and BEM on Agile projects. 
+        Self-motivated and driven: exemplified by creation of D3.js library 
+        and initiation of effective team-building program.
+        Advocated for code stability through unit, integration, functional, or 
+        automated visual-diff testing.
+      features: 
+        - feature: 
+          title: Autonomous and motivated
+          text: Created reusable d3.js charting library between projects 
+        - feature: 
+          title: Quickly learned and utilized new technology
+          text: From Backbone to AngularJS and Aurelia
+    - work1:
+      id: putnam
+      company: Putnam Investments
+      printsinglepage: show
+      collapsed: false
+      location: Boston, MA
+      title: Javascript UI Developer 
+      started: 2012
+      duration: 2012 &ndash; 2013
+      technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
+      description: > 
+        Implemented significant contributions to interactive retirement planning tool,
+        turning complex business logic into an engaging user experience.
+        <br/><br/>
+        Initiated suite of unit tests to prevent recurring defects.
+        Reached cross-browser functionality with collaborative discussions.
+      features: 
+        - feature: 
+          title: Drove consistent quality with unit test suite
+        - feature: 
+          title: Created dynamic visualizations for retirement income projections
+    - work1:
+      id: innerscope
+      company: Innerscope Research Inc.
+      printsinglepage: collapsed
+      collapsed: true
+      location: Boston, MA
+      title: Sr. Interactive Developer, L2 
+      started: 2009
+      duration: 2009 &ndash; 2012
+      technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
+      description: >
+        Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
+    - work1:
+      id: ecboston
+      company: EC Boston
+      printsinglepage: collapsed
+      collapsed: true
+      location: Boston, MA
+      title: Web Developer 
+      started: 2009
+      duration: 2009
+      technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
+      description: >
+        Facilitated and increased conversion rates by establishing new branding and 
+        easily accessible information. 
+        Worked closely with client to optimize content organization and modernize 
+        graphical feel for improved user experience. 
+        Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
+    - work1:
+      id: crimson
+      company: Crimson Life Sciences
+      printsinglepage: hidden
+      collapsed: true
+      location: Boston, MA
+      title: Process Engineer 
+      started: 2009
+      duration: 2009
+      technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
+      description: >
+        Delivered high ROI by automating Excel and Word document processing. 
+        Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
+        Achieved timely project completion through appropriate architecture and schedule planning. 
+        Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use.
+    - work1:
+      id: reebok
+      company: Reebok International
+      printsinglepage: collapsed
+      collapsed: true
+      location: Canton, MA
+      title: Graphic Designer & Process Engineer 
+      started: 2007
+      duration: 2007 &ndash; 2009
+      technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
+      description: >
+        Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
+        Initiated projects to enhance data communication across groups. 
+        Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
+        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
   workSamples:
     - ahope:
-      id: ahope 
+      id: ahope
       title: Non-profit Intake App
+      printsinglepage: show
       duration: 2018 &ndash; Present
       description: >
-        With guidance from GE Foundation, leading a team to create an intake app for a local non-profit. 
-        Creating and navigating requirements from stakeholders, including secure data storage 
-        and transfer with Google Cloud services. 
+        Leading a team to create an patient intake app for a local non-profit, with guidance from GE Foundation.
+        Creating and navigating requirements from business stakeholders, including secure data storage 
+        and transfer with Google Cloud Platform. 
+        Bringing together experts (domain, UX, legal, medical, technical) and driving concensus.
         Managing a small group of software engineers who are donating time for this project: 
         ensuring coordinated efforts, timely delivery, and continued engagement.
         Utilizing GitHub projects to achieve agile development, stay focused on MVP and
         keep stakeholders informed.
       features: 
         - feature1: 
-          text: Form submission, contact profile search and update, and reports
+          text: Form submission, profile search, profile update, and aggregation reports
         - feature1:
-          text: Websockets and REST, React / Redux
+          text: Websockets and REST
+        - feature1: 
+          text: "Data architecture: Redux"
         - feature1: 
           text: Secure sign-in using Google OAuth
         - feature1: 
@@ -68,6 +221,7 @@ author:
     - auctionapp:
       id: auction-app
       collapsed: true
+      printsinglepage: collapsed
       title: PMC Auction App
       duration: 2016 &ndash; 2018
       description: >
@@ -87,12 +241,13 @@ author:
         - feature1: 
           text: Database and hosting using Firebase.io
       icon: mouse-pointer
-      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES6, Babel, Domain Modeling"
+      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES6, Babel, Domain Modeling, Trello, ESLint, Webpack"
       link: https://pmc-2018-demo.firebaseapp.com
       completedyear: 2018
     - streamcorrelation:
       id: streamcorrelation 
       title: Stream Correlation
+      printsinglepage: hidden
       hidden: true
       description: "Individual hackathon project intending to address the question: \"What other ways can a web app add value to an HMI (human-machine interface) dashboard?\""
       features: 
@@ -108,135 +263,10 @@ author:
       technologies: "NodeJS, Polymer 2.0, WebSockets, Correlation Rank (NPM)"
       link: https://github.com/evandana/stream-correlation
       completedyear: 2017
-  workHistory:
-    - work1:
-      id: ge
-      company: General Electric | GE Digital
-      location: Boston, MA
-      title: Sr. Software Engineer
-      started: 2016
-      duration: 2016 &ndash; Present
-      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS" 
-      description: > 
-        Delivered complex features in a timely manner, independently and through 
-        collaboration, with utmost attention to quality. 
-        Exemplified best practices from coding patterns to agile methodologies.
-        Translated requirements into manageable stories with clear and complete 
-        acceptance criteria, raising discussions early if needed.
-        Ensured quality by writing unit and system tests for use in CI/CD workflow.
-        Exposed to varied project architecture elements including 
-        cloud, microapp/microservies, and Docker.
-        <br/><br/>    
-        Mentored software engineers and presented on modern UI frameworks and 
-        patterns through the use of interactive programming session.
-      features: 
-        - feature: 
-          title: Community thought leader and advocate
-          text: SME across teams for UI frameworks and patterns
-        - feature: 
-          title: Project / feature lead
-          text: 'Led UI development of feature on open source repo: <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pulls?q=is%3Apr+is%3Aclosed+author%3Aevandana">px-data-table</a>'
-        - feature: 
-          title: Team contributor
-          text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
-        - feature: 
-          title: Independent feature delivery
-          text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
-        - feature: 
-          title: Backlog refinement and feature design
-          text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
-    - work1:
-      id: sapient
-      company: Publicis.Sapient | Sapient Consulting
-      location: Boston, MA
-      title: Sr. Interactive Developer, L2 
-      started: 2013
-      duration: 2013 &ndash; 2016
-      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, Atomic Design, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling" 
-      description: > 
-        UI Lead and front-end developer with aptitude for team dynamics: 
-        group coordination, process efficiencies, and individual development. 
-        Awarded recognition for Client-Focused Delivery after client feedback 
-        on project when leading FED with recently self-taught technology.
-        <br/><br/>    
-        Years of experience in UI lead role, conducting engaging technical 
-        presentations, and as technical liason for client and internal domain teams.
-        Enforced code quality using best practices such as John DePapa's 
-        style guide and BEM on both Agile and Atomic approach projects. 
-        Self-motivated and driven as exemplified by creation of D3.js library 
-        during bench time and initiation of effective team-building program.
-        Advocate for code stability through unit, integration, functional, or 
-        automated visual-diff testing.
-    - work1:
-      id: putnam
-      company: Putnam Investments
-      collapsed: true
-      location: Boston, MA
-      title: Javascript UI Developer 
-      started: 2012
-      duration: 2012 &ndash; 2013
-      technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
-      description: >
-        Extended current app by developing additional functionality and engaging UI with JavaScript. 
-        Implemented significant contributions in an Agile team to achieve business goals. 
-        Reached cross-browser functionality with collaborative discussions. 
-    - work1:
-      id: innerscope
-      company: Innerscope Research Inc.
-      collapsed: true
-      location: Boston, MA
-      title: Sr. Interactive Developer, L2 
-      started: 2009
-      duration: 2009 &ndash; 2012
-      technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
-      description: >
-        Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
-    - work1:
-      id: ecboston
-      company: EC Boston
-      collapsed: true
-      location: Boston, MA
-      title: Web Developer 
-      started: 2009
-      duration: 2009
-      technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
-      description: >
-        Facilitated and increased conversion rates by establishing new branding and 
-        easily accessible information. 
-        Worked closely with client to optimize content organization and modernize 
-        graphical feel for improved user experience. 
-        Content updatable by client without markup. Site was live September 2009 &ndash; 20011.
-    # - work1:
-    #   id: crimson
-    #   company: Crimson Life Sciences
-    #   collapsed: true
-    #   location: Boston, MA
-    #   title: Process Engineer 
-    #   started: 2009
-    #   duration: 2009
-    #   technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
-    #   description: >
-    #     Delivered high ROI by automating Excel and Word document processing. 
-    #     Thoroughly examined current manual processes; using diagrams and concise summary, discussed proposed solution with project stakeholders. 
-    #     Achieved timely project completion through appropriate architecture and schedule planning. 
-    #     Resulting desktop Java application eliminated unnecessary user interaction and maximized efficiency, accuracy and ease of use.
-    - work1:
-      id: reebok
-      company: Reebok International
-      collapsed: true
-      location: Canton, MA
-      title: Graphic Designer & Process Engineer 
-      started: 2007
-      duration: 2007 &ndash; 2009
-      technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
-      description: >
-        Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
-        Initiated projects to enhance data communication across groups. 
-        Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
-        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
   educationHistory:
     - rit:
       id: rit
+      printsinglepage: show
       organization: Rochester Institute of Technology
       location: Rochester, NY
       degree: Bachelor
@@ -249,22 +279,27 @@ author:
         AAS in Graphic Design. 
         <br/>
         Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology.
-    - extension:
+    - harvard:
+      id: harvard
+      printsinglepage: show
+      collapsed: true
       organization: Harvard Extension School
+      degree: Mobile Operating Systems and Applications
       location: Cambridge, MA
       description: >
-        Mobile Operating Systems and Applications
-        <br/><br/>
         Deep dive into hardware and software underlying Android and iOS operating sytems. 
         Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
         Final project: Android "deck of cards" workout app.
       completed: 2013
       duration: 2013 &ndash; 2013
     - coursera:
+      id: coursera
+      collapsed: true
+      printsinglepage: show
       organization: Coursera.org
       location: Stanford University Online
       description: >
-        Enriched and expanded skills and understanding with classes: Introduction to Python & Model Thinking & Software Engineering for SaaS. 
+        Enriched and expanded skills and understanding with classes: Introduction to Python, Model Thinking, Software Engineering for SaaS. 
         Courses included homework, lectures, and quizzes/exams. 
         <br/></br/>
         Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
@@ -274,8 +309,11 @@ author:
   activities:
     - activity:
       id: november-project
+      printsinglepage: hidden
+      collapsed: true
       location: Boston, MA
-      title: Co-leader of November Project Boston
+      title: Fitness Group Co-leader
+      organization: November Project, Boston
       started: 2013
       icon: bicycle
       duration: 2014 &ndash; 2015
@@ -287,8 +325,10 @@ author:
         With co-leaders, cultured strong relationships that included feedback cycles.
     - activity:
       id: ga-instructor
-      location: General Assembly, MA
+      printsinglepage: show
+      location: Boston, MA
       title: D3.js Instructor 
+      organization: General Assembly
       started: 2015
       icon: code
       duration: 2015
@@ -316,13 +356,21 @@ author:
       name: French
       proficiency: Limited Conversational
   programmingSkills:
+    # - skill:
+    #   name: "JS: React, Polymer, Node"
+    #   percentage: 80%
+    #   usefulness: expert
+    # - skill3:
+    #   name: Java
+    #   percentage: 20%
+    #   usefulness: proficient
     - skill2:
-      name: "Frameworks: Polymer | React | Angular | Aurelia"
-      percentage: 80%
-      usefulness: expert
+      name: "Frameworks: Polymer | React | AngularJS"
+      percentage: 70%
+      usefulness: experienced
     - skill1:
       name: JavaScript/ES6
-      percentage: 70%
+      percentage: 75%
       usefulness: expert
     - skill4:
       name: HTML5
@@ -332,10 +380,6 @@ author:
       name: CSS3/SCSS
       percentage: 60%
       usefulness: experienced
-    - skill3:
-      name: Server-side
-      percentage: 30%
-      usefulness: proficient
   opensource:
       intro: Notable repos
       repos:

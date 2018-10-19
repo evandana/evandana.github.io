@@ -74,78 +74,12 @@ layout: default
                 </section>
             {% endif %}
 
-            {% if site.author.workSamples %}
-                <section id="codeHighlights">
-                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
-                    <ul class="timeline">
-                        {% for sample in site.author.workSamples %}
-                            <li class="timeline-inverted {% if sample.collapsed %}collapsed{% endif %} {% if sample.hidden %}hidden{% endif %}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
-                                {% if sample.icon %}
-                                    {% if sample.icon %}
-                                        <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
-                                    {% endif %}
-                                {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if sample.collapsed %}i-collapsed{% endif %}">
-                                    <div class="timeline-heading">
-                                        {% if sample.title %}
-                                            <h4 class="timeline-title">{{ sample.title }}</h4>
-                                        {% endif %}
-                                        {% if sample.link %}
-                                            <p class="text-muted">
-                                                <small>
-                                                    <a href="{{ sample.link }}" target="_blank">
-                                                        {{ sample.link }}
-                                                        <span class="fa fa-external-link"> </span>
-                                                    </a>
-                                                </small>        
-                                            </p>
-                                        {% endif %}
-                                        {% if sample.technologies %}
-                                            <p class="text-muted i-preserve">
-                                                <small>
-                                                    {{ sample.technologies }}
-                                                </small>
-                                            </p>
-                                        {% endif %}
-                                        {% if sample.duration or sample.location %}
-                                        <p class="work-history-dates text-muted">
-                                            <small >
-                                                {% if sample.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ sample.duration }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
-                                    {% endif %}
-                                    </div>
-                                    <div class="timeline-body">
-                                        {% if sample.description %}
-                                            <p>{{ sample.description }}</p>
-                                        {% endif %}
-                                        {% if sample.features %}
-                                            <ul class="feature-list">
-                                                {% for feature in sample.features %}
-                                                    {% if feature.text or feature.title %}
-                                                        <li>
-                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
-                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
-                                                    {% endif %}
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </section>
-            {% endif %}
-
             {% if site.author.workHistory %}
                 <section id="workHistory">
                     <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
                     <ul class="timeline">
                         {% for work in site.author.workHistory %}
-                            <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} {% if work.collapsed %}collapsed{% endif %}">
+                            <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} print-single-page--{{ work.printsinglepage }}">
                                 {% if work.started %}
                                     <div class="timeline-badge info">{{ work.started }}</div>
                                 {% endif %}
@@ -155,7 +89,7 @@ layout: default
                                             <h4 class="timeline-title">{{ work.company }} </h4>
                                         {% endif %}
                                         {% if work.title %}
-                                            <p class="text-muted">
+                                            <p class="text-muted timeline-role-title">
                                                 <small >
                                                     {{ work.title }}
                                                 </small>
@@ -189,6 +123,72 @@ layout: default
                                             <ul class="feature-list">
                                                 {% for feature in work.features %}
                                                 
+                                                    {% if feature.text or feature.title %}
+                                                        <li>
+                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+
+            {% if site.author.workSamples %}
+                <section id="codeHighlights">
+                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
+                    <ul class="timeline">
+                        {% for sample in site.author.workSamples %}
+                            <li class="timeline-inverted {% if sample.hidden %}hidden{% endif %} print-single-page--{{ sample.printsinglepage }}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
+                                {% if sample.icon %}
+                                    {% if sample.icon %}
+                                        <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
+                                    {% endif %}
+                                {% endif %}
+                                <div class="timeline-panel grid-block i-toggle-view {% if sample.collapsed %}i-collapsed{% endif %}">
+                                    <div class="timeline-heading">
+                                        {% if sample.title %}
+                                            <h4 class="timeline-title">{{ sample.title }}</h4>
+                                        {% endif %}
+                                        {% if sample.link %}
+                                            <p class="text-muted timeline-external-link">
+                                                <small>
+                                                    <a href="{{ sample.link }}" target="_blank">
+                                                        {{ sample.link }}
+                                                        <span class="fa fa-external-link"> </span>
+                                                    </a>
+                                                </small>        
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.technologies %}
+                                            <p class="text-muted i-preserve">
+                                                <small>
+                                                    {{ sample.technologies }}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.duration or sample.location %}
+                                        <p class="work-history-dates text-muted">
+                                            <small >
+                                                {% if sample.duration %}
+                                                    <i class="fa fa-calendar"></i> {{ sample.duration }}
+                                                {% endif %}
+                                            </small>
+                                        </p>
+                                    {% endif %}
+                                    </div>
+                                    <div class="timeline-body">
+                                        {% if sample.description %}
+                                            <p>{{ sample.description }}</p>
+                                        {% endif %}
+                                        {% if sample.features %}
+                                            <ul class="feature-list">
+                                                {% for feature in sample.features %}
                                                     {% if feature.text or feature.title %}
                                                         <li>
                                                             {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
@@ -260,7 +260,7 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
                     <ul class="timeline">
                         {% for activity in site.author.activities %}
-                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted {% if activity.hidden %}hidden{% endif %} {% if activity.collapsed %}collapsed{% endif %}">
+                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted {% if activity.hidden %}hidden{% endif %} {% if activity.collapsed %}collapsed{% endif %} print-single-page--{{ activity.printsinglepage }}">
                                 {% if activity.icon %}
                                     <div class="timeline-badge info fa fa-{{ activity.icon }}"></div>
                                 {% else %}
@@ -271,6 +271,11 @@ layout: default
                                         {% if activity.title %}
                                             <h4 class="timeline-title">{{ activity.title }} </h4>
                                         {% endif %}
+
+                                        {% if activity.organization %}
+                                            <p class="text-muted"><small>{{ activity.organization }}</small></p>
+                                        {% endif %}
+
                                         {% if activity.duration or activity.location %}
                                             <p class="text-muted i-preserve">
                                                 <small>
