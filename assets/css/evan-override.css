@@ -770,49 +770,6 @@ input:checked + .slider:before {
     /* ------------------- */
     /* Education */
     /* ------------------- */
-    /* #education .timeline-panel.grid-block.i-toggle-view:hover,
-        #activities .timeline-panel.grid-block.i-toggle-view:hover {
-        background: #fff;
-    }
-    #education .timeline-panel,
-        #activities .timeline-panel {
-        background: #fff;
-    }
-    #education .timeline-panel::after,
-        #activities .timeline-panel::after {
-        content: ' ';
-    }
-    #education .timeline-panel .timeline-body,
-        #activities .timeline-panel .timeline-body {
-        display: block;
-    }
-    #education .timeline-panel .timeline-heading,
-        #activities .timeline-panel .timeline-heading {
-        max-width: 18em;
-        width: 100%;
-    }
-    #education .timeline-panel .timeline-heading h4,
-        #activities .timeline-panel .timeline-heading h4 {
-        float: none;
-        margin-bottom: 10px;
-    }
-    #education .timeline-panel .timeline-heading .text-muted,
-        #activities .timeline-panel .timeline-heading .text-muted {
-        display: block;
-    }
-    #education .timeline-panel .timeline-heading .text-muted.i-preserve,
-        #activities .timeline-panel .timeline-heading .text-muted.i-preserve {
-        margin-left: 0;
-        margin-bottom: 10px;
-        float: none;
-        text-align: left;
-        display: block;
-    }
-    #education .timeline-panel .timeline-heading .work-history-dates,
-        #activities .timeline-panel .timeline-heading .work-history-dates {
-        display: block;
-        position: static;
-    } */
 
     #education {
         clear: both;
@@ -925,37 +882,46 @@ input:checked + .slider:before {
     }
 
     /** Force Expand */
-    .print-single-page .print-single-page--show .timeline-panel.grid-block.i-toggle-view:hover,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel.grid-block.i-toggle-view:hover,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel.grid-block.i-toggle-view:hover{
         background: #fff;
     }
-    .print-single-page .print-single-page--show .timeline-panel,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel{
         background: #fff;
     }
-    .print-single-page .print-single-page--show .timeline-panel::after,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel::after,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel::after{
         content: ' ';
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-body,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-body,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-body{
         display: block;
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-heading,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-heading,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-heading{
         max-width: 18em;
         width: 100%;
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-heading h4,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-heading h4,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-heading h4{
         float: none;
         margin-bottom: 10px;
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-heading .text-muted,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-heading .text-muted,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-heading .text-muted{
         display: block;
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-heading .text-muted.i-preserve,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-heading .text-muted.i-preserve,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-heading .text-muted.i-preserve{
         margin-left: 0;
         margin-bottom: 10px;
         float: none;
         text-align: left;
         display: block;
     }
-    .print-single-page .print-single-page--show .timeline-panel .timeline-heading .work-history-dates,{
+    .print-single-page #workHistory .print-single-page--show .timeline-panel .timeline-heading .work-history-dates,
+        .print-single-page #codeHighlights .print-single-page--show .timeline-panel .timeline-heading .work-history-dates{
         display: block;
         position: static;
     }

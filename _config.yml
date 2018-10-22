@@ -59,7 +59,7 @@ author:
         Ensured quality by writing unit and system tests for use in CI/CD workflow.
         Consistently created useful graphical and text-based documentation.
         Exposed to varied project architecture elements including 
-        cloud, microapp/microservies, and Docker.
+        cloud, microapp/microservices, and Docker.
         <br/><br/>    
         Mentored software engineers and presented on modern UI frameworks and 
         patterns through the use of interactive programming session.
@@ -98,7 +98,7 @@ author:
         on project when leading UI development with recently self-taught technology.
         <br/><br/>    
         Years of experience in UI lead role, conducting engaging presentations, 
-        and as technical liason for client and internal domain teams.
+        and as technical liaison for client and internal domain teams.
         Enforced code quality using best practices such as John DePapa's 
         style guide and BEM on Agile projects. 
         Self-motivated and driven: exemplified by creation of D3.js library 
@@ -148,7 +148,7 @@ author:
     - work1:
       id: ecboston
       company: EC Boston
-      printsinglepage: collapsed
+      printsinglepage: hidden
       collapsed: true
       location: Boston, MA
       title: Web Developer 
@@ -201,7 +201,7 @@ author:
         Leading a team to create an patient intake app for a local non-profit, with guidance from GE Foundation.
         Creating and navigating requirements from business stakeholders, including secure data storage 
         and transfer with Google Cloud Platform. 
-        Bringing together experts (domain, UX, legal, medical, technical) and driving concensus.
+        Bringing together experts (domain, UX, legal, medical, technical) and driving consensus.
         Managing a small group of software engineers who are donating time for this project: 
         ensuring coordinated efforts, timely delivery, and continued engagement.
         Utilizing GitHub projects to achieve agile development, stay focused on MVP and
