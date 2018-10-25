@@ -291,6 +291,10 @@ section {
     margin-right: .25em;
 }
 
+.timeline-title {
+    padding-right: 1em;
+}
+
 .timeline-body {
     margin-left: 20em;
 }
@@ -304,6 +308,10 @@ section {
 .timeline-body li {
     margin-left: 1.2em;
     padding-bottom: .5em;
+}
+
+.work-history-dates {
+    white-space: nowrap;
 }
 
 .grid-block:before, .grid-block:after {
