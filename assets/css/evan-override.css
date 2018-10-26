@@ -410,8 +410,9 @@ li.timeline-inverted {
     #codeHighlights .timeline-panel.i-collapsed::after {
     content: ' ';
 }
-#workHistory .timeline-panel.i-collapsed .timeline-body,
-    #codeHighlights .timeline-panel.i-collapsed .timeline-body {
+/* applies to all */
+.timeline-panel.i-collapsed .timeline-body,
+    .timeline-panel.i-collapsed .timeline-body {
     display: none;
 }
 #workHistory .timeline-panel.i-collapsed .timeline-heading,
