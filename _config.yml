@@ -232,7 +232,7 @@ author:
         Working with one other developer, we started with domain models, UX whiteboarding, 
         framework choices, and hosting discussions.
         <br/><br/>
-        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fas fa-external-link-alt"></i></a> using dummy data. 
+        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fas fa-external-link-alt"></i></a> using dummy data. 
       features: 
         - feature1: 
           text: 'Live bidding: websockets, React / Redux'
@@ -336,7 +336,7 @@ author:
       duration: 2015
       description: >
         Engaged developers in an immersive and interactive two-night class: Introduction to D3.js. 
-        Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck <i class="fas fa-external-link-alt"></i></a>
+        Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck <i class="fa fas fa-external-link-alt"></i></a>
          with individually-editable code examples.
     - activity:
       hidden: true
