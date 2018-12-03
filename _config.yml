@@ -232,7 +232,7 @@ author:
         Working with one other developer, we started with domain models, UX whiteboarding, 
         framework choices, and hosting discussions.
         <br/><br/>
-        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fa-external-link"></i></a> using dummy data. 
+        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fas fa-external-link-alt"></i></a> using dummy data. 
       features: 
         - feature1: 
           text: 'Live bidding: websockets, React / Redux'
@@ -274,7 +274,7 @@ author:
       degree: Bachelor
       major: Industrial Design
       completed: 2005
-      duration: (2001 &ndash; 2005)
+      duration: 2001 &ndash; 2005
       description: >
         BFA in Industrial Design, GPA 3.84, highest honors. 
         <br/><br/>
@@ -307,7 +307,7 @@ author:
         Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
         Earned a certificate of completion for listed classes.
       completed: 2014
-      duration: (2012 &ndash; 2013)  
+      duration: 2012 &ndash; 2013
   activities:
     - activity:
       id: november-project
@@ -336,7 +336,7 @@ author:
       duration: 2015
       description: >
         Engaged developers in an immersive and interactive two-night class: Introduction to D3.js. 
-        Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck<i class="fa fa-external-link"></i></a>
+        Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck <i class="fas fa-external-link-alt"></i></a>
          with individually-editable code examples.
     - activity:
       hidden: true
