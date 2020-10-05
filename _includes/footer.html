@@ -4,12 +4,12 @@
             <div class="col-md-12">
                  <ul class="footer-items">
                      <li><span title="evan.writes.code" onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> Click for email</span></li>
-                    {% if site.resumelink %}
+                    {% if site.data.config.resumelink %}
                         <li>
-                            <a href="{{ site.resumelink }}" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>    
+                            <a href="{{ site.data.config.resumelink }}" class="btn btn-flat"><i class="icon-file icon-white"></i> Download Résumé </a>    
                         </li>
                     {% endif %}
-                     <li>Copyright &copy; 2018 {{ site.author.name }} - All rights reserved.</li>
+                     <li>Copyright &copy; 2018 {{ site.data.config.author.name }} - All rights reserved.</li>
                 </ul>
             </div>
         </div>

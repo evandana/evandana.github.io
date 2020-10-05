@@ -59,26 +59,26 @@ layout: default
     <div class="row-fluid">
         <main class="col-md-8">
 
-            {% if site.author.intro %}
+            {% if site.data.config.author.intro %}
                 <section id="intro">
                     <div class="intro-block">
-                        {% if site.author.intro.description %}
+                        {% if site.data.config.author.intro.description %}
                             <p class="intro-body">
                                 <span class="intro-body-first-line">
-                                    {{ site.author.intro.firstline }}
+                                    {{ site.data.config.author.intro.firstline }}
                                 </span>
-                                {{ site.author.intro.description }}
+                                {{ site.data.config.author.intro.description }}
                             </p>
                         {% endif %}
                     </div>
                 </section>
             {% endif %}
 
-            {% if site.author.workHistory %}
+            {% if site.data.config.author.workHistory %}
                 <section id="workHistory">
                     <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
                     <ul class="timeline">
-                        {% for work in site.author.workHistory %}
+                        {% for work in site.data.config.author.workHistory %}
                             <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} print-single-page--{{ work.printsinglepage }}">
                                 {% if work.started %}
                                     <div class="timeline-badge info">{{ work.started }}</div>
@@ -139,11 +139,11 @@ layout: default
                 </section>
             {% endif %}
 
-            {% if site.author.workSamples %}
+            {% if site.data.config.author.workSamples %}
                 <section id="codeHighlights">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
                     <ul class="timeline">
-                        {% for sample in site.author.workSamples %}
+                        {% for sample in site.data.config.author.workSamples %}
                             <li class="timeline-inverted {% if sample.hidden %}hidden{% endif %} print-single-page--{{ sample.printsinglepage }}" {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
                                 {% if sample.icon %}
                                     {% if sample.icon %}
@@ -205,11 +205,11 @@ layout: default
                 </section>
             {% endif %}
 
-            {% if site.author.educationHistory %}
+            {% if site.data.config.author.educationHistory %}
                 <section id="education">
                     <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education History</h3>
                     <ul class="timeline">
-                        {% for education in site.author.educationHistory %}
+                        {% for education in site.data.config.author.educationHistory %}
                             <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %} class="timeline-inverted {% if education.collapsed %}collapsed{% endif %}">
                                 {% if education.completed %}
                                     <div class="timeline-badge info">{{ education.completed }}</div>
@@ -255,11 +255,11 @@ layout: default
                 </section>
             {% endif %}
 
-            {% if site.author.activities %}
+            {% if site.data.config.author.activities %}
                 <section id="activities">
                     <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
                     <ul class="timeline">
-                        {% for activity in site.author.activities %}
+                        {% for activity in site.data.config.author.activities %}
                             <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted {% if activity.hidden %}hidden{% endif %} {% if activity.collapsed %}collapsed{% endif %} print-single-page--{{ activity.printsinglepage }}">
                                 {% if activity.icon %}
                                     <div class="timeline-badge info fa fa-{{ activity.icon }}"></div>
@@ -303,16 +303,16 @@ layout: default
 
         </main>
         <aside class="sidebar col-md-4">
-            {% if site.author.stackoverflow or site.author.programmingSkills %}
+            {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkills %}
                 <section id="programmingSkills">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
-                    {% if site.author.stackoverflow %}
+                    {% if site.data.config.author.stackoverflow %}
                     <div class="grid-block">
-                    <p><a href="//stackoverflow.com/users/{{ site.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.author.stackoverflow }}.png"></a></p>
+                    <p><a href="//stackoverflow.com/users/{{ site.data.config.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.data.config.author.stackoverflow }}.png"></a></p>
                     <ul class="list-unstyled list-stackoverflow" id="stackoverflow_questions_and_answers"></ul>
                     <script type="text/javascript">
                     $(function () {
-                        var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
+                        var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.data.config.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
                         var api_url_format_questions = "//api.stackexchange.com/2.2/questions/%question_ids%?site=stackoverflow";
 
                         $.get(api_url_user, function (data_user) {
@@ -428,10 +428,10 @@ layout: default
                     </script>
                     </div>
                     {% endif %}
-                    {% if site.author.programmingSkills %}
+                    {% if site.data.config.author.programmingSkills %}
                     <div class="grid-block">
                         <ul class="list-unstyled list-skills">
-                            {% for programmingSkill in site.author.programmingSkills %}
+                            {% for programmingSkill in site.data.config.author.programmingSkills %}
                                 <li>
                                     {% if programmingSkill.name %}
                                         <span class="caption-skill">{{ programmingSkill.name }}</span>
@@ -450,13 +450,13 @@ layout: default
                     {% endif %}
                 </section>
             {% endif %}
-            {% if site.author.opensource %}
+            {% if site.data.config.author.opensource %}
                 <section id="github">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Github</h3>
                     <div class="grid-block">
                         <p>{{ opensource.description }}</p>
                         <ul class="list-unstyled">
-                            {% for repo in site.author.opensource.repos %}
+                            {% for repo in site.data.config.author.opensource.repos %}
                                 <li class="github-repo">
                                     {% if repo.name %}
                                         <span class="github-name">
@@ -477,13 +477,13 @@ layout: default
                     </div>
                 </section>
             {% endif %}
-            {% if site.author.languages %}
+            {% if site.data.config.author.languages %}
                 <section id="languages">
                     <div class="deviter"></div>
                     <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
                     <div class="grid-block">
                         <ul class="list-unstyled list-strip">
-                            {% for language in site.author.languages %}
+                            {% for language in site.data.config.author.languages %}
                                 {% if language.name %}
                                     {% if language.proficiency %}
                                         <li>
@@ -500,7 +500,7 @@ layout: default
             <div class="deviter"></div>
                 <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
                 <div class="grid-block">
-                    <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.data.config.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
                 </div>
             {% endif %}
         </aside>

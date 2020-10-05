@@ -2,22 +2,22 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="author-intro col-sm-4 col-xs-6">
-                <img src="{{ site.favicon | prepend: site.baseurl }}" title="Avatar" alt="My Avatar">
-                <h4 class="author-name">{{ site.author.name }}</h4>
-                <p class="author-title">{{ site.author.title }}</p>
-                <p class="author-address muted">{{ site.author.address }}</p>
+                <img src="{{ site.data.config.favicon | prepend: site.data.config.baseurl }}" title="Avatar" alt="My Avatar">
+                <h4 class="author-name">{{ site.data.config.author.name }}</h4>
+                <p class="author-title">{{ site.data.config.author.title }}</p>
+                <p class="author-address muted">{{ site.data.config.author.address }}</p>
                 <div class="clearfix"></div>
             </div>
             <div class="social-link-container col-sm-4 col-xs-3">
                 <p class="social-link-block"><i class="far fa-envelope fa-fw"></i><span title="evan.writes.code"
                     onclick="this.innerHTML=' ' + this.title + '@gmail.com';"> click for email</span></p>
-                <p class="social-link-block"><i class="fab fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
-                <p class="social-link-block"><i class="fab fa-linkedin fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> {{ site.author.linkedin }} </a></p>
+                <p class="social-link-block"><i class="fab fa-github fa-fw"></i><a href="//github.com/{{ site.data.config.author.github }}" target="_blank">  @{{ site.data.config.author.github }} </a></p>
+                <p class="social-link-block"><i class="fab fa-linkedin fa-fw"></i> <a href="//linkedin.com/in/{{ site.data.config.author.linkedin }}" target="_blank"> {{ site.data.config.author.linkedin }} </a></p>
                 <p class="social-link-block header-website-link"><i class="fas fa-globe fa-fw"></i><a href="//evandana.com" target="_blank">  evandana.com </a></p>
             </div>
             <div class="download-print-container col-sm-4 col-xs-3 print-removed">
-                {% if site.resumelink %}
-                    <p class="social-link-block"><a href="{{ site.resumelink }}" title="Download résumé" target="_BLANK"><i class="fa fa-file-download fa-fw"></i> Download</a></p>
+                {% if site.data.config.resumelink %}
+                    <p class="social-link-block"><a href="{{ site.data.config.resumelink }}" title="Download résumé" target="_BLANK"><i class="fa fa-file-download fa-fw"></i> Download</a></p>
                 {% endif %}
                 <p class="social-link-block"><a onclick="printPage( 'SINGLE' );" title="Print single page" class="print-icon-group"> <i class="fas fa-print fa-fw"></i> Print Single Page</a></p>
                 <p class="social-link-block"><a onclick="printPage();" title="Print" class="print-icon-group"><i class="fas fa-print fa-fw"></i> Print </a></p>

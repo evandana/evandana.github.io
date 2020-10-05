@@ -3,17 +3,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.config.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.config.description }}{% endif %}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.data.config.baseurl }}">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ "/assets/css/resumecard.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/css/evan-override.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/resumecard.css" | prepend: site.data.config.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/evan-override.css" | prepend: site.data.config.baseurl }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <link rel="icon" type="image/png" href="{{ site.favicon | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ site.data.config.favicon | prepend: site.data.config.baseurl }}">
 
   <!-- Google fonts -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300' type='text/css'>

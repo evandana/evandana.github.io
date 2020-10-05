@@ -42,13 +42,37 @@ author:
         I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
   workHistory:
     - work1:
+      id: pear
+      company: Pear Therapeutics
+      printsinglepage: show
+      location: Boston, MA
+      title: Sr. Software Engineer
+      started: 2016
+      duration: 2019 &ndash; Present
+      technologies: "React Native, React-Native-Testing-Library, TypeScript"
+      description: > 
+        Tech Lead
+        <br/><br/>
+        EEC Chair
+        <br/><br/>
+      features: 
+        - feature: 
+          title: Tech Lead
+          text: ...
+        - feature: 
+          title: Mobile Platform
+          text: ...
+        - feature: 
+          title: EEC Chair
+          text: ...
+    - work1:
       id: ge
       company: General Electric | GE Digital
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
       started: 2016
-      duration: 2016 &ndash; Present
+      duration: 2016 &ndash; 2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown documentation" 
       description: > 
         Delivered complex features in a timely manner, independently and through 
@@ -60,7 +84,7 @@ author:
         Consistently created useful graphical and text-based documentation.
         Exposed to varied project architecture elements including 
         cloud, microapp/microservices, and Docker.
-        <br/><br/>    
+        <br/><br/>
         Mentored software engineers and presented on modern UI frameworks and 
         patterns through the use of interactive programming session.
       features: 
@@ -367,7 +391,7 @@ author:
     #   percentage: 20%
     #   usefulness: proficient
     - skill2:
-      name: "Frameworks: Polymer | React | AngularJS"
+      name: "Frameworks: ReactNative | React"
       percentage: 70%
       usefulness: experienced
     - skill1:
@@ -382,6 +406,10 @@ author:
       name: CSS3/SCSS
       percentage: 60%
       usefulness: experienced
+    - skill3:
+      name: "Native OS: Objective-C | Java"
+      percentage: 20%
+      usefulness: beginner
   opensource:
       intro: Notable repos
       repos:

@@ -3,106 +3,11 @@
   <channel>
     <title>Evan Dana's CV</title>
     <description>Evan Dana's CV</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Oct 2018 07:48:40 -0400</pubDate>
-    <lastBuildDate>Fri, 26 Oct 2018 07:48:40 -0400</lastBuildDate>
-    <generator>Jekyll v3.7.3</generator>
-    
-      <item>
-        <title>AngularJS Multi-select Dropdown</title>
-        <description>&lt;p&gt;Design guidelines require a multi-select dropdown that shows all the options as selectable and tallies the selections as a comma-separated, concatenated string in the dropdown’s consolidated view.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-target&quot;&gt;The TARGET&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/uiselect/target.png&quot; alt=&quot;Multi-select dropdown target&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Basic Requirements&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Multi-select&lt;/li&gt;
-  &lt;li&gt;Summarizes selections in collapsed view&lt;/li&gt;
-  &lt;li&gt;Shows all items in dropdown and can toggle selection state&lt;/li&gt;
-  &lt;li&gt;Cross-browser compatible&lt;/li&gt;
-  &lt;li&gt;Skinnable&lt;/li&gt;
-  &lt;li&gt;AngularJS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-contenders&quot;&gt;The CONTENDERS&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/angular-ui/ui-select&quot;&gt;UI-Select&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://dotansimha.github.io/angularjs-dropdown-multiselect/#/&quot;&gt;Angularjs Dropdown Multiselect&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/angular-multi-select&quot;&gt;angular-multi-select&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;ui-select&quot;&gt;UI-Select&lt;/h3&gt;
-
-&lt;p&gt;Previously &lt;a href=&quot;https://github.com/angular-ui/ui-select2&quot;&gt;UI-Select2&lt;/a&gt;
-&lt;a href=&quot;https://github.com/angular-ui/ui-select&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/uiselect/uiselect.png&quot; alt=&quot;UI-Select snapshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;overview&quot;&gt;Overview&lt;/h4&gt;
-
-&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Once an item has been selected, it is removed from the dropdown list and becomes a “remove this item” button with customizable label.&lt;/p&gt;
-
-&lt;h4 id=&quot;try-it&quot;&gt;Try it&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;http://plnkr.co/edit/juqoNOt1z1Gb349XabQ2?p=preview&quot;&gt;Plnkr.co&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;review&quot;&gt;Review&lt;/h4&gt;
-&lt;p&gt;Although there are many available skins for download, the CSS is usually intended for &lt;a href=&quot;https://select2.github.io/&quot;&gt;Select2&lt;/a&gt; and therefore the classes and class declarations do not match that of &lt;code class=&quot;highlighter-rouge&quot;&gt;ui-select&lt;/code&gt;. There is a bit of an aesthetic drawback when the number or size of the selected items forces the dropdown to occupy two lines. The other UI inhibitor is that the dropdown can only be triggered in the space between the selected items and the edge of the dropdown, therefore making it difficult to find a consistent place for enabling dropdowns.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;angularjs-dropdown-multiselect&quot;&gt;AngularJS Dropdown Multiselect&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://dotansimha.github.io/angularjs-dropdown-multiselect/#/&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/uiselect/ngmultiselect.png&quot; alt=&quot;AngularJS Dropdown Multiselect snapshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;overview-1&quot;&gt;Overview&lt;/h4&gt;
-
-&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Extensive documentation and examples are provided on their site.&lt;/p&gt;
-
-&lt;h4 id=&quot;try-it-1&quot;&gt;Try it&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/evand/bmvtmzmm/&quot;&gt;jsfiddle.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;review-1&quot;&gt;Review&lt;/h4&gt;
-&lt;p&gt;This full-featured and highly customizable directive addresses all the functionality you could want. Easily change visual themes with Bootstrap skins (e.g. &lt;a href=&quot;https://bootswatch.com/&quot;&gt;Bootswatch&lt;/a&gt;).&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;angularjs-multi-select&quot;&gt;AngularJS Multi Select&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/angular-multi-select&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/uiselect/angularjsmultiselect.png&quot; alt=&quot;AngularJS Multi Select snapshot&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;overview-2&quot;&gt;Overview&lt;/h4&gt;
-
-&lt;p&gt;This 100% AngularJS solution provides a customizable multi-select dropdown angular directive. Select options can be toggled and filtered (with search criteria) while dropdown is shown. Also provides options to select or clear all items. Icons can be shown next to items in the dropdown and in the button text.&lt;/p&gt;
-
-&lt;p&gt;It appears that there is a duplicate repo and it is unclear to me exactly what is going on. Both github users contributed to &lt;a href=&quot;http://alexandernst.github.io/angular-multi-select/&quot;&gt;this repo&lt;/a&gt;, but only one contributed to &lt;a href=&quot;http://isteven.github.io/angular-multi-select/&quot;&gt;this&lt;/a&gt; one.&lt;/p&gt;
-
-&lt;h4 id=&quot;try-it-2&quot;&gt;Try it&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://jsfiddle.net/evand/x6kjc76r/&quot;&gt;jsfiddle.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;review-2&quot;&gt;Review&lt;/h4&gt;
-&lt;p&gt;This full-featured and highly customizable directive addresses all the functionality you could want. There are no readily available skins for this.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 03 Aug 2015 09:35:58 -0400</pubDate>
-        <link>http://localhost:4000/angularjs/ui/2015/08/03/angular-multi-select-dropdown.html</link>
-        <guid isPermaLink="true">http://localhost:4000/angularjs/ui/2015/08/03/angular-multi-select-dropdown.html</guid>
-        
-        
-        <category>angularJS</category>
-        
-        <category>ui</category>
-        
-      </item>
+    <link>http://evandana.github.io/</link>
+    <atom:link href="http://evandana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate></pubDate>
+    <lastBuildDate></lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
   </channel>
 </rss>
