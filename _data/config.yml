@@ -30,7 +30,7 @@ author:
 #  stackoverflow: 4582127
   intro: 
       firstline: >
-        Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web experiences</a>. 
+        Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web and mobile experiences</a>. 
       description: >
         Specializing in front-end technologies, I 
         <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">deliver customer value</a>
@@ -47,24 +47,34 @@ author:
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
-      started: 2016
+      started: 2019
       duration: 2019 &ndash; Present
-      technologies: "React Native, React-Native-Testing-Library, TypeScript"
+      technologies: "React Native, React-Native-Testing-Library, TypeScript, Bitrise.io"
       description: > 
-        Tech Lead
-        <br/><br/>
-        EEC Chair
-        <br/><br/>
+        Worked across multiple prescription digital therapeutic (PDT) apps (iOS / Android) and the mobile platform team
+        in a variety of capacities from individual contributor to Tech Lead.
+        Followed the engineering practices of Software as a Medical Device (SaMD),
+        ensuring high quality and auditable code while also focusing on value-based delivery.
       features: 
         - feature: 
           title: Tech Lead
-          text: ...
+          text: Responsible for code delivery, quality, and providing techincal estimates
+            for full-stack React Native app with 3 other engineers.
+            Working with product and design to set appropriate requirements.
+            Delivered app to app stores on time for study participants.
         - feature: 
           title: Mobile Platform
-          text: ...
+          text: Major contributor to the set of shared libraries used by the other Pear apps.
+            Lead an app team collaboration requiring new core components;
+            crafted implementation strategy and tackled the most complex tasks. 
         - feature: 
-          title: EEC Chair
-          text: ...
+          title: Chair of Employee Engagement Council
+          text: Lead the employee resource group to create a better employee experience.
+            Worked cross-functionally, with executive team, leadership team, and all employees,
+            to ensure the collective and underserved voices are heard,
+            making proposals to leadership for change.
+            Allocated EEC funds to create opportunities for shared experiences and
+            relief for common stressors in this unusal time.
     - work1:
       id: ge
       company: General Electric | GE Digital
@@ -392,11 +402,11 @@ author:
     #   usefulness: proficient
     - skill2:
       name: "Frameworks: ReactNative | React"
-      percentage: 70%
-      usefulness: experienced
+      percentage: 75%
+      usefulness: expert
     - skill1:
       name: JavaScript/ES6
-      percentage: 75%
+      percentage: 80%
       usefulness: expert
     - skill4:
       name: HTML5
@@ -408,7 +418,7 @@ author:
       usefulness: experienced
     - skill3:
       name: "Native OS: Objective-C | Java"
-      percentage: 20%
+      percentage: 10%
       usefulness: beginner
   opensource:
       intro: Notable repos
