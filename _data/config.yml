@@ -55,7 +55,26 @@ author:
         in a variety of capacities from individual contributor to Tech Lead.
         Followed the engineering practices of Software as a Medical Device (SaMD),
         ensuring high quality and auditable code while also focusing on value-based delivery.
+        Co-organized and led the first two annual engineering-wide hackathons;
+        organizer for monthly Tech Talks.
       features: 
+        - feature: 
+          title: Mobile Platform
+          text: Primary contributor to the set of shared libraries used by the other Pear apps.
+            Functionality includes common utility classes for managing state and syncing that with the services,
+            customizable and themable UI components, and a UI flow for the Login experience.
+            Maintained these libraries with ReactNative and RN Nav upgrades,
+            including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation.
+            Led an app-team collaboration requiring new core components;
+            crafted implementation strategy and tackled the most complex stories with composable components.
+        - feature: 
+          title: Platform Engineer
+          text:
+            Increased event retention and ability to debug errors on endpoint for saving event batches.
+            Saved hundreds of hours of cross-functional time VIA proposal and facilitation of work that 
+            enabled data mutation VIA endpoint instead of direct DB access and the ensuing regulatory documentation.
+            Consolidated requirements and solutions into a detailed RFC defining 
+            how to incrementally move to new auth microservices while servicing older mobile clients.
         - feature: 
           title: Tech Lead
           text: Responsible for code delivery, quality, and providing techincal estimates
@@ -63,16 +82,11 @@ author:
             Working with product and design to set appropriate requirements.
             Delivered app to app stores on time for study participants.
         - feature: 
-          title: Mobile Platform
-          text: Major contributor to the set of shared libraries used by the other Pear apps.
-            Lead an app team collaboration requiring new core components;
-            crafted implementation strategy and tackled the most complex tasks. 
-        - feature: 
           title: Chair of Employee Engagement Council
-          text: Lead the employee resource group to create a better employee experience.
-            Worked cross-functionally, with executive team, leadership team, and all employees,
-            to ensure the collective and underserved voices are heard,
-            making proposals to leadership for change.
+          text: Led the employee resource group to enhance the employee experience.
+            Worked cross-functionally, with executive team (C-suite), leadership team (VPs), and all employees,
+            to ensure the collective and underserved voices are heard.
+            Proposed solution recommendations to leadership based on aligned goals.
             Allocated EEC funds to create opportunities for shared experiences and
             relief for common stressors in this unusal time.
     - work1:
@@ -171,7 +185,7 @@ author:
       id: innerscope
       company: Innerscope Research Inc.
       printsinglepage: collapsed
-      collapsed: true
+      collapsed: false
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       started: 2009
@@ -232,9 +246,8 @@ author:
       printsinglepage: show
       duration: 2018 &ndash; Present
       description: >
-        Leading a team to create an patient intake app for a local non-profit, with guidance from GE Foundation.
-        Creating and navigating requirements from business stakeholders, including secure data storage 
-        and transfer with Google Cloud Platform. 
+        Leading a team to create an patient intake app for a local non-profit.
+        Ascertaining and documenting requirements from business stakeholders. 
         Bringing together experts (domain, UX, legal, medical, technical) and driving consensus.
         Managing a small group of software engineers who are donating time for this project: 
         ensuring coordinated efforts, timely delivery, and continued engagement.
@@ -244,15 +257,13 @@ author:
         - feature1: 
           text: Form submission, profile search, profile update, and aggregation reports
         - feature1:
-          text: Websockets and REST
+          text: Transitioned from Google Cloud to Microsoft Azure based on chaning requirements.
+        - feature1:
+          text: Backend completely rebuilt with NestJS instead of Parse
         - feature1: 
-          text: "Data architecture: Redux"
-        - feature1: 
-          text: Secure sign-in using Google OAuth
-        - feature1: 
-          text: Parse API for server and database interface on Google Cloud
+          text: Secure sign-in using Microsoft Azure
       icon: mouse-pointer
-      technologies: "ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
+      technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
       link: https://github.com/evandana/keep-ahope
     - auctionapp:
       id: auction-app
@@ -392,14 +403,6 @@ author:
       name: French
       proficiency: Limited Conversational
   programmingSkills:
-    # - skill:
-    #   name: "JS: React, Polymer, Node"
-    #   percentage: 80%
-    #   usefulness: expert
-    # - skill3:
-    #   name: Java
-    #   percentage: 20%
-    #   usefulness: proficient
     - skill2:
       name: "Frameworks: ReactNative | React"
       percentage: 75%
@@ -408,24 +411,33 @@ author:
       name: JavaScript/ES6
       percentage: 80%
       usefulness: expert
+    - skill5:
+      name: "Typescript"
+      percentage: 40%
+      usefulness: intermediate
     - skill4:
-      name: HTML5
-      percentage: 70%
-      usefulness: experienced
-    - skill3:
-      name: CSS3/SCSS
+      name: HTML5 / CSS
       percentage: 60%
       usefulness: experienced
     - skill3:
       name: "Native OS: Objective-C | Java"
       percentage: 10%
       usefulness: beginner
+  programmingSkillsOption2:
+    - skill2:
+      name: "Cross-Platform UI Development: ReactNative"
+      percentage: 80%
+      usefulness: experienced
+    - skill1:
+      name: "Backend Development: Node"
+      percentage: 50%
+      usefulness: experienced
   opensource:
       intro: Notable repos
       repos:
       - repo:
         name: AHOPE
-        year: 2018
+        year: 2018 - present
         link: https://github.com/evandana/keep-ahope
         description: Patient intake app created in partnership with GE Foundation
       - repo:

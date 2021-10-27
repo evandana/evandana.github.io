@@ -311,8 +311,11 @@ section {
 }
 
 .work-history-dates {
+    display: block;
+    clear: left;
+    padding-top: 3px;
     white-space: nowrap;
-    display: inline-block;
+    
 }
 
 .grid-block:before, .grid-block:after {
@@ -425,7 +428,7 @@ li.timeline-inverted {
     float: left;
     margin-bottom: 0;
 }
-#workHistory .timeline-panel.i-collapsed .timeline-heading .timeline-role-title,
+/* #workHistory .timeline-panel.i-collapsed .timeline-heading .timeline-role-title, */
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading .timeline-external-link {
     display: none;
 }
@@ -433,7 +436,17 @@ li.timeline-inverted {
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
     display: block;
     float: right;
+    clear: right;
     margin-bottom: 0;
+}
+#workHistory .timeline-panel.i-collapsed .timeline-technologies,
+    #codeHighlights .timeline-panel.i-collapsed .timeline-technologies{
+    margin-left: 2em;
+    text-align: right;
+}
+#workHistory .timeline-panel.i-collapsed .work-history-dates,
+    #codeHighlights .timeline-panel.i-collapsed .work-history-dates{
+    display: none;
 }
 
 /* -------------------------------- */
@@ -552,6 +565,7 @@ input:checked + .slider:before {
         max-width: 100%;
     }
 
+    /* OPTION 1
     ul.feature-list {    
         width: 200px;
         margin-right: -.25em;
@@ -560,6 +574,11 @@ input:checked + .slider:before {
     }
     #workHistory .feature-list--content {
         display: none;
+    } */
+    /* OPTION 2 */
+    #workHistory .feature-list {
+        display: block;
+        /* float: left; */
     }
     .fa.fa-calendar, .fa.fa-map-marker {
         display: none;
@@ -699,15 +718,16 @@ input:checked + .slider:before {
     }
 
     .timeline-heading {
-        float: left;
-        max-width: 18em;
+        display: block;
+        float: none;
+        width: 100%;
     }
     .timeline-body {
         margin-left: 20em;
     }
 
     .timeline-body p {
-        width: 30em;
+        width: 40em;
         display: inline-block;
     }
 
@@ -749,11 +769,10 @@ input:checked + .slider:before {
         clear: both;
     }
 
-    .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
         display: block;
-        position: absolute;
-        left: 20em;
-        top: 10px;
+        clear: left;
+        padding-top: 3px;
     }
 
     #workHistory .timeline-inverted {
