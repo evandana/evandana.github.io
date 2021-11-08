@@ -30,15 +30,15 @@ author:
 #  stackoverflow: 4582127
   intro: 
       firstline: >
-        Lead Software Engineer with a focus on <a href="#work-sample-auction-app" title="Jump to Auction App (Work Sample)">architecting successful web and mobile experiences</a>. 
+        Lead Software Engineer with a focus on <a href="#work-sample-ahope" title="Jump to AHOPE App (Work Sample)">architecting successful web and mobile experiences</a>. 
       description: >
         Specializing in front-end technologies, I 
-        <a href="#workHistory-sapient" title="Jump to Publicis.Sapient (Work History)">deliver customer value</a>
+        <a href="#workHistorypear" title="Jump to Pear Therapeutics (Work History)">deliver customer value</a>
         through leadership and collaborative roles:
         as an <a href="#workHistory-ge" title="Jump to GE (Work History)">individual contributor, technical lead</a>, 
         and counsel for stakeholders.
         I enjoy providing <a href="#activity-ga-instructor" title="Jump to GA Instructor (Activities)">technical mentorship</a>
-        and plan to stay current with tools and patterns.
+        and stay current with tools and patterns.
         I approach challenges with <a href="#activity-november-project" title="Jump to November Project (Activity)">engaging energy and passion</a>.
   workHistory:
     - work1:
@@ -47,19 +47,20 @@ author:
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
-      started: 2019
-      duration: 2019 &ndash; Present
+      ended: curr.
+      duration: 2019 &ndash; Current
       technologies: "React Native, React-Native-Testing-Library, TypeScript, Bitrise.io"
       description: > 
-        Worked across multiple prescription digital therapeutic (PDT) apps (iOS / Android) and the mobile platform team
-        in a variety of capacities from individual contributor to Tech Lead.
+        Worked across multiple prescription digital therapeutic (PDT) mobile apps (iOS / Android)
+        and the mobile platform team as both individual contributor and as team lead.
         Followed the engineering practices of Software as a Medical Device (SaMD),
         ensuring high quality and auditable code while also focusing on value-based delivery.
-        Co-organized and led the first two annual engineering-wide hackathons;
+        Co-organized and led the first two annual engineering-wide hackathons
         organizer for monthly Tech Talks.
+        Hackathon produced a self-service site for internal accounts and PoC investigations that facilitated future permanent work; increasing visibility of these efforts and the cross-functional teamwork has lasting effects.
       features: 
         - feature: 
-          title: Mobile Platform
+          title: Mobile Platform Engineer
           text: Primary contributor to the set of shared libraries used by the other Pear apps.
             Functionality includes common utility classes for managing state and syncing that with the services,
             customizable and themable UI components, and a UI flow for the Login experience.
@@ -70,17 +71,17 @@ author:
         - feature: 
           title: Platform Engineer
           text:
-            Increased event retention and ability to debug errors on endpoint for saving event batches.
-            Saved hundreds of hours of cross-functional time VIA proposal and facilitation of work that 
-            enabled data mutation VIA endpoint instead of direct DB access and the ensuing regulatory documentation.
             Consolidated requirements and solutions into a detailed RFC defining 
-            how to incrementally move to new auth microservices while servicing older mobile clients.
+            how to incrementally move users to new auth microservices while servicing older mobile clients;
+            created diagrams to align on use cases and tracked aggregate platform-consumer functionality matrix in chart depicting implementation team and pattern.
+            Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
+            Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
         - feature: 
           title: Tech Lead
-          text: Responsible for code delivery, quality, and providing techincal estimates
+          text: Responsible for coordinating code delivery, quality, and providing techincal estimates
             for full-stack React Native app with 3 other engineers.
             Working with product and design to set appropriate requirements.
-            Delivered app to app stores on time for study participants.
+            Delivered properly functioning app to app stores on time for study participants.
         - feature: 
           title: Chair of Employee Engagement Council
           text: Led the employee resource group to enhance the employee experience.
@@ -95,19 +96,20 @@ author:
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
-      started: 2016
+      ended: 2019
       duration: 2016 &ndash; 2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown documentation" 
       description: > 
-        Delivered complex features in a timely manner, independently and through 
+        For an IIOT monitoring dashboard app that minimized machine down time,
+        delivered complex features in a timely manner, independently and through 
         collaboration, with utmost attention to quality.
         Exemplified best practices from coding patterns to agile methodologies.
         Translated requirements into manageable stories with clear and complete 
         acceptance criteria, raising discussions early if needed.
         Ensured quality by writing unit and system tests for use in CI/CD workflow.
         Consistently created useful graphical and text-based documentation.
-        Exposed to varied project architecture elements including 
-        cloud, microapp/microservices, and Docker.
+        <!-- Exposed to varied project architecture elements including 
+        cloud, microapp/microservices, and Docker. -->
         <br/><br/>
         Mentored software engineers and presented on modern UI frameworks and 
         patterns through the use of interactive programming session.
@@ -126,16 +128,16 @@ author:
         - feature: 
           title: Independent feature delivery
           text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
-        - feature: 
-          title: Backlog refinement and feature design
-          text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
+        # - feature: 
+        #   title: Backlog refinement and feature design
+        #   text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
     - work1:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
       printsinglepage: show
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
-      started: 2013
+      ended: 2016
       duration: 2013 &ndash; 2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA" 
       description: > 
@@ -164,10 +166,10 @@ author:
       id: putnam
       company: Putnam Investments
       printsinglepage: show
-      collapsed: false
+      collapsed: true
       location: Boston, MA
       title: Javascript UI Developer 
-      started: 2012
+      ended: 2013
       duration: 2012 &ndash; 2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description: > 
@@ -185,10 +187,10 @@ author:
       id: innerscope
       company: Innerscope Research Inc.
       printsinglepage: collapsed
-      collapsed: false
+      collapsed: true
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
-      started: 2009
+      ended: 2012
       duration: 2009 &ndash; 2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       description: >
@@ -197,10 +199,11 @@ author:
       id: ecboston
       company: EC Boston
       printsinglepage: hidden
+      hide: true
       collapsed: true
       location: Boston, MA
       title: Web Developer 
-      started: 2009
+      ended: 2009
       duration: 2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
@@ -213,10 +216,11 @@ author:
       id: crimson
       company: Crimson Life Sciences
       printsinglepage: hidden
+      hide: true
       collapsed: true
       location: Boston, MA
       title: Process Engineer 
-      started: 2009
+      ended: 2009
       duration: 2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
@@ -231,7 +235,7 @@ author:
       collapsed: true
       location: Canton, MA
       title: Graphic Designer & Process Engineer 
-      started: 2007
+      ended: 2009
       duration: 2007 &ndash; 2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: >
@@ -242,14 +246,19 @@ author:
   workSamples:
     - ahope:
       id: ahope
-      title: Non-profit Intake App
+      title: "Non-profit Intake App: AHOPE / Boston Public Health Commission"
       printsinglepage: show
       duration: 2018 &ndash; Present
+      icon: mouse-pointer
+      technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, PostgresQL, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
+      link: https://github.com/evandana/keep-ahope
       description: >
-        Leading a team to create an patient intake app for a local non-profit.
+        Leading a team to create an patient intake app for a local non-profit harm reduction center called 
+        <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE <i class="fa fas fa-external-link-alt"></i></a>
+        who is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
         Ascertaining and documenting requirements from business stakeholders. 
         Bringing together experts (domain, UX, legal, medical, technical) and driving consensus.
-        Managing a small group of software engineers who are donating time for this project: 
+        Managing a small group of software engineers who are mostly donating time for this project: 
         ensuring coordinated efforts, timely delivery, and continued engagement.
         Utilizing GitHub projects to achieve agile development, stay focused on MVP and
         keep stakeholders informed.
@@ -257,14 +266,11 @@ author:
         - feature1: 
           text: Form submission, profile search, profile update, and aggregation reports
         - feature1:
-          text: Transitioned from Google Cloud to Microsoft Azure based on chaning requirements.
+          text: Transitioned from Firebase to Google Cloud Services to Microsoft Azure based on updated IAM requirements.
         - feature1:
-          text: Backend completely rebuilt with NestJS instead of Parse
+          text: Backend completely rebuilt with NestJS, previously Google Firebase then Parse (with MongoDB)
         - feature1: 
           text: Secure sign-in using Microsoft Azure
-      icon: mouse-pointer
-      technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
-      link: https://github.com/evandana/keep-ahope
     - auctionapp:
       id: auction-app
       collapsed: true
@@ -329,7 +335,7 @@ author:
     - harvard:
       id: harvard
       printsinglepage: show
-      collapsed: true
+      collapsed: false
       organization: Harvard Extension School
       degree: Mobile Operating Systems and Applications
       location: Cambridge, MA
@@ -341,7 +347,7 @@ author:
       duration: 2013 &ndash; 2013
     - coursera:
       id: coursera
-      collapsed: true
+      collapsed: false
       printsinglepage: show
       organization: Coursera.org
       location: Stanford University Online
@@ -357,7 +363,7 @@ author:
     - activity:
       id: november-project
       printsinglepage: hidden
-      collapsed: true
+      collapsed: false
       location: Boston, MA
       title: Fitness Group Co-leader
       organization: November Project, Boston
@@ -384,10 +390,10 @@ author:
         Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck <i class="fa fas fa-external-link-alt"></i></a>
          with individually-editable code examples.
     - activity:
-      hidden: true
       location: Boston, MA
       collapsed: false
-      title: Co-leader and Webmaster of The Most Informal Running Club Ever (TMIRCE) 
+      title: Running Club Co-leader and Webmaster
+      organization: The Most Informal Running Club Ever (TMIRCE)
       started: 2010
       icon: bicycle
       duration: 2010 &ndash; 2011
@@ -402,36 +408,36 @@ author:
     - language2:
       name: French
       proficiency: Limited Conversational
-  programmingSkills:
-    - skill2:
-      name: "Frameworks: ReactNative | React"
-      percentage: 75%
-      usefulness: expert
-    - skill1:
-      name: JavaScript/ES6
-      percentage: 80%
-      usefulness: expert
-    - skill5:
-      name: "Typescript"
-      percentage: 40%
-      usefulness: intermediate
-    - skill4:
-      name: HTML5 / CSS
-      percentage: 60%
-      usefulness: experienced
-    - skill3:
-      name: "Native OS: Objective-C | Java"
-      percentage: 10%
-      usefulness: beginner
+  # programmingSkills:
+  #   - skill2:
+  #     name: "Frameworks: ReactNative | React"
+  #     percentage: 75%
+  #     usefulness: expert
+  #   - skill1:
+  #     name: JavaScript/ES6
+  #     percentage: 80%
+  #     usefulness: expert
+  #   - skill5:
+  #     name: "Typescript"
+  #     percentage: 40%
+  #     usefulness: intermediate
+  #   - skill4:
+  #     name: HTML5 / CSS
+  #     percentage: 60%
+  #     usefulness: experienced
+  #   - skill3:
+  #     name: "Native OS: Objective-C | Java"
+  #     percentage: 10%
+  #     usefulness: beginner
   programmingSkillsOption2:
     - skill2:
       name: "Cross-Platform UI Development: ReactNative"
       percentage: 80%
       usefulness: experienced
     - skill1:
-      name: "Backend Development: Node"
+      name: "Backend Development: Node w/ NestJS"
       percentage: 50%
-      usefulness: experienced
+      usefulness: intermediate
   opensource:
       intro: Notable repos
       repos:
@@ -439,7 +445,7 @@ author:
         name: AHOPE
         year: 2018 - present
         link: https://github.com/evandana/keep-ahope
-        description: Patient intake app created in partnership with GE Foundation
+        description: Patient intake app for AHOPE / BPHC
       - repo:
         name: Auction App
         year: 2018

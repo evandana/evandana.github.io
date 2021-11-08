@@ -79,9 +79,10 @@ layout: default
                     <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
                     <ul class="timeline">
                         {% for work in site.data.config.author.workHistory %}
+                            {% if work.hide != true %}
                             <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} print-single-page--{{ work.printsinglepage }}">
-                                {% if work.started %}
-                                    <div class="timeline-badge info">{{ work.started }}</div>
+                                {% if work.ended %}
+                                    <div class="timeline-badge info">{{ work.ended }}</div>
                                 {% endif %}
                                 <div class="timeline-panel grid-block i-toggle-view {% if work.collapsed %}i-collapsed{% endif %}">
                                     <div class="timeline-heading">
@@ -95,13 +96,6 @@ layout: default
                                                 </small>
                                             </p>
                                         {% endif %}
-                                        {% if work.technologies %}
-                                            <p class="text-muted timeline-technologies i-preserve">
-                                                <small>
-                                                    {{ work.technologies }}
-                                                </small>
-                                            </p>
-                                        {% endif %}
                                         {% if work.duration or work.location %}
                                             <p class="work-history-dates text-muted">
                                                 <small >
@@ -111,6 +105,13 @@ layout: default
                                                     {% if work.location %}
                                                         <i class="fa fa-map-marker"></i>  {{ work.location }}
                                                     {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if work.technologies %}
+                                            <p class="text-muted timeline-technologies i-preserve">
+                                                <small>
+                                                    {{ work.technologies }}
                                                 </small>
                                             </p>
                                         {% endif %}
@@ -134,6 +135,7 @@ layout: default
                                     </div>
                                 </div>
                             </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </section>
@@ -166,7 +168,7 @@ layout: default
                                             </p>
                                         {% endif %}
                                         {% if sample.technologies %}
-                                            <p class="text-muted i-preserve">
+                                            <p class="text-muted timeline-technologies i-preserve">
                                                 <small>
                                                     {{ sample.technologies }}
                                                 </small>
@@ -449,6 +451,8 @@ layout: default
                     </div>
                     {% endif %}
                 </section>
+            {% endif %}
+            {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkillsOption2 %}
                 <section id="programmingSkillsOption2">
                     <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills (Option2)</h3>
                     {% if site.data.config.author.stackoverflow %}
@@ -607,7 +611,7 @@ layout: default
                                         <span class="github-name">
                                             {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
                                                 {{ repo.name }}
-                                            {% if repo.link %}<i class="fa fa-external-link"></i></a>{% endif %}
+                                            {% if repo.link %}<i class="fa fas fa-external-link-alt"></i></a>{% endif %}
                                             {% if repo.year %}<span class="github-name--year">{{ repo.year }}</span>{% endif %}
                                         </span>
                                     {% endif %}

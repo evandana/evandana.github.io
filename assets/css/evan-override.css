@@ -322,6 +322,10 @@ section {
     display: none;
 }
 
+.timeline-role-title {
+    color: #000;
+}
+
 
 /* --------------------------------
  * RESPONSIVE
@@ -426,28 +430,33 @@ li.timeline-inverted {
 #workHistory .timeline-panel.i-collapsed .timeline-heading h4,
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading h4 {
     float: left;
-    margin-bottom: 0;
+    width: 17.5em;
 }
-/* #workHistory .timeline-panel.i-collapsed .timeline-heading .timeline-role-title, */
+#workHistory .timeline-panel.i-collapsed .timeline-heading .timeline-role-title
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading .timeline-external-link {
-    display: none;
+    /* display: none; */
+    float: right;
+    text-align: right;
 }
 #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve,
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
     display: block;
     float: right;
     clear: right;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 #workHistory .timeline-panel.i-collapsed .timeline-technologies,
-    #codeHighlights .timeline-panel.i-collapsed .timeline-technologies{
+    #codeHighlights .timeline-panel.i-collapsed .timeline-technologies {
     margin-left: 2em;
     text-align: right;
 }
 #workHistory .timeline-panel.i-collapsed .work-history-dates,
-    #codeHighlights .timeline-panel.i-collapsed .work-history-dates{
+    #codeHighlights .timeline-panel.i-collapsed .work-history-dates {
     display: none;
 }
+/* #codeHighlights .timeline-panel.i-collapsed .work-history-dates {
+    margin-top: -5.5em;
+} */
 
 /* -------------------------------- */
 /* Toggle switch */
@@ -536,6 +545,13 @@ input:checked + .slider:before {
         width: 100%;
         height: 100%;
         zoom: 50%;
+        page-break-before: avoid;
+        zoom: 100%;
+
+        width: 750px;
+        max-width: 750px;
+        min-width: 750px;
+        font-size: 10px;
     }
 
     .print-hidden {
@@ -544,25 +560,21 @@ input:checked + .slider:before {
     .print-removed {
         display: none;
     }
+    .col-md-8 {
+        width: 100%;
+    }
 
 
     /* ------------------- */
     /* Global */
     /* ------------------- */
 
-    body{
-        page-break-before: avoid;
-        width: 100%;
-        height: 100%;
-        zoom: 100%;
-
-        width: 750px;
-        max-width: 750px;
-        font-size: 10px;
-    }
-
     .page-content {
         max-width: 100%;
+    }
+
+    .timeline-panel {
+        position: relative;
     }
 
     /* OPTION 1
@@ -576,9 +588,14 @@ input:checked + .slider:before {
         display: none;
     } */
     /* OPTION 2 */
-    #workHistory .feature-list {
+    .feature-list {
         display: block;
-        /* float: left; */
+        float: right;
+        width: 42.5em;
+        margin-top: 0;
+    }
+    .timeline-body ul {
+        margin-top: 0;
     }
     .fa.fa-calendar, .fa.fa-map-marker {
         display: none;
@@ -672,6 +689,10 @@ input:checked + .slider:before {
     .timeline-heading a[href]:after, .header a[href]:after {
         content: none !important;
     }
+    .timeline-role-title {
+        color: #000;
+        font-weight: bold;
+    }
 
 
     /* ------------------- */
@@ -691,12 +712,76 @@ input:checked + .slider:before {
         display: none;
     }
 
+    .timeline-title, .timeline-role-title {
+        float: left;
+        clear: left;
+    }
+    #codeHighlights .timeline-title {
+        width: 18.6em;
+        max-width: 18.6em;
+    }
+    #education .timeline-title,
+        #activities .timeline-title {
+        width: 100%;
+    }
+
+    .timeline-technologies, .work-history-dates {
+        float: right;
+        clear: right;
+        width: 43.25em;
+        margin-top: -1.8em;
+    }
+    .timeline-external-link {
+        display: none;
+        /* float: left;
+        clear: right;
+        width: 43.25em;
+        text-align: right; */
+    }
+    #codeHighlights .work-history-dates {
+        margin-top: -5.9em;
+    }
+    .timeline-technologies {
+        margin-top: -1em;
+        font-style: italic;
+    }
+
+    #codeHighlights .timeline-technologies {
+        margin-top: -0em;
+    }
+
     #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve,
         #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
-        margin-left: 31em;
-        text-align: right;
-        float: none;
+        display: block;
+        float: left;
+        clear: left;
+        /* margin-bottom: 0; */
     }
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve,
+        #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve {
+        float: right;
+        text-align: left;
+        margin-top: -2.5em;
+    }
+    #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve {
+        margin-top: 0;
+    }
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.work-history-dates.i-preserve,
+        #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.work-history-dates.i-preserve {
+        float: left;
+        text-align: left;
+        /* margin-top: 0; */
+    }
+
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates,
+        #codeHighlights .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
+        display: block;
+        clear: right;
+        float: right;
+    }
+    /* #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
+        margin-top: -2em;
+    } */
 
     .page-content > .wrapper > .container-fluid {
         padding: 0;
@@ -721,18 +806,21 @@ input:checked + .slider:before {
         display: block;
         float: none;
         width: 100%;
+        max-width: 100%;
     }
     .timeline-body {
-        margin-left: 20em;
+        clear: both;
+        margin-top: 1em;
+        margin-left: 0;
     }
 
     .timeline-body p {
-        width: 40em;
+        width: 27em;
         display: inline-block;
     }
 
     .timeline-panel .timeline-heading h4 {
-        max-width: 12em;
+        margin-bottom: 0.25em;
     }
 
     #workHistory .timeline .timeline-inverted, #codeHighlights .timeline .timeline-inverted {
@@ -767,12 +855,6 @@ input:checked + .slider:before {
 
     #workHistory {
         clear: both;
-    }
-
-    #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
-        display: block;
-        clear: left;
-        padding-top: 3px;
     }
 
     #workHistory .timeline-inverted {
