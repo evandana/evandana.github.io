@@ -189,7 +189,7 @@ author:
       printsinglepage: collapsed
       collapsed: true
       location: Boston, MA
-      title: Sr. Interactive Developer, L2 
+      title: Interactive Developer, L2
       ended: 2012
       duration: 2009 &ndash; 2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
@@ -317,6 +317,33 @@ author:
       link: https://github.com/evandana/stream-correlation
       completedyear: 2017
   educationHistory:
+    - coursera:
+      id: coursera
+      collapsed: false
+      printsinglepage: show
+      organization: Coursera.org
+      location: Stanford University Online
+      description: >
+        Enriched and expanded skills and understanding with classes: Introduction to Python, Model Thinking, Software Engineering for SaaS. 
+        Courses included homework, lectures, and quizzes/exams. 
+        <br/></br/>
+        Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
+        Earned a certificate of completion for listed classes.
+      completed: 2014
+      duration: 2012 &ndash; 2013
+    - harvard:
+      id: harvard
+      printsinglepage: show
+      collapsed: false
+      organization: Harvard Extension School
+      degree: Mobile Operating Systems and Applications
+      location: Cambridge, MA
+      description: >
+        Deep dive into hardware and software underlying Android and iOS operating sytems. 
+        Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
+        Final project: Android "deck of cards" workout app.
+      completed: 2013
+      duration: 2013 &ndash; 2013
     - rit:
       id: rit
       printsinglepage: show
@@ -332,33 +359,6 @@ author:
         AAS in Graphic Design. 
         <br/>
         Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology.
-    - harvard:
-      id: harvard
-      printsinglepage: show
-      collapsed: false
-      organization: Harvard Extension School
-      degree: Mobile Operating Systems and Applications
-      location: Cambridge, MA
-      description: >
-        Deep dive into hardware and software underlying Android and iOS operating sytems. 
-        Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
-        Final project: Android "deck of cards" workout app.
-      completed: 2013
-      duration: 2013 &ndash; 2013
-    - coursera:
-      id: coursera
-      collapsed: false
-      printsinglepage: show
-      organization: Coursera.org
-      location: Stanford University Online
-      description: >
-        Enriched and expanded skills and understanding with classes: Introduction to Python, Model Thinking, Software Engineering for SaaS. 
-        Courses included homework, lectures, and quizzes/exams. 
-        <br/></br/>
-        Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
-        Earned a certificate of completion for listed classes.
-      completed: 2014
-      duration: 2012 &ndash; 2013
   activities:
     - activity:
       id: november-project
