@@ -1,3 +1,13 @@
+/**
+ * NOTE TO PROSPECTIVE EMPLOYERS READING THIS SOURCE CODE
+ *
+ * While the functionality achieved (yml -> static site hosted in Github) and custom print CSS
+ * is something that I'm proud of, the organization of this CSS is far from ideal.
+ * However, as is with any project, there is the question of where do you allocated limited resources?
+ * In this case, I am choosing to prioritize the site functionality and content over the perfecting coding patters;
+ * delivery over maintainability. In other projects, where I'm not the maintainer, a more balanced approach is best.
+ */
+
 @media (max-width: 550px) {
     .author-intro {
         width: 100%;
@@ -563,6 +573,9 @@ input:checked + .slider:before {
     .col-md-8 {
         width: 100%;
     }
+    .fa.fas.fa-external-link-alt {
+        display: none;
+    }
 
 
     /* ------------------- */
@@ -598,6 +611,9 @@ input:checked + .slider:before {
         margin-top: 0;
     }
     .fa.fa-calendar, .fa.fa-map-marker {
+        display: none;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel:after {
         display: none;
     }
 
@@ -889,7 +905,9 @@ input:checked + .slider:before {
 
     #education .timeline-inverted {
         float: left;
-        width: 20em;
+        width: 14.8em;
+        padding: 0.3em;
+        margin-right: -0.2em;
     }
 
     #education .timeline-body {
@@ -908,7 +926,7 @@ input:checked + .slider:before {
 
     #activities .timeline-inverted {
         float: left;
-        width: 20em;
+        width: 18em;
     }
 
     #activities .timeline-body {

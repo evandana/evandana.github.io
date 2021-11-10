@@ -317,6 +317,35 @@ author:
       link: https://github.com/evandana/stream-correlation
       completedyear: 2017
   educationHistory:
+    - react-training-2021: 
+      id: react-training-2021
+      collapsed: false
+      printsinglepage: show
+      organization: React Advanced Composition Patterns Workshop
+      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
+      description: >
+        An interactive series of lessons and practice sessions covering the breadth of 
+        patterns for appropriate design of customization and prop passing for a component.
+        Lessons included: prop drilling, React Hooks' ContextAPI, and component composition.
+        <br/><br/>
+        I provided Pear engineers with an internal interactive presentation, complete with code examples.
+      completed: 2021
+      duration: 2021
+    - react-training-2019: 
+      id: react-training-2019
+      collapsed: false
+      printsinglepage: show
+      organization: React Hooks Workshop
+      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
+      description: >
+        An interactive series of lessons and practice sessions covering best practices for React Hooks, 
+        including use and code design for optimization. Lessons included: ContextAPI, Effect Hook, and State Hook.
+        <br/><br/>
+        I provided Pear engineers with an internal interactive presentation, complete with code examples.
+        <br/><br/>
+        <a href="https://github.com/evandana/hooks-workshop" target="_BLANK">workshop notes <i class="fa fas fa-external-link-alt"></i></a>
+      completed: 2019
+      duration: 2019
     - coursera:
       id: coursera
       collapsed: false
@@ -360,6 +389,24 @@ author:
         <br/>
         Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology.
   activities:
+    - activity:
+      id: js-mobile-conf
+      printsinglepage: hidden
+      collapsed: false
+      location: Boston, MA
+      title: 2-day JS Mobile Conference Attendee
+      organization: JS Mobile Conf
+      started: 2018
+      icon: code
+      duration: 2018 &amp; 2019
+      description: >
+        JS Mobile Conf was a local conference focusing on using JavaScript to deliver mobile applications.
+        <br/><br/>
+        It was funded by Progress Software, and therefore had a bias towards NativeScript, but it also covered other cross-platform and web technologies, such as ReactNative and PWAs.
+        <br/><br/>
+        <a href="https://github.com/evandana/jsmobileconf2019" target="_BLANK">2019 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
+        <br/>
+        <a href="https://github.com/evandana/jsmobileconf" target="_BLANK">2018 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
     - activity:
       id: november-project
       printsinglepage: hidden
