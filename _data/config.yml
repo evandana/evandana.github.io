@@ -494,6 +494,11 @@ author:
         link: https://github.com/evandana/keep-ahope
         description: Patient intake app for AHOPE / BPHC
       - repo:
+        name: Flutter Nav PoC
+        year: 2021 - present
+        link: https://github.com/evandana/flutter-poc
+        description: Initial Flutter exploration into a nested navigation flow with independent modules
+      - repo:
         name: Auction App
         year: 2018
         link: https://github.com/evandana/pmc-auction
