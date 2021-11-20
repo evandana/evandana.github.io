@@ -610,7 +610,7 @@ layout: default
                                     {% if repo.name %}
                                         <span class="github-name">
                                             {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
-                                                {{ repo.name }}
+                                                <i class="fab fa-github fa-fw"></i> {{ repo.name }}
                                             {% if repo.link %}<i class="fa fas fa-external-link-alt"></i></a>{% endif %}
                                             {% if repo.year %}<span class="github-name--year">{{ repo.year }}</span>{% endif %}
                                         </span>

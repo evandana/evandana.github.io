@@ -977,7 +977,8 @@ input:checked + .slider:before {
         padding: 10px 0 0 0;
     }
 
-    aside {
+    /* aside { display: none; } */
+    #programmingSkills, #programmingSkillsOption2 {
         display: none;
     }
 
