@@ -514,11 +514,11 @@ author:
         year: 2018
         link: https://github.com/evandana/pmc-auction
         description: Charitable-focused auction app including bucketed raffles
-      - repo:
-        name: Wellworth New England
-        year: 2018
-        link: https://github.com/evandana/wellworthnewengland
-        description: Charitable-focused auction app including bucketed raffles
+      # - repo:
+      #   name: Wellworth New England
+      #   year: 2018
+      #   link: https://github.com/evandana/wellworthnewengland
+      #   description: Charitable-focused auction app including bucketed raffles
       - repo:
         name: Stream Correlation
         year: 2018
