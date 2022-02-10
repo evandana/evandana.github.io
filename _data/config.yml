@@ -73,12 +73,12 @@ author:
           text:
             Consolidated requirements and solutions into a detailed RFC defining 
             how to incrementally move users to new auth microservices while servicing older mobile clients;
-            created diagrams to align on use cases and tracked aggregate platform-consumer functionality matrix in chart depicting implementation team and pattern.
+            created diagrams to align on use cases and tracked aggregate platform-consumer functionality matrix in a chart depicting implementation team and pattern.
             Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
             Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
         - feature: 
           title: Tech Lead
-          text: Responsible for coordinating code delivery, quality, and providing techincal estimates
+          text: Responsible for coordinating code delivery, quality, and providing technical estimates
             for full-stack React Native app with 3 other engineers.
             Working with product and design to set appropriate requirements.
             Delivered properly functioning app to app stores on time for study participants.
@@ -89,7 +89,7 @@ author:
             to ensure the collective and underserved voices are heard.
             Proposed solution recommendations to leadership based on aligned goals.
             Allocated EEC funds to create opportunities for shared experiences and
-            relief for common stressors in this unusal time.
+            relief for common stressors in this unusual time.
     - work1:
       id: ge
       company: General Electric | GE Digital
