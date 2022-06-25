@@ -37,13 +37,28 @@ author:
         <!-- I enjoy providing technical mentorship and approach challenges with engaging energy. -->
   workHistory:
     - work1:
+      id: bighealth
+      company: Big Health
+      printsinglepage: show
+      location: Remote
+      title: Staff Software Engineer
+      ended: curr.
+      duration: 2022 &ndash; Current
+      technologies: "React Native, React-Native-Testing-Library, TypeScript, Software as a Medical Device"
+      description: > 
+        Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> app.
+      features:
+        - feature:
+          title: Only a few months in
+          text: More details to come soon
+    - work1:
       id: pear
       company: Pear Therapeutics
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
-      ended: curr.
-      duration: 2019 &ndash; Current
+      ended: 2022
+      duration: 2019 &ndash; 2022
       technologies: "React Native, React-Native-Testing-Library, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
       description: > 
         Led planning, coordination, and development of major features and components across teams. Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries. Delivered complex stories independently, and in collaboration, ensuring high quality and auditable code while also focusing on value-based delivery. Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations. Improved engineering community through large and small initiatives.
