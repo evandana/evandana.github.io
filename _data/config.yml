@@ -17,7 +17,7 @@ exclude: [vendor]
 # Author settings
 author:
   name: Evan Dana
-  title: Sr. Software Engineer
+  title: Staff Software Engineer
   address: Boston, MA
   email: userhatestogetspam@gmail.com
   link: http://evandana.com
@@ -30,9 +30,9 @@ author:
 #  stackoverflow: 4582127
   intro: 
       firstline: >
-        LEAD SOFTWARE ENGINEER WITH A FOCUS ON <a href="#workHistorypear" title="Jump to Pear Therapeutics (Work History)">ARCHITECTING SUCCESSFUL WEB AND MOBILE EXPERIENCES</a>.
+        LEAD SOFTWARE ENGINEER WITH A FOCUS ON <a href="#workHistorypear" title="Jump to Pear Therapeutics (Work History)">ARCHITECTING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
       description: >
-        I deliver customer value through leadership and collaborative roles:
+        Leveraging SaMD experience, I deliver customer value through leadership and collaborative roles:
         as an individual contributor, technical lead, and counsel for stakeholders.
         <!-- I enjoy providing technical mentorship and approach challenges with engaging energy. -->
   workHistory:
@@ -46,11 +46,23 @@ author:
       duration: 2022 &ndash; Current
       technologies: "React Native, React-Native-Testing-Library, TypeScript, Software as a Medical Device"
       description: > 
-        Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> app.
+        Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
+         a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Only a few months in
-          text: More details to come soon
+          title: Technical Leadership
+          text: Contributed towards predictable, realistic delivery by engaging with stakeholders
+              to provide solution options that aligned with priorities and planned goals.
+            Guided and mentored other engineers on complex work items.
+        - feature:
+          title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
+          text: Focused on team delivery through tech leadership and cross-functional collaboration.
+            Working with PM and EM for alignment on priorities,
+             strategically planned work to remove blockers and reduce risk.
+            Continually refined the technical documentation as new information surfaced
+             and reshuffled backlog items based on anticipated capacity.
+            Removed roadblocks, whether independently resolving complex work items,
+             guiding coworker on their tickets, or working cross-functionally with QMS.
     - work1:
       id: pear
       company: Pear Therapeutics
@@ -85,11 +97,11 @@ author:
         - feature: 
           title: Improved the Employee Experience (Chair of Employee Engagement Council)
           text: 
-            Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure underserved voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
+            Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
         - feature:
           title: Fostered Engineering Community (Engineering Advocate)
           text:
-            Co-organized and led the first two annual engineering-wide hackathons; Hackathon produced a self-service site (still in use) and PoC investigations that facilitated future permanent work; the cross-functional teamwork has lasting effects. 3rd year running monthly Tech Talks, providing opportunities for knowledge sharing and practicing technical speaking.
+            Co-organized and led the first two annual engineering-wide hackathons. They produced a self-service site (still in use) and PoC investigations that facilitated future permanent work; the cross-functional teamwork has lasting effects. 3rd year running monthly Tech Talks, providing opportunities for knowledge sharing and practicing technical speaking.
             <!-- Initiated meetings and introductions to welcome new hires. -->
     - work1:
       id: ge
@@ -136,6 +148,7 @@ author:
       id: sapient
       company: Publicis.Sapient | Sapient Consulting
       printsinglepage: show
+      collapsed: true
       location: Boston, MA
       title: Sr. Interactive Developer, L2 
       ended: 2016
@@ -281,7 +294,7 @@ author:
       description: >
         From concept through development to processing results, this live-bidding auction 
         and raffle ticket web app exceeded expectations &mdash; raising over $5000 for charity. 
-        Working with one other developer, we started with domain models, UX whiteboarding, 
+        Working with one other developer, we started with domain models, UX white-boarding, 
         framework choices, and hosting discussions.
         <br/><br/>
         <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fas fa-external-link-alt"></i></a> using dummy data. 
@@ -369,7 +382,7 @@ author:
       degree: Mobile Operating Systems and Applications
       location: Cambridge, MA
       description: >
-        Deep dive into hardware and software underlying Android and iOS operating sytems. 
+        Deep dive into hardware and software underlying Android and iOS operating systems. 
         Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
         Final project: Android "deck of cards" workout app.
       completed: 2013
@@ -403,7 +416,7 @@ author:
       description: >
         JS Mobile Conf was a local conference focusing on using JavaScript to deliver mobile applications.
         <br/><br/>
-        It was funded by Progress Software, and therefore had a bias towards NativeScript, but it also covered other cross-platform and web technologies, such as ReactNative and PWAs.
+        Covered cross-platform and web technologies for mobile devices: NativeScript (Angular), ReactNative (React), and PWAs.
         <br/><br/>
         <a href="https://github.com/evandana/jsmobileconf2019" target="_BLANK">2019 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
         <br/>
@@ -493,10 +506,10 @@ author:
         name: AHOPE
         year: 2018 - present
         link: https://github.com/evandana/keep-ahope
-        description: Patient intake app for AHOPE / BPHC
+        description: Patient intake app for AHOPE / Boston Public Health Commission
       - repo:
         name: Flutter Nav PoC
-        year: 2021 - present
+        year: 2021
         link: https://evandana.com/flutter-poc/README.html
         description: Initial Flutter exploration into a nested navigation flow with independent modules
       - repo:
