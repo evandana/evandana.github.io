@@ -1,10 +1,15 @@
 # Site settings
 title: Evan Dana's CV
 description: Evan Dana's CV
-favicon: /assets/img/edana-professional.jpg
+#TODO update photo
+# https://photos.google.com/u/1/search/me/photo/AF1QipPw8HHB2hOj84d0d75t2QGRYl0-D7ljCVgnMHgk
+# https://photos.google.com/u/1/search/me/photo/AF1QipOxGcKWupOzmUZkktimlqlCNWU2ulPA2_oJNO3L
+# new pic
+favicon: /assets/img/edana-professional.jpg 
 baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
+#TODO Look up analytics
 google_analytics: UA-6306273-2
 resumelink: /assets/Evan-Dana__Public-Resume.pdf
 
@@ -30,11 +35,11 @@ author:
 #  stackoverflow: 4582127
   intro: 
       firstline: >
+        #TODO update to point to BigHealth
         LEAD SOFTWARE ENGINEER WITH A FOCUS ON <a href="#workHistorypear" title="Jump to Pear Therapeutics (Work History)">ARCHITECTING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
       description: >
-        Leveraging SaMD experience, I deliver customer value through leadership and collaborative roles:
-        as an individual contributor, technical lead, and counsel for stakeholders.
-        <!-- I enjoy providing technical mentorship and approach challenges with engaging energy. -->
+        Leveraging SaMD experience, I deliver customer value through technical leadership, individual contributions, and collaboration,
+        focusing on strategy, execution, and team culture.
   workHistory:
     - work1:
       id: bighealth
@@ -44,25 +49,43 @@ author:
       title: Staff Software Engineer
       ended: curr.
       duration: 2022 &ndash; Current
-      technologies: "React Native, React-Native-Testing-Library, TypeScript, Software as a Medical Device"
+      technologies: "React Native, TypeScript, SaMD" 
+        # Python, Postgres, CI/CD, Docker, CircleCI
+        # HealthKit, Notifications
       description: > 
-        Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
-         a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
+        Staff software engineer on multiple SaMD products
+        # Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
+        #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Technical Leadership
-          text: Contributed towards predictable, realistic delivery by engaging with stakeholders
-              to provide solution options that aligned with priorities and planned goals.
-            Guided and mentored other engineers on complex work items.
+          title: Launched engagement test on time with greenfield app; resulting in 1.5x+ engagement compared to sibling products
+          text: Rigorously prioritized most impactful work; led technical roadmap and implementation strategy for complex components.
+            Proactively de-risked delivery by anticipating roadblocks and [finding solutions]. # TODO reword?
         - feature:
-          title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
-          text: Focused on team delivery through tech leadership and cross-functional collaboration.
-            Working with PM and EM for alignment on priorities,
-             strategically planned work to remove blockers and reduce risk.
-            Continually refined the technical documentation as new information surfaced
-             and reshuffled backlog items based on anticipated capacity.
-            Removed roadblocks, whether independently resolving complex work items,
-             guiding coworker on their tickets, or working cross-functionally with QMS.
+          title: Improved average session starts by 0.5; achieved pivotal trial readiness
+          text: High rate of adoption (40%) resulted from collaboration with design and product, 
+              by providing capabilities, limitations, and UX best practices for relevant technologies.
+            Led planning and implementation of cross-product local notifications; primary code contributor.
+        - feature:
+          title: Reduced tech debt and risk through cross functional buy-in on overdue React Native upgrade
+          text: Gathered and presented options to cross-functional stakeholders for alignment.
+        - feature:
+          title: Met quarterly goal of 50% delivery of new app, leveraging and extending existing custom platform
+          text: Team delivery 
+        # - feature:
+        #   title: Technical Leadership
+        #   text: Contributed towards predictable, realistic delivery by engaging with stakeholders
+        #       to provide solution options that aligned with priorities and planned goals.
+        #     Guided and mentored other engineers on complex work items.
+        # - feature:
+        #   title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
+        #   text: Focused on team delivery through tech leadership and cross-functional collaboration.
+        #     Working with PM and EM for alignment on priorities,
+        #      strategically planned work to remove blockers and reduce risk.
+        #     Continually refined the technical documentation as new information surfaced
+        #      and reshuffled backlog items based on anticipated capacity.
+        #     Removed roadblocks, whether independently resolving complex work items,
+        #      guiding coworker on their tickets, or working cross-functionally with QMS.
     - work1:
       id: pear
       company: Pear Therapeutics
@@ -71,7 +94,7 @@ author:
       title: Sr. Software Engineer
       ended: 2022
       duration: 2019 &ndash; 2022
-      technologies: "React Native, React-Native-Testing-Library, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
+      technologies: "React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
       description: > 
         Led planning, coordination, and development of major features and components across teams. Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries. Delivered complex stories independently, and in collaboration, ensuring high quality and auditable code while also focusing on value-based delivery. Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations. Improved engineering community through large and small initiatives.
       features:
@@ -96,13 +119,8 @@ author:
             <!-- Working with product and design to set appropriate requirements. -->
         - feature: 
           title: Improved the Employee Experience (Chair of Employee Engagement Council)
-          text: 
-            Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
         - feature:
           title: Fostered Engineering Community (Engineering Advocate)
-          text:
-            Co-organized and led the first two annual engineering-wide hackathons. They produced a self-service site (still in use) and PoC investigations that facilitated future permanent work; the cross-functional teamwork has lasting effects. 3rd year running monthly Tech Talks, providing opportunities for knowledge sharing and practicing technical speaking.
-            <!-- Initiated meetings and introductions to welcome new hires. -->
     - work1:
       id: ge
       company: General Electric | GE Digital
