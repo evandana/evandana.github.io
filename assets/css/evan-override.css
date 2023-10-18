@@ -1,11 +1,11 @@
 /**
  * NOTE TO PROSPECTIVE EMPLOYERS READING THIS SOURCE CODE
  *
- * While the functionality achieved (yml -> static site hosted in Github) and custom print CSS
+ * While the functionality achieved (yml -> static site hosted in Github) and the custom print layout
  * is something that I'm proud of, the organization of this CSS is far from ideal.
  * However, as is with any project, there is the question of where do you allocated limited resources?
- * In this case, I am choosing to prioritize the site functionality and content over the perfecting coding patters;
- * delivery over maintainability. In other projects, where I'm not the maintainer, a more balanced approach is best.
+ * In this case, I am choosing to prioritize the site functionality and content over coding patters;
+ * delivery over maintainability.
  */
 
 @media (max-width: 550px) {
@@ -29,6 +29,7 @@
 body {
     background-image: none;
     background: #f6f6f6;
+    letter-spacing: 0.02rem;
 }
 
 .timeline > li > .timeline-badge {
@@ -99,14 +100,13 @@ section {
     margin-bottom: 5em;
     margin-top: 1em;
 }
-.intro-block {
-}
 .intro-body {
     font-size: 22px;
     line-height: 1.4em;
 }
 .intro-body-first-line {
     text-transform: uppercase;
+    display: block;
 }
 #intro a {
     /*color: #23527c;*/
@@ -303,6 +303,12 @@ section {
 
 .timeline-title {
     padding-right: 1em;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+}
+.timeline-role-title {
+    font-size: 16px;
+    letter-spacing: 0.05rem;
 }
 
 .timeline-body {
@@ -428,8 +434,7 @@ li.timeline-inverted {
     content: ' ';
 }
 /* applies to all */
-.timeline-panel.i-collapsed .timeline-body,
-    .timeline-panel.i-collapsed .timeline-body {
+.timeline-panel.i-collapsed .timeline-body {
     display: none;
 }
 #workHistory .timeline-panel.i-collapsed .timeline-heading,
@@ -453,20 +458,16 @@ li.timeline-inverted {
     display: block;
     float: right;
     clear: right;
-    /* margin-bottom: 0; */
+    text-align: right;
 }
 #workHistory .timeline-panel.i-collapsed .timeline-technologies,
     #codeHighlights .timeline-panel.i-collapsed .timeline-technologies {
     margin-left: 2em;
-    text-align: right;
 }
 #workHistory .timeline-panel.i-collapsed .work-history-dates,
     #codeHighlights .timeline-panel.i-collapsed .work-history-dates {
     display: none;
 }
-/* #codeHighlights .timeline-panel.i-collapsed .work-history-dates {
-    margin-top: -5.5em;
-} */
 
 /* -------------------------------- */
 /* Toggle switch */
@@ -589,27 +590,26 @@ input:checked + .slider:before {
     .timeline-panel {
         position: relative;
     }
+    #workHistory {
+        max-width: 45em;
+        float: left;
+        clear: none;
+    }
+    #codeHighlights {
+        max-width: 45em;
+        float: left;
+    }
 
-    /* OPTION 1
-    ul.feature-list {    
+    #education .timeline-inverted {
+        width: 200px !important;
+    }
+
+    #education, #activities, #github {
         width: 200px;
-        margin-right: -.25em;
-        margin-top: 0;
         float: right;
+        clear: none;
     }
-    #workHistory .feature-list--content {
-        display: none;
-    } */
-    /* OPTION 2 */
-    .feature-list {
-        display: block;
-        float: right;
-        width: 42.5em;
-        margin-top: 0;
-    }
-    .timeline-body ul {
-        margin-top: 0;
-    }
+
     .fa.fa-calendar, .fa.fa-map-marker {
         display: none;
     }
@@ -718,7 +718,6 @@ input:checked + .slider:before {
     main > section {
         margin-bottom: 1em;
         padding-top: 1em;
-        clear: both;
     }
     .title.with-icon {
         margin: 6px 0 10px -50px;
@@ -729,81 +728,71 @@ input:checked + .slider:before {
     }
 
     .timeline-title, .timeline-role-title {
-        float: left;
-        clear: left;
+        display: inline;
+    }
+    .timeline-title small {
+        font-size: 16px;
+        text-align: right;
+    }
+    #workHistory .timeline-title::before {
+        content: '@';
     }
     #codeHighlights .timeline-title {
         width: 18.6em;
         max-width: 18.6em;
+
     }
     #education .timeline-title,
         #activities .timeline-title {
         width: 100%;
     }
 
-    .timeline-technologies, .work-history-dates {
-        float: right;
-        clear: right;
-        width: 43.25em;
-        margin-top: -1.8em;
-    }
     .timeline-external-link {
         display: none;
-        /* float: left;
-        clear: right;
-        width: 43.25em;
-        text-align: right; */
-    }
-    #codeHighlights .work-history-dates {
-        margin-top: -5.9em;
     }
     .timeline-technologies {
-        margin-top: -1em;
         font-style: italic;
     }
 
     #codeHighlights .timeline-technologies {
         margin-top: -0em;
     }
-
-    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve,
-        #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
+    #workHistory .timeline-panel.i-collapsed .timeline-body,
+        #codeHighlights .timeline-panel.i-collapsed .timeline-body {
         display: block;
-        float: left;
-        clear: left;
-        /* margin-bottom: 0; */
+    }
+    #workHistory .timeline-panel.i-collapsed .timeline-heading h4, 
+        #codeHighlights .timeline-panel.i-collapsed .timeline-heading h4 {
+        float: none;
+        display: inline;
+    }
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
+        /* #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve { */
+        float: none;
+        display: inline;
+    }
+    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve,
+    #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.i-preserve {
+        text-align: left;
+        margin-left: 0;
     }
     #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve,
         #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve {
-        float: right;
-        text-align: left;
-        margin-top: -2.5em;
+        float: none;
     }
     #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.timeline-technologies.i-preserve {
         margin-top: 0;
-    }
-    #workHistory .timeline-panel.i-collapsed .timeline-heading .text-muted.work-history-dates.i-preserve,
-        #codeHighlights .timeline-panel.i-collapsed .timeline-heading .text-muted.work-history-dates.i-preserve {
-        float: left;
-        text-align: left;
-        /* margin-top: 0; */
     }
 
     #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates,
         #codeHighlights .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
         display: block;
-        clear: right;
-        float: right;
     }
-    /* #workHistory .timeline-panel.i-collapsed .timeline-heading .work-history-dates {
-        margin-top: -2em;
-    } */
 
     .page-content > .wrapper > .container-fluid {
         padding: 0;
         margin: 0 -5px;
     }
-
 
     /* ------------------- */
     /* Timeline */
@@ -830,16 +819,12 @@ input:checked + .slider:before {
         margin-left: 0;
     }
 
-    .timeline-body p {
-        width: 27em;
-        display: inline-block;
-    }
-
     .timeline-panel .timeline-heading h4 {
         margin-bottom: 0.25em;
     }
 
-    #workHistory .timeline .timeline-inverted, #codeHighlights .timeline .timeline-inverted {
+    #workHistory .timeline .timeline-inverted,
+        #codeHighlights .timeline .timeline-inverted {
         width: 100% !important;
     }
 
@@ -869,14 +854,8 @@ input:checked + .slider:before {
     /* Work History */
     /* ------------------- */
 
-    #workHistory {
-        clear: both;
-    }
-
     #workHistory .timeline-inverted {
-        width: 500px;
         float: left;
-        clear: both;
     }
 
     #workHistory .timeline-inverted:nth-child(n+6) {
@@ -889,7 +868,6 @@ input:checked + .slider:before {
     /* ------------------- */
     
     #codeHighlights .timeline-inverted {
-        width: 500px;
         float: left;
     }
 
@@ -897,11 +875,6 @@ input:checked + .slider:before {
     /* ------------------- */
     /* Education */
     /* ------------------- */
-
-    #education {
-        clear: both;
-        display: block;
-    }
 
     #education .timeline-inverted {
         float: left;
@@ -917,12 +890,6 @@ input:checked + .slider:before {
     /* ------------------- */
     /* Activities */
     /* ------------------- */
-
-    #activities {
-        width: 100%;
-        display: inline-block;
-        clear: both;
-    }
 
     #activities .timeline-inverted {
         float: left;
@@ -977,7 +944,6 @@ input:checked + .slider:before {
         padding: 10px 0 0 0;
     }
 
-    /* aside { display: none; } */
     #programmingSkills, #programmingSkillsOption2 {
         display: none;
     }
@@ -1059,43 +1025,7 @@ input:checked + .slider:before {
     
 
     /** Force Collapsed */
-
-    .print-single-page .print-single-page--collapsed .timeline-panel.grid-block.i-toggle-view:hover {
-        background: rgba(255, 255, 255, 0.8);
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel {
-        background: rgba(255, 255, 255, 0.2);
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel::after {
-        content: ' ';
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-body {
-        display: none;
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-heading {
-        max-width: 100%;
-        width: 100%;
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-heading h4 {
-        float: left;
-        margin-bottom: 0;
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-heading .text-muted {
-        display: none;
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-heading .text-muted.i-preserve {
-        margin-left: 30em;
-        float: none;
-        text-align: right;
-        display: block;
-        margin-bottom: 10px;
-    }
-    .print-single-page .print-single-page--collapsed .timeline-panel .timeline-heading .work-history-dates {
-        display: block;
-        position: absolute;
-        left: 20em;
-        top: 10px;
-    }
+    /** No longer doing this. Leaving comment for future reference */
 
     /** Force Hidden */
 

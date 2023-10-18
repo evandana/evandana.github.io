@@ -5,14 +5,13 @@ description: Evan Dana's CV
 # https://photos.google.com/u/1/search/me/photo/AF1QipPw8HHB2hOj84d0d75t2QGRYl0-D7ljCVgnMHgk
 # https://photos.google.com/u/1/search/me/photo/AF1QipOxGcKWupOzmUZkktimlqlCNWU2ulPA2_oJNO3L
 # new pic
-favicon: /assets/img/edana-professional.jpg 
+favicon: /assets/img/edana-professional.jpg
 baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
 #TODO Look up analytics
 google_analytics: UA-6306273-2
 resumelink: /assets/Evan-Dana__Public-Resume.pdf
-
 
 # Build settings
 markdown: kramdown
@@ -25,21 +24,22 @@ author:
   title: Staff Software Engineer
   address: Boston, MA
   email: userhatestogetspam@gmail.com
-  link: http://evandana.com
+  link: evandana.com
   weibo:
   github: evandana
   linkedin: evandana
   twitter: evandana
   gavatar: /assets/img/edana-professional.jpg
   stackoverflow:
-#  stackoverflow: 4582127
-  intro: 
-      firstline: >
-        #TODO update to point to BigHealth
-        LEAD SOFTWARE ENGINEER WITH A FOCUS ON <a href="#workHistorypear" title="Jump to Pear Therapeutics (Work History)">ARCHITECTING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
-      description: >
-        Leveraging SaMD experience, I deliver customer value through technical leadership, individual contributions, and collaboration,
-        focusing on strategy, execution, and team culture.
+  #  stackoverflow: 4582127
+  intro:
+    firstline:
+      LEAD SOFTWARE ENGINEER, specializing in React Native.
+      # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
+    description:
+      # and focus on strategy, execution, and team culture.
+      I leverage SaMD experience,
+      I deliver customer value through technical leadership, individual contributions, and collaboration.
   workHistory:
     - work1:
       id: bighealth
@@ -49,29 +49,42 @@ author:
       title: Staff Software Engineer
       ended: curr.
       duration: 2022 &ndash; Current
-      technologies: "React Native, TypeScript, SaMD" 
-        # Python, Postgres, CI/CD, Docker, CircleCI
-        # HealthKit, Notifications
-      description: > 
-        Staff software engineer on multiple SaMD products
+      technologies: React Native, TypeScript, ReactQuery, SaMD,
+        Python, Postgres, Docker, CircleCI,
+        HealthKit
+      description:
+        Focused on strategy, execution, and team culture while being adaptable to changing needs.
+        Led a variety of high-impact workstreams across multiple pods and SaMD products.
         # Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
         #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Launched engagement test on time with greenfield app; resulting in 1.5x+ engagement compared to sibling products
-          text: Rigorously prioritized most impactful work; led technical roadmap and implementation strategy for complex components.
-            Proactively de-risked delivery by anticipating roadblocks and [finding solutions]. # TODO reword?
+          title: 1.5x engagement achieved, on time, with new app. #sibling
+          text: >
+            Technical front-end lead: 
+              implemented complex UI components,
+              and evangelized and implemented best practices (e.g. code coverage from 0 → 80%).
+            Led technical roadmap and collaborated cross-functionally to reduce time to deliver user value;
+            proactively de-risked delivery by anticipating roadblocks and proposing solutions.
         - feature:
-          title: Improved average session starts by 0.5; achieved pivotal trial readiness
-          text: High rate of adoption (40%) resulted from collaboration with design and product, 
-              by providing capabilities, limitations, and UX best practices for relevant technologies.
+          title: Improved average session starts by 0.5. #; achieved pivotal trial readiness.
+          text:
+            High rate of adoption (40%) resulted from collaboration with design and product,
+            by providing capabilities, limitations, and UX best practices for relevant technologies.
             Led planning and implementation of cross-product local notifications; primary code contributor.
         - feature:
-          title: Reduced tech debt and risk through cross functional buy-in on overdue React Native upgrade
-          text: Gathered and presented options to cross-functional stakeholders for alignment.
+          title: Met quarterly goal of 50% delivery of new app. #, leveraging existing platform.
+          text:
+            Working with PM and EM for alignment on priorities,
+            strategically planned work to remove blockers and reduce risk.
+            Removed roadblocks, whether independently resolving complex technical items,
+            guiding coworker on their tickets, or working cross-functionally.
+            # Focused on team delivery through tech leadership and cross-functional collaboration.
+            # Continually refined the technical documentation as new information surfaced
+            #  and reshuffled backlog items based on anticipated capacity.
         - feature:
-          title: Met quarterly goal of 50% delivery of new app, leveraging and extending existing custom platform
-          text: Team delivery 
+          title: Reduced tech debt and risk through cross functional buy-in on overdue upgrade.
+          text: Gathered and presented options to cross-functional stakeholders for alignment.
         # - feature:
         #   title: Technical Leadership
         #   text: Contributed towards predictable, realistic delivery by engaging with stakeholders
@@ -95,30 +108,40 @@ author:
       ended: 2022
       duration: 2019 &ndash; 2022
       technologies: "React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
-      description: > 
-        Led planning, coordination, and development of major features and components across teams. Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries. Delivered complex stories independently, and in collaboration, ensuring high quality and auditable code while also focusing on value-based delivery. Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations. Improved engineering community through large and small initiatives.
+      description:
+        Led planning, coordination, and development of major features and components across teams.
+        Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
+        Delivered complex stories independently, and in collaboration, ensuring high quality and auditable code while also focusing on value-based delivery.
+        # Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations.
+        # Improved engineering community through large and small initiatives.
       features:
+        - feature:
+          title: Increased PDT Development Efficiency through Shared UI Libraries (Mobile Platform Engineer)
+          text:
+            Tech lead and primary contributor for the shared UI libraries.
+            Functionality includes utilities for managing state syncing, customizable and themeable UI components, and the login screen flow.
+            Led a collaboration building new core components;
+            crafted implementation strategy and tackled the most complex stories with composable components.
+            # Maintained these libraries with ReactNative and RN Nav upgrades,
+            # including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation.
+            # Somryst Redesign, RN Nav v3 -> v5, RN 61 -> 63
         - feature:
           title: Drove Complex Cross-Team Initiatives To Success (Platform Engineer)
           text:
-            Organized, planned, and implemented mobile-centric facet of cross-functionally complex project migrating from monolith to micro-services. For migration to new auth service, consolidated requirements and solution options into a detailed RFC and living documentation for continued collaboration. Identified critical paths and opportunities for parallelization across teams, proactively collaborating to find solutions.
-            <!-- Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
-            Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress. -->
-            <!-- Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint -->
+            Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to micro-services.
+            For migration to new auth service, consolidated requirements and solution options into a detailed RFC and managed the living documentation.
+            Proactively identified critical paths and opportunities for parallelization across teams.
+            # Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
+            # Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
+            # Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint
         - feature:
-          title: Increased PDT Development Efficiency through Shared UI Libraries (Mobile Platform Engineer)
-          text: 
-            Tech lead and primary contributor to the set of shared libraries used by the other Pear apps. Functionality includes utility classes for managing state syncing, customizable and themable UI components, and the login screen flow. Led a collaboration requiring new core components; crafted implementation strategy and tackled the most complex stories with composable components.
-            <!-- Maintained these libraries with ReactNative and RN Nav upgrades,
-            including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation. -->
-            <!-- Somryst Redesign, RN Nav v3 -> v5, RN 61 -> 63 -->
-        - feature: 
           title: Delivered PDT for Study Use (Tech Lead)
-          text: 
+          text:
             Responsible for coordinating code delivery, quality, and providing technical estimates for full-stack app with 3 other engineers. Delivered properly functioning app on time for clinical study.
             <!-- Working with product and design to set appropriate requirements. -->
-        - feature: 
+        - feature:
           title: Improved the Employee Experience (Chair of Employee Engagement Council)
+          # text: Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
         - feature:
           title: Fostered Engineering Community (Engineering Advocate)
     - work1:
@@ -129,10 +152,10 @@ author:
       title: Sr. Software Engineer
       ended: 2019
       duration: 2016 &ndash; 2019
-      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown" 
-      description: > 
-        For an IIOT monitoring dashboard app that minimized machine down time,
-        delivered complex features in a timely manner, independently and through 
+      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
+      description: >
+        For an IIOT monitoring dashboard app that minimized machine downtime,
+        delivered complex features on time, independently and through 
         collaboration, with utmost attention to quality.
         Exemplified best practices from coding patterns to agile methodologies.
         Translated requirements into manageable stories with clear and complete 
@@ -143,55 +166,49 @@ author:
         cloud, microapp/microservices, and Docker. -->
         <br/><br/>
         Mentored software engineers and presented on modern UI frameworks and 
-        patterns through the use of interactive programming session.
-      features: 
-        - feature: 
+        patterns through the use of an interactive programming session.
+      features:
+        - feature:
           title: Community thought leader and advocate
           text: SME across teams for UI frameworks and patterns
-        - feature: 
+        - feature:
           title: Feature lead
           text: >
             Led UI development of feature on open source shared component library: 
             <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>
-        - feature: 
+        - feature:
           title: Team contributor
           text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
-        - feature: 
+        - feature:
           title: Independent feature delivery
           text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
-        # - feature: 
+        # - feature:
         #   title: Backlog refinement and feature design
         #   text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
     - work1:
       id: sapient
-      company: Publicis.Sapient | Sapient Consulting
+      company: Publicis.Sapient
       printsinglepage: show
       collapsed: true
       location: Boston, MA
-      title: Sr. Interactive Developer, L2 
+      title: Sr. Interactive Developer, L2
       ended: 2016
       duration: 2013 &ndash; 2016
-      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA" 
-      description: > 
-        UI lead and front-end developer with aptitude for team dynamics,
-        group coordination, and process efficiencies. 
-        <br/><br/>    
-        Awarded recognition for Client-Focused Delivery after client feedback 
-        on project when leading UI development with recently self-taught technology.
-        <br/><br/>    
-        Years of experience in UI lead role, conducting engaging presentations, 
+      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
+      description:
+        Years of experience in UI lead role, conducting engaging presentations,
         and as technical liaison for client and internal domain teams.
-        Enforced code quality using best practices such as John DePapa's 
-        style guide and BEM on Agile projects. 
-        Self-motivated and driven: exemplified by creation of D3.js library 
-        and initiation of effective team-building program.
-        Advocated for code stability through unit, integration, functional, or 
-        automated visual-diff testing.
-      features: 
-        - feature: 
+        Enforced code quality and best practices.
+        # Advocated for code stability through unit, integration, functional, or
+        # automated visual-diff testing.
+      features:
+        - feature:
+          title: Awarded recognition for Client-Focused Delivery following client feedback
+          text: Led UI development for that project, having recently self-taught the technology.
+        - feature:
           title: Autonomous and motivated
-          text: Created reusable d3.js charting library between projects 
-        - feature: 
+          text: Created reusable d3.js charting library between assignments
+        - feature:
           title: Quickly learned and utilized new technology
           text: From Backbone to AngularJS and Aurelia
     - work1:
@@ -200,21 +217,20 @@ author:
       printsinglepage: show
       collapsed: true
       location: Boston, MA
-      title: Javascript UI Developer 
+      title: Javascript UI Developer
       ended: 2013
       duration: 2012 &ndash; 2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
-      description: > 
+      description:
         Implemented significant contributions to interactive retirement planning tool,
         turning complex business logic into an engaging user experience.
-        <br/><br/>
-        Initiated suite of unit tests to prevent recurring defects.
-        Reached cross-browser functionality with collaborative discussions.
-      features: 
-        - feature: 
+        # Initiated suite of unit tests to prevent recurring defects.
+        # Reached cross-browser functionality with collaborative discussions.
+      features:
+        - feature:
           title: Drove consistent quality with unit test suite
-        - feature: 
-          title: Created dynamic visualizations for retirement income projections
+        - feature:
+          title: Created dynamic visualizations # for retirement income projections
     - work1:
       id: innerscope
       company: Innerscope Research Inc.
@@ -226,7 +242,7 @@ author:
       duration: 2009 &ndash; 2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       description: >
-        Architected, implemented, and optimized dynamic internal web sites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
+        Architected, implemented, and optimized dynamic internal websites under tight time constraints. Increased efficiency through process refinement and custom application development; reduced bottle-necks. Satisfied clients by researching technical solutions, advising on options, and implementing solutions. Effectively managed graphic design interns with clear instruction and judicious direction; initiated the graphic design intern program, complete with cumulative curriculum. Conceptualized, designed, and coordinated delivery of graphical needs: marketing material, graphical information, and interactive experiences.
     - work1:
       id: ecboston
       company: EC Boston
@@ -234,7 +250,7 @@ author:
       hide: true
       collapsed: true
       location: Boston, MA
-      title: Web Developer 
+      title: Web Developer
       ended: 2009
       duration: 2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
@@ -251,7 +267,7 @@ author:
       hide: true
       collapsed: true
       location: Boston, MA
-      title: Process Engineer 
+      title: Process Engineer
       ended: 2009
       duration: 2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
@@ -266,7 +282,7 @@ author:
       printsinglepage: collapsed
       collapsed: true
       location: Canton, MA
-      title: Graphic Designer & Process Engineer 
+      title: Graphic Designer & Process Engineer
       ended: 2009
       duration: 2007 &ndash; 2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
@@ -274,35 +290,33 @@ author:
         Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
         Initiated projects to enhance data communication across groups. 
         Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
-        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production. 
+        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production.
   workSamples:
     - ahope:
       id: ahope
       title: "Non-profit Intake App: AHOPE / Boston Public Health Commission"
       printsinglepage: show
-      duration: 2018 &ndash; Present
+      duration: 2018 &ndash; 2022
       icon: mouse-pointer
       technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, PostgresQL, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
-      link: https://github.com/evandana/keep-ahope
-      description: >
-        Leading a team to create an patient intake app for a local non-profit harm reduction center called 
+      link: github.com/evandana/keep-ahope
+      description:
+        Led a team in creating a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE <i class="fa fas fa-external-link-alt"></i></a>
-        who is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
-        Ascertaining and documenting requirements from business stakeholders. 
-        Bringing together experts (domain, UX, legal, medical, technical) and driving consensus.
-        Managing a small group of software engineers who are mostly donating time for this project: 
-        ensuring coordinated efforts, timely delivery, and continued engagement.
-        Utilizing GitHub projects to achieve agile development, stay focused on MVP and
-        keep stakeholders informed.
-      features: 
-        - feature1: 
-          text: Form submission, profile search, profile update, and aggregation reports
+        which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
+        Brought together cross functional experts and drove consensus on requirements and technical plan.
+        Managed a small group of software engineers who donated time to this project.
+        # ensured coordinated efforts, timely delivery, and continued engagement.
+      features:
         - feature1:
-          text: Transitioned from Firebase to Google Cloud Services to Microsoft Azure based on updated IAM requirements.
+          text: Transitioned from Firebase to Google Cloud Platform to Microsoft Azure as IAM requirements changed.
         - feature1:
-          text: Backend completely rebuilt with NestJS, previously Google Firebase then Parse (with MongoDB)
-        - feature1: 
-          text: Secure sign-in using Microsoft Azure
+          text: >
+            Key features: Form submission, profile search, profile update, and aggregation reports
+        # - feature1:
+        #   text: Backend completely rebuilt with NestJS, previously Google Firebase then Parse (with MongoDB)
+        # - feature1:
+        #   text: Secure sign-in using Microsoft Azure
     - auctionapp:
       id: auction-app
       collapsed: true
@@ -315,96 +329,34 @@ author:
         Working with one other developer, we started with domain models, UX white-boarding, 
         framework choices, and hosting discussions.
         <br/><br/>
-        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try the demo-version <i class="fa fas fa-external-link-alt"></i></a> using dummy data. 
-      features: 
-        - feature1: 
-          text: 'Live bidding: websockets, React / Redux'
-        - feature1: 
-          text: Secure sign-in using Google OAuth
-        - feature1: 
-          text: Enforced business logic (bidding rules) in UI and Mid-Tier
-        - feature1: 
-          text: Database and hosting using Firebase.io
+        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try live bidding<i class="fa fas fa-external-link-alt"></i></a> using dummy data.
+      # features:
+      #   - feature1:
+      #     text: "Live bidding: with websockets"
       icon: mouse-pointer
-      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase.io, Material-UI, Google OAuth, ES6, Babel, Domain Modeling, Trello, ESLint, Webpack"
-      link: https://pmc-2018-demo.firebaseapp.com
+      technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase, Material-UI, Google OAuth, ES6, Babel, Domain Modeling, Trello, ESLint, Webpack"
+      link: pmc-2018-demo.firebaseapp.com
       completedyear: 2018
     - streamcorrelation:
-      id: streamcorrelation 
+      id: streamcorrelation
       title: Stream Correlation
       printsinglepage: hidden
       hidden: true
-      description: "Individual hackathon project intending to address the question: \"What other ways can a web app add value to an HMI (human-machine interface) dashboard?\""
-      features: 
-        - feature: 
+      description: 'Individual hackathon project intending to address the question: "What other ways can a web app add value to an HMI (human-machine interface) dashboard?"'
+      features:
+        - feature:
           text: "Node service generates semi-random data into N streams and publishes values over WebSocket connection"
-        - feature: 
+        - feature:
           text: "Node service subscribes to data generator, stores subset of data, processes data for correlation, and makes processed data available over WebSockets to client UI"
-        - feature: 
+        - feature:
           text: "Client UI subscribes to processed data service and shows corelation graph for any streams that correlate with the specified streams"
-        - feature: 
-          text: "Initialization and installation of the above three folders is handled simultaneously with shell script"
+        - feature:
+          text: "Initialization and installation of the above three folders are handled simultaneously with shell script"
       icon: cogs
       technologies: "NodeJS, Polymer 2.0, WebSockets, Correlation Rank (NPM)"
-      link: https://github.com/evandana/stream-correlation
+      link: github.com/evandana/stream-correlation
       completedyear: 2017
   educationHistory:
-    - react-training-2021: 
-      id: react-training-2021
-      collapsed: false
-      printsinglepage: show
-      organization: React Advanced Composition Patterns Workshop
-      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
-      description: >
-        An interactive series of lessons and practice sessions covering the breadth of 
-        patterns for appropriate design of customization and prop passing for a component.
-        Lessons included: prop drilling, React Hooks' ContextAPI, and component composition.
-        <br/><br/>
-        I provided Pear engineers with an internal interactive presentation, complete with code examples.
-      completed: 2021
-      duration: 2021
-    - react-training-2019: 
-      id: react-training-2019
-      collapsed: false
-      printsinglepage: show
-      organization: React Hooks Workshop
-      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
-      description: >
-        An interactive series of lessons and practice sessions covering best practices for React Hooks, 
-        including use and code design for optimization. Lessons included: ContextAPI, Effect Hook, and State Hook.
-        <br/><br/>
-        I provided Pear engineers with an internal interactive presentation, complete with code examples.
-        <br/><br/>
-        <a href="https://github.com/evandana/hooks-workshop" target="_BLANK">workshop notes <i class="fa fas fa-external-link-alt"></i></a>
-      completed: 2019
-      duration: 2019
-    - coursera:
-      id: coursera
-      collapsed: false
-      printsinglepage: show
-      organization: Coursera.org
-      location: Stanford University Online
-      description: >
-        Enriched and expanded skills and understanding with classes: Introduction to Python, Model Thinking, Software Engineering for SaaS. 
-        Courses included homework, lectures, and quizzes/exams. 
-        <br/></br/>
-        Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku. 
-        Earned a certificate of completion for listed classes.
-      completed: 2014
-      duration: 2012 &ndash; 2013
-    - harvard:
-      id: harvard
-      printsinglepage: show
-      collapsed: false
-      organization: Harvard Extension School
-      degree: Mobile Operating Systems and Applications
-      location: Cambridge, MA
-      description: >
-        Deep dive into hardware and software underlying Android and iOS operating systems. 
-        Covered spectrum of mobile landscape and considerations for design/development of web, native wrappers, and native apps.
-        Final project: Android "deck of cards" workout app.
-      completed: 2013
-      duration: 2013 &ndash; 2013
     - rit:
       id: rit
       printsinglepage: show
@@ -420,6 +372,56 @@ author:
         AAS in Graphic Design. 
         <br/>
         Concentration in conversational French. Technical concentrations in Mechanical and Manufacturing Technology.
+    - harvard:
+      id: harvard
+      printsinglepage: show
+      collapsed: false
+      organization: Harvard Extension School
+      degree: Mobile Operating Systems and Applications
+      location: Cambridge, MA
+      description: >
+        Deep dive into hardware and software underlying Android and iOS operating systems. 
+        Covered mobile landscape and considerations for design/development of web, native wrappers, and native apps.
+        Final project: Android "deck of cards" workout app.
+      completed: 2013
+      duration: 2013 &ndash; 2013
+    - react-training-2021:
+      id: react-training-2021
+      collapsed: false
+      printsinglepage: show
+      organization: Advanced React Workshops
+      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
+      description:
+        React Advanced Composition Patterns Workshop
+        <br/>
+        React Hooks Workshop
+        # React Advanced Composition Patterns
+        # An interactive series of lessons and practice sessions covering the breadth of
+        # patterns for appropriate design of customization and prop passing for a component.
+        # Lessons included: prop drilling, React Hooks' ContextAPI, and component composition.
+        # React Hooks Workshop:
+        # An interactive series of lessons and practice sessions covering best practices for React Hooks,
+        # including use and code design for optimization. Lessons included: ContextAPI, Effect Hook, and State Hook.
+      completed: 2021
+      duration: 2019 &amp; 2021
+    - onlineLearning:
+      id: onlineLearning
+      collapsed: false
+      printsinglepage: show
+      organization: Online Learning
+      location: Codecademy, LinkedIn, Pluralsight, Coursera / Stanford University Online
+      description: >
+        Recent Topics: 
+        <br/>- Python 3
+        <br/>- GPT-4 Foundations &amp; Prompt Engineering
+      # Enriched and expanded skills and understanding with classes: Introduction to Python, Model Thinking, Software Engineering for SaaS.
+      # Courses included homework, lectures, and quizzes/exams.
+      # <br/></br/>
+      # Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku.
+      # Earned a certificate of completion for listed classes.
+      completed: curr.
+      duration: 2012 &ndash; current
+
   activities:
     - activity:
       id: js-mobile-conf
@@ -435,10 +437,10 @@ author:
         JS Mobile Conf was a local conference focusing on using JavaScript to deliver mobile applications.
         <br/><br/>
         Covered cross-platform and web technologies for mobile devices: NativeScript (Angular), ReactNative (React), and PWAs.
-        <br/><br/>
-        <a href="https://github.com/evandana/jsmobileconf2019" target="_BLANK">2019 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
-        <br/>
-        <a href="https://github.com/evandana/jsmobileconf" target="_BLANK">2018 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
+      # <br/><br/>
+      # <a href="https://github.com/evandana/jsmobileconf2019" target="_BLANK">2019 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
+      # <br/>
+      # <a href="https://github.com/evandana/jsmobileconf" target="_BLANK">2018 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
     - activity:
       id: november-project
       printsinglepage: hidden
@@ -450,7 +452,7 @@ author:
       icon: bicycle
       duration: 2014 &ndash; 2015
       description: >
-        November Project is a free-fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
+        November Project is a free fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
         <br/></br/>
         Developed comfort, ease, and power when speaking and writing for a large audience.
         Inspired self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities.  
@@ -459,7 +461,7 @@ author:
       id: ga-instructor
       printsinglepage: show
       location: Boston, MA
-      title: D3.js Instructor 
+      title: D3.js Instructor
       organization: General Assembly
       started: 2015
       icon: code
@@ -467,7 +469,7 @@ author:
       description: >
         Engaged developers in an immersive and interactive two-night class: Introduction to D3.js. 
         Presented using a <a href="http://slides.com/evandana/d3-intro-3" target="_BLANK">follow-along slide deck <i class="fa fas fa-external-link-alt"></i></a>
-         with individually-editable code examples.
+         with individually editable code examples.
     # - activity:
     #   location: Boston, MA
     #   collapsed: false
@@ -477,8 +479,8 @@ author:
     #   icon: bicycle
     #   duration: 2010 &ndash; 2011
     #   description: >
-    #     Cultivated welcoming community of runners through attitude modeling and directing activities. 
-    #     Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity. 
+    #     Cultivated welcoming community of runners through attitude modeling and directing activities.
+    #     Provided club necessities and member benefits through successfully managed sponsor relationships without losing sight of integrity.
     #     Positioned club for success with engaging presentation of its social impact.
   REMOVE-THIS-TO-ENABLE-languages:
     - language1:
@@ -510,48 +512,49 @@ author:
   #     usefulness: beginner
   programmingSkillsOption2:
     - skill2:
-      name: "Cross-Platform UI Development: ReactNative"
+      name: "Cross-Platform UI Development (ReactNative)"
       percentage: 80%
       usefulness: experienced
     - skill1:
-      name: "Backend Development: Node w/ NestJS"
+      name: "Backend Development"
       percentage: 50%
       usefulness: intermediate
   opensource:
-      intro: Notable repos
-      repos:
+    intro: Notable repos
+    repos:
       - repo:
         name: AHOPE
-        year: 2018 - present
-        link: https://github.com/evandana/keep-ahope
+        year: 2018 - 2022
+        link: github.com/evandana/keep-ahope
         description: Patient intake app for AHOPE / Boston Public Health Commission
+      - repo:
+        name: Repo for this site
+        year: 2018 - current
+        link: github.com/evandana/evandana.github.io
+        description: Data-driven flow for web and PDF output
       - repo:
         name: Flutter Nav PoC
         year: 2021
-        link: https://evandana.com/flutter-poc/README.html
+        link: evandana.com/flutter-poc/README.html
         description: Initial Flutter exploration into a nested navigation flow with independent modules
-      - repo:
-        name: Auction App
-        year: 2018
-        link: https://github.com/evandana/pmc-auction
-        description: Charitable-focused auction app including bucketed raffles
+      # - repo:
+      #   name: Auction App
+      #   year: 2018
+      #   link: github.com/evandana/pmc-auction
+      #   description: Charitable-focused auction app including bucketed raffles
       # - repo:
       #   name: Wellworth New England
       #   year: 2018
-      #   link: https://github.com/evandana/wellworthnewengland
+      #   link: github.com/evandana/wellworthnewengland
       #   description: Charitable-focused auction app including bucketed raffles
-      - repo:
-        name: Stream Correlation
-        year: 2018
-        link: https://github.com/evandana/stream-correlation
-        description: Generate random data streams and show which ones are correlated
-      - repo:
-        name: Repo for this site
-        year: 2018
-        link: https://github.com/evandana/evandana.github.io
-        description: Jekyll template with UX modifications
       # - repo:
-      #   name: Previous evandana.com
-      #   year: 2012
-      #   link: https://github.com/evandana/website-2012
-      #   description: D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
+      #   name: Stream Correlation
+      #   year: 2018
+      #   link: github.com/evandana/stream-correlation
+      #   description: Generate random data streams and show which ones are correlated
+
+    # - repo:
+    #   name: Previous evandana.com
+    #   year: 2012
+    #   link: github.com/evandana/website-2012
+    #   description: D3.JS, PHP, JavaScript, XML, XSLT, HTML5, CSS3, InDesign XML Workflow
