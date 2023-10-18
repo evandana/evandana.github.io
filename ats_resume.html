@@ -1,135 +1,144 @@
 ---
-layout: default
+layout: ATS
 ---
-<script>
-    $(document).ready(function () {
-        
-        $('.i-toggle-view').on( 'click', expandCollapse );
 
-        function expandCollapse (evt) {
-
-            var panel = $(evt.currentTarget);
-            if (panel[0].parentElement.id.match(/workHistory|codeHighlights/)) {
-                if ( panel.hasClass('i-collapsed') ) {
-                    panel.removeClass('i-collapsed');
-                } else {
-                    panel.addClass('i-collapsed');
-                }
-            }
-        }
-
-        $(window).on('hashchange', function() {
-            // allow temporary highlighting of hash target
-            $(window.location.hash).addClass('hash-focus');
-            setTimeout( function () {
-                $(window.location.hash).removeClass('hash-focus');
-            }, 1000);
-        });
-
-
-    });
-
-    function printPage ( printSingle ) {
-        if (printSingle === 'SINGLE') {
-            togglePrintSinglePage( true );
-            window.print();
-            togglePrintSinglePage( false );
-        } else {
-            window.print();
-        }
-    }
-
-    function togglePrintSinglePage( trueOrFalse ) {
-        var bodyEl = document.body,
-            bodyPrintSinglePageTrue = document.body.classList.value.indexOf('print-single-page') > -1;
-
-        if ( trueOrFalse !== undefined ) {
-            if ( !trueOrFalse ) {
-                document.body.classList.remove('print-single-page');
-            } else {
-                document.body.classList.add('print-single-page');
-            }
-        } else if ( bodyPrintSinglePageTrue ) {
-            document.body.classList.remove('print-single-page');
-        } else {
-            document.body.classList.add('print-single-page');
-        }
-    }
-</script>
-
-<div class="container-fluid">
-    <div class="row-fluid">
-        <main class="col-md-8 section-container">
+<div>
+    <div >
+        <main >
 
             {% if site.data.config.author.intro %}
-                <section id="intro">
-                    <div class="intro-block">
+                <aside id="intro">
+                    <div >
                         {% if site.data.config.author.intro.description %}
-                            <p class="intro-body">
-                                <span class="intro-body-first-line">
+                            <p >
+                                <span >
                                     {{ site.data.config.author.intro.firstline }}
                                 </span>
                                 {{ site.data.config.author.intro.description }}
                             </p>
                         {% endif %}
                     </div>
-                </section>
+                </aside>
             {% endif %}
 
             {% if site.data.config.author.workHistory %}
                 <section id="workHistory">
-                    <h3 class="title with-icon"><span class="fa fa-briefcase cat-title"></span>Work History</h3>
-                    <ul class="timeline">
+                    <h3 ><span ></span>Work History</h3>
+                    <div >
                         {% for work in site.data.config.author.workHistory %}
                             {% if work.hide != true %}
-                            <li {% if work.id %}id="workHistory{{ work.id }}"{% endif %} class="timeline-inverted work-{{ work.id }} print-single-page--{{ work.printsinglepage }}">
-                                {% if work.ended %}
-                                    <div class="timeline-badge info">{{ work.ended }}</div>
-                                {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if work.collapsed %}i-collapsed{% endif %}">
-                                    <div class="timeline-heading">
+                            <div {% if work.id %}id="workHistory{{ work.id }}"{% endif %} >
+                                <div >
+                                    <div >
                                         {% if work.title %}
-                                            <p class="text-muted timeline-role-title i-preserve">
+                                            <h4>
                                                 {{ work.title }}
-                                            </p>
-                                        {% endif %}
-                                        {% if work.company %}
-                                            <h4 class="timeline-title">
-                                                {{ work.company }}
                                             </h4>
                                         {% endif %}
+                                        {% if work.company %}
+                                            <p >
+                                                    {{ work.company }}
+                                            </p>
+                                        {% endif %}
                                         {% if work.duration or work.location %}
-                                            <p class="work-history-dates text-muted">
+                                            <p >
                                                 <small >
                                                     {% if work.duration %}
-                                                        <i class="fa fa-calendar"></i> {{ work.duration }} &nbsp;&nbsp;|&nbsp;&nbsp;
+                                                        <i ></i> {{ work.duration }} &nbsp;&nbsp;|&nbsp;&nbsp;
                                                     {% endif %}
                                                     {% if work.location %}
-                                                        <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                                        <i ></i>  {{ work.location }}
                                                     {% endif %}
                                                 </small>
                                             </p>
                                         {% endif %}
                                         {% if work.technologies %}
-                                            <p class="text-muted timeline-technologies i-preserve">
+                                            <p >
                                                 <small>
                                                     {{ work.technologies }}
                                                 </small>
                                             </p>
                                         {% endif %}
                                     </div>
-                                    <div class="timeline-body">
+                                    <div >
                                         {% if work.description %}
                                             <p>{{ work.description }}</p>
                                         {% endif %}
                                         {% if work.features %}
-                                            <ul class="feature-list">
+                                            <ul >
                                                 {% for feature in work.features %}
                                                 
                                                     {% if feature.text or feature.title %}
                                                         <li>
-                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
-                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
+                                                            {% if feature.title %}<span >{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span >{{ feature.text }}</span>{% endif %}</li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                              </div>
+                            {% endif %}
+                        {% endfor %}
+                          </div>
+                </section>
+            {% endif %}
+
+            {% if site.data.config.author.workSamples %}
+                <section id="codeHighlights">
+                    <h3 ><span ></span>Code Highlights</h3>
+                    <ul >
+                        {% for sample in site.data.config.author.workSamples %}
+                            <li  {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
+                                {% if sample.icon %}
+                                    {% if sample.icon %}
+                                        <div > </div>
+                                    {% endif %}
+                                {% endif %}
+                                <div >
+                                    <div >
+                                        {% if sample.title %}
+                                            <h4 >{{ sample.title }}</h4>
+                                        {% endif %}
+                                        {% if sample.link %}
+                                            <p >
+                                                <small>
+                                                    <a href="{{ sample.link }}" target="_blank">
+                                                        {{ sample.link }}
+                                                        <span > </span>
+                                                    </a>
+                                                </small>        
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.technologies %}
+                                            <p >
+                                                <small>
+                                                    {{ sample.technologies }}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.duration or sample.location %}
+                                        <p >
+                                            <small >
+                                                {% if sample.duration %}
+                                                    <i ></i> {{ sample.duration }}
+                                                {% endif %}
+                                            </small>
+                                        </p>
+                                    {% endif %}
+                                    </div>
+                                    <div >
+                                        {% if sample.description %}
+                                            <p>{{ sample.description }}</p>
+                                        {% endif %}
+                                        {% if sample.features %}
+                                            <ul >
+                                                {% for feature in sample.features %}
+                                                    {% if feature.text or feature.title %}
+                                                        <li>
+                                                            {% if feature.title %}<span >{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span >{{ feature.text }}</span>{% endif %}</li>
                                                     {% endif %}
                                                 {% endfor %}
                                             </ul>
@@ -137,7 +146,6 @@ layout: default
                                     </div>
                                 </div>
                             </li>
-                            {% endif %}
                         {% endfor %}
                     </ul>
                 </section>
@@ -145,20 +153,17 @@ layout: default
 
             {% if site.data.config.author.educationHistory %}
                 <section id="education">
-                    <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education History</h3>
-                    <ul class="timeline">
+                    <h3 ><span ></span>Education History</h3>
+                    <ul >
                         {% for education in site.data.config.author.educationHistory %}
-                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %} class="timeline-inverted {% if education.collapsed %}collapsed{% endif %}">
-                                {% if education.completed %}
-                                    <div class="timeline-badge info">{{ education.completed }}</div>
-                                {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if education.collapsed %}i-collapsed{% endif %}">
-                                    <div class="timeline-heading">
+                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %} >
+                                <div >
+                                    <div >
                                         {% if education.organization %}
-                                            <h4 class="timeline-title">{{ education.organization }}</h4>
+                                            <h4 >{{ education.organization }}</h4>
                                         {% endif %}
                                         {% if education.degree or education.major %}
-                                            <p class="text-muted">
+                                            <p >
                                                 <small>
                                                     {% if education.degree %}
                                                         {{ education.degree }}{% endif %}{% if education.degree and education.major %}, {% endif %}
@@ -169,19 +174,19 @@ layout: default
                                             </p>
                                         {% endif %}
                                         {% if education.duration or education.location %}
-                                            <p class="text-muted i-preserve">
+                                            <p >
                                                 <small>
                                                     {% if education.duration %}
-                                                        <i class="fa fa-calendar"></i> {{ education.duration }} &nbsp;|&nbsp;
+                                                        <i ></i> {{ education.duration }} &nbsp;|&nbsp;
                                                     {% endif %}
                                                     {% if education.location %}
-                                                        <i class="fa fa-map-marker"></i>  {{ education.location }}
+                                                        <i ></i>  {{ education.location }}
                                                     {% endif %}
                                                 </small>
                                             </p>
                                         {% endif %}
                                     </div>
-                                    <div class="timeline-body">
+                                    <div >
                                         {% if education.description %}
                                             <p>{{ education.description }}</p>
                                         {% endif %}
@@ -195,39 +200,39 @@ layout: default
 
             {% if site.data.config.author.activities %}
                 <section id="activities">
-                    <h3 class="title with-icon"><span class="fa fa-male cat-title"></span>Activities</h3>
-                    <ul class="timeline">
+                    <h3 ><span ></span>Activities</h3>
+                    <ul >
                         {% for activity in site.data.config.author.activities %}
-                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} class="timeline-inverted {% if activity.hidden %}hidden{% endif %} {% if activity.collapsed %}collapsed{% endif %} print-single-page--{{ activity.printsinglepage }}">
+                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} >
                                 {% if activity.icon %}
-                                    <div class="timeline-badge info fa fa-{{ activity.icon }}"></div>
+                                    <div ></div>
                                 {% else %}
-                                    <div class="timeline-badge info">{{ activity.started }}</div>
+                                    <div >{{ activity.started }}</div>
                                 {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if activity.collapsed %}i-collapsed{% endif %}">
-                                    <div class="timeline-heading">
+                                <div >
+                                    <div >
                                         {% if activity.title %}
-                                            <h4 class="timeline-title">{{ activity.title }} </h4>
+                                            <h4 >{{ activity.title }} </h4>
                                         {% endif %}
 
                                         {% if activity.organization %}
-                                            <p class="text-muted"><small>{{ activity.organization }}</small></p>
+                                            <p ><small>{{ activity.organization }}</small></p>
                                         {% endif %}
 
                                         {% if activity.duration or activity.location %}
-                                            <p class="text-muted i-preserve">
+                                            <p >
                                                 <small>
                                                     {% if activity.duration %}
-                                                        <i class="fa fa-calendar"></i> {{ activity.duration }} &nbsp;|&nbsp;
+                                                        <i ></i> {{ activity.duration }} &nbsp;|&nbsp;
                                                     {% endif %}
                                                     {% if activity.location %}
-                                                        <i class="fa fa-map-marker"></i>  {{ activity.location }}
+                                                        <i ></i>  {{ activity.location }}
                                                     {% endif %}
                                                 </small>
                                             </p>
                                         {% endif %}
                                     </div>
-                                    <div class="timeline-body">
+                                    <div >
                                         {% if activity.description %}
                                             <p>{{ activity.description }}</p>
                                         {% endif %}
@@ -239,81 +244,15 @@ layout: default
                 </section>
             {% endif %}
 
-            {% if site.data.config.author.workSamples %}
-                <section id="codeHighlights">
-                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span>Code Highlights</h3>
-                    <ul class="timeline">
-                        {% for sample in site.data.config.author.workSamples %}
-                            <li {% if sample.id %}id="codeHighlights-{ sample.id }}"{% endif %}  class="timeline-inverted {% if sample.hidden %}hidden{% endif %} print-single-page--{{ sample.printsinglepage }}" >
-                                {% if sample.icon %}
-                                    {% if sample.icon %}
-                                        <div class="timeline-badge info fa fa-{{ sample.icon }}"> </div>
-                                    {% endif %}
-                                {% endif %}
-                                <div class="timeline-panel grid-block i-toggle-view {% if sample.collapsed %}i-collapsed{% endif %}">
-                                    <div class="timeline-heading">
-                                        {% if sample.title %}
-                                            <h4 class="timeline-title">{{ sample.title }}</h4>
-                                        {% endif %}
-                                        {% if sample.link %}
-                                            <p class="text-muted timeline-external-link">
-                                                <small>
-                                                    <a href="https://{{ sample.link }}" target="_blank">
-                                                        {{ sample.link }}
-                                                        <span class="fa fa-external-link"> </span>
-                                                    </a>
-                                                </small>        
-                                            </p>
-                                        {% endif %}
-                                        {% if sample.technologies %}
-                                            <p class="text-muted timeline-technologies i-preserve">
-                                                <small>
-                                                    {{ sample.technologies }}
-                                                </small>
-                                            </p>
-                                        {% endif %}
-                                        {% if sample.duration or sample.location %}
-                                        <p class="work-history-dates text-muted">
-                                            <small >
-                                                {% if sample.duration %}
-                                                    <i class="fa fa-calendar"></i> {{ sample.duration }}
-                                                {% endif %}
-                                            </small>
-                                        </p>
-                                    {% endif %}
-                                    </div>
-                                    <div class="timeline-body">
-                                        {% if sample.description %}
-                                            <p>{{ sample.description }}</p>
-                                        {% endif %}
-                                        {% if sample.features %}
-                                            <ul class="feature-list">
-                                                {% for feature in sample.features %}
-                                                    {% if feature.text or feature.title %}
-                                                        <li>
-                                                            {% if feature.title %}<span class="feature-list--title">{{ feature.title }}</span>{% endif %}
-                                                            {% if feature.text %}<span class="feature-list--content">{{ feature.text }}</span>{% endif %}</li>
-                                                    {% endif %}
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </section>
-            {% endif %}
-
         </main>
-        <aside class="sidebar col-md-4">
+        <aside >
             {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkills %}
                 <section id="programmingSkills">
-                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+                    <h3 ><span ></span> Programming Skills</h3>
                     {% if site.data.config.author.stackoverflow %}
-                    <div class="grid-block">
+                    <div >
                     <p><a href="//stackoverflow.com/users/{{ site.data.config.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.data.config.author.stackoverflow }}.png"></a></p>
-                    <ul class="list-unstyled list-stackoverflow" id="stackoverflow_questions_and_answers"></ul>
+                    <ul  id="stackoverflow_questions_and_answers"></ul>
                     <script type="text/javascript">
                     $(function () {
                         var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.data.config.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
@@ -381,7 +320,7 @@ layout: default
                             }
 
                             complex_question.title = item.title;
-                            complex_question.link = 'https://' + item.link;
+                            complex_question.link = item.link;
                             });
 
                             render_complex_questions(complex_questions);
@@ -433,16 +372,16 @@ layout: default
                     </div>
                     {% endif %}
                     {% if site.data.config.author.programmingSkills %}
-                    <div class="grid-block">
-                        <ul class="list-unstyled list-skills">
+                    <div >
+                        <ul >
                             {% for programmingSkill in site.data.config.author.programmingSkills %}
                                 <li>
                                     {% if programmingSkill.name %}
-                                        <span class="caption-skill">{{ programmingSkill.name }}</span>
+                                        <span >{{ programmingSkill.name }}</span>
                                     {% endif %}
                                     {% if programmingSkill.percentage %}
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+                                        <div >
+                                            <div  style="width: {{ programmingSkill.percentage }}">
                                                 <span>{{ programmingSkill.usefulness }} </span>
                                             </div>
                                         </div>
@@ -456,11 +395,11 @@ layout: default
             {% endif %}
             {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkillsOption2 %}
                 <section id="programmingSkillsOption2">
-                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Programming Skills</h3>
+                    <h3 ><span ></span> Programming Skills</h3>
                     {% if site.data.config.author.stackoverflow %}
-                    <div class="grid-block">
+                    <div >
                     <p><a href="//stackoverflow.com/users/{{ site.data.config.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.data.config.author.stackoverflow }}.png"></a></p>
-                    <ul class="list-unstyled list-stackoverflow" id="stackoverflow_questions_and_answers"></ul>
+                    <ul  id="stackoverflow_questions_and_answers"></ul>
                     <script type="text/javascript">
                     $(function () {
                         var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.data.config.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
@@ -528,7 +467,7 @@ layout: default
                             }
 
                             complex_question.title = item.title;
-                            complex_question.link = 'https://' + item.link;
+                            complex_question.link = item.link;
                             });
 
                             render_complex_questions(complex_questions);
@@ -580,16 +519,16 @@ layout: default
                     </div>
                     {% endif %}
                     {% if site.data.config.author.programmingSkillsOption2 %}
-                    <div class="grid-block">
-                        <ul class="list-unstyled list-skills">
+                    <div >
+                        <ul >
                             {% for programmingSkill in site.data.config.author.programmingSkillsOption2 %}
                                 <li>
                                     {% if programmingSkill.name %}
-                                        <span class="caption-skill">{{ programmingSkill.name }}</span>
+                                        <span >{{ programmingSkill.name }}</span>
                                     {% endif %}
                                     {% if programmingSkill.percentage %}
-                                        <div class="progress">
-                                            <div class="progress-bar" style="width: {{ programmingSkill.percentage }}">
+                                        <div >
+                                            <div  style="width: {{ programmingSkill.percentage }}">
                                                 <span>{{ programmingSkill.usefulness }} </span>
                                             </div>
                                         </div>
@@ -603,22 +542,22 @@ layout: default
             {% endif %}
             {% if site.data.config.author.opensource %}
                 <section id="github">
-                    <h3 class="title with-icon"><span class="fa fa-code cat-title"></span> Github</h3>
-                    <div class="grid-block">
+                    <h3 ><span ></span> Github</h3>
+                    <div >
                         <p>{{ opensource.description }}</p>
-                        <ul class="list-unstyled">
+                        <ul >
                             {% for repo in site.data.config.author.opensource.repos %}
-                                <li class="github-repo">
+                                <li >
                                     {% if repo.name %}
-                                        <span class="github-name">
-                                            {% if repo.link %}<a href="https://{{ repo.link }}" target="_BLANK">{% endif %}
-                                                <i class="fab fa-github fa-fw"></i> {{ repo.name }}
-                                            {% if repo.link %}<i class="fa fas fa-external-link-alt"></i></a>{% endif %}
-                                            {% if repo.year %}<span class="github-name--year">{{ repo.year }}</span>{% endif %}
+                                        <span >
+                                            {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
+                                                <i ></i> {{ repo.name }}
+                                            {% if repo.link %}<i ></i></a>{% endif %}
+                                            {% if repo.year %}<span >{{ repo.year }}</span>{% endif %}
                                         </span>
                                     {% endif %}
                                     {% if repo.description %}
-                                        <span class="github-description">
+                                        <span >
                                             {{ repo.description }}
                                         </span>
                                     {% endif %}
@@ -630,15 +569,15 @@ layout: default
             {% endif %}
             {% if site.data.config.author.languages %}
                 <section id="languages">
-                    <div class="deviter"></div>
-                    <h3 class="title with-icon"><span class="fa fa-globe cat-title"></span> Language Skills</h3>
-                    <div class="grid-block">
-                        <ul class="list-unstyled list-strip">
+                    <div ></div>
+                    <h3 ><span ></span> Language Skills</h3>
+                    <div >
+                        <ul >
                             {% for language in site.data.config.author.languages %}
                                 {% if language.name %}
                                     {% if language.proficiency %}
                                         <li>
-                                            <i class="fa fa-check"></i> <span class="badge badge-green badge-right-float">{{ language.proficiency }}</span>{{ language.name }}
+                                            <i ></i> <span >{{ language.proficiency }}</span>{{ language.name }}
                                         </li>
                                     {% endif %}
                                 {% endif %}
@@ -648,9 +587,9 @@ layout: default
                 </section>
             {% endif %}
             {% if false %}
-            <div class="deviter"></div>
-                <h3 class="title with-icon"><span class="fa fa-location-arrow cat-title"></span> Location</h3>
-                <div class="grid-block">
+            <div ></div>
+                <h3 ><span ></span> Location</h3>
+                <div >
                     <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.data.config.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
                 </div>
             {% endif %}
