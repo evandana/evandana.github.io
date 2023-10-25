@@ -38,7 +38,7 @@ author:
       # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
     description:
       # and focus on strategy, execution, and team culture.
-      I leverage SaMD experience,
+      I leverage SaMD experience, # TODO: use "regulated"
       I deliver customer value through technical leadership, individual contributions, and collaboration.
   workHistory:
     - work1:
@@ -50,7 +50,8 @@ author:
       ended: curr.
       duration: 2022 &ndash; Current
       technologies: React Native, TypeScript, ReactQuery, SaMD,
-        Python, Postgres, Docker, CircleCI,
+        Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
+        Lean Agile Methodologies, Kanban,
         HealthKit
       description:
         Focused on strategy, execution, and team culture while being adaptable to changing needs.
@@ -60,6 +61,7 @@ author:
       features:
         - feature:
           title: 1.5x engagement achieved, on time, with new app. #sibling
+          # TODO: add something around efficient agile/kanban
           text: >
             Technical front-end lead: 
               implemented complex UI components,
@@ -67,13 +69,15 @@ author:
             Led technical roadmap and collaborated cross-functionally to reduce time to deliver user value;
             proactively de-risked delivery by anticipating roadblocks and proposing solutions.
         - feature:
-          title: Improved average session starts by 0.5. #; achieved pivotal trial readiness.
+          title: Increased user adherence for improved clinical outcomes. #; achieved pivotal trial readiness.
+          # TODO: title: Improved clinical outcomes by increasing session starts (adherence) with a feature at 40% adoption rate. #; achieved pivotal trial readiness.
           text:
             High rate of adoption (40%) resulted from collaboration with design and product,
             by providing capabilities, limitations, and UX best practices for relevant technologies.
             Led planning and implementation of cross-product local notifications; primary code contributor.
+            # TODO: resulting in improved average session starts and high rate of adoption
         - feature:
-          title: Met quarterly goal of 50% delivery of new app. #, leveraging existing platform.
+          title: Met quarterly goal of delivery of new app. #, leveraging existing platform.
           text:
             Working with PM and EM for alignment on priorities,
             strategically planned work to remove blockers and reduce risk.
@@ -85,11 +89,12 @@ author:
         - feature:
           title: Reduced tech debt and risk through cross functional buy-in on overdue upgrade.
           text: Gathered and presented options to cross-functional stakeholders for alignment.
-        # - feature:
-        #   title: Technical Leadership
-        #   text: Contributed towards predictable, realistic delivery by engaging with stakeholders
-        #       to provide solution options that aligned with priorities and planned goals.
-        #     Guided and mentored other engineers on complex work items.
+        - feature:
+          title: Technical Leadership
+          text: Contributed towards predictable, realistic delivery by engaging with stakeholders
+              to provide solution options that aligned with priorities and planned goals.
+            Guided and mentored other engineers on complex work items.
+            # TODO add note about proposal
         # - feature:
         #   title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
         #   text: Focused on team delivery through tech leadership and cross-functional collaboration.
