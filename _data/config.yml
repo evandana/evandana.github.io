@@ -38,7 +38,7 @@ author:
       # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
     description:
       # and focus on strategy, execution, and team culture.
-      I leverage SaMD experience, # TODO: use "regulated"
+      Leveraging experience in high-quality and high-output environments,
       I deliver customer value through technical leadership, individual contributions, and collaboration.
   workHistory:
     - work1:
@@ -49,8 +49,8 @@ author:
       title: Staff Software Engineer
       ended: curr.
       duration: 2022 &ndash; Current
-      technologies: React Native, TypeScript, ReactQuery, SaMD,
-        Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
+      technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
+        Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
         Lean Agile Methodologies, Kanban,
         HealthKit
       description:
@@ -61,40 +61,45 @@ author:
       features:
         - feature:
           title: 1.5x engagement achieved, on time, with new app. #sibling
-          # TODO: add something around efficient agile/kanban
           text: >
             Technical front-end lead: 
-              implemented complex UI components,
-              and evangelized and implemented best practices (e.g. code coverage from 0 → 80%).
-            Led technical roadmap and collaborated cross-functionally to reduce time to deliver user value;
+              planned and implemented complex UI components;
+              evangelized and applied best practices (e.g. code coverage from 0 → 80%).
+            Drove several features: discovery and refinement of requirements and sequencing iterative milestones to balance complexity and delivery.
+            Led technical roadmap and collaborated with PM, EM, Design, and Clinical to reduce time to deliver user value;
             proactively de-risked delivery by anticipating roadblocks and proposing solutions.
+            Worked in hybrid Kanban / Agile Scrum to optimize delivery and alignment while minimizing unnecessary overhead.
         - feature:
-          title: Increased user adherence for improved clinical outcomes. #; achieved pivotal trial readiness.
-          # TODO: title: Improved clinical outcomes by increasing session starts (adherence) with a feature at 40% adoption rate. #; achieved pivotal trial readiness.
-          text:
-            High rate of adoption (40%) resulted from collaboration with design and product,
-            by providing capabilities, limitations, and UX best practices for relevant technologies.
-            Led planning and implementation of cross-product local notifications; primary code contributor.
-            # TODO: resulting in improved average session starts and high rate of adoption
+          title: Increased app usage (correlating to improved clinical outcomes) by adding local push notifications. #; achieved pivotal trial readiness.
+          text: >
+            Originated idea, guided high-level planning, and led implementation of cross-product local notifications; primary code contributor.
+            Collaborated tightly in iterations with design, product, and clinical to understand technical capabilities, limitations, and platform-specific best practices.
+            Resulted in 40% adoption rate and the average user starting nearly one more in-app lesson.
         - feature:
-          title: Met quarterly goal of delivery of new app. #, leveraging existing platform.
+          title: Met quarterly goal of delivery of new app, leveraging existing platform.
           text:
             Working with PM and EM for alignment on priorities,
-            strategically planned work to remove blockers and reduce risk.
+              strategically planned work to remove blockers and reduce risk.
             Removed roadblocks, whether independently resolving complex technical items,
             guiding coworker on their tickets, or working cross-functionally.
-            # Focused on team delivery through tech leadership and cross-functional collaboration.
-            # Continually refined the technical documentation as new information surfaced
-            #  and reshuffled backlog items based on anticipated capacity.
+            Continually refined the technical documentation as new information surfaced
+             and reshuffled backlog items based on anticipated capacity and needed expertise.
         - feature:
-          title: Reduced tech debt and risk through cross functional buy-in on overdue upgrade.
-          text: Gathered and presented options to cross-functional stakeholders for alignment.
+          title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
+          text: 
+            Wrote draft proposal and organized complex concepts into clear visuals and language.
+            Working with a group representing multiple teams and functions,
+              brainstormed and evaluated possible solutions to address the identified risks.
+            The proposal document enriched the architecture discussion by offering 
+              delivery-focused and future-forward solutions with rich detail.
         - feature:
           title: Technical Leadership
           text: Contributed towards predictable, realistic delivery by engaging with stakeholders
               to provide solution options that aligned with priorities and planned goals.
             Guided and mentored other engineers on complex work items.
-            # TODO add note about proposal
+        - feature:
+          title: Reduced tech debt and risk through cross-functional buy-in on overdue upgrade.
+          text: Gathered and presented options to cross-functional stakeholders for alignment.
         # - feature:
         #   title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
         #   text: Focused on team delivery through tech leadership and cross-functional collaboration.
@@ -133,7 +138,7 @@ author:
         - feature:
           title: Drove Complex Cross-Team Initiatives To Success (Platform Engineer)
           text:
-            Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to micro-services.
+            Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to microservices.
             For migration to new auth service, consolidated requirements and solution options into a detailed RFC and managed the living documentation.
             Proactively identified critical paths and opportunities for parallelization across teams.
             # Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
@@ -167,10 +172,8 @@ author:
         acceptance criteria, raising discussions early if needed.
         Ensured quality by writing unit and system tests for use in CI/CD workflow.
         Consistently created useful graphical and text-based documentation.
-        <!-- Exposed to varied project architecture elements including 
-        cloud, microapp/microservices, and Docker. -->
         <br/><br/>
-        Mentored software engineers and presented on modern UI frameworks and 
+        Mentored software engineers. Presented on modern UI frameworks and 
         patterns through the use of an interactive programming session.
       features:
         - feature:
@@ -309,7 +312,7 @@ author:
         Led a team in creating a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE <i class="fa fas fa-external-link-alt"></i></a>
         which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
-        Brought together cross functional experts and drove consensus on requirements and technical plan.
+        Brought together cross-functional experts and drove consensus on requirements and technical plan.
         Managed a small group of software engineers who donated time to this project.
         # ensured coordinated efforts, timely delivery, and continued engagement.
       features:
@@ -335,9 +338,6 @@ author:
         framework choices, and hosting discussions.
         <br/><br/>
         <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try live bidding<i class="fa fas fa-external-link-alt"></i></a> using dummy data.
-      # features:
-      #   - feature1:
-      #     text: "Live bidding: with websockets"
       icon: mouse-pointer
       technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase, Material-UI, Google OAuth, ES6, Babel, Domain Modeling, Trello, ESLint, Webpack"
       link: pmc-2018-demo.firebaseapp.com

@@ -1,3 +1,10 @@
 {
-  "cSpell.enabled": true
+  "cSpell.enabled": true,
+  "grammarly.selectors": [
+    {
+      "language": "yaml",
+      "scheme": "file",
+      "pattern": "_data/config.yml"
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Evan Dana's CV</title>
-    <description>Evan Dana's CV</description>
+    <title>Evan Dana&apos;s CV</title>
+    <description>Evan Dana&apos;s CV</description>
     <link>http://evandana.github.io/</link>
     <atom:link href="http://evandana.github.io/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate></pubDate>
     <lastBuildDate></lastBuildDate>
-    <generator>Jekyll v3.9.0</generator>
+    <generator>Jekyll v4.3.2</generator>
     
   </channel>
 </rss>

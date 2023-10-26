@@ -448,7 +448,12 @@ li.timeline-inverted {
     width: 17.5em;
 }
 #workHistory .timeline-panel.i-collapsed .timeline-heading .timeline-role-title
-    #codeHighlights .timeline-panel.i-collapsed .timeline-heading .timeline-external-link {
+    #codeHighlights .timeline-panel.i-collapsed .timeline-heading .timeline-role-title {
+    /* display: none; */
+    float: right;
+    text-align: right;
+}
+#codeHighlights .timeline-panel.i-collapsed .timeline-heading .timeline-external-link {
     /* display: none; */
     float: right;
     text-align: right;
@@ -559,9 +564,9 @@ input:checked + .slider:before {
         page-break-before: avoid;
         zoom: 100%;
 
-        width: 750px;
-        max-width: 750px;
-        min-width: 750px;
+        width: 800px;
+        max-width: 800px;
+        min-width: 800px;
         font-size: 10px;
     }
 
@@ -591,12 +596,12 @@ input:checked + .slider:before {
         position: relative;
     }
     #workHistory {
-        max-width: 45em;
+        max-width: 55em;
         float: left;
         clear: none;
     }
     #codeHighlights {
-        max-width: 45em;
+        max-width: 55em;
         float: left;
     }
 
