@@ -1,0 +1,598 @@
+---
+layout: ATS
+---
+
+<div>
+    <div >
+        <main >
+
+            {% if site.data.config.author.intro %}
+                <aside id="intro">
+                    <div >
+                        {% if site.data.config.author.intro.description %}
+                            <p >
+                                <span >
+                                    {{ site.data.config.author.intro.firstline }}
+                                </span>
+                                {{ site.data.config.author.intro.description }}
+                            </p>
+                        {% endif %}
+                    </div>
+                </aside>
+            {% endif %}
+
+            {% if site.data.config.author.workHistory %}
+                <section id="workHistory">
+                    <h3 ><span ></span>Work History</h3>
+                    <div >
+                        {% for work in site.data.config.author.workHistory %}
+                            {% if work.hide != true %}
+                            <div {% if work.id %}id="workHistory{{ work.id }}"{% endif %} >
+                                <div >
+                                    <div >
+                                        {% if work.title %}
+                                            <h4>
+                                                {{ work.title }}
+                                            </h4>
+                                        {% endif %}
+                                        {% if work.company %}
+                                            <p >
+                                                    {{ work.company }}
+                                            </p>
+                                        {% endif %}
+                                        {% if work.duration or work.location %}
+                                            <p >
+                                                <small >
+                                                    {% if work.duration %}
+                                                        <i ></i> {{ work.duration }} &nbsp;&nbsp;|&nbsp;&nbsp;
+                                                    {% endif %}
+                                                    {% if work.location %}
+                                                        <i ></i>  {{ work.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if work.technologies %}
+                                            <p >
+                                                <small>
+                                                    Technologies: {{ work.technologies }}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                    <div >
+                                        {% if work.description %}
+                                            <p>{{ work.description }}</p>
+                                        {% endif %}
+                                        {% if work.features %}
+                                            <div>
+                                                {% for feature in work.features %}
+                                                    <p>
+                                                    {% if feature.text or feature.title %}
+                                                        {% if feature.title %}<span >- {{ feature.title }}</span>{% endif %}
+                                                        {% if feature.text %}<span >{{ feature.text }}</span>{% endif %}
+                                                    {% endif %}
+                                                    </p>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                              </div>
+                            {% endif %}
+                        {% endfor %}
+                          </div>
+                </section>
+            {% endif %}
+
+            {% if site.data.config.author.workSamples %}
+                <section id="codeHighlights">
+                    <h3 ><span ></span>Code Highlights</h3>
+                    <ul >
+                        {% for sample in site.data.config.author.workSamples %}
+                            <li  {% if sample.id %}id="work-sample-{{ sample.id }}"{% endif %}>
+                                {% if sample.icon %}
+                                    {% if sample.icon %}
+                                        <div > </div>
+                                    {% endif %}
+                                {% endif %}
+                                <div >
+                                    <div >
+                                        {% if sample.title %}
+                                            <h4 >{{ sample.title }}</h4>
+                                        {% endif %}
+                                        {% if sample.link %}
+                                            <p >
+                                                <small>
+                                                    <a href="{{ sample.link }}" target="_blank">
+                                                        {{ sample.link }}
+                                                        <span > </span>
+                                                    </a>
+                                                </small>        
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.technologies %}
+                                            <p >
+                                                <small>
+                                                    {{ sample.technologies }}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if sample.duration or sample.location %}
+                                        <p >
+                                            <small >
+                                                {% if sample.duration %}
+                                                    <i ></i> {{ sample.duration }}
+                                                {% endif %}
+                                            </small>
+                                        </p>
+                                    {% endif %}
+                                    </div>
+                                    <div >
+                                        {% if sample.description %}
+                                            <p>{{ sample.description }}</p>
+                                        {% endif %}
+                                        {% if sample.features %}
+                                            <ul >
+                                                {% for feature in sample.features %}
+                                                    {% if feature.text or feature.title %}
+                                                        <li>
+                                                            {% if feature.title %}<span >{{ feature.title }}</span>{% endif %}
+                                                            {% if feature.text %}<span >{{ feature.text }}</span>{% endif %}</li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+
+            {% if site.data.config.author.educationHistory %}
+                <section id="education">
+                    <h3 ><span ></span>Education History</h3>
+                    <ul >
+                        {% for education in site.data.config.author.educationHistory %}
+                            <li {% if education.id %}id="education-history-{{ education.id }}"{% endif %} >
+                                <div >
+                                    <div >
+                                        {% if education.organization %}
+                                            <h4 >{{ education.organization }}</h4>
+                                        {% endif %}
+                                        {% if education.degree or education.major %}
+                                            <p >
+                                                <small>
+                                                    {% if education.degree %}
+                                                        {{ education.degree }}{% endif %}{% if education.degree and education.major %}, {% endif %}
+                                                    {% if education.major %}
+                                                        {{ education.major }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                        {% if education.duration or education.location %}
+                                            <p >
+                                                <small>
+                                                    {% if education.duration %}
+                                                        <i ></i> {{ education.duration }} &nbsp;|&nbsp;
+                                                    {% endif %}
+                                                    {% if education.location %}
+                                                        <i ></i>  {{ education.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                    <div >
+                                        {% if education.description %}
+                                            <p>{{ education.description }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+
+            {% if site.data.config.author.activities %}
+                <section id="activities">
+                    <h3 ><span ></span>Activities</h3>
+                    <ul >
+                        {% for activity in site.data.config.author.activities %}
+                            <li {% if activity.id %}id="activity-{{ activity.id }}"{% endif %} >
+                                {% if activity.icon %}
+                                    <div ></div>
+                                {% else %}
+                                    <div >{{ activity.started }}</div>
+                                {% endif %}
+                                <div >
+                                    <div >
+                                        {% if activity.title %}
+                                            <h4 >{{ activity.title }} </h4>
+                                        {% endif %}
+
+                                        {% if activity.organization %}
+                                            <p ><small>{{ activity.organization }}</small></p>
+                                        {% endif %}
+
+                                        {% if activity.duration or activity.location %}
+                                            <p >
+                                                <small>
+                                                    {% if activity.duration %}
+                                                        <i ></i> {{ activity.duration }} &nbsp;|&nbsp;
+                                                    {% endif %}
+                                                    {% if activity.location %}
+                                                        <i ></i>  {{ activity.location }}
+                                                    {% endif %}
+                                                </small>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                    <div >
+                                        {% if activity.description %}
+                                            <p>{{ activity.description }}</p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+
+        </main>
+        <aside >
+            {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkills %}
+                <section id="programmingSkills">
+                    <h3 ><span ></span> Programming Skills</h3>
+                    {% if site.data.config.author.stackoverflow %}
+                    <div >
+                    <p><a href="//stackoverflow.com/users/{{ site.data.config.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.data.config.author.stackoverflow }}.png"></a></p>
+                    <ul  id="stackoverflow_questions_and_answers"></ul>
+                    <script type="text/javascript">
+                    $(function () {
+                        var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.data.config.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
+                        var api_url_format_questions = "//api.stackexchange.com/2.2/questions/%question_ids%?site=stackoverflow";
+
+                        $.get(api_url_user, function (data_user) {
+                        if (!data_user) {
+                            return;
+                        }
+                        if (!data_user.items) {
+                            return;
+                        }
+                        if (!data_user.items.length) {
+                            return;
+                        }
+
+                        var question_ids = [];
+                        var complex_questions = {};
+                        $.each(data_user.items, function (index, item) {
+                            if (!item) {
+                            return;
+                            }
+                            if (!item.question_id) {
+                            return;
+                            }
+                            if (!item.answer_id) {
+                            return;
+                            }
+                            if (!item.score) {
+                            return;
+                            }
+
+                            complex_questions[item.question_id] = {
+                            "question_id": item.question_id,
+                            "answer_id": item.answer_id,
+                            "score": humanize_score(item.score),
+                            "is_accepted": item.is_accepted
+                            };
+                            question_ids.push(item.question_id);
+                        });
+
+                        var api_url_questions = api_url_format_questions.replace('%question_ids%', question_ids.join(';'));
+
+                        $.get(api_url_questions, function (data_questions) {
+                            if (!data_questions) {
+                            return;
+                            }
+                            if (!data_questions.items) {
+                            return;
+                            }
+                            if (!data_questions.items.length) {
+                            return;
+                            }
+
+                            $.each(data_questions.items, function (index, item) {
+                            if (!item) {
+                                return;
+                            }
+                            if (!item.question_id) {
+                                return;
+                            }
+                            var complex_question = complex_questions[item.question_id];
+                            if (!complex_question) {
+                                return;
+                            }
+
+                            complex_question.title = item.title;
+                            complex_question.link = item.link;
+                            });
+
+                            render_complex_questions(complex_questions);
+                        });
+                        });
+                    });
+                    function humanize_score(score) {
+                        if (!score) {
+                        return;
+                        }
+
+                        if (score / 1000 > 1) {
+                        return (score / 1000) + "k";
+                        } else {
+                        return score;
+                        }
+                    }
+                    function render_complex_questions(complex_questions) {
+                        if (!complex_questions) {
+                        return;
+                        }
+
+                        complex_questions = $.map(complex_questions, function (complex_question) {
+                        return [complex_question];
+                        });
+                        complex_questions.sort(function (a, b) {
+                        return b.score - a.score;
+                        });
+
+                        $stackoverflow_questions_and_answers = $('#stackoverflow_questions_and_answers');
+
+                        $.each(complex_questions, function (index, complex_question) {
+                        var link = complex_question.link + '#answer-' + complex_question.answer_id;
+                        var $li = $('<li />');
+                        $('<span />')
+                            .addClass('badge')
+                            .addClass(complex_question.is_accepted ? 'progress-bar-success' : '')
+                            .text(complex_question.score)
+                            .appendTo($li);
+                        $('<a />')
+                            .attr('href', link)
+                            .attr('target', '_blank')
+                            .text(complex_question.title)
+                            .appendTo($li);
+                        $li.appendTo($stackoverflow_questions_and_answers);
+                        });
+                    }
+                    </script>
+                    </div>
+                    {% endif %}
+                    {% if site.data.config.author.programmingSkills %}
+                    <div >
+                        <ul >
+                            {% for programmingSkill in site.data.config.author.programmingSkills %}
+                                <li>
+                                    {% if programmingSkill.name %}
+                                        <span >{{ programmingSkill.name }}</span>
+                                    {% endif %}
+                                    {% if programmingSkill.percentage %}
+                                        <div >
+                                            <div  style="width: {{ programmingSkill.percentage }}">
+                                                <span>{{ programmingSkill.usefulness }} </span>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </section>
+            {% endif %}
+            {% if site.data.config.author.stackoverflow or site.data.config.author.programmingSkillsOption2 %}
+                <section id="programmingSkillsOption2">
+                    <h3 ><span ></span> Programming Skills</h3>
+                    {% if site.data.config.author.stackoverflow %}
+                    <div >
+                    <p><a href="//stackoverflow.com/users/{{ site.data.config.author.stackoverflow }}"><img src="//stackoverflow.com/users/flair/{{ site.data.config.author.stackoverflow }}.png"></a></p>
+                    <ul  id="stackoverflow_questions_and_answers"></ul>
+                    <script type="text/javascript">
+                    $(function () {
+                        var api_url_user = "//api.stackexchange.com/2.2/users/{{ site.data.config.author.stackoverflow }}/answers?pagesize=5&order=desc&sort=votes&site=stackoverflow";
+                        var api_url_format_questions = "//api.stackexchange.com/2.2/questions/%question_ids%?site=stackoverflow";
+
+                        $.get(api_url_user, function (data_user) {
+                        if (!data_user) {
+                            return;
+                        }
+                        if (!data_user.items) {
+                            return;
+                        }
+                        if (!data_user.items.length) {
+                            return;
+                        }
+
+                        var question_ids = [];
+                        var complex_questions = {};
+                        $.each(data_user.items, function (index, item) {
+                            if (!item) {
+                            return;
+                            }
+                            if (!item.question_id) {
+                            return;
+                            }
+                            if (!item.answer_id) {
+                            return;
+                            }
+                            if (!item.score) {
+                            return;
+                            }
+
+                            complex_questions[item.question_id] = {
+                            "question_id": item.question_id,
+                            "answer_id": item.answer_id,
+                            "score": humanize_score(item.score),
+                            "is_accepted": item.is_accepted
+                            };
+                            question_ids.push(item.question_id);
+                        });
+
+                        var api_url_questions = api_url_format_questions.replace('%question_ids%', question_ids.join(';'));
+
+                        $.get(api_url_questions, function (data_questions) {
+                            if (!data_questions) {
+                            return;
+                            }
+                            if (!data_questions.items) {
+                            return;
+                            }
+                            if (!data_questions.items.length) {
+                            return;
+                            }
+
+                            $.each(data_questions.items, function (index, item) {
+                            if (!item) {
+                                return;
+                            }
+                            if (!item.question_id) {
+                                return;
+                            }
+                            var complex_question = complex_questions[item.question_id];
+                            if (!complex_question) {
+                                return;
+                            }
+
+                            complex_question.title = item.title;
+                            complex_question.link = item.link;
+                            });
+
+                            render_complex_questions(complex_questions);
+                        });
+                        });
+                    });
+                    function humanize_score(score) {
+                        if (!score) {
+                        return;
+                        }
+
+                        if (score / 1000 > 1) {
+                        return (score / 1000) + "k";
+                        } else {
+                        return score;
+                        }
+                    }
+                    function render_complex_questions(complex_questions) {
+                        if (!complex_questions) {
+                        return;
+                        }
+
+                        complex_questions = $.map(complex_questions, function (complex_question) {
+                        return [complex_question];
+                        });
+                        complex_questions.sort(function (a, b) {
+                        return b.score - a.score;
+                        });
+
+                        $stackoverflow_questions_and_answers = $('#stackoverflow_questions_and_answers');
+
+                        $.each(complex_questions, function (index, complex_question) {
+                        var link = complex_question.link + '#answer-' + complex_question.answer_id;
+                        var $li = $('<li />');
+                        $('<span />')
+                            .addClass('badge')
+                            .addClass(complex_question.is_accepted ? 'progress-bar-success' : '')
+                            .text(complex_question.score)
+                            .appendTo($li);
+                        $('<a />')
+                            .attr('href', link)
+                            .attr('target', '_blank')
+                            .text(complex_question.title)
+                            .appendTo($li);
+                        $li.appendTo($stackoverflow_questions_and_answers);
+                        });
+                    }
+                    </script>
+                    </div>
+                    {% endif %}
+                    {% if site.data.config.author.programmingSkillsOption2 %}
+                    <div >
+                        <ul >
+                            {% for programmingSkill in site.data.config.author.programmingSkillsOption2 %}
+                                <li>
+                                    {% if programmingSkill.name %}
+                                        <span >{{ programmingSkill.name }}</span>
+                                    {% endif %}
+                                    {% if programmingSkill.percentage %}
+                                        <div >
+                                            <div  style="width: {{ programmingSkill.percentage }}">
+                                                <span>{{ programmingSkill.usefulness }} </span>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                </section>
+            {% endif %}
+            {% if site.data.config.author.opensource %}
+                <section id="github">
+                    <h3 ><span ></span> Github</h3>
+                    <div >
+                        <p>{{ opensource.description }}</p>
+                        <ul >
+                            {% for repo in site.data.config.author.opensource.repos %}
+                                <li >
+                                    {% if repo.name %}
+                                        <span >
+                                            {% if repo.link %}<a href="{{ repo.link }}" target="_BLANK">{% endif %}
+                                                <i ></i> {{ repo.name }}
+                                            {% if repo.link %}<i ></i></a>{% endif %}
+                                            {% if repo.year %}<span >{{ repo.year }}</span>{% endif %}
+                                        </span>
+                                    {% endif %}
+                                    {% if repo.description %}
+                                        <span >
+                                            {{ repo.description }}
+                                        </span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+            {% endif %}
+            {% if site.data.config.author.languages %}
+                <section id="languages">
+                    <div ></div>
+                    <h3 ><span ></span> Language Skills</h3>
+                    <div >
+                        <ul >
+                            {% for language in site.data.config.author.languages %}
+                                {% if language.name %}
+                                    {% if language.proficiency %}
+                                        <li>
+                                            <i ></i> <span >{{ language.proficiency }}</span>{{ language.name }}
+                                        </li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </section>
+            {% endif %}
+            {% if false %}
+            <div ></div>
+                <h3 ><span ></span> Location</h3>
+                <div >
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q={{ site.data.config.author.address }}&key=AIzaSyClEWLh20lxrQBFR7omuuVESviszPxONyk" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+                </div>
+            {% endif %}
+        </aside>
+    </div>
+</div>
