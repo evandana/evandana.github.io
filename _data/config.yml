@@ -11,7 +11,7 @@ url: http://evandana.github.io
 rss_url: /pages/atom.xml
 #TODO Look up analytics
 google_analytics: UA-6306273-2
-resumelink: /assets/Evan-Dana__Public-Resume.pdf
+resumelink: /assets/EvanDanaCV.pdf
 
 # Build settings
 markdown: kramdown
@@ -47,8 +47,8 @@ author:
       printsinglepage: show
       location: Remote
       title: Staff Software Engineer
-      ended: curr.
-      duration: 2022 &ndash; Current
+      ended: 2023
+      duration: 5/2022 &ndash; 11/2023
       technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
         Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
         Lean Agile Methodologies, Kanban,
@@ -117,7 +117,7 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2022
-      duration: 2019 &ndash; 2022
+      duration: 1/2019 &ndash; 5/2022
       technologies: "React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
       description:
         Led planning, coordination, and development of significant features and components across teams.
@@ -162,7 +162,7 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2019
-      duration: 2016 &ndash; 2019
+      duration: 10/2016 &ndash; 1/2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
@@ -202,7 +202,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2
       ended: 2016
-      duration: 2013 &ndash; 2016
+      duration: 6/2013 &ndash; 10/2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
       description:
         Years of experience in UI lead role, conducting engaging presentations,
@@ -228,7 +228,7 @@ author:
       location: Boston, MA
       title: Javascript UI Developer
       ended: 2013
-      duration: 2012 &ndash; 2013
+      duration: 7/2012 &ndash; 5/2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description:
         Implemented significant contributions to interactive retirement planning tool,
@@ -248,7 +248,7 @@ author:
       location: Boston, MA
       title: Interactive Developer, L2
       ended: 2012
-      duration: 2009 &ndash; 2012
+      duration: 9/2009 &ndash; 5/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       description: >
         Architected, implemented, and optimized dynamic internal websites under tight time constraints.
@@ -267,7 +267,7 @@ author:
       location: Boston, MA
       title: Web Developer
       ended: 2009
-      duration: 2009
+      duration: 4/2009 &ndash; 9/209
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
         Facilitated and increased conversion rates by establishing new branding and 
@@ -284,7 +284,7 @@ author:
       location: Boston, MA
       title: Process Engineer
       ended: 2009
-      duration: 2009
+      duration: 4/2009 &ndash; 9/209
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
         Delivered high ROI by automating Excel and Word document processing. 
@@ -299,7 +299,7 @@ author:
       location: Canton, MA
       title: Graphic Designer & Process Engineer
       ended: 2009
-      duration: 2007 &ndash; 2009
+      duration: 3/2007 &ndash; 1/2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: >
         Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
@@ -402,7 +402,8 @@ author:
       collapsed: false
       printsinglepage: show
       organization: Advanced React Workshops
-      location: 'Online Workshop by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>'
+      degree: Presented by <a href="https://reacttraining.com/" target="_BLANK">React Training <i class="fa fas fa-external-link-alt"></i></a>
+      location: Online Workshop
       description:
         React Advanced Composition Patterns Workshop
         <br/>
@@ -420,8 +421,9 @@ author:
       id: onlineLearning
       collapsed: false
       printsinglepage: show
-      organization: Online Learning
-      location: Codecademy, LinkedIn, Pluralsight, Coursera / Stanford University Online
+      organization: Online learning
+      degree: Codecademy, LinkedIn, Pluralsight, Coursera / Stanford University Online
+      location: Online Learning
       description: >
         Recent Topics: 
         <br/>- Python 3
