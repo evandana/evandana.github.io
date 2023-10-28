@@ -52,6 +52,7 @@ author:
       technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
         Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
         Lean Agile Methodologies, Kanban,
+        Figma, Storybook,
         HealthKit
       description:
         Focused on strategy, execution, and team culture while adapting to changing needs.
@@ -118,7 +119,7 @@ author:
       title: Sr. Software Engineer
       ended: 2022
       duration: 1/2019 &ndash; 5/2022
-      technologies: "React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT"
+      technologies: React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT, Figma, Storybook
       description:
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
