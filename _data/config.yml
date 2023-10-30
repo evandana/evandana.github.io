@@ -61,13 +61,10 @@ author:
         #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Delivered new app with excellent user engagement metrics.
-          # by anticipating roadblocks and proposing solutions.
-          # Worked in hybrid Kanban / Agile Scrum to maximize delivery while minimizing process overhead.
-          # proactively de-risked delivery.
-          text: >
+          title: Delivered new app, exceeding user engagement target by 50%. 
+          text:
             Technical front-end lead for app with provisional requirements and tight timelines; 
-              delivered on time and exceeded user engagement target by 50%.
+              delivered on time.
             Drove several features from requirements discovery through implementation, 
               including sequencing milestones and reviewing PRs.
             Planned and implemented complex UI/UX enhancements.
@@ -76,32 +73,30 @@ author:
             Evangelized and applied best practices; drove code coverage improvement from 0 to 80% in one quarter.
         - feature:
           title: Increased app usage (correlating to improved clinical outcomes) by adding local notifications. #; achieved pivotal trial readiness.
-          text: >
-            Originated idea, guided high-level planning, and led implementation of cross-product local notifications; primary code contributor.
-            Collaborated tightly to drive requirements to meet technical capabilities, limitations, and platform-specific best practices.
+          text:
+            Originated idea, guided high-level planning, and led implementation of cross-product local notifications; 
+              primary code contributor.
             These actions resulted in 40% adoption rate and the average user starting nearly one more in-app lesson.
         - feature:
           title: Met quarterly goal of delivery of new app, leveraging existing platform.
           text: >
-            Strategically planned, chunked, and sequenced work 
-              to maximize parallelization and available capacity.
+            Strategically planned, chunked, and sequenced work to maximize throughput.
             Removed roadblocks: independently resolved complex technical items,
               guided coworkers on implementation, and worked cross-functionally.
-            Continually refined the technical documentation as new information surfaced
-             and reshuffled backlog items based on anticipated capacity and needed expertise.
         - feature:
           title: Technical Leadership
-          text: Contributed towards predictable, realistic delivery by engaging with stakeholders
-              to provide solution options that aligned with priorities and planned goals.
+          text: 
+            Reduced tech debt and risk; achieved cross-team stakeholder alignment on ROI for overdue upgrade.
+            Drove alignment across teams as presenter and facilitator at Front End Guild meetings.
             Mentored other engineers on complex work items.
         - feature:
           title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
           text: 
             Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
-            Enriched the architecture discussion by offering a delivery-focused and future-forward proposal with rich detail.
-        - feature:
-          title: Reduced tech debt and risk through cross-team buy-in on overdue upgrade.
-          text: Gathered and presented options to stakeholders for alignment.
+            # Enriched the architecture discussion by offering a delivery-focused and future-forward proposal with rich detail.
+        # - feature:
+        #   title: Reduced tech debt and risk through cross-team buy-in on overdue upgrade.
+        #   text: Gathered and presented options to stakeholders for alignment.
         # - feature:
         #   title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
         #   text: Focused on team delivery through tech leadership and cross-functional collaboration.
@@ -119,7 +114,7 @@ author:
       title: Sr. Software Engineer
       ended: 2022
       duration: 1/2019 &ndash; 5/2022
-      technologies: React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT, Figma, Storybook
+      technologies: React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT, Figma, Storybook, AWS
       description:
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
@@ -185,13 +180,14 @@ author:
           title: Feature lead
           text: >
             Led UI development of feature on open source shared component library: 
-            <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>
-        - feature:
-          title: Team contributor
-          text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
-        - feature:
-          title: Independent feature delivery
-          text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
+            <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>.
+            Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs.
+        # - feature:
+        #   title: Team contributor
+        #   text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
+        # - feature:
+        #   title: Independent feature delivery
+        #   text: Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs
         # - feature:
         #   title: Backlog refinement and feature design
         #   text: Groomed stories for useful, actionable, and clear Acceptance Criteria; provided estimates for saga delivery
@@ -213,11 +209,11 @@ author:
         # automated visual-diff testing.
       features:
         - feature:
-          title: Awarded recognition for Client-Focused Delivery following client feedback
+          title: Awarded recognition for Client-Focused Delivery
           text: Led UI development for that project, having recently self-taught the technology.
-        - feature:
-          title: Autonomous and motivated
-          text: Created reusable d3.js charting library between assignments
+        # - feature:
+        #   title: Autonomous and motivated
+        #   text: Created reusable d3.js charting library between assignments
         - feature:
           title: Quickly learned and utilized new technology
           text: From Backbone to AngularJS and Aurelia
@@ -251,14 +247,15 @@ author:
       ended: 2012
       duration: 9/2009 &ndash; 5/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
-      description: >
-        Architected, implemented, and optimized dynamic internal websites under tight time constraints.
-        Increased efficiency through process refinement and custom application development; reduced bottlenecks.
-        Satisfied clients by researching technical solutions, advising on options, and implementing solutions.
-        Effectively managed graphic design interns with clear instruction and judicious direction;
-          initiated the graphic design intern program, complete with cumulative curriculum.
-        Conceptualized, designed, and coordinated delivery of graphical needs:
-          marketing material, graphical information, and interactive experiences.
+      features:
+        - feature:
+          title: Technical contributions
+          text: Architected, implemented, and optimized dynamic internal websites under tight time constraints.
+            Increased efficiency through process refinement and custom application development; reduced bottlenecks.
+        - feature:
+          title: Managed intern program
+          text: Effectively managed graphic design interns with clear instruction and judicious direction;
+            initiated the graphic design intern program, complete with cumulative curriculum.
     - work1:
       id: ecboston
       company: EC Boston
@@ -320,8 +317,8 @@ author:
         Led a team in creating a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE<i class="fa fas fa-external-link-alt"></i></a>,
         which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
-        Brought together cross-functional experts and drove consensus on requirements and technical plan.
         Managed a small group of software engineers who donated time to this project.
+        # Brought together cross-functional experts and drove consensus on requirements and technical plan.
         # ensured coordinated efforts, timely delivery, and continued engagement.
       features:
         - feature1:
@@ -337,15 +334,13 @@ author:
       id: auction-app
       collapsed: true
       printsinglepage: collapsed
-      title: PMC Auction App
+      title: Pan Mass Challenge Auction App
       duration: 2016 &ndash; 2018
       description: >
         From concept through development to processing results, this live-bidding auction 
-        and raffle ticket web app exceeded expectations &mdash; raising over $5000 for charity. 
+          and raffle ticket web app raised over $5000 for charity. 
         Working with another developer, we started with domain models, UX white-boarding, 
-        framework choices, and hosting discussions.
-        <br/><br/>
-        <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try live bidding<i class="fa fas fa-external-link-alt"></i></a> using dummy data.
+          framework choices, and hosting discussions. <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try live bidding<i class="fa fas fa-external-link-alt"></i></a> using dummy data.
       icon: mouse-pointer
       technologies: "ReactJS 15.1.x, Redux, WebSockets, Firebase, Material-UI, Google OAuth, ES6, Babel, Domain Modeling, Trello, ESLint, Webpack"
       link: pmc-2018-demo.firebaseapp.com

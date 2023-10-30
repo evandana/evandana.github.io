@@ -596,12 +596,12 @@ input:checked + .slider:before {
         position: relative;
     }
     #workHistory {
-        max-width: 55em;
+        max-width: 45em;
         float: left;
         clear: none;
     }
     #codeHighlights {
-        max-width: 55em;
+        max-width: 45em;
         float: left;
     }
 
