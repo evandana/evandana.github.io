@@ -564,10 +564,10 @@ input:checked + .slider:before {
         page-break-before: avoid;
         zoom: 100%;
 
-        width: 800px;
-        max-width: 800px;
-        min-width: 800px;
-        font-size: 10px;
+        width: 1000px;
+        max-width: 1000px;
+        min-width: 1000px;
+        font-size: 14px;
     }
 
     .print-hidden {
@@ -581,6 +581,9 @@ input:checked + .slider:before {
     }
     .fa.fas.fa-external-link-alt {
         display: none;
+    }
+    .timeline-panel {
+        break-inside: avoid;
     }
 
 
@@ -596,12 +599,12 @@ input:checked + .slider:before {
         position: relative;
     }
     #workHistory {
-        max-width: 45em;
+        max-width: 48em;
         float: left;
         clear: none;
     }
     #codeHighlights {
-        max-width: 45em;
+        max-width: 48em;
         float: left;
     }
 
@@ -675,10 +678,9 @@ input:checked + .slider:before {
 
     #intro {
         position: absolute;
-        right: 14px;
-        top: -93px;
-        font-size: 10px;
-        width: 412px;
+        right: 28px;
+        top: -116px;
+        width: 394px;
         margin: 0;
     }
 
@@ -691,7 +693,7 @@ input:checked + .slider:before {
     }
 
     .intro-body {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .social-link-block:first-of-type span {
@@ -892,6 +894,10 @@ input:checked + .slider:before {
         display: none;
     }
 
+    #education p.text-muted {
+        margin-bottom: 0.2em;
+    }
+
     /* ------------------- */
     /* Activities */
     /* ------------------- */
@@ -903,6 +909,9 @@ input:checked + .slider:before {
 
     #activities .timeline-body {
         display: none;
+    }
+    #education p.text-muted {
+        margin-bottom: 0.2em;
     }
 
 

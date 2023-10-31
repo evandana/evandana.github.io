@@ -48,7 +48,7 @@ author:
       location: Remote
       title: Staff Software Engineer
       ended: 2023
-      duration: 5/2022 &ndash; 11/2023
+      duration: 05/2022 &ndash; 11/2023
       technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
         Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
         Agile, Kanban,
@@ -69,7 +69,7 @@ author:
               including sequencing milestones and reviewing PRs.
             Planned and implemented complex UI/UX enhancements.
             Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively
-              (hybrid of Kanban and Agile Scrum);
+              (hybrid of Kanban and Agile Scrum).
             Evangelized and applied best practices; drove code coverage improvement from 0 to 80% in one quarter.
         - feature:
           title: Increased app usage (correlating to improved clinical outcomes) by adding local notifications. #; achieved pivotal trial readiness.
@@ -101,7 +101,7 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2022
-      duration: 1/2019 &ndash; 5/2022
+      duration: 01/2019 &ndash; 05/2022
       technologies: React Native, TypeScript, Redux, NestJS, 
         Figma, Storybook,
         Bitrise.io, CI/CD, Docker, 
@@ -151,7 +151,7 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2019
-      duration: 10/2016 &ndash; 1/2019
+      duration: 10/2016 &ndash; 01/2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
@@ -192,7 +192,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2
       ended: 2016
-      duration: 6/2013 &ndash; 10/2016
+      duration: 06/2013 &ndash; 10/2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
       description:
         Years of experience in UI lead role, conducting engaging presentations,
@@ -218,7 +218,7 @@ author:
       location: Boston, MA
       title: Javascript UI Developer
       ended: 2013
-      duration: 7/2012 &ndash; 5/2013
+      duration: 07/2012 &ndash; 05/2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description:
         Implemented significant contributions to interactive retirement planning tool,
@@ -238,7 +238,7 @@ author:
       location: Boston, MA
       title: Interactive Developer, L2
       ended: 2012
-      duration: 9/2009 &ndash; 5/2012
+      duration: 9/2009 &ndash; 05/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       features:
         - feature:
@@ -258,7 +258,7 @@ author:
       location: Boston, MA
       title: Web Developer
       ended: 2009
-      duration: 4/2009 &ndash; 9/2009
+      duration: 04/2009 &ndash; 09/2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
         Facilitated and increased conversion rates by establishing new branding and 
@@ -275,7 +275,7 @@ author:
       location: Boston, MA
       title: Process Engineer
       ended: 2009
-      duration: 4/2009 &ndash; 9/2009
+      duration: 04/2009 &ndash; 09/2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
         Delivered high ROI by automating Excel and Word document processing. 
@@ -290,7 +290,7 @@ author:
       location: Canton, MA
       title: Graphic Designer & Process Engineer.
       ended: 2009
-      duration: 3/2007 &ndash; 1/2009
+      duration: 03/2007 &ndash; 01/2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: >
         Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
