@@ -231,6 +231,15 @@ layout: default
                                         {% if activity.description %}
                                             <p>{{ activity.description }}</p>
                                         {% endif %}
+                                        {% if activity.features %}
+                                            <ul class="feature-list">
+                                                {% for feature in activity.features %}
+                                                    {% if feature.title %}
+                                                        <li><span class="feature-list--title">{{ feature.title }}</span></li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </li>

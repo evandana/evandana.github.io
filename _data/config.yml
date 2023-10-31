@@ -48,10 +48,10 @@ author:
       location: Remote
       title: Staff Software Engineer
       ended: 2023
-      duration: 5/2022 &ndash; 11/2023
+      duration: 05/2022 &ndash; 11/2023
       technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
         Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
-        Lean Agile Methodologies, Kanban,
+        Agile, Kanban,
         Figma, Storybook,
         HealthKit
       description:
@@ -69,7 +69,7 @@ author:
               including sequencing milestones and reviewing PRs.
             Planned and implemented complex UI/UX enhancements.
             Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively
-              (hybrid of Kanban and Agile Scrum);
+              (hybrid of Kanban and Agile Scrum).
             Evangelized and applied best practices; drove code coverage improvement from 0 to 80% in one quarter.
         - feature:
           title: Increased app usage (correlating to improved clinical outcomes) by adding local notifications. #; achieved pivotal trial readiness.
@@ -94,18 +94,6 @@ author:
           text: 
             Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
             # Enriched the architecture discussion by offering a delivery-focused and future-forward proposal with rich detail.
-        # - feature:
-        #   title: Reduced tech debt and risk through cross-team buy-in on overdue upgrade.
-        #   text: Gathered and presented options to stakeholders for alignment.
-        # - feature:
-        #   title: Delivered Progress towards App, Leveraging Existing Platform (Tech Lead)
-        #   text: Focused on team delivery through tech leadership and cross-functional collaboration.
-        #     Working with PM and EM for alignment on priorities,
-        #      strategically planned work to remove blockers and reduce risk.
-        #     Continually refined the technical documentation as new information surfaced
-        #      and reshuffled backlog items based on anticipated capacity.
-        #     Removed roadblocks, whether independently resolving complex work items,
-        #      guiding coworker on their tickets, or working cross-functionally with QMS.
     - work1:
       id: pear
       company: Pear Therapeutics
@@ -113,8 +101,11 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2022
-      duration: 1/2019 &ndash; 5/2022
-      technologies: React Native, TypeScript, NestJS, Bitrise.io, CI/CD, Docker, Software as a Medical Device, PDT, Figma, Storybook, AWS
+      duration: 01/2019 &ndash; 05/2022
+      technologies: React Native, TypeScript, Redux, NestJS, 
+        Figma, Storybook,
+        Bitrise.io, CI/CD, Docker, 
+        Software as a Medical Device, PDT, AWS
       description:
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
@@ -123,17 +114,17 @@ author:
         # Improved engineering community through large and small initiatives.
       features:
         - feature:
-          title: Increased PDT Development Efficiency through Shared UI Libraries (Mobile Platform Engineer)
+          title: Increased PDT development efficiency through shared ui libraries (Mobile Platform Engineer).
           text:
             Tech lead and primary contributor for the shared UI libraries.
-            Functionality includes utilities for managing state syncing, customizable and themeable UI components, and the login screen flow.
+            Functionality includes utilities for managing state syncing, design system components, and the login screen flow.
             Led a collaboration building new core components;
             crafted implementation strategy and tackled the most complex stories with composable components.
             # Maintained these libraries with ReactNative and RN Nav upgrades,
             # including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation.
             # Somryst Redesign, RN Nav v3 -> v5, RN 61 -> 63
         - feature:
-          title: Drove Complex Cross-Team Initiatives To Success (Platform Engineer)
+          title: Drove complex cross-team initiatives to success (Platform Engineer).
           text:
             Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to microservices.
             For migration to new auth service, consolidated requirements and solution options into a detailed RFC and managed the living documentation.
@@ -142,15 +133,17 @@ author:
             # Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
             # Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint
         - feature:
-          title: Delivered PDT for Study Use (Tech Lead)
+          title: Delivered PDT for study use (tech lead).
           text:
             Responsible for coordinating code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
             Delivered properly functioning app on time for clinical study.
+            Resolved challenging performance issue by leading a mini-hackathon.
+            Conducted technical phone screens and candidate interviews.
         - feature:
-          title: Improved the Employee Experience (Chair of Employee Engagement Council)
+          title: Improved the employee experience (Chair of Employee Engagement Council).
           # text: Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
         - feature:
-          title: Fostered Engineering Community (Engineering Advocate)
+          title: Fostered engineering community (Engineering Advocate).
     - work1:
       id: ge
       company: General Electric | GE Digital
@@ -158,13 +151,13 @@ author:
       location: Boston, MA
       title: Sr. Software Engineer
       ended: 2019
-      duration: 10/2016 &ndash; 1/2019
+      duration: 10/2016 &ndash; 01/2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
         delivered complex features on time, independently and through 
         collaboration, with utmost attention to quality.
-        Exemplified best practices from coding patterns to agile methodologies.
+        Exemplified best practices, from coding patterns to agile methodologies.
         Translated requirements into manageable stories with clear and complete 
         acceptance criteria, raising discussions early if needed.
         Ensured quality by writing unit and system tests for use in CI/CD workflow.
@@ -174,10 +167,10 @@ author:
         patterns through an interactive programming session.
       features:
         - feature:
-          title: Community thought leader and advocate
+          title: Community thought leader and advocate.
           text: SME across teams for UI frameworks and patterns
         - feature:
-          title: Feature lead
+          title: Feature lead.
           text: >
             Led UI development of feature on open source shared component library: 
             <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>.
@@ -199,7 +192,7 @@ author:
       location: Boston, MA
       title: Sr. Interactive Developer, L2
       ended: 2016
-      duration: 6/2013 &ndash; 10/2016
+      duration: 06/2013 &ndash; 10/2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
       description:
         Years of experience in UI lead role, conducting engaging presentations,
@@ -209,13 +202,13 @@ author:
         # automated visual-diff testing.
       features:
         - feature:
-          title: Awarded recognition for Client-Focused Delivery
+          title: Awarded recognition for client-focused delivery.
           text: Led UI development for that project, having recently self-taught the technology.
         # - feature:
         #   title: Autonomous and motivated
         #   text: Created reusable d3.js charting library between assignments
         - feature:
-          title: Quickly learned and utilized new technology
+          title: Quickly learned and utilized new technology.
           text: From Backbone to AngularJS and Aurelia
     - work1:
       id: putnam
@@ -225,7 +218,7 @@ author:
       location: Boston, MA
       title: Javascript UI Developer
       ended: 2013
-      duration: 7/2012 &ndash; 5/2013
+      duration: 07/2012 &ndash; 05/2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description:
         Implemented significant contributions to interactive retirement planning tool,
@@ -234,9 +227,9 @@ author:
         # Reached cross-browser functionality with collaborative discussions.
       features:
         - feature:
-          title: Drove consistent quality with unit test suite
+          title: Drove consistent quality with unit test suite.
         - feature:
-          title: Created dynamic visualizations # for retirement income projections
+          title: Created dynamic visualizations. # for retirement income projections
     - work1:
       id: innerscope
       company: Innerscope Research Inc.
@@ -245,15 +238,15 @@ author:
       location: Boston, MA
       title: Interactive Developer, L2
       ended: 2012
-      duration: 9/2009 &ndash; 5/2012
+      duration: 9/2009 &ndash; 05/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
       features:
         - feature:
-          title: Technical contributions
+          title: Technical contributions.
           text: Architected, implemented, and optimized dynamic internal websites under tight time constraints.
             Increased efficiency through process refinement and custom application development; reduced bottlenecks.
         - feature:
-          title: Managed intern program
+          title: Managed intern program.
           text: Effectively managed graphic design interns with clear instruction and judicious direction;
             initiated the graphic design intern program, complete with cumulative curriculum.
     - work1:
@@ -265,7 +258,7 @@ author:
       location: Boston, MA
       title: Web Developer
       ended: 2009
-      duration: 4/2009 &ndash; 9/2009
+      duration: 04/2009 &ndash; 09/2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
       description: >
         Facilitated and increased conversion rates by establishing new branding and 
@@ -282,7 +275,7 @@ author:
       location: Boston, MA
       title: Process Engineer
       ended: 2009
-      duration: 4/2009 &ndash; 9/2009
+      duration: 04/2009 &ndash; 09/2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
       description: >
         Delivered high ROI by automating Excel and Word document processing. 
@@ -295,15 +288,18 @@ author:
       printsinglepage: collapsed
       collapsed: true
       location: Canton, MA
-      title: Graphic Designer & Process Engineer
+      title: Graphic Designer & Process Engineer.
       ended: 2009
-      duration: 3/2007 &ndash; 1/2009
+      duration: 03/2007 &ndash; 01/2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
       description: >
         Improved efficiency and accuracy of artwork-data workflow by authoring scripts to remove repetitive tasks. 
         Initiated projects to enhance data communication across groups. 
-        Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
-        Designed and built image- and data-intensive catalogs; coordinated and automated catalog production.
+      features:
+        - feature: 
+          text: Coordinated and automated catalog production; designed and built image- and data-intensive catalogs.
+        - feature: 
+          text: Saved resources by in-house development of a dynamic departmental website for collateral viewing and organization; crafted simple update process with existing database. 
   workSamples:
     - ahope:
       id: ahope
@@ -314,7 +310,7 @@ author:
       technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, PostgresQL, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
       link: github.com/evandana/keep-ahope
       description:
-        Led a team in creating a patient intake app for a local non-profit harm reduction center called
+        Largely a pro-bono side project, created a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE<i class="fa fas fa-external-link-alt"></i></a>,
         which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
         Managed a small group of software engineers who donated time to this project.
@@ -334,11 +330,10 @@ author:
       id: auction-app
       collapsed: true
       printsinglepage: collapsed
-      title: Pan Mass Challenge Auction App
+      title: Pan-Mass Challenge Auction App
       duration: 2016 &ndash; 2018
       description: >
-        From concept through development to processing results, this live-bidding auction 
-          and raffle ticket web app raised over $5000 for charity. 
+        Raised over $5000 for charity by creating a web app with live auction and raffle tickets.
         Working with another developer, we started with domain models, UX white-boarding, 
           framework choices, and hosting discussions. <a href="https://pmc-2018-demo.firebaseapp.com" target="_BLANK">Try live bidding<i class="fa fas fa-external-link-alt"></i></a> using dummy data.
       icon: mouse-pointer
@@ -445,12 +440,9 @@ author:
       duration: 2018 &amp; 2019
       description: >
         JS Mobile Conf was a local conference focusing on using JavaScript to deliver mobile applications.
-        <br/><br/>
-        Covered cross-platform and web technologies for mobile devices: NativeScript (Angular), ReactNative (React), and PWAs.
-      # <br/><br/>
-      # <a href="https://github.com/evandana/jsmobileconf2019" target="_BLANK">2019 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
-      # <br/>
-      # <a href="https://github.com/evandana/jsmobileconf" target="_BLANK">2018 workshop notes <i class="fa fas fa-external-link-alt"></i></a>
+      features:
+        - feature:
+          title: "Covered cross-platform and web technologies for mobile devices: NativeScript (Angular), ReactNative (React), and PWAs."
     - activity:
       id: november-project
       printsinglepage: hidden
@@ -463,10 +455,12 @@ author:
       duration: 2014 &ndash; 2015
       description: >
         November Project is a free fitness movement with "tribes" in 30+ cities across the world, with Boston as the origin.
-        <br/></br/>
-        Developed comfort, ease, and power when speaking and writing for a large audience.
-        Inspired self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities.  
-        With co-leaders, cultured strong relationships that included feedback cycles.
+      features:
+        - feature: 
+          title: Developed comfort, ease, and power when speaking and writing for a large audience.
+        - feature:
+          title: Inspired self and others while designing, leading, coaching, and documenting workouts for 150-1500 athletes of all abilities.  
+            With co-leaders, cultured strong relationships that included feedback cycles.
     - activity:
       id: ga-instructor
       printsinglepage: show
