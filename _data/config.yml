@@ -5,7 +5,7 @@ description: Evan Dana's CV
 # https://photos.google.com/u/1/search/me/photo/AF1QipPw8HHB2hOj84d0d75t2QGRYl0-D7ljCVgnMHgk
 # https://photos.google.com/u/1/search/me/photo/AF1QipOxGcKWupOzmUZkktimlqlCNWU2ulPA2_oJNO3L
 # new pic
-favicon: /assets/img/edana-professional.jpg
+favicon: /assets/img/evan-avatar.png
 baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
@@ -29,7 +29,7 @@ author:
   github: evandana
   linkedin: evandana
   twitter: evandana
-  gavatar: /assets/img/edana-professional.jpg
+  gavatar: /assets/img/evan-avatar.png
   stackoverflow:
   #  stackoverflow: 4582127
   intro:
@@ -49,10 +49,10 @@ author:
       title: Staff Software Engineer
       ended: 2023
       duration: 05/2022 &ndash; 11/2023
-      technologies: React Native, TypeScript, ReactQuery, Expo, SaMD,
+      technologies: React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD,
         Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
         Agile, Kanban,
-        Figma, Storybook,
+        Figma, Storybook, Component Library, Design System,
         HealthKit
       description:
         Focused on strategy, execution, and team culture while adapting to changing needs.
@@ -103,18 +103,20 @@ author:
       ended: 2022
       duration: 01/2019 &ndash; 05/2022
       technologies: React Native, TypeScript, Redux, NestJS, 
-        Figma, Storybook,
         Bitrise.io, CI/CD, Docker, 
+        Sentry, DataDog, OpsGenie, PagerDuty,
+        Figma, Storybook,
+        Component Library, Design System,
         Software as a Medical Device, PDT, AWS
       description:
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
-        Delivered complex stories independently, and in collaboration, ensuring high quality and auditable code while also focusing on value-based delivery.
+        Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
         # Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations.
         # Improved engineering community through large and small initiatives.
       features:
         - feature:
-          title: Increased PDT development efficiency through shared ui libraries (Mobile Platform Engineer).
+          title: Increased PDT development efficiency through shared UI libraries (Mobile Platform Engineer).
           text:
             Tech lead and primary contributor for the shared UI libraries.
             Functionality includes utilities for managing state syncing, design system components, and the login screen flow.
@@ -155,26 +157,26 @@ author:
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
-        delivered complex features on time, independently and through 
-        collaboration, with utmost attention to quality.
+          delivered complex features on time, independently and through 
+          collaboration, with utmost attention to quality.
         Exemplified best practices, from coding patterns to agile methodologies.
         Translated requirements into manageable stories with clear and complete 
-        acceptance criteria, raising discussions early if needed.
+         acceptance criteria, raising discussions early if needed.
         Ensured quality by writing unit and system tests for use in CI/CD workflow.
         Consistently created useful graphical and text-based documentation.
-        <br/><br/>
-        Mentored software engineers. Presented on modern UI frameworks and 
-        patterns through an interactive programming session.
       features:
-        - feature:
-          title: Community thought leader and advocate.
-          text: SME across teams for UI frameworks and patterns
         - feature:
           title: Feature lead.
           text: >
             Led UI development of feature on open source shared component library: 
             <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>.
             Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs.
+        - feature:
+          title: Community thought leader and advocate.
+          text: 
+            SME across teams for UI frameworks and patterns. 
+            Mentored software engineers.
+            Presented on modern UI frameworks and patterns through an interactive programming session.
         # - feature:
         #   title: Team contributor
         #   text: Focusing on group success, I drove inclusive discussions; improved maintainability with useful documentation and code reviews
