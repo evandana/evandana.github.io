@@ -43,6 +43,52 @@ author:
       I deliver customer value through technical leadership, individual contributions, and collaboration.
   workHistory:
     - work1:
+      id: osmind
+      company: Osmind
+      printsinglepage: show
+      location: Remote
+      title: Staff Software Engineer
+      ended: 2026
+      duration: 11/2023 &ndash; current
+      technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, Styled Components, Electron, Docker
+      description:
+        Demonstrated end-to-end technical leadership and project ownership as a Staff Software Engineer, 
+        driving high-impact initiatives across native app distribution, data migration, and infrastructure optimization. 
+        Consistently delivered scalable solutions and measurable improvements that 
+        enhanced engineering efficiency, product reliability, and customer outcomes.
+      features:
+        - feature:
+          title: Directed and executed multiple data migration projects
+          text: 
+            Included Athena EHR onboarding and bespoke migrations for high-priority customers, 
+            delivering initial CSVs ahead of schedule and reducing manual migration effort 
+            through automation and early test imports.
+        - feature:
+          title: Distribution pipeline for Osmind's first Desktop app (Electron)
+          text: 
+            Implemented CI/CD, cross-platform code signing, and S3-based distribution 
+            with auto-updates, and reduced build times by 60% and installer size by 40%.
+        - feature:
+          title: Resolved critical security and multi-tenant issues in legacy patient code
+          text: 
+            Overhauled architecture and test coverage to enable safe patient detachment 
+            and improve system integrity.
+        - feature:
+          title: Established secure, scalable authentication and authorization for 
+            whitelabeled ERH iFrame integrations
+          text: 
+            Designed and implemented OIDC-based middleware and collaborated with infrastructure 
+            to enable multi-org support and robust staging/testing environments.
+        - feature:
+          title: Fostered a culture of collaboration and technical excellence
+          text: 
+            Built consensus across teams, provided consolidated documentation and process references, 
+            and earned the Team Above Self award for consistently elevating team performance 
+            and supporting company values.
+
+        - Led the design and delivery of logout confirmation flows, presenting at Eng All Hands and earning company-wide recognition for improving user experience and security.
+          
+    - work1:
       id: bighealth
       company: Big Health
       printsinglepage: show
