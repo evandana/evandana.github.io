@@ -34,9 +34,11 @@ author:
   #  stackoverflow: 4582127
   intro:
     firstline:
-      LEAD SOFTWARE ENGINEER, specializing in React Native.
+      FULL STACK STAFF SOFTWARE ENGINEER, specializing in Front End.
       # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
-      # test
+      
+      
+   
     description:
       # and focus on strategy, execution, and team culture.
       Leveraging experience in high-quality and high-output environments,
@@ -90,13 +92,13 @@ author:
         Figma, Storybook, Component Library, Design System,
         HealthKit
       description:
-        Focused on strategy, execution, and team culture while adapting to changing needs.
-        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications.
+        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications while 
+        focused on strategy, execution, and team culture in a highly dynamic environment.
         # Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
         #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Delivered new app, exceeding user engagement target by 50%. 
+          title: Exceeding user engagement target by 50% for clinical trial app poised to improve depression symptoms.
           text:
             Technical front-end lead for app with provisional requirements and tight timelines; 
               delivered on time.
@@ -112,22 +114,22 @@ author:
             Originated idea, guided high-level planning, and led implementation of cross-product local notifications; 
               primary code contributor.
             These actions resulted in 40% adoption rate and the average user starting nearly one more in-app lesson.
-        - feature:
-          title: Met quarterly goal of delivery of new app, leveraging existing platform.
-          text: >
-            Strategically planned, chunked, and sequenced work to maximize throughput.
-            Removed roadblocks: independently resolved complex technical items,
-              guided coworkers on implementation, and worked cross-functionally.
+        #- feature:
+        #  title: Met quarterly goal of delivery of new app, leveraging existing platform.
+        #  text: >
+        #    Strategically planned, chunked, and sequenced work to maximize throughput.
+        #    Removed roadblocks: independently resolved complex technical items,
+        #      guided coworkers on implementation, and worked cross-functionally.
         - feature:
           title: Technical Leadership
           text: 
             Reduced tech debt and risk; achieved cross-team stakeholder alignment on ROI for overdue upgrade.
             Drove alignment across teams as presenter and facilitator at Front End Guild meetings.
             Mentored other engineers on complex work items.
-        - feature:
-          title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
-          text: 
-            Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
+        #- feature:
+        #  title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
+        #  text: 
+        #    Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
             # Enriched the architecture discussion by offering a delivery-focused and future-forward proposal with rich detail.
     - work1:
       id: pear
@@ -145,36 +147,36 @@ author:
         Component Library, Design System,
         Software as a Medical Device, PDT, AWS
       description:
+        Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
-        Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
+        
         # Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations.
         # Improved engineering community through large and small initiatives.
       features:
         - feature:
-          title: Increased PDT development efficiency through shared UI libraries (Mobile Platform Engineer).
+          title: Increased prescription mobile app development efficiency through shared UI libraries (Mobile Platform Engineer).
           text:
-            Tech lead and primary contributor for the shared UI libraries.
-            Functionality includes utilities for managing state syncing, design system components, and the login screen flow.
-            Led a collaboration building new core components;
-            crafted implementation strategy and tackled the most complex stories with composable components.
+            Tech lead and primary contributor for the shared UI libraries, leveraging composable components.
+            Functionality included utilities for managing bidirectional state syncing and resolution, design system components, and the login screen flow.
+            # Led a collaboration building new core components;
+            # crafted implementation strategy and tackled the most complex stories with composable components.
             # Maintained these libraries with ReactNative and RN Nav upgrades,
             # including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation.
             # Somryst Redesign, RN Nav v3 -> v5, RN 61 -> 63
         - feature:
           title: Drove complex cross-team initiatives to success (Platform Engineer).
-          text:
-            Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to microservices.
-            For migration to new auth service, consolidated requirements and solution options into a detailed RFC and managed the living documentation.
+          text: >
+            For migration to a monolith and new auth services: organized, planned, and implemented the mobile-centric aspects.
+            Drove solution alignment across teams by consolidating requirements, creating a detailed RFC and managing the living documentation.
             Proactively identified critical paths and opportunities for parallelization across teams.
             # Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
             # Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
             # Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint
         - feature:
-          title: Delivered PDT for study use (tech lead).
+          title: Delivered prescription Insomnia digital therapeutic app for clinical study (tech lead).
           text:
-            Responsible for coordinating code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
-            Delivered properly functioning app on time for clinical study.
+            Responsible for coordinating timely code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
             Resolved challenging performance issue by leading a mini-hackathon.
             # Conducted technical phone screens and candidate interviews.
         # - feature:
@@ -197,8 +199,8 @@ author:
       # Consistently created useful graphical and text-based documentation.  
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
-          delivered complex features on time, independently and through 
-          collaboration, with utmost attention to quality.
+          delivered complex features on time.
+        # , independently and through collaboration, with utmost attention to quality.
         Translated requirements into manageable stories with clear and complete 
          acceptance criteria, raising discussions early if needed.
       features:
@@ -207,9 +209,9 @@ author:
           text: >
             Led UI development of feature on open source shared component library: 
             <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>.
-            Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs.
+            Implemented complex features, adding comprehensive E2E tests.
         - feature:
-          title: Community thought leader and advocate.
+          title: Community thought leader.
           text: 
             SME across teams for UI frameworks and patterns. 
             Mentored software engineers.
@@ -235,18 +237,19 @@ author:
       duration: 06/2013 &ndash; 10/2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
       description:
-        Years of experience in UI lead role, conducting engaging presentations,
-        and as technical liaison for client and internal domain teams.
-        Enforced code quality and best practices.
+        Awarded recognition for client-focused delivery. 
+        In UI lead role, conducted engaging presentations,
+        and was technical liaison for client and internal domain teams.
+        # Enforced code quality and best practices.
         # Advocated for code stability through unit, integration, functional, or
         # automated visual-diff testing.
-      features:
-        - feature:
-          title: Awarded recognition for client-focused delivery.
-          text: Led UI development for that project, having recently self-taught the technology.
-        # - feature:
-        #   title: Autonomous and motivated
-        #   text: Created reusable d3.js charting library between assignments
+      #features:
+      #  - feature:
+      #    title: Awarded recognition for client-focused delivery.
+      #    text: Led UI development for that project, having recently self-taught the technology.
+         - feature:
+           title: Autonomous and motivated
+           text: Created reusable d3.js charting library between assignments
         # - feature:
         #   title: Quickly learned and utilized new technology.
         #   text: From Backbone to AngularJS and Aurelia
@@ -263,14 +266,14 @@ author:
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description:
         Implemented significant contributions to interactive retirement planning tool,
-        turning complex business logic into an engaging user experience.
+        turning complex business logic into an engaging user experience. Created dynamic visualizations.
         # Initiated suite of unit tests to prevent recurring defects.
         # Reached cross-browser functionality with collaborative discussions.
       features:
-        - feature:
-          title: Drove consistent quality with unit test suite.
-        - feature:
-          title: Created dynamic visualizations. # for retirement income projections
+        # - feature:
+        #   title: Drove consistent quality with unit test suite.
+        # - feature:
+        #  title: Created dynamic visualizations. # for retirement income projections
     - work1:
       id: innerscope
       company: Innerscope Research Inc.
