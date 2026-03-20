@@ -55,24 +55,29 @@ author:
       duration: 11/2023 &ndash; current
       technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, Styled Components, Electron, Docker
       description:
-        Demonstrated technical leadership and ownership as a Staff Software Engineer, delivering high-impact solutions across the full stack, including mobile and desktop. Consistently improved release speed, code quality, and cross-team alignment by driving automation, setting technical standards, and proactively solving business-critical engineering challenges.
+        Demonstrated technical leadership and ownership as a Staff Software Engineer, delivering high-impact solutions across the full stack, including mobile and desktop. 
+        # AI JUNK: Consistently improved release speed, code quality, and cross-team alignment by driving automation, setting technical standards, and proactively solving business-critical engineering challenges.
       features:
       - feature:
-        title: Established secure, scalable authentication for whitelabeled EHR iFrame integrations
+        title: Established authentication and authorization for whitelabeled EHR iFrame integrations
         text: 
-          Designed and implemented OIDC-based middleware and collaborated with infrastructure to enable multi-org support and robust staging/testing environments.
+          Designed and led implementation of iFrame context driving Cognito authN followed by backend authZ middleware. 
+          Collaborated with infrastructure to ensure multi-tenant support and robust staging environment.
       - feature:
         title: Owned and streamlined the mobile release process across teams
         text: 
           Ensured seamless delivery by driving alignment, documentation, and prioritization for mobile releases, mentoring new owners, and setting standards for cross-pod collaboration.
       - feature:
-        title: Architected and deployed Osmind's first desktop app distribution pipeline
+        title: Architected and deployed distribution pipeline for Osmind's first desktop app using Electron
         text: 
-          Implemented CI/CD, cross-platform code signing, and S3-based distribution with auto-updates, reducing build times by 60% and installer size by 40%, saving ~$150/month in CI costs.
+          Implemented CI/CD, cross-platform code signing (app store prerequisite), and S3-based app distribution with auto-updates.
+          Reduced native build times over 60% and installer size by over 40%, saving ~$150/month in CI costs.
       - feature:
-        title: Directed and executed multiple data migration projects
+        title: Led and executed customer data migration across platforms, 
         text: 
-          Enabled Athena EHR onboarding and bespoke migrations for high-priority customers, delivering initial CSVs ahead of schedule and reducing manual migration effort through automation and early test imports.
+          Enabled bulk EMR onboarding and bespoke migrations for high-priority customers.
+          Delivered initial migration documents ahead of schedule and reduced manual migration effort and human error.
+          Meticulous process documentation enabled quick resolution of idiosyncracies.
       # - feature:
       #   title: Led frontend technical standards and process improvements
       #   text: 
