@@ -48,52 +48,40 @@ author:
       printsinglepage: show
       location: Remote
       title: Staff Software Engineer
+      started: 2023
       ended: 2026
       duration: 11/2023 &ndash; current
       technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, Styled Components, Electron, Docker
       description:
-        Demonstrated end-to-end technical leadership and project ownership as a Staff Software Engineer, 
-        driving high-impact initiatives across native app distribution, data migration, and infrastructure optimization. 
-        Consistently delivered scalable solutions and measurable improvements that 
-        enhanced engineering efficiency, product reliability, and customer outcomes.
+        Demonstrated technical leadership and ownership as a Staff Software Engineer, delivering high-impact solutions across the full stack, including mobile and desktop. Consistently improved release speed, code quality, and cross-team alignment by driving automation, setting technical standards, and proactively solving business-critical engineering challenges.
       features:
-        - feature:
-          title: Directed and executed multiple data migration projects
-          text: 
-            Included Athena EHR onboarding and bespoke migrations for high-priority customers, 
-            delivering initial CSVs ahead of schedule and reducing manual migration effort 
-            through automation and early test imports.
-        - feature:
-          title: Distribution pipeline for Osmind's first Desktop app (Electron)
-          text: 
-            Implemented CI/CD, cross-platform code signing, and S3-based distribution 
-            with auto-updates, and reduced build times by 60% and installer size by 40%.
-        - feature:
-          title: Resolved critical security and multi-tenant issues in legacy patient code
-          text: 
-            Overhauled architecture and test coverage to enable safe patient detachment 
-            and improve system integrity.
-        - feature:
-          title: Established secure, scalable authentication and authorization for 
-            whitelabeled ERH iFrame integrations
-          text: 
-            Designed and implemented OIDC-based middleware and collaborated with infrastructure 
-            to enable multi-org support and robust staging/testing environments.
-        - feature:
-          title: Fostered a culture of collaboration and technical excellence
-          text: 
-            Built consensus across teams, provided consolidated documentation and process references, 
-            and earned the Team Above Self award for consistently elevating team performance 
-            and supporting company values.
-
-        - Led the design and delivery of logout confirmation flows, presenting at Eng All Hands and earning company-wide recognition for improving user experience and security.
-          
+      - feature:
+        title: Established secure, scalable authentication for whitelabeled EHR iFrame integrations
+        text: 
+          Designed and implemented OIDC-based middleware and collaborated with infrastructure to enable multi-org support and robust staging/testing environments.
+      - feature:
+        title: Owned and streamlined the mobile release process across teams
+        text: 
+          Ensured seamless delivery by driving alignment, documentation, and prioritization for mobile releases, mentoring new owners, and setting standards for cross-pod collaboration.
+      - feature:
+        title: Architected and deployed Osmind's first desktop app distribution pipeline
+        text: 
+          Implemented CI/CD, cross-platform code signing, and S3-based distribution with auto-updates, reducing build times by 60% and installer size by 40%, saving ~$150/month in CI costs.
+      - feature:
+        title: Directed and executed multiple data migration projects
+        text: 
+          Enabled Athena EHR onboarding and bespoke migrations for high-priority customers, delivering initial CSVs ahead of schedule and reducing manual migration effort through automation and early test imports.
+      # - feature:
+      #   title: Led frontend technical standards and process improvements
+      #   text: 
+      #     Authored and rolled out RFCs, best practices, and interview processes for frontend architecture, testing, and diagramming, directly influencing team quality and hiring.
     - work1:
       id: bighealth
       company: Big Health
       printsinglepage: show
       location: Remote
       title: Staff Software Engineer
+      started: 2022
       ended: 2023
       duration: 05/2022 &ndash; 11/2023
       technologies: React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD,
@@ -147,6 +135,7 @@ author:
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
+      started: 2019
       ended: 2022
       duration: 01/2019 &ndash; 05/2022
       technologies: React Native, TypeScript, Redux, NestJS, 
@@ -187,30 +176,31 @@ author:
             Responsible for coordinating code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
             Delivered properly functioning app on time for clinical study.
             Resolved challenging performance issue by leading a mini-hackathon.
-            Conducted technical phone screens and candidate interviews.
-        - feature:
-          title: Improved the employee experience (Chair of Employee Engagement Council).
+            # Conducted technical phone screens and candidate interviews.
+        # - feature:
+        #   title: Improved the employee experience (Chair of Employee Engagement Council).
           # text: Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
-        - feature:
-          title: Fostered engineering community (Engineering Advocate).
+        # - feature:
+        #   title: Fostered engineering community (Engineering Advocate).
     - work1:
       id: ge
       company: General Electric | GE Digital
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
+      started: 2016
       ended: 2019
       duration: 10/2016 &ndash; 01/2019
       technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
+      # Exemplified best practices, from coding patterns to agile methodologies.
+      # Ensured quality by writing unit and system tests for use in CI/CD workflow.
+      # Consistently created useful graphical and text-based documentation.  
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
           delivered complex features on time, independently and through 
           collaboration, with utmost attention to quality.
-        Exemplified best practices, from coding patterns to agile methodologies.
         Translated requirements into manageable stories with clear and complete 
          acceptance criteria, raising discussions early if needed.
-        Ensured quality by writing unit and system tests for use in CI/CD workflow.
-        Consistently created useful graphical and text-based documentation.
       features:
         - feature:
           title: Feature lead.
@@ -240,6 +230,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Sr. Interactive Developer, L2
+      started: 2013
       ended: 2016
       duration: 06/2013 &ndash; 10/2016
       technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
@@ -256,9 +247,9 @@ author:
         # - feature:
         #   title: Autonomous and motivated
         #   text: Created reusable d3.js charting library between assignments
-        - feature:
-          title: Quickly learned and utilized new technology.
-          text: From Backbone to AngularJS and Aurelia
+        # - feature:
+        #   title: Quickly learned and utilized new technology.
+        #   text: From Backbone to AngularJS and Aurelia
     - work1:
       id: putnam
       company: Putnam Investments
@@ -266,6 +257,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Javascript UI Developer
+      started: 2012
       ended: 2013
       duration: 07/2012 &ndash; 05/2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
@@ -286,6 +278,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Interactive Developer, L2
+      started: 2009
       ended: 2012
       duration: 9/2009 &ndash; 05/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
@@ -306,6 +299,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Web Developer
+      started: 2009
       ended: 2009
       duration: 04/2009 &ndash; 09/2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
@@ -323,6 +317,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Process Engineer
+      started: 2009
       ended: 2009
       duration: 04/2009 &ndash; 09/2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
@@ -338,6 +333,7 @@ author:
       collapsed: true
       location: Canton, MA
       title: Graphic Designer & Process Engineer.
+      started: 2007
       ended: 2009
       duration: 03/2007 &ndash; 01/2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
@@ -359,7 +355,7 @@ author:
       technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, PostgresQL, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
       link: github.com/evandana/keep-ahope
       description:
-        Largely a pro-bono side project, created a patient intake app for a local non-profit harm reduction center called
+        Pro-bono side project creating a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE<i class="fa fas fa-external-link-alt"></i></a>,
         which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
         Managed a small group of software engineers who donated time to this project.
@@ -473,8 +469,8 @@ author:
       # <br/></br/>
       # Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku.
       # Earned a certificate of completion for listed classes.
-      completed: curr.
-      duration: 2012 &ndash; current
+      completed: 2024
+      duration: 2012 &ndash; 2024
 
   activities:
     - activity:
