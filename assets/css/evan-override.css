@@ -560,14 +560,13 @@ input:checked + .slider:before {
         page-break-before: avoid;
         width: 100%;
         height: 100%;
-        zoom: 50%;
         page-break-before: avoid;
         zoom: 100%;
 
         width: 1000px;
         max-width: 1000px;
         min-width: 1000px;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .print-hidden {
@@ -582,9 +581,9 @@ input:checked + .slider:before {
     .fa.fas.fa-external-link-alt {
         display: none;
     }
-    .timeline-panel {
+    /* .timeline-panel {
         break-inside: avoid;
-    }
+    } */
 
 
     /* ------------------- */
@@ -599,23 +598,27 @@ input:checked + .slider:before {
         position: relative;
     }
     #workHistory {
-        max-width: 48em;
+        max-width: 38em;
         float: left;
         clear: none;
     }
     #codeHighlights {
-        max-width: 48em;
+        max-width: 38em;
         float: left;
+        display: none;
     }
 
     #education .timeline-inverted {
-        width: 200px !important;
+        width: 260px !important;
     }
 
     #education, #activities, #github {
-        width: 200px;
+        width: 260px;
         float: right;
         clear: none;
+    }
+    #github {
+        margin-top: 18px;
     }
 
     .fa.fa-calendar, .fa.fa-map-marker {
@@ -678,9 +681,9 @@ input:checked + .slider:before {
 
     #intro {
         position: absolute;
-        right: 28px;
-        top: -116px;
-        width: 394px;
+        right: -40px;
+        top: -153px;
+        width: 537px;
         margin: 0;
     }
 
@@ -693,7 +696,7 @@ input:checked + .slider:before {
     }
 
     .intro-body {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .social-link-block:first-of-type span {
@@ -736,6 +739,7 @@ input:checked + .slider:before {
 
     .timeline-title, .timeline-role-title {
         display: inline;
+        font-size: 18px;
     }
     .timeline-title small {
         font-size: 16px;
@@ -883,6 +887,12 @@ input:checked + .slider:before {
     /* Education */
     /* ------------------- */
 
+    #education, #activities {
+        border-left: 1px solid #c7c7c7;
+        margin-left: -25px;
+        padding-left: 25px;
+    }
+
     #education .timeline-inverted {
         float: left;
         width: 14.8em;
@@ -919,6 +929,10 @@ input:checked + .slider:before {
     /* Github */
     /* ------------------- */
 
+    #github {
+        display: none;
+    }
+
     #programmingSkills {
         display: none;
     }
@@ -947,11 +961,6 @@ input:checked + .slider:before {
         left: 0;
         text-transform: uppercase
     }
-
-
-    /* ------------------- */
-    /* Github */
-    /* ------------------- */
 
     #github .grid-block {
         margin: 0;
@@ -982,6 +991,10 @@ input:checked + .slider:before {
     /* ----------------------------------------- */
     /* Print Single Page */
     /* ----------------------------------------- */
+
+    .print-single-page--hidden {
+        display: none;
+    }
 
     .print-single-page #education {
         display: inline-block;
