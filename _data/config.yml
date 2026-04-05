@@ -1,10 +1,6 @@
 # Site settings
 title: Evan Dana's CV
 description: Evan Dana's CV
-#TODO update photo
-# https://photos.google.com/u/1/search/me/photo/AF1QipPw8HHB2hOj84d0d75t2QGRYl0-D7ljCVgnMHgk
-# https://photos.google.com/u/1/search/me/photo/AF1QipOxGcKWupOzmUZkktimlqlCNWU2ulPA2_oJNO3L
-# new pic
 favicon: /assets/img/headshot_bw_sm.png
 baseurl: ""
 url: http://evandana.github.io
@@ -31,18 +27,11 @@ author:
   twitter: evandana
   gavatar: /assets/img/headshot_bw_sm.png
   stackoverflow:
-  #  stackoverflow: 4582127
   intro:
     firstline:
-      FULL STACK STAFF SOFTWARE ENGINEER, specializing in Med Tech
-      # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
-      
-      
-   
+      FULL STACK STAFF SOFTWARE ENGINEER, specializing in MedTech
     description:
-      # and focus on strategy, execution, and team culture.
-      Leveraging experience in high-quality and high-output environments,
-      I deliver customer value through technical leadership, individual contributions, and collaboration.
+      Dedicated to delivering positive impact, I am known for for UI development, versatility, and excellent documentation.
   workHistory:
     - work1:
       id: osmind
@@ -53,28 +42,31 @@ author:
       started: 2023
       ended: 2026
       duration: 11/2023 &ndash; current
-      technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, Styled Components, Electron, Docker
+      technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, GraphQL, Styled Components, Electron, Docker
       description:
-        Demonstrated technical leadership and ownership as a Staff Software Engineer, delivering high-impact solutions across the full stack, including mobile and desktop. 
-        # AI JUNK: Consistently improved release speed, code quality, and cross-team alignment by driving automation, setting technical standards, and proactively solving business-critical engineering challenges.
+        Demonstrated technical versitility while delivering Electronic Health Record (EHR) features on legacy systems and new products. Recognized for culture contributions with Team Above Self Award.
       features:
       - feature:
-        title: ... candid integration
+        title: Unlocked revenue model by syncing insurance payments across systems
         text: 
-          Spearheaded seamless integration between third-party healthcare platforms by architecting and implementing robust API connectors, enabling secure, real-time data exchange and enhancing interoperability across clinical workflows. 
+          Spearheaded seamless integration between third-party healthcare platforms by architecting and implementing robust API connectors, enabling secure data exchange for claims' payments. 
       - feature:
         title: Established auth for whitelabeled EHR iFrame integration
         text: 
-          Designed and led implementation of iFrame context driving Cognito authN followed by backend authZ middleware. 
-          Collaborated with infrastructure to ensure multi-tenant support and robust staging environment.
+          Designed and led implementation of iFrame auth using Cognito authN followed by backend authZ middleware, driving collaboration with platform team.
+          5+ apps were built using these foundational docs and codepaths.
       - feature:
-        title: Architected and deployed distribution pipeline for first desktop app (Electron)
+        title: Architected and deployed distribution pipeline for 0→1 AI desktop app (Electron)
         text: 
-          Implemented CI/CD, cross-platform code signing (app store prerequisite), and S3-based app distribution with auto-updates.
-          Reduced native build times over 60% and installer size by over 40%, saving ~$150/month in CI costs.
+          #  Led end-to-end delivery of Osmind's first desktop app, architecting CI/CD and distribution pipelines that reduced build times by 60% and costs by $150/month. Mentored engineers on best practices for cross-platform delivery.
+          # Alternative:
+          Implemented CI/CD, cross-platform code signing (app store prerequisite), and AWS S3-based app distribution with auto-updates.
+          Saved CI costs and improved dev cycle time by reducing native build times by over 60% and installer size by over 40%.
       - feature:
         title: Owned and streamlined the mobile release process across teams
         text: 
+          # Championed team alignment and knowledge sharing by documenting and standardizing the mobile release process, mentoring new owners, and facilitating cross-pod collaboration to ensure reliable, on-time delivery.
+          # Alternative:
           Ensured seamless delivery by driving alignment, documentation, and prioritization for mobile releases, mentoring new owners, and setting standards for cross-pod collaboration.
       # - feature:
       #   title: Led and executed customer data migration across platforms, 
@@ -98,7 +90,7 @@ author:
       technologies: "React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD, Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace, Figma, Storybook, Component Library, Design System, HealthKit"
       # "React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD, Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace, Agile, Kanban, Figma, Storybook, Component Library, Design System, HealthKit"
       description:
-        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications while 
+        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications (DTx) while 
         focused on strategy, execution, and team culture in a highly dynamic environment.
         # Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
         #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
@@ -109,10 +101,9 @@ author:
             Technical front-end lead for app with provisional requirements and tight timelines; 
               delivered on time.
             Drove several features from requirements discovery through implementation, 
-              including sequencing milestones and reviewing PRs.
-            Planned and implemented complex UI/UX enhancements.
-            Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively
-              (hybrid of Kanban and Agile Scrum).
+              including sequencing milestones.
+            <br/>Planned and implemented complex UI/UX enhancements.
+            Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively.
             Evangelized and applied best practices; drove code coverage improvement from 0 to 80% in one quarter.
         - feature:
           title: Increased app usage, correlating to improved clinical outcomes. #; achieved pivotal trial readiness.
@@ -152,12 +143,6 @@ author:
         Figma, Storybook,
         Component Library, Design System,
         SaMD, PDT, AWS"
-      # "React Native, TypeScript, Redux, NestJS, 
-      #   Bitrise.io, CI/CD, Docker, 
-      #   Sentry, DataDog, OpsGenie, PagerDuty,
-      #   Figma, Storybook,
-      #   Component Library, Design System,
-      #   Software as a Medical Device, PDT, AWS"
       description:
         Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
         Led planning, coordination, and development of significant features and components across teams.
@@ -256,13 +241,13 @@ author:
         # Enforced code quality and best practices.
         # Advocated for code stability through unit, integration, functional, or
         # automated visual-diff testing.
-      features:
+      # features:
       #  - feature:
       #    title: Awarded recognition for client-focused delivery.
       #    text: Led UI development for that project, having recently self-taught the technology.
-          - feature:
-            title: Autonomous and motivated
-            text: Created reusable d3.js charting library between assignments
+          # - feature:
+          #   title: Autonomous and motivated
+          #   text: Created reusable d3.js charting library between assignments
         # - feature:
         #   title: Quickly learned and utilized new technology.
         #   text: From Backbone to AngularJS and Aurelia
@@ -348,7 +333,7 @@ author:
       printsinglepage: collapsed
       collapsed: true
       location: Canton, MA
-      title: Graphic Designer & Process Engineer.
+      title: Graphic Designer & Process Engineer
       started: 2007
       ended: 2009
       duration: 03/2007 &ndash; 01/2009
@@ -568,7 +553,7 @@ author:
       percentage: 80%
       usefulness: experienced
     - skill:
-      name: "Coding: FE, BE, RN, Electron"
+      name: "Coding: FE (React), BE (NodeJS), ReactNative"
       percentage: 50%
       usefulness: intermediate
     - skill:
