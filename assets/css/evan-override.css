@@ -8,6 +8,8 @@
  * delivery over maintainability.
  */
 
+@import "evan-theme-colors.css";
+
 @media (max-width: 550px) {
     .author-intro {
         width: 100%;
@@ -28,7 +30,7 @@
 
 body {
     background-image: none;
-    background: #f6f6f6;
+    background: var(--background);
     letter-spacing: 0.02rem;
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 .title .cat-title {
-    background: #5bc0de;
+    background: var(--primary);
     padding: 10px 7px; 
     min-width: auto;
     min-height: auto;
@@ -69,11 +71,11 @@ body {
 }
 
 .title .cat-title:after {
-    border-top: 10px solid #5bc0de;
+    border-top: 10px solid var(--primary);
 }
 
 .timeline-badge.info {
-    background: #c7c7c7 !important;
+    background: var(--secondary) !important;
 }
 
 /* panel left arrow, main */
@@ -112,11 +114,11 @@ section {
     /*color: #23527c;*/
     text-decoration:none;
     padding-bottom:0;
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid var(--secondary);
 }
 #intro a:hover {
-    color: #5bc0de;
-    border-bottom: 1px solid #5bc0de;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .feature-list--title {
@@ -127,7 +129,7 @@ section {
 /* header */
 .header {
     background-image: none;
-    background: #f7f7f7;
+    background: var(--header-bg);
 }
 .author-name {
     text-transform: uppercase;
@@ -148,7 +150,7 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .ribbon.red {
-    background: #5bc0de;
+    background: var(--primary);
 }
 .ribbon a {
     text-shadow: none;
@@ -158,9 +160,9 @@ section {
 .btn-flat {
     background: none;
     color: black;
-    border: 1px solid #c7c7c7;
+    border: 1px solid var(--secondary);
     padding-right: 20px;
-    box-shadow: 0 1px 0 #c7c7c7;
+    box-shadow: 0 1px 0 var(--secondary);
  }
 .btn-flat:active, .btn-flat:hover, .btn-flat:focus, .btn-flat:visited {
     color: black;
@@ -179,20 +181,20 @@ section {
 
 /* sidebar */
 aside .grid-block {
-    background: #f0f0f0;
+    background: var(--sidebar-bg);
     border: none;
 }
 aside .title .cat-title {
-    background: #c7c7c7;
+    background: var(--secondary);
 }
 aside .title .cat-title::after {
-    border-top: 10px solid #c7c7c7;
+    border-top: 10px solid var(--secondary);
 }
 .github-name {
     text-transform: uppercase;
 }
 .github-name a:hover {
-    color: #63A4B5;
+    color: var(--accent);
 }
 .github-name .fa {
     font-size: .8em;

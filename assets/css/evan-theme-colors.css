@@ -1,0 +1,96 @@
+/* Evan Theme Colors - Semantic color variables */
+
+:root {
+  /* Hues (Base Colors) */
+  --blue-primary: #5bc0de;
+  --gray-secondary: #c7c7c7;
+  --gray-accent: #63A4B5;
+  --gray-background: #f6f6f6;
+  --gray-header: #f7f7f7;
+  --gray-sidebar: #f0f0f0;
+  --gray-card: #F0F0F0;
+  --black-text: #333;
+  --gray-text-light: #777;
+  --gray-text-muted: #a9a9a9;
+  --white: #ffffff;
+  --black: #111;
+  --blue-brand: #2a7ae2;
+  --gray: #828282;
+  --gray-light: #d1d1d1;
+  --gray-dark: #5a5a5a;
+  --gray-light-bg: #EAEAEA;
+  --gray-border: #d4d4d4;
+  --gray-button: #c6c6c6;
+  --gray-muted: #bbb;
+  --gray-card-text: #333;
+  --gray-card-shadow: rgba(0, 0, 0, 0.25);
+  --gray-card-border: rgba(0, 0, 0, 0.1);
+  --gray-card-gradient-start: #666666;
+  --gray-card-gradient-end: #444444;
+  --gray-card-border-color: #555;
+  --gray-card-bg-alt: #f0f0f0;
+  --gray-card-bg-light: #eeeeee;
+  --gray-card-bg-dark: #575757;
+  --gray-card-bg-muted: #999999;
+  --gray-card-text-light: #f0f0f0;
+  --gray-card-text-eee: #eee;
+  --blue-btn-primary: #2e6da4;
+  --green-btn-success: #3f903f;
+  --orange-btn-warning: #f0ad4e;
+  --red-btn-danger: #d9534f;
+  --blue-btn-info: #5bc0de;
+  --gray-bs-bg: #ddd;
+  --gray-bs-border: #ccc;
+  --white-bs: #fff;
+  --red-bs: #dd5a43;
+  --blue-bs: #478fca;
+  --blue-light-bs: #93cbf9;
+  --green-bs: #69aa46;
+  --green-light-bs: #b0d877;
+  --gray-bs-shadow: rgba(0, 0, 0, 0.175);
+
+  /* Semantic Usage */
+  /* --primary: var(--blue-primary);
+  --secondary: var(--gray-secondary);
+  --accent: var(--gray-accent); */
+  --primary: var(--gray-accent);
+  --secondary: var(--gray-secondary);
+  --accent: var(--blue-primary);
+  --background: var(--gray-background);
+  --header-bg: var(--gray-header);
+  --sidebar-bg: var(--gray-sidebar);
+  --card-bg: var(--gray-card);
+  --text: var(--black-text);
+  --text-light: var(--gray-text-light);
+  --text-muted: var(--gray-text-muted);
+  --brand: var(--blue-brand);
+  --grey: var(--gray);
+  --grey-light: var(--gray-light);
+  --grey-dark: var(--gray-dark);
+  --card-text: var(--gray-card-text);
+  --card-shadow: var(--gray-card-shadow);
+  --card-border: var(--gray-card-border);
+  --card-gradient-start: var(--gray-card-gradient-start);
+  --card-gradient-end: var(--gray-card-gradient-end);
+  --card-border-color: var(--gray-card-border-color);
+  --card-bg-alt: var(--gray-card-bg-alt);
+  --card-bg-light: var(--gray-card-bg-light);
+  --card-bg-dark: var(--gray-card-bg-dark);
+  --card-bg-muted: var(--gray-card-bg-muted);
+  --card-text-light: var(--gray-card-text-light);
+  --card-text-eee: var(--gray-card-text-eee);
+  --btn-primary: var(--blue-btn-primary);
+  --btn-success: var(--green-btn-success);
+  --btn-warning: var(--orange-btn-warning);
+  --btn-danger: var(--red-btn-danger);
+  --btn-info: var(--blue-btn-info);
+  --bs-bg: var(--gray-bs-bg);
+  --bs-border: var(--gray-bs-border);
+  --bs-white: var(--white-bs);
+  --bs-red: var(--red-bs);
+  --bs-blue: var(--blue-bs);
+  --bs-light-blue: var(--blue-light-bs);
+  --bs-green: var(--green-bs);
+  --bs-light-green: var(--green-light-bs);
+  --bs-shadow: var(--gray-bs-shadow);
+}

@@ -1,5 +1,7 @@
+@import "evan-theme-colors.css";
+
 body{
-	background:#ddd;
+	background: var(--bs-bg);
 	background-image: url(../img/bg.jpg);
 	font-family: 'Open Sans', Arial, Tahoma;
 }
@@ -7,7 +9,7 @@ body{
 	margin-top: 80px;
 }
 .dp-box{
-	background: #ddd;
+	background: var(--bs-bg);
 	margin-top: -75px;
 	width: 220px;
 	padding: 10px;
@@ -118,15 +120,15 @@ SKILLS
 	margin:0 0 10px 0;
 }
 
-.white{color:#fff!important}
-.red{color:#dd5a43!important}
-.blue{color:#478fca!important}
-.light-blue{color:#93cbf9!important}
-.green{color:#69aa46!important}
-.light-green{color:#b0d877!important}
+.white{color: var(--bs-white)!important}
+.red{color: var(--bs-red)!important}
+.blue{color: var(--bs-blue)!important}
+.light-blue{color: var(--bs-light-blue)!important}
+.green{color: var(--bs-green)!important}
+.light-green{color: var(--bs-light-green)!important}
 .brown{color:brown!important}
-.grey{color:#777!important}
-.light-grey{color:#bbb!important}
+.grey{color: var(--text-light)!important}
+.light-grey{color: var(--gray-muted)!important}
 .bigger-110{font-size:110%!important}
 .bigger-120{font-size:120%!important}
 .bigger-150{font-size:150%!important}
