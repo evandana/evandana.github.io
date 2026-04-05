@@ -8,6 +8,8 @@
  * delivery over maintainability.
  */
 
+@import "evan-theme-colors.css";
+
 @media (max-width: 550px) {
     .author-intro {
         width: 100%;
@@ -28,7 +30,7 @@
 
 body {
     background-image: none;
-    background: #f6f6f6;
+    background: var(--background);
     letter-spacing: 0.02rem;
 }
 
@@ -56,7 +58,7 @@ body {
 }
 
 .title .cat-title {
-    background: #5bc0de;
+    background: var(--primary);
     padding: 10px 7px; 
     min-width: auto;
     min-height: auto;
@@ -69,11 +71,11 @@ body {
 }
 
 .title .cat-title:after {
-    border-top: 10px solid #5bc0de;
+    border-top: 10px solid var(--primary);
 }
 
 .timeline-badge.info {
-    background: #c7c7c7 !important;
+    background: var(--secondary) !important;
 }
 
 /* panel left arrow, main */
@@ -112,11 +114,11 @@ section {
     /*color: #23527c;*/
     text-decoration:none;
     padding-bottom:0;
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid var(--secondary);
 }
 #intro a:hover {
-    color: #5bc0de;
-    border-bottom: 1px solid #5bc0de;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .feature-list--title {
@@ -127,7 +129,7 @@ section {
 /* header */
 .header {
     background-image: none;
-    background: #f7f7f7;
+    background: var(--header-bg);
 }
 .author-name {
     text-transform: uppercase;
@@ -148,7 +150,7 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .ribbon.red {
-    background: #5bc0de;
+    background: var(--primary);
 }
 .ribbon a {
     text-shadow: none;
@@ -158,9 +160,9 @@ section {
 .btn-flat {
     background: none;
     color: black;
-    border: 1px solid #c7c7c7;
+    border: 1px solid var(--secondary);
     padding-right: 20px;
-    box-shadow: 0 1px 0 #c7c7c7;
+    box-shadow: 0 1px 0 var(--secondary);
  }
 .btn-flat:active, .btn-flat:hover, .btn-flat:focus, .btn-flat:visited {
     color: black;
@@ -179,20 +181,20 @@ section {
 
 /* sidebar */
 aside .grid-block {
-    background: #f0f0f0;
+    background: var(--sidebar-bg);
     border: none;
 }
 aside .title .cat-title {
-    background: #c7c7c7;
+    background: var(--secondary);
 }
 aside .title .cat-title::after {
-    border-top: 10px solid #c7c7c7;
+    border-top: 10px solid var(--secondary);
 }
 .github-name {
     text-transform: uppercase;
 }
 .github-name a:hover {
-    color: #63A4B5;
+    color: var(--accent);
 }
 .github-name .fa {
     font-size: .8em;
@@ -560,14 +562,12 @@ input:checked + .slider:before {
         page-break-before: avoid;
         width: 100%;
         height: 100%;
-        zoom: 50%;
         page-break-before: avoid;
         zoom: 100%;
-
-        width: 1000px;
-        max-width: 1000px;
-        min-width: 1000px;
-        font-size: 14px;
+        width: 1100px;
+        max-width: 1100px;
+        min-width: 1100px;
+        font-size: 18px;
     }
 
     .print-hidden {
@@ -599,23 +599,27 @@ input:checked + .slider:before {
         position: relative;
     }
     #workHistory {
-        max-width: 48em;
+        max-width: 44em;
         float: left;
         clear: none;
     }
     #codeHighlights {
-        max-width: 48em;
+        max-width: 44em;
         float: left;
+        display: none;
     }
 
     #education .timeline-inverted {
-        width: 200px !important;
+        width: 260px !important;
     }
 
     #education, #activities, #github {
-        width: 200px;
+        width: 260px;
         float: right;
         clear: none;
+    }
+    #github {
+        margin-top: 18px;
     }
 
     .fa.fa-calendar, .fa.fa-map-marker {
@@ -678,9 +682,9 @@ input:checked + .slider:before {
 
     #intro {
         position: absolute;
-        right: 28px;
-        top: -116px;
-        width: 394px;
+        right: -13px;
+        top: -153px;
+        width: 570px;
         margin: 0;
     }
 
@@ -693,7 +697,7 @@ input:checked + .slider:before {
     }
 
     .intro-body {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .social-link-block:first-of-type span {
@@ -736,6 +740,7 @@ input:checked + .slider:before {
 
     .timeline-title, .timeline-role-title {
         display: inline;
+        font-size: 18px;
     }
     .timeline-title small {
         font-size: 16px;
@@ -865,8 +870,12 @@ input:checked + .slider:before {
         float: left;
     }
 
-    #workHistory .timeline-inverted:nth-child(n+6) {
+    #workHistory .timeline-inverted:nth-child(n+6) .timeline-body, 
+    #workHistory .timeline-inverted:nth-child(n+6) .text-muted.timeline-technologies.i-preserve {
         display: none;
+    }
+    #workHistory .timeline-inverted:nth-child(n+6) .work-history-dates.text-muted {
+        display: inline;
     }
 
 
@@ -882,6 +891,14 @@ input:checked + .slider:before {
     /* ------------------- */
     /* Education */
     /* ------------------- */
+
+    #education, #activities {
+        border-left: 1px solid #c7c7c7;
+        margin-left: -25px;
+        padding-left: 25px;
+        margin-top: 18px;
+        padding-top: 0;
+    }
 
     #education .timeline-inverted {
         float: left;
@@ -919,6 +936,10 @@ input:checked + .slider:before {
     /* Github */
     /* ------------------- */
 
+    #github {
+        display: none;
+    }
+
     #programmingSkills {
         display: none;
     }
@@ -947,11 +968,6 @@ input:checked + .slider:before {
         left: 0;
         text-transform: uppercase
     }
-
-
-    /* ------------------- */
-    /* Github */
-    /* ------------------- */
 
     #github .grid-block {
         margin: 0;
@@ -982,6 +998,10 @@ input:checked + .slider:before {
     /* ----------------------------------------- */
     /* Print Single Page */
     /* ----------------------------------------- */
+
+    .print-single-page--hidden {
+        display: none;
+    }
 
     .print-single-page #education {
         display: inline-block;

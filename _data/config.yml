@@ -1,11 +1,7 @@
 # Site settings
 title: Evan Dana's CV
 description: Evan Dana's CV
-#TODO update photo
-# https://photos.google.com/u/1/search/me/photo/AF1QipPw8HHB2hOj84d0d75t2QGRYl0-D7ljCVgnMHgk
-# https://photos.google.com/u/1/search/me/photo/AF1QipOxGcKWupOzmUZkktimlqlCNWU2ulPA2_oJNO3L
-# new pic
-favicon: /assets/img/evan-avatar.png
+favicon: /assets/img/headshot_bw_sm.png
 baseurl: ""
 url: http://evandana.github.io
 rss_url: /pages/atom.xml
@@ -29,71 +25,104 @@ author:
   github: evandana
   linkedin: evandana
   twitter: evandana
-  gavatar: /assets/img/evan-avatar.png
+  gavatar: /assets/img/headshot_bw_sm.png
   stackoverflow:
-  #  stackoverflow: 4582127
   intro:
     firstline:
-      LEAD SOFTWARE ENGINEER, specializing in React Native.
-      # WITH A FOCUS ON <a href="#workHistorybighealth" title="Jump to Big Health (Work History)">CREATING SUCCESSFUL CROSS-PLATFORM MOBILE EXPERIENCES</a>.
-      # test
+      FULL STACK STAFF SOFTWARE ENGINEER, specializing in HealthTech
     description:
-      # and focus on strategy, execution, and team culture.
-      Leveraging experience in high-quality and high-output environments,
-      I deliver customer value through technical leadership, individual contributions, and collaboration.
+      Dedicated to delivering positive impact, I am known for for UI development, versatility, and excellent documentation.
   workHistory:
+    - work1:
+      id: osmind
+      company: Osmind
+      printsinglepage: show
+      location: Remote
+      title: Staff Software Engineer
+      started: 2023
+      ended: 2026
+      duration: 11/2023 &ndash; current
+      technologies: TypeScript, NodeJS, Prisma, Postgres, GH Workflows, ReactQuery, GraphQL, Styled Components, Electron, Docker
+      description:
+        Demonstrated technical versitility while delivering Electronic Health Record (EHR) features on legacy systems and new products. Recognized for culture contributions with Team Above Self Award.
+      features:
+      - feature:
+        title: Unlocked revenue model by syncing insurance payments across systems
+        text: 
+          Spearheaded seamless integration between healthcare platforms by architecting and implementing robust API connections, enabling secure data exchange for claims' payments. 
+      - feature:
+        title: Established auth for EHR iFrame integration
+        text: 
+          Designed and led implementation of iFrame auth using Cognito authN followed by backend authZ middleware, driving collaboration with platform team.
+          5+ apps were built using these foundational docs and codepaths.
+      - feature:
+        title: Architected and deployed distribution pipeline for 0→1 cross-platform app
+        text: 
+          Implemented CI/CD, cross-platform code signing (app store prerequisite), and AWS S3-based app distribution with auto-updates.
+          Saved CI costs and improved dev cycle time by reducing native build times by over 60% and installer size by over 40%.
+      - feature:
+        title: Owned and streamlined the mobile release process across teams
+        text: 
+          Ensured seamless delivery by driving alignment, documentation, and prioritization for mobile releases, mentoring new owners, and setting standards for cross-pod collaboration.
+      # - feature:
+      #   title: Led and executed customer data migration across platforms, 
+      #   text: 
+      #     Enabled bulk EMR onboarding and bespoke migrations for high-priority customers.
+      #     Delivered initial migration documents ahead of schedule and reduced manual migration effort and human error.
+      #     Meticulous process documentation enabled quick resolution of idiosyncracies.
+      # - feature:
+      #   title: Led frontend technical standards and process improvements
+      #   text: 
+      #     Authored and rolled out RFCs, best practices, and interview processes for frontend architecture, testing, and diagramming, directly influencing team quality and hiring.
     - work1:
       id: bighealth
       company: Big Health
       printsinglepage: show
       location: Remote
       title: Staff Software Engineer
+      started: 2022
       ended: 2023
       duration: 05/2022 &ndash; 11/2023
-      technologies: React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD,
-        Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace,
-        Agile, Kanban,
-        Figma, Storybook, Component Library, Design System,
-        HealthKit
+      technologies: "React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD, Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace, Figma, Storybook, Component Library, Design System, HealthKit"
+      # "React Native, TypeScript, Redux, ReactQuery, Styled Components, Expo, SaMD, Bash, Python, Postgres, Docker, CircleCI, DataDog, Streamtrace, Agile, Kanban, Figma, Storybook, Component Library, Design System, HealthKit"
       description:
-        Focused on strategy, execution, and team culture while adapting to changing needs.
-        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications.
+        Led a variety of high-impact workstreams across multiple pods and SaMD mobile applications (DTx) while 
+        focused on strategy, execution, and team culture in a highly dynamic environment.
         # Staff software engineer on <a href="https://www.bighealth.com/daylight/" target="_blank">Daylight</a> –
         #  a React Native app helping those with Generalized Anxiety Disorder find lasting improvement in anxiety, mood, and insomnia.
       features:
         - feature:
-          title: Delivered new app, exceeding user engagement target by 50%. 
+          title: Exceeding user engagement target by 50% for clinical trial app poised to improve depression symptoms.
           text:
             Technical front-end lead for app with provisional requirements and tight timelines; 
               delivered on time.
             Drove several features from requirements discovery through implementation, 
-              including sequencing milestones and reviewing PRs.
-            Planned and implemented complex UI/UX enhancements.
-            Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively
-              (hybrid of Kanban and Agile Scrum).
+              including sequencing milestones.
+            <br/>Planned and implemented complex UI/UX enhancements.
+            Led technical roadmap and collaborated cross-functionally to deliver user value quickly and iteratively.
             Evangelized and applied best practices; drove code coverage improvement from 0 to 80% in one quarter.
         - feature:
-          title: Increased app usage (correlating to improved clinical outcomes) by adding local notifications. #; achieved pivotal trial readiness.
+          title: Increased app usage, correlating to improved clinical outcomes. #; achieved pivotal trial readiness.
           text:
             Originated idea, guided high-level planning, and led implementation of cross-product local notifications; 
               primary code contributor.
             These actions resulted in 40% adoption rate and the average user starting nearly one more in-app lesson.
-        - feature:
-          title: Met quarterly goal of delivery of new app, leveraging existing platform.
-          text: >
-            Strategically planned, chunked, and sequenced work to maximize throughput.
-            Removed roadblocks: independently resolved complex technical items,
-              guided coworkers on implementation, and worked cross-functionally.
+        #- feature:
+        #  title: Met quarterly goal of delivery of new app, leveraging existing platform.
+        #  text: >
+        #    Strategically planned, chunked, and sequenced work to maximize throughput.
+        #    Removed roadblocks: independently resolved complex technical items,
+        #      guided coworkers on implementation, and worked cross-functionally.
         - feature:
           title: Technical Leadership
           text: 
             Reduced tech debt and risk; achieved cross-team stakeholder alignment on ROI for overdue upgrade.
             Drove alignment across teams as presenter and facilitator at Front End Guild meetings.
             Mentored other engineers on complex work items.
-        - feature:
-          title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
-          text: 
-            Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
+        #- feature:
+        #  title: Drafted architecture proposal for future app, focused on delivering business goals quicker.
+        #  text: 
+        #    Wrote initial draft and organized complex concepts into clear visuals and text, based on group collaboration.
             # Enriched the architecture discussion by offering a delivery-focused and future-forward proposal with rich detail.
     - work1:
       id: pear
@@ -101,79 +130,81 @@ author:
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
+      started: 2019
       ended: 2022
       duration: 01/2019 &ndash; 05/2022
-      technologies: React Native, TypeScript, Redux, NestJS, 
+      technologies: "React Native, TypeScript, Redux, NestJS, 
         Bitrise.io, CI/CD, Docker, 
-        Sentry, DataDog, OpsGenie, PagerDuty,
+        Sentry, DataDog,
         Figma, Storybook,
         Component Library, Design System,
-        Software as a Medical Device, PDT, AWS
+        SaMD, PDT, AWS"
       description:
+        Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
         Led planning, coordination, and development of significant features and components across teams.
         Increased efficiency of prescription digital therapeutic (PDT) mobile app development through ownership of shared UI libraries.
-        Delivered complex stories independently, and in collaboration, ensuring high-quality and auditable code while also focusing on value-based delivery.
+        
         # Strong collaborator, using documentation and diagramming to maintain aligned understanding and expectations.
         # Improved engineering community through large and small initiatives.
       features:
         - feature:
-          title: Increased PDT development efficiency through shared UI libraries (Mobile Platform Engineer).
+          title: Increased prescription mobile app development efficiency through shared UI libraries (Mobile Platform Engineer).
           text:
-            Tech lead and primary contributor for the shared UI libraries.
-            Functionality includes utilities for managing state syncing, design system components, and the login screen flow.
-            Led a collaboration building new core components;
-            crafted implementation strategy and tackled the most complex stories with composable components.
+            Tech lead and primary contributor for the shared UI libraries, leveraging composable components.
+            Functionality included utilities for managing bidirectional state syncing and resolution, design system components, and the login screen flow.
+            # Led a collaboration building new core components;
+            # crafted implementation strategy and tackled the most complex stories with composable components.
             # Maintained these libraries with ReactNative and RN Nav upgrades,
             # including refactoring large classes to functional components with React Hooks and facilitating app-teams' implementation.
             # Somryst Redesign, RN Nav v3 -> v5, RN 61 -> 63
         - feature:
           title: Drove complex cross-team initiatives to success (Platform Engineer).
-          text:
-            Organized, planned, and implemented mobile-centric facet of a cross-functionally complex project migrating from monolith to microservices.
-            For migration to new auth service, consolidated requirements and solution options into a detailed RFC and managed the living documentation.
+          text: >
+            For migration to a monolith and new auth services: organized, planned, and implemented the mobile-centric aspects.
+            Drove solution alignment across teams by consolidating requirements, creating a detailed RFC and managing the living documentation.
             Proactively identified critical paths and opportunities for parallelization across teams.
-            # Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
-            # Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
-            # Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint
+          # Increased event retention and enabled debugging of malformed events; led to visibility and fix of a prod defect.
+          # Saved dozens of hours of cross-functional time by enabling safe data mutation of user app progress.
+          # Mobile concerns for Arch 2.0, Event retention, Admin AppState endpoint
         - feature:
-          title: Delivered PDT for study use (tech lead).
+          title: Delivered prescription Insomnia digital therapeutic app for clinical study (tech lead).
           text:
-            Responsible for coordinating code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
-            Delivered properly functioning app on time for clinical study.
+            Responsible for coordinating timely code delivery, ensuring quality, and providing technical estimates for full-stack app with 3 other engineers.
             Resolved challenging performance issue by leading a mini-hackathon.
-            Conducted technical phone screens and candidate interviews.
-        - feature:
-          title: Improved the employee experience (Chair of Employee Engagement Council).
-          # text: Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
-        - feature:
-          title: Fostered engineering community (Engineering Advocate).
+          # Conducted technical phone screens and candidate interviews.
+          # - feature:
+          #   title: Improved the employee experience (Chair of Employee Engagement Council).
+            # text: Worked with executive team (C-suite), leadership team (VPs), and all employees, to ensure under-served voices are heard. Proposed solution recommendations to leadership based on aligned goals. Results were positively mentioned in the annual employee engagement survey and many initiatives are still ongoing.
+          # - feature:
+          #   title: Fostered engineering community (Engineering Advocate).
     - work1:
       id: ge
       company: General Electric | GE Digital
       printsinglepage: show
       location: Boston, MA
       title: Sr. Software Engineer
+      started: 2016
       ended: 2019
       duration: 10/2016 &ndash; 01/2019
-      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
+      technologies: "ES6, Polymer, WebSockets, NodeJS, CI/CD, Docker, AngularJS"
+      # "ES6, Polymer, WebSockets, NodeJS, CI/CD, Agile, Domain Modeling, Docker, AngularJS, ProUI, Bash scripting, Markdown"
+      # Exemplified best practices, from coding patterns to agile methodologies.
+      # Ensured quality by writing unit and system tests for use in CI/CD workflow.
+      # Consistently created useful graphical and text-based documentation.  
       description: >
         For an IIOT monitoring dashboard app that minimized machine downtime,
-          delivered complex features on time, independently and through 
-          collaboration, with utmost attention to quality.
-        Exemplified best practices, from coding patterns to agile methodologies.
+        delivered complex features on time.
         Translated requirements into manageable stories with clear and complete 
-         acceptance criteria, raising discussions early if needed.
-        Ensured quality by writing unit and system tests for use in CI/CD workflow.
-        Consistently created useful graphical and text-based documentation.
+        acceptance criteria, raising discussions early if needed.
       features:
         - feature:
           title: Feature lead.
           text: >
             Led UI development of feature on open source shared component library: 
             <a target="_BLANK" href="https://github.com/predixdesignsystem/px-data-table/pull/126">px-data-table</a>.
-            Implemented complex features and refactorings; added in-depth E2E tests and UI/UX designs.
+            Implemented complex features, adding comprehensive E2E tests.
         - feature:
-          title: Community thought leader and advocate.
+          title: Community thought leader.
           text: 
             SME across teams for UI frameworks and patterns. 
             Mentored software engineers.
@@ -194,25 +225,28 @@ author:
       collapsed: true
       location: Boston, MA
       title: Sr. Interactive Developer, L2
+      started: 2013
       ended: 2016
       duration: 06/2013 &ndash; 10/2016
-      technologies: "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
+      technologies: "D3.js, AngularJS, NodeJS, Hexagonal Architecture, Domain-Driven Development"
+      # "ES6, D3.js, AngularJS, Aurelia, Agile, JSPM, NodeJS, Continuous Integration, Hexagonal Architecture (server-side), Domain-Driven Development, Domain Modeling, JIRA"
       description:
-        Years of experience in UI lead role, conducting engaging presentations,
-        and as technical liaison for client and internal domain teams.
-        Enforced code quality and best practices.
+        Awarded recognition for client-focused delivery. 
+        In UI lead role, conducted engaging presentations,
+        and was technical liaison for client and internal domain teams.
+        # Enforced code quality and best practices.
         # Advocated for code stability through unit, integration, functional, or
         # automated visual-diff testing.
-      features:
-        - feature:
-          title: Awarded recognition for client-focused delivery.
-          text: Led UI development for that project, having recently self-taught the technology.
+      # features:
+      #  - feature:
+      #    title: Awarded recognition for client-focused delivery.
+      #    text: Led UI development for that project, having recently self-taught the technology.
+          # - feature:
+          #   title: Autonomous and motivated
+          #   text: Created reusable d3.js charting library between assignments
         # - feature:
-        #   title: Autonomous and motivated
-        #   text: Created reusable d3.js charting library between assignments
-        - feature:
-          title: Quickly learned and utilized new technology.
-          text: From Backbone to AngularJS and Aurelia
+        #   title: Quickly learned and utilized new technology.
+        #   text: From Backbone to AngularJS and Aurelia
     - work1:
       id: putnam
       company: Putnam Investments
@@ -220,19 +254,20 @@ author:
       collapsed: true
       location: Boston, MA
       title: Javascript UI Developer
+      started: 2012
       ended: 2013
       duration: 07/2012 &ndash; 05/2013
       technologies: JavaScript (jQuery, Highcharts), CSS, HTML, Backbone.js, Modernizr, SVN
       description:
         Implemented significant contributions to interactive retirement planning tool,
-        turning complex business logic into an engaging user experience.
+        turning complex business logic into an engaging user experience. Created dynamic visualizations.
         # Initiated suite of unit tests to prevent recurring defects.
         # Reached cross-browser functionality with collaborative discussions.
       features:
-        - feature:
-          title: Drove consistent quality with unit test suite.
-        - feature:
-          title: Created dynamic visualizations. # for retirement income projections
+        # - feature:
+        #   title: Drove consistent quality with unit test suite.
+        # - feature:
+        #  title: Created dynamic visualizations. # for retirement income projections
     - work1:
       id: innerscope
       company: Innerscope Research Inc.
@@ -240,6 +275,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Interactive Developer, L2
+      started: 2009
       ended: 2012
       duration: 9/2009 &ndash; 05/2012
       technologies: HTML, CSS, PHP, JavaScript, Photoshop, Illustrator
@@ -260,6 +296,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Web Developer
+      started: 2009
       ended: 2009
       duration: 04/2009 &ndash; 09/2009
       technologies: HTML, CSS, PHP, JavaScript, Adobe Contribute compatibility, Photoshop, Illustrator
@@ -277,6 +314,7 @@ author:
       collapsed: true
       location: Boston, MA
       title: Process Engineer
+      started: 2009
       ended: 2009
       duration: 04/2009 &ndash; 09/2009
       technologies: Java (apache.poi, javax.swing), Eclipse IDE, Microsoft Office (2001 &ndash; 2007), Mac and PC platforms
@@ -291,7 +329,8 @@ author:
       printsinglepage: collapsed
       collapsed: true
       location: Canton, MA
-      title: Graphic Designer & Process Engineer.
+      title: Graphic Designer & Process Engineer
+      started: 2007
       ended: 2009
       duration: 03/2007 &ndash; 01/2009
       technologies: "AppleScript, HTML, XML, CSS, PHP, FileMaker Pro, InDesign, Illustrator, Photoshop, Bridge"
@@ -313,7 +352,7 @@ author:
       technologies: "NestJS, TypeORM, Azure Cloud products, ReactJS 15.1.x, Redux, PostgresQL, Google Cloud, Parse, WebSockets, Material-UI, Google OAuth, ES6, Babel, Open source, GitHub Projects"
       link: github.com/evandana/keep-ahope
       description:
-        Largely a pro-bono side project, created a patient intake app for a local non-profit harm reduction center called
+        Pro-bono side project creating a patient intake app for a local non-profit harm reduction center called
         <a href="https://www.bphc.org/whatwedo/Recovery-Services/services-for-active-users/Pages/Services-for-Active-Users-AHOPE.aspx" target="_blank">AHOPE<i class="fa fas fa-external-link-alt"></i></a>,
         which is managed by <a href="https://www.bphc.org/Pages/default.aspx" target="_blank">BPHC <i class="fa fas fa-external-link-alt"></i></a>.
         Managed a small group of software engineers who donated time to this project.
@@ -427,8 +466,8 @@ author:
       # <br/></br/>
       # Topics covered: Python, Ruby on Rails, SQL, Amazon Web Services, version control with GIT, and cloud deployment with Heroku.
       # Earned a certificate of completion for listed classes.
-      completed: curr.
-      duration: 2012 &ndash; current
+      completed: 2024
+      duration: 2012 &ndash; 2024
 
   activities:
     - activity:
@@ -453,7 +492,7 @@ author:
       location: Boston, MA
       title: Fitness Group Co-leader
       organization: November Project, Boston
-      started: 2013
+      started: 2014
       icon: bicycle
       duration: 2014 &ndash; 2015
       description: >
@@ -496,34 +535,29 @@ author:
     - language2:
       name: French
       proficiency: Limited Conversational
-  # programmingSkills:
-  #   - skill2:
-  #     name: "Frameworks: ReactNative | React"
-  #     percentage: 75%
-  #     usefulness: expert
-  #   - skill1:
-  #     name: JavaScript/ES6
-  #     percentage: 80%
-  #     usefulness: expert
-  #   - skill5:
-  #     name: "Typescript"
-  #     percentage: 40%
-  #     usefulness: intermediate
-  #   - skill4:
-  #     name: HTML5 / CSS
-  #     percentage: 60%
-  #     usefulness: experienced
-  #   - skill3:
-  #     name: "Native OS: Objective-C | Java"
-  #     percentage: 10%
-  #     usefulness: beginner
   programmingSkillsOption2:
-    - skill2:
-      name: "Cross-Platform UI Development (ReactNative)"
+    # - skill2:
+    #   name: "Cross-Platform UI Development (ReactNative)"
+    #   percentage: 80%
+    #   usefulness: experienced
+    # - skill1:
+    #   name: "Backend Development"
+    #   percentage: 50%
+    #   usefulness: intermediate
+    - skill:
+      name: "Debugging"
       percentage: 80%
       usefulness: experienced
-    - skill1:
-      name: "Backend Development"
+    - skill:
+      name: "Coding: FE (React), BE (NodeJS), ReactNative"
+      percentage: 50%
+      usefulness: intermediate
+    - skill:
+      name: "Architecture & Design"
+      percentage: 50%
+      usefulness: intermediate
+    - skill:
+      name: "Leveraging AI"
       percentage: 50%
       usefulness: intermediate
   opensource:
@@ -534,16 +568,16 @@ author:
         year: 2018 - 2022
         link: github.com/evandana/keep-ahope
         description: Patient intake app for AHOPE / Boston Public Health Commission
-      - repo:
-        name: Repo for this site
-        year: 2018 - current
-        link: github.com/evandana/evandana.github.io
-        description: Data-driven flow for web and PDF output
-      - repo:
-        name: Flutter Nav PoC
-        year: 2021
-        link: evandana.com/flutter-poc/README.html
-        description: Initial Flutter exploration into a nested navigation flow with independent modules
+      # - repo:
+      #   name: Repo for this site
+      #   year: 2018 - current
+      #   link: github.com/evandana/evandana.github.io
+      #   description: Data-driven flow for web and PDF output
+      # - repo:
+      #   name: Flutter Nav PoC
+      #   year: 2021
+      #   link: evandana.com/flutter-poc/README.html
+      #   description: Initial Flutter exploration into a nested navigation flow with independent modules
       # - repo:
       #   name: Auction App
       #   year: 2018

@@ -1,0 +1,9 @@
+{
+   "name": "Jekyll on Default Linux Universal",
+
+   // This is what you get if you start a codespace from scratch without a devcontainer
+   "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+
+   // Once it is created, run the Jekyll setup commands
+   "postCreateCommand": "rvm install ruby-3.0.5; rvm use 3.0.5; gem install bundler jekyll; bundle update; bundle exec jekyll serve"
+}

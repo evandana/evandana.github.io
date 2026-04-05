@@ -12,7 +12,7 @@ Résumé site for Evan Dana built on the template 'resumecard' as referenced bel
 ### Run Locally
 
 - [Full instructions](http://kbroman.org/simple_site/pages/local_test.html)
-- `jbundle exec jekyll serve -l`
+- `bundle exec jekyll serve -l`
 - Go to: <http://localhost:4000>.
 
 
